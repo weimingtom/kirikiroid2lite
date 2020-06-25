@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include\GLFW">
+      <UniqueIdentifier>{74de412d-7ccc-4cf7-83e6-b1c814905084}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\include\GLFW\glfw3.h">
+      <Filter>include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\include\GLFW\glfw3native.h">
+      <Filter>include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\glfw_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\internal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\wgl_platform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\win32_platform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\clipboard.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\context.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\gamma.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\init.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\input.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\joystick.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\wgl_context.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\monitor.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\time.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\window.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\win32_clipboard.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\win32_gamma.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\win32_init.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\win32_joystick.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\win32_monitor.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\win32_time.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\glfw-3.0.4\src\win32_window.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

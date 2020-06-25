@@ -1,0 +1,2023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Classes\core">
+      <UniqueIdentifier>{8d131192-71bd-4afc-a558-b36c97cf1fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plugins">
+      <UniqueIdentifier>{f4b7c6d7-77c0-47b9-9ca0-1544c1352741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plugins\ncbind">
+      <UniqueIdentifier>{b50fb9f7-8d38-47da-a760-4f47aff40f6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\base">
+      <UniqueIdentifier>{1ab69e74-0145-4306-840d-b1216c7a25af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\environ">
+      <UniqueIdentifier>{1d4cc892-2e49-46ef-af79-e8bd398c08d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\extension">
+      <UniqueIdentifier>{4dfb3531-bc43-41e8-aca9-0cc3364aaacb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\movie">
+      <UniqueIdentifier>{0d04847f-29b3-4838-a5fb-f9a3146f24ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\msg">
+      <UniqueIdentifier>{73a00569-efa3-405a-81dc-e0bc5e865319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\sound">
+      <UniqueIdentifier>{5dc0fbf9-69cc-4ff1-bf79-a19808983f43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\tjs2">
+      <UniqueIdentifier>{bfb73af0-be11-4d6e-9b1d-d2edb61377a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\utils">
+      <UniqueIdentifier>{0185f082-9311-4652-a88b-8aec0e053bc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\visual">
+      <UniqueIdentifier>{42f4da76-63ed-4d94-8eeb-0076b468b32c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\base\win32">
+      <UniqueIdentifier>{fd0e59a4-95ab-4d5f-a01b-dbe06d5824b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\environ\android">
+      <UniqueIdentifier>{e7cd03dc-1a6f-4f19-a820-5a0eaace3673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\environ\cocos2d">
+      <UniqueIdentifier>{410b20cc-6609-4e19-908c-07e484ebb82b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\environ\ConfigManager">
+      <UniqueIdentifier>{3e519917-6f95-4ee9-905d-d437f676e8da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\environ\linux">
+      <UniqueIdentifier>{12ccd06d-fa9f-434c-9ea9-ccc18ffb0e81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\environ\ui">
+      <UniqueIdentifier>{4beaf9a4-fb6e-4d33-b8da-caab91309a7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\environ\win32">
+      <UniqueIdentifier>{63bf2558-135a-453e-b86c-4f61ee16bb00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\msg\win32">
+      <UniqueIdentifier>{f4a45abb-78e3-4eae-a719-c83f92cd367e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\sound\win32">
+      <UniqueIdentifier>{837a7a01-18ad-4ac5-9392-673db7693f48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\utils\encoding">
+      <UniqueIdentifier>{89bc3d20-da03-4e11-8452-c4d0a3a1d925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\utils\minizip">
+      <UniqueIdentifier>{040d353b-9474-48a8-af3c-5b0ab7c47564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\utils\win32">
+      <UniqueIdentifier>{2e4d3f84-61ec-4724-a930-cb4df8eebf66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\visual\ARM">
+      <UniqueIdentifier>{1e335d8f-8cc0-4702-946a-b8317185aa03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\visual\gl">
+      <UniqueIdentifier>{fb28205b-9a9b-4edf-8f57-fb52e121a82d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\visual\ogl">
+      <UniqueIdentifier>{6a34fb2e-a106-4b69-90d9-7112eccb7ee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\visual\win32">
+      <UniqueIdentifier>{eb7d35b2-f7ca-4f92-9874-114cbe14c82e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\environ\ui\extension">
+      <UniqueIdentifier>{2febd0d6-a72e-4f66-91fd-6c8c08e7ba88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="onig">
+      <UniqueIdentifier>{391fd60e-44b1-4632-af07-2abafcce248e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="onig\enc">
+      <UniqueIdentifier>{c4761bdd-d4db-4229-b160-e33db992e136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core">
+      <UniqueIdentifier>{92006822-9cbb-4d68-8d63-07fe99a05f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgproc">
+      <UniqueIdentifier>{cf1373c3-aae5-46aa-ad63-636e669d2dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgproc\avx">
+      <UniqueIdentifier>{25891cb1-2ed8-4b89-a728-caeda9208e44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgproc\avx2">
+      <UniqueIdentifier>{3419a85f-e683-471d-9abc-194dee32bac8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate_ori.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\ncbind\ncbind.cpp">
+      <Filter>Classes\plugins\ncbind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\addFont.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\csvParser.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\dirlist.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\fftgraph.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\getabout.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\getSample.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\InternalPlugins.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\LayerExBase.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\layerExMovie.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\layerExPerspective.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\saveStruct.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\varfile.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\win32dialog.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\wutcwf.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\xp3filter.cpp">
+      <Filter>Classes\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\win32\EventImpl.cpp">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\win32\FileSelector.cpp">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\win32\FuncStubs.cpp">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\win32\NativeEventQueue.cpp">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\win32\PluginImpl.cpp">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\win32\ScriptMgnImpl.cpp">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\win32\StorageImpl.cpp">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\win32\SusieArchive.cpp">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\win32\SysInitImpl.cpp">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\win32\SystemImpl.cpp">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\7zArchive.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\BinaryStream.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\CharacterSet.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\EventIntf.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\PluginIntf.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\ScriptMgnIntf.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\StorageIntf.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\SysInitIntf.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\SystemIntf.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\TARArchive.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\TextStream.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\UtilStreams.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\XP3Archive.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\ZIPArchive.cpp">
+      <Filter>Classes\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\android\AndroidUtils.cpp">
+      <Filter>Classes\core\environ\android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\cocos2d\AppDelegate.cpp">
+      <Filter>Classes\core\environ\cocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\cocos2d\CustomFileUtils.cpp">
+      <Filter>Classes\core\environ\cocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\cocos2d\MainScene.cpp">
+      <Filter>Classes\core\environ\cocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\cocos2d\YUVSprite.cpp">
+      <Filter>Classes\core\environ\cocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ConfigManager\GlobalConfigManager.cpp">
+      <Filter>Classes\core\environ\ConfigManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ConfigManager\IndividualConfigManager.cpp">
+      <Filter>Classes\core\environ\ConfigManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ConfigManager\LocaleConfigManager.cpp">
+      <Filter>Classes\core\environ\ConfigManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\linux\Platform.cpp">
+      <Filter>Classes\core\environ\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\extension\ActionExtension.cpp">
+      <Filter>Classes\core\environ\ui\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\extension\UIExtension.cpp">
+      <Filter>Classes\core\environ\ui\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\BaseForm.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\ConsoleWindow.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\DebugViewLayerForm.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\FileSelectorForm.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\GameMainMenu.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\GlobalPreferenceForm.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\IndividualPreferenceForm.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\InGameMenuForm.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\MainFileSelectorForm.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\MessageBox.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\PreferenceForm.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\SeletListForm.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\SimpleMediaFilePlayer.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\TipsHelpForm.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\XP3RepackForm.cpp">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\CompatibleNativeFuncs.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\ConfigFormUnit.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\DetectCPU.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\EmergencyExit.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\HintWindow.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\MainFormUnit.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\MouseCursor.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\my_HintWindow.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\Platform.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\SystemControl.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\TouchPoint.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\TVPWindow.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\VersionFormUnit.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\WindowFormUnit.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\WindowsUtil.cpp">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\Application.cpp">
+      <Filter>Classes\core\environ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\DetectCPU.cpp">
+      <Filter>Classes\core\environ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\DumpSend.cpp">
+      <Filter>Classes\core\environ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\XP3ArchiveRepack.cpp">
+      <Filter>Classes\core\environ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\extension\Extension.cpp">
+      <Filter>Classes\core\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\movie\krmovie.cpp">
+      <Filter>Classes\core\movie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\msg\win32\MsgImpl.cpp">
+      <Filter>Classes\core\msg\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\msg\win32\MsgLoad.cpp">
+      <Filter>Classes\core\msg\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\msg\win32\OptionsDesc.cpp">
+      <Filter>Classes\core\msg\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\msg\win32\ReadOptionDesc.cpp">
+      <Filter>Classes\core\msg\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\msg\MsgIntf.cpp">
+      <Filter>Classes\core\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\win32\CDDAImpl.cpp">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\win32\MIDIImpl.cpp">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\win32\SoundBufferBaseImpl.cpp">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\win32\tvpsnd.cpp">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\win32\WaveImpl.cpp">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\win32\WaveMixer.cpp">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\CDDAIntf.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\FFWaveDecoder.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\MathAlgorithms.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\MIDIIntf.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\PhaseVocoderDSP.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\PhaseVocoderFilter.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\SoundBufferBaseIntf.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\VorbisWaveDecoder.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\WaveFormatConverter.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\WaveFormatConverter_SSE.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\WaveIntf.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\WaveLoopManager.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\WaveSegmentQueue.cpp">
+      <Filter>Classes\core\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjs.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjs.tab.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsArray.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsBinarySerializer.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsByteCodeLoader.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsCompileControl.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsConfig.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsConstArrayData.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsDate.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsdate.tab.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsDateParser.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsDateWordMap.cc">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsDebug.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsDictionary.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsDisassemble.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsError.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsException.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsGlobalStringMap.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsInterCodeExec.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsInterCodeGen.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsInterface.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsLex.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsMath.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsMessage.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsMT19937ar-cok.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsNamespace.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsNative.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsObject.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsObjectExtendable.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsOctPack.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjspp.tab.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsRandomGenerator.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsRegExp.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsScriptBlock.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsScriptCache.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsString.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsUtils.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsVariant.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsVariantString.cpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\encoding\gbk2unicode.c">
+      <Filter>Classes\core\utils\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\encoding\jis2unicode.c">
+      <Filter>Classes\core\utils\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\minizip\ioapi.cpp">
+      <Filter>Classes\core\utils\minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\minizip\unzip.c">
+      <Filter>Classes\core\utils\minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\minizip\zip.c">
+      <Filter>Classes\core\utils\minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\win32\ClipboardImpl.cpp">
+      <Filter>Classes\core\utils\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\win32\DebugImpl.cpp">
+      <Filter>Classes\core\utils\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\win32\PadImpl.cpp">
+      <Filter>Classes\core\utils\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\win32\ThreadImpl.cpp">
+      <Filter>Classes\core\utils\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\win32\TimerImpl.cpp">
+      <Filter>Classes\core\utils\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\win32\TVPTimer.cpp">
+      <Filter>Classes\core\utils\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\ClipboardIntf.cpp">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\DebugIntf.cpp">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\KAGParser.cpp">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\MathAlgorithms_Default.cpp">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\md5.c">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\MiscUtility.cpp">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\PadIntf.cpp">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\Random.cpp">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\RealFFT_Default.cpp">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\ThreadIntf.cpp">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\TickCount.cpp">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\TimerIntf.cpp">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\utils\VelocityTracker.cpp">
+      <Filter>Classes\core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\ARM\tvpgl_arm.cpp">
+      <Filter>Classes\core\visual\ARM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\gl\blend_function.cpp">
+      <Filter>Classes\core\visual\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\gl\ResampleImage.cpp">
+      <Filter>Classes\core\visual\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\gl\WeightFunctor.cpp">
+      <Filter>Classes\core\visual\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\ogl\astcrt.cpp">
+      <Filter>Classes\core\visual\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\ogl\etcpak.cpp">
+      <Filter>Classes\core\visual\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\ogl\imagepacker.cpp">
+      <Filter>Classes\core\visual\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\ogl\pvrtc.cpp">
+      <Filter>Classes\core\visual\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\ogl\RenderManager_ogl.cpp">
+      <Filter>Classes\core\visual\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\BasicDrawDevice.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\BitmapBitsAlloc.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\BitmapInfomation.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\DInputMgn.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\DrawDevice.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\GDIFontRasterizer.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\GraphicsLoaderImpl.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\LayerBitmapImpl.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\LayerImpl.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\MenuItemImpl.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\NativeFreeTypeFace.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\PassThroughDrawDevice.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\TVPScreen.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\TVPSysFont.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\VideoOvlImpl.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\VSyncTimingThread.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\WindowImpl.cpp">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\argb.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\BitmapIntf.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\BitmapLayerTreeOwner.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\CharacterData.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\ComplexRect.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\FontImpl.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\FontSystem.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\FreeType.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\FreeTypeFontRasterizer.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\GraphicsLoaderIntf.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\GraphicsLoadThread.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\ImageFunction.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LayerBitmapIntf.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LayerIntf.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LayerManager.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LayerTreeOwnerImpl.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LoadBPG.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LoadJPEG.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LoadJXR.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LoadPNG.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LoadPVRv3.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LoadTLG.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LoadWEBP.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\MenuItemIntf.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\PrerenderedFont.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\RectItf.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\RenderManager.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\SaveTLG5.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\SaveTLG6.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\TransIntf.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\tvpgl.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\VideoOvlIntf.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\WindowIntf.cpp">
+      <Filter>Classes\core\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\ascii.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\big5.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\cp1251.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\euc_jp.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\euc_kr.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\euc_tw.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\gb18030.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_1.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_2.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_3.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_4.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_5.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_6.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_7.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_8.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_9.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_10.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_11.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_13.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_14.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_15.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_16.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\koi8.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\koi8_r.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\mktable.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\sjis.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\unicode.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\utf8.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\utf16_be.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\utf16_le.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\utf32_be.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\enc\utf32_le.c">
+      <Filter>onig\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\regcomp.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\regenc.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\regerror.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\regexec.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\regext.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\reggnu.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\regparse.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\regposerr.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\regposix.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\regsyntax.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\regtrav.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\regversion.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\st.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\testc.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\testu.c">
+      <Filter>onig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\algorithm.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\alloc.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\arithm.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\array.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\cmdparser.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\convert.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\copy.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\datastructs.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\drawing.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\dxt.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\gl_core_3_1.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\glob.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\gpumat.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\lapack.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\mathfuncs.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\matmul.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\matop.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\matrix.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\opengl_interop.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\opengl_interop_deprecated.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\out.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\parallel.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\persistence.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\rand.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\stat.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\system.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\avx\imgwarp_avx.cpp">
+      <Filter>opencv_imgproc\avx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\avx2\imgwarp_avx2.cpp">
+      <Filter>opencv_imgproc\avx2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\accum.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\approx.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\canny.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\clahe.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\color.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\contours.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\convhull.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\corner.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\cornersubpix.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\deriv.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\distransform.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\emd.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\featureselect.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\filter.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\floodfill.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\gabor.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\generalized_hough.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\geometry.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\grabcut.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\histogram.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\hough.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\imgwarp.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\linefit.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\matchcontours.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\moments.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\morph.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\phasecorr.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\pyramids.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\rotcalipers.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\samplers.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\segmentation.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\shapedescr.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\smooth.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\subdivision2d.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\sumpixels.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\tables.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\templmatch.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\thresh.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\undistort.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\utils.cpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\tables_core.cpp">
+      <Filter>opencv_core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppMacros.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\plugins\ncbind\ncb_foreach.h">
+      <Filter>Classes\plugins\ncbind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\plugins\ncbind\ncb_invoke.hpp">
+      <Filter>Classes\plugins\ncbind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\plugins\ncbind\ncbind.hpp">
+      <Filter>Classes\plugins\ncbind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\plugins\LayerExBase.h">
+      <Filter>Classes\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\plugins\layerExBase.hpp">
+      <Filter>Classes\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\plugins\PluginStub.h">
+      <Filter>Classes\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\plugins\tp_stub.h">
+      <Filter>Classes\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\plugins\xp3filter.h">
+      <Filter>Classes\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\win32\EventImpl.h">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\win32\FileSelector.h">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\win32\FuncStubs.h">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\win32\NativeEventQueue.h">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\win32\PluginImpl.h">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\win32\ScriptMgnImpl.h">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\win32\StorageImpl.h">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\win32\SusieArchive.h">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\win32\SysInitImpl.h">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\win32\SystemImpl.h">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\win32\win32io.h">
+      <Filter>Classes\core\base\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\BinaryStream.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\CharacterSet.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\common.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\EventIntf.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\PluginIntf.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\ScriptMgnIntf.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\StorageIntf.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\SysInitIntf.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\SystemIntf.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\tar.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\TextStream.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\UserEvent.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\UtilStreams.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\base\XP3Archive.h">
+      <Filter>Classes\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\android\AndroidUtils.h">
+      <Filter>Classes\core\environ\android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\cocos2d\AppDelegate.h">
+      <Filter>Classes\core\environ\cocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\cocos2d\CCKeyCodeConv.h">
+      <Filter>Classes\core\environ\cocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\cocos2d\CustomFileUtils.h">
+      <Filter>Classes\core\environ\cocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\cocos2d\MainScene.h">
+      <Filter>Classes\core\environ\cocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\cocos2d\YUVSprite.h">
+      <Filter>Classes\core\environ\cocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ConfigManager\GlobalConfigManager.h">
+      <Filter>Classes\core\environ\ConfigManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ConfigManager\IndividualConfigManager.h">
+      <Filter>Classes\core\environ\ConfigManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ConfigManager\LocaleConfigManager.h">
+      <Filter>Classes\core\environ\ConfigManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\extension\ActionExtension.h">
+      <Filter>Classes\core\environ\ui\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\extension\UIExtension.h">
+      <Filter>Classes\core\environ\ui\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\BaseForm.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\ConsoleWindow.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\DebugViewLayerForm.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\FileSelectorForm.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\GameMainMenu.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\GlobalPreferenceForm.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\IndividualPreferenceForm.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\InGameMenuForm.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\MainFileSelectorForm.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\MessageBox.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\PreferenceConfig.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\PreferenceForm.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\SeletListForm.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\SimpleMediaFilePlayer.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\TipsHelpForm.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\ui\XP3RepackForm.h">
+      <Filter>Classes\core\environ\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\ApplicationSpecialPath.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\CompatibleNativeFuncs.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\config.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\ConfigFormUnit.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\DetectCPU.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\EmergencyExit.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\HintWindow.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\ImeControl.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\MainFormUnit.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\MouseCursor.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\SystemControl.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\TouchPoint.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\TVPWindow.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\VersionFormUnit.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\WindowFormUnit.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\WindowsUtil.h">
+      <Filter>Classes\core\environ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\Application.h">
+      <Filter>Classes\core\environ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\combase.h">
+      <Filter>Classes\core\environ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\cpu_types.h">
+      <Filter>Classes\core\environ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\DetectCPU.h">
+      <Filter>Classes\core\environ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\Platform.h">
+      <Filter>Classes\core\environ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\typedefine.h">
+      <Filter>Classes\core\environ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\vkdefine.h">
+      <Filter>Classes\core\environ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32type.h">
+      <Filter>Classes\core\environ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\XP3ArchiveRepack.h">
+      <Filter>Classes\core\environ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\extension\Extension.h">
+      <Filter>Classes\core\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\msg\win32\MsgImpl.h">
+      <Filter>Classes\core\msg\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\msg\win32\OptionsDesc.h">
+      <Filter>Classes\core\msg\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\msg\win32\ReadOptionDesc.h">
+      <Filter>Classes\core\msg\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\msg\MsgIntf.h">
+      <Filter>Classes\core\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\msg\MsgIntfInc.h">
+      <Filter>Classes\core\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\win32\CDDAImpl.h">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\win32\kmp_pi.h">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\win32\MIDIImpl.h">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\win32\oldwaveunpacker.h">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\win32\SoundBufferBaseImpl.h">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\win32\tvpsnd.h">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\win32\WaveImpl.h">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\win32\WaveMixer.h">
+      <Filter>Classes\core\sound\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\CDDAIntf.h">
+      <Filter>Classes\core\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\FFWaveDecoder.h">
+      <Filter>Classes\core\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\MathAlgorithms.h">
+      <Filter>Classes\core\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\MIDIIntf.h">
+      <Filter>Classes\core\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\PhaseVocoderDSP.h">
+      <Filter>Classes\core\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\PhaseVocoderFilter.h">
+      <Filter>Classes\core\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\RingBuffer.h">
+      <Filter>Classes\core\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\SoundBufferBaseIntf.h">
+      <Filter>Classes\core\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\VorbisWaveDecoder.h">
+      <Filter>Classes\core\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\WaveIntf.h">
+      <Filter>Classes\core\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\WaveLoopManager.h">
+      <Filter>Classes\core\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\WaveSegmentQueue.h">
+      <Filter>Classes\core\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjs.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjs.tab.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjs.tab.hpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsArray.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsBinarySerializer.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsByteCodeLoader.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsCommHead.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsCompileControl.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsConfig.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsConstArrayData.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsDate.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsdate.tab.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsdate.tab.hpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsDateParser.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsDebug.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsDictionary.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsError.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsError_jp.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsErrorDefs.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsErrorInc.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsException.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsGlobalStringMap.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsHashSearch.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsInterCodeExec.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsInterCodeGen.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsInterface.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsLex.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsMath.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsMessage.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsMT19937ar-cok.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsNamespace.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsNative.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsObject.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsObjectExtendable.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsOctPack.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjspp.tab.hpp">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsRandomGenerator.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsRegExp.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsScriptBlock.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsScriptCache.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsString.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsTypes.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsUtils.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsVariant.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tjs2\tjsVariantString.h">
+      <Filter>Classes\core\tjs2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\minizip\crypt.h">
+      <Filter>Classes\core\utils\minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\minizip\ioapi.h">
+      <Filter>Classes\core\utils\minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\minizip\unzip.h">
+      <Filter>Classes\core\utils\minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\minizip\zip.h">
+      <Filter>Classes\core\utils\minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\win32\ClipboardImpl.h">
+      <Filter>Classes\core\utils\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\win32\DebugImpl.h">
+      <Filter>Classes\core\utils\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\win32\PadImpl.h">
+      <Filter>Classes\core\utils\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\win32\ThreadImpl.h">
+      <Filter>Classes\core\utils\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\win32\TimerImpl.h">
+      <Filter>Classes\core\utils\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\win32\TVPTimer.h">
+      <Filter>Classes\core\utils\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\ClipboardIntf.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\Debugger.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\DebugIntf.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\Exception.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\FilePathUtil.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\KAGParser.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\MathAlgorithms.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\MathAlgorithms_Default.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\md5.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\ObjectList.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\PadIntf.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\Random.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\RealFFT.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\StringUtil.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\ThreadIntf.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\TickCount.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\TimerIntf.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\utils\VelocityTracker.h">
+      <Filter>Classes\core\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\ARM\AlphaMovie_mjpeg.h">
+      <Filter>Classes\core\visual\ARM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\ARM\tvpgl_arm_intf.h">
+      <Filter>Classes\core\visual\ARM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\gl\aligned_allocator.h">
+      <Filter>Classes\core\visual\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\gl\blend_functor_c.h">
+      <Filter>Classes\core\visual\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\gl\blend_util_func.h">
+      <Filter>Classes\core\visual\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\gl\blend_variation.h">
+      <Filter>Classes\core\visual\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\gl\ResampleImage.h">
+      <Filter>Classes\core\visual\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\gl\ResampleImageInternal.h">
+      <Filter>Classes\core\visual\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\gl\tvpgl_mathutil.h">
+      <Filter>Classes\core\visual\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\gl\WeightFunctor.h">
+      <Filter>Classes\core\visual\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\ogl\astcrt.h">
+      <Filter>Classes\core\visual\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\ogl\etcpak.h">
+      <Filter>Classes\core\visual\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\ogl\imagepacker.h">
+      <Filter>Classes\core\visual\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\ogl\ogl_common.h">
+      <Filter>Classes\core\visual\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\ogl\pvr.h">
+      <Filter>Classes\core\visual\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\ogl\pvrtc.h">
+      <Filter>Classes\core\visual\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\ogl\RenderManager_ogl_test.hpp">
+      <Filter>Classes\core\visual\ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\BasicDrawDevice.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\BitmapBitsAlloc.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\BitmapInfomation.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\DInputMgn.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\DrawDevice.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\GDIFontRasterizer.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\GraphicsLoaderImpl.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\krmovie.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\LayerBitmapImpl.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\LayerImpl.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\MenuItemImpl.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\NativeFreeTypeFace.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\PassThroughDrawDevice.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\TVPColor.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\TVPScreen.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\TVPSysFont.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\VideoOvlImpl.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\VSyncTimingThread.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\win32\WindowImpl.h">
+      <Filter>Classes\core\visual\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\argb.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\BitmapIntf.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\BitmapLayerTreeOwner.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\CharacterData.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\ComplexRect.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\drawable.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\FontImpl.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\FontRasterizer.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\FontSystem.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\FreeType.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\FreeTypeFace.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\FreeTypeFontRasterizer.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\GraphicsLoaderIntf.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\GraphicsLoadThread.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\ImageFunction.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\LayerBitmapIntf.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\LayerIntf.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\LayerManager.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\LayerTreeOwner.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\LayerTreeOwnerImpl.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\LoadTLG.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\MenuItemIntf.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\PrerenderedFont.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\RectItf.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\RenderManager.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\RenderManager_software.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\SaveTLG.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\transhandler.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\TransIntf.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\tvpfontstruc.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\tvpgl.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\tvpgl_asm_init.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\tvphal.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\tvpinputdefs.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\VideoOvlIntf.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\voMode.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\visual\WindowIntf.h">
+      <Filter>Classes\core\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\onig\config.h">
+      <Filter>onig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\onig\oniggnu.h">
+      <Filter>onig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\onig\onigposix.h">
+      <Filter>onig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\onig\oniguruma.h">
+      <Filter>onig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\onig\regenc.h">
+      <Filter>onig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\onig\regint.h">
+      <Filter>onig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\onig\regparse.h">
+      <Filter>onig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\onig\st.h">
+      <Filter>onig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\gl_core_3_1.hpp">
+      <Filter>opencv_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\precomp.hpp">
+      <Filter>opencv_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\avx\imgwarp_avx.hpp">
+      <Filter>opencv_imgproc\avx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\avx2\imgwarp_avx2.hpp">
+      <Filter>opencv_imgproc\avx2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\_geom.h">
+      <Filter>opencv_imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\_list.h">
+      <Filter>opencv_imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\gcgraph.hpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\precomp.hpp">
+      <Filter>opencv_imgproc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\core\environ\cocos2d\CustomFileUtils.mm">
+      <Filter>Classes\core\environ\cocos2d</Filter>
+    </None>
+    <None Include="..\..\src\core\visual\tvpps.inc">
+      <Filter>Classes\core\visual</Filter>
+    </None>
+  </ItemGroup>
+</Project>

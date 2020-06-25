@@ -1,0 +1,2 @@
+bool TVPAppDelegate::applicationDidFinishLaunching() {
+__debugbreak(); throw;

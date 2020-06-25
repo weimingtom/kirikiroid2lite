@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c623f5fe-3a07-4b23-b543-1ee14a85b4bb}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2ee3c8fe-4cb1-440e-9068-9b95158e5afa}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngpread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngrio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngrtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngrutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngtrans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngwio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngwtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngwutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\png.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\pngconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\CHANGES" />
+    <CustomBuild Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\LICENSE" />
+    <CustomBuild Include="..\..\..\cocos2d-x-3.6\external\libpng-1.4.5\README" />
+  </ItemGroup>
+</Project>

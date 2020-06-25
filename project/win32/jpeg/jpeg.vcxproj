@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{5505BFD4-DA64-53BD-D072-FD018D675A38}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\jpeg.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\jpeg.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\jpeg.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\jpeg.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\jpeg.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\jpeg.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jaricom.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jcapimin.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jcapistd.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jcarith.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jccoefct.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jccolor.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jcdctmgr.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jchuff.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jcinit.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jcmainct.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jcmarker.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jcmaster.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jcomapi.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jcparam.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jcprepct.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jcsample.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jctrans.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdapimin.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdapistd.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdarith.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdatadst.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdatasrc.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdcoefct.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdcolor.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jddctmgr.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdhuff.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdinput.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdmainct.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdmarker.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdmaster.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdmerge.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdpostct.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdsample.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdtrans.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jerror.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jfdctflt.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jfdctfst.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jfdctint.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jidctflt.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jidctfst.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jidctint.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jmemansi.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jmemdos.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jmemmac.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jmemmgr.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jmemname.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jmemnobs.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jpegtran.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jquant1.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jquant2.c" />
+    <ClCompile Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jutils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\cderror.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\cdjpeg.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jchuff.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdct.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jdhuff.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jerror.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jinclude.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jmemsys.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jmorecfg.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jpegint.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jpeglib.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jversion.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\transupp.h" />
+    <ClInclude Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\jconfig.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\cocos2d-x-3.6\external\jpeg-9\README">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

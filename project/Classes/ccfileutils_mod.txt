@@ -1,0 +1,7 @@
+class CC_DLL FileUtilsWin32 : public FileUtils
+{
+    friend class FileUtils;
+public:
+mod here, become public --->	FileUtilsWin32();
+	
+	

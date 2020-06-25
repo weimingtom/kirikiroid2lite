@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B8BF9E81-35FD-4582-BA1C-B85FA365BABB}</ProjectGuid>
+    <RootNamespace>cpp-empty-test-win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\cpp-empty-test\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\cpp-empty-test\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\src;..\..\src\core\utils;..\..\src\core\environ;..\..\src\core\external\onig;..\..\src\core\tjs2;..\..\src\core\visual;..\..\src\core\msg;..\..\src\core\external\zlib;..\..\src\core\msg\win32;..\..\src\core\base\win32;..\..\src\core\visual\win32;..\..\src\core\sound;..\..\src\core\sound\win32;..\..\src\core\utils\win32;..\..\src\core\environ\win32;..\..\src\core\extension;..\..\src\core\base;..\..\src\core;..\..\src\core\external\jxrlib\jxrgluelib;..\..\cocos2d-x-3.6\external\libpng-1.4.5;..\..\src\core\external\jxrlib\image\decode;..\..\src\core\external;..\..\cocos2d-x-3.6;..\..\cocos2d-x-3.6\extensions;..\..\src\plugins;..\..\src\core\external\freetype2;..\..\src\core\external\libjpeg-turbo;..\..\src\core\external\libjpeg-turbo\vcproj;..\..\src\core\external\opencv-2.4.13\modules\core\include;..\..\src\core\external\opencv-2.4.13\modules\imgproc\include;..\..\src\core\external\opencv-2.4.13\modules\dynamicuda\include;..\..\src\core\external\opencv-2.4.13;..\..\cocos2d-x-3.6\cocos\editor-support;..\..\cocos2d-x-3.6\cocos;..\..\cocos2d-x-3.6\cocos\platform;..\..\cocos2d-x-3.6\cocos\platform\desktop;..\..\cocos2d-x-3.6\external\glfw-3.0.4\include\GLFW;..\..\cocos2d-x-3.6\external\win32-specific\gles\include\OGLES;..\..\cocos2d-x-3.6\external\freetype2\include\win32\freetype2;..\..\cocos2d-x-3.6\external\freetype2\include\win32\;..\..\cocos2d-x-3.6\external\box2d;..\..\cocos2d-x-3.6\external\sqlite3\include;..\..\cocos2d-x-3.6\external\unzip;..\..\cocos2d-x-3.6\external\edtaa3func;..\..\cocos2d-x-3.6\external\tinyxml2;..\..\cocos2d-x-3.6\external\jpeg-9;..\..\cocos2d-x-3.6\external\freetype-2.5.0.1\include;..\..\cocos2d-x-3.6\external\zlib-1.2.5;..\..\cocos2d-x-3.6\external\xxhash;..\..\cocos2d-x-3.6\external\ConvertUTF;..\..\cocos2d-x-3.6\external\poly2tri\common;..\..\cocos2d-x-3.6\external\poly2tri\sweep;..\..\cocos2d-x-3.6\external\poly2tri;..\..\cocos2d-x-3.6\external;..\..\cocos2d-x-3.6\cocos\audio\include;..\..\cocos2d-x-3.6\;..\..\cocos2d-x-3.6\external\boost_1_55_0;..\..\cocos2d-x-3.6\external\pthreads;..\..\cocos2d-x-3.6\external\glew-1.7.0\include..\..\cocos2d-x-3.6\external;..\..\cocos2d-x-3.6\external\glew-1.7.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;TJS_TEXT_OUT_CRLF;__STDC_CONSTANT_MACROS;USE_UNICODE_FSTRING;_7ZIP_ST;VC_EXTRALEAN;GLEW_STATIC;ONIG_EXTERN=extern;NOT_RUBY;EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)$(Configuration).win32;.\pthread\Debug;.\zlib\Debug;.\libpng\Debug;.\glfw\Debug;.\jpeg\Debug;.\glew\Debug;.\freetype\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>libcocos2d.lib;glew.lib;pthreadVC2.lib;opengl32.lib;zlib.lib;libpng.lib;jpeg.lib;glfw.lib;freetype.lib;winmm.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+xcopy "$(OutDir)..\*.dll" "$(OutDir)" /D /Y</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Copy files</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\Classes;..\Classes\core\utils;..\Classes\core\environ;..\Classes\core\external\onig;..\Classes\core\tjs2;..\Classes\core\visual;..\Classes\core\msg;..\Classes\core\external\zlib;..\Classes\core\msg\win32;..\Classes\core\base\win32;..\Classes\core\visual\win32;..\Classes\core\sound;..\Classes\core\sound\win32;..\Classes\core\utils\win32;..\Classes\core\environ\win32;..\Classes\core\extension;..\Classes\core\base;..\Classes\core\external\pthreads;..\Classes\core;..\Classes\core\external\jxrlib\jxrgluelib;..\Classes\core\external\lpng;..\Classes\core\external\jxrlib\image\decode;..\Classes\core\external;..\Classes\core\external\cocos;..\Classes\core\external\cocos\extensions;..\Classes\plugins;..\Classes\core\external\freetype2;..\Classes\core\external\libjpeg-turbo;..\Classes\core\external\libjpeg-turbo\vcproj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;TJS_TEXT_OUT_CRLF;__STDC_CONSTANT_MACROS;USE_UNICODE_FSTRING;_7ZIP_ST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glew.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)$(Configuration).win32;..\Classes\core\external\lib;..\Classes\core\external\onig\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+xcopy "$(OutDir)..\*.dll" "$(OutDir)" /D /Y</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Copy files</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\base\7zArchive.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\BinaryStream.cpp" />
+    <ClCompile Include="..\..\src\core\base\CharacterSet.cpp" />
+    <ClCompile Include="..\..\src\core\base\EventIntf.cpp" />
+    <ClCompile Include="..\..\src\core\base\PluginIntf.cpp" />
+    <ClCompile Include="..\..\src\core\base\ScriptMgnIntf.cpp" />
+    <ClCompile Include="..\..\src\core\base\StorageIntf.cpp" />
+    <ClCompile Include="..\..\src\core\base\SysInitIntf.cpp" />
+    <ClCompile Include="..\..\src\core\base\SystemIntf.cpp" />
+    <ClCompile Include="..\..\src\core\base\TARArchive.cpp" />
+    <ClCompile Include="..\..\src\core\base\TextStream.cpp" />
+    <ClCompile Include="..\..\src\core\base\UtilStreams.cpp" />
+    <ClCompile Include="..\..\src\core\base\win32\EventImpl.cpp" />
+    <ClCompile Include="..\..\src\core\base\win32\FileSelector.cpp" />
+    <ClCompile Include="..\..\src\core\base\win32\FuncStubs.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\win32\NativeEventQueue.cpp" />
+    <ClCompile Include="..\..\src\core\base\win32\PluginImpl.cpp" />
+    <ClCompile Include="..\..\src\core\base\win32\ScriptMgnImpl.cpp" />
+    <ClCompile Include="..\..\src\core\base\win32\StorageImpl.cpp" />
+    <ClCompile Include="..\..\src\core\base\win32\SusieArchive.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\base\win32\SysInitImpl.cpp" />
+    <ClCompile Include="..\..\src\core\base\win32\SystemImpl.cpp" />
+    <ClCompile Include="..\..\src\core\base\XP3Archive.cpp" />
+    <ClCompile Include="..\..\src\core\base\ZIPArchive.cpp" />
+    <ClCompile Include="..\..\src\core\environ\android\AndroidUtils.cpp" />
+    <ClCompile Include="..\..\src\core\environ\Application.cpp" />
+    <ClCompile Include="..\..\src\core\environ\cocos2d\AppDelegate.cpp" />
+    <ClCompile Include="..\..\src\core\environ\cocos2d\CustomFileUtils.cpp" />
+    <ClCompile Include="..\..\src\core\environ\cocos2d\MainScene.cpp" />
+    <ClCompile Include="..\..\src\core\environ\cocos2d\YUVSprite.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ConfigManager\GlobalConfigManager.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ConfigManager\IndividualConfigManager.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ConfigManager\LocaleConfigManager.cpp" />
+    <ClCompile Include="..\..\src\core\environ\DetectCPU.cpp" />
+    <ClCompile Include="..\..\src\core\environ\DumpSend.cpp" />
+    <ClCompile Include="..\..\src\core\environ\linux\Platform.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\BaseForm.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\ConsoleWindow.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\DebugViewLayerForm.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\extension\ActionExtension.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\extension\UIExtension.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\FileSelectorForm.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\GameMainMenu.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\GlobalPreferenceForm.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\IndividualPreferenceForm.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\InGameMenuForm.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\MainFileSelectorForm.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\MessageBox.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\PreferenceForm.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\SeletListForm.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\SimpleMediaFilePlayer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\ui\TipsHelpForm.cpp" />
+    <ClCompile Include="..\..\src\core\environ\ui\XP3RepackForm.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\CompatibleNativeFuncs.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\ConfigFormUnit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\DetectCPU.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\EmergencyExit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\HintWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\MainFormUnit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\MouseCursor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\my_HintWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\Platform.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\SystemControl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\TouchPoint.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\TVPWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\VersionFormUnit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\WindowFormUnit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\win32\WindowsUtil.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\environ\XP3ArchiveRepack.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\extension\Extension.cpp" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\ascii.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\big5.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\cp1251.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\euc_jp.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\euc_kr.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\euc_tw.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\gb18030.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_1.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_10.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_11.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_13.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_14.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_15.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_16.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_2.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_3.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_4.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_5.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_6.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_7.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_8.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\iso8859_9.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\koi8.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\koi8_r.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\mktable.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\sjis.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\unicode.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\utf16_be.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\utf16_le.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\utf32_be.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\utf32_le.c" />
+    <ClCompile Include="..\..\src\core\external\onig\enc\utf8.c" />
+    <ClCompile Include="..\..\src\core\external\onig\regcomp.c" />
+    <ClCompile Include="..\..\src\core\external\onig\regenc.c" />
+    <ClCompile Include="..\..\src\core\external\onig\regerror.c" />
+    <ClCompile Include="..\..\src\core\external\onig\regexec.c" />
+    <ClCompile Include="..\..\src\core\external\onig\regext.c" />
+    <ClCompile Include="..\..\src\core\external\onig\reggnu.c" />
+    <ClCompile Include="..\..\src\core\external\onig\regparse.c" />
+    <ClCompile Include="..\..\src\core\external\onig\regposerr.c" />
+    <ClCompile Include="..\..\src\core\external\onig\regposix.c" />
+    <ClCompile Include="..\..\src\core\external\onig\regsyntax.c" />
+    <ClCompile Include="..\..\src\core\external\onig\regtrav.c" />
+    <ClCompile Include="..\..\src\core\external\onig\regversion.c" />
+    <ClCompile Include="..\..\src\core\external\onig\st.c" />
+    <ClCompile Include="..\..\src\core\external\onig\testc.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\onig\testu.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\algorithm.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\alloc.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\arithm.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\array.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\cmdparser.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\convert.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\copy.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\datastructs.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\drawing.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\dxt.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\glob.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\gl_core_3_1.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\gpumat.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\lapack.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\mathfuncs.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\matmul.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\matop.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\matrix.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\opengl_interop.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\opengl_interop_deprecated.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\out.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\parallel.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\persistence.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\rand.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\stat.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\system.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\tables_core.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\accum.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\approx.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\avx2\imgwarp_avx2.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\avx\imgwarp_avx.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\canny.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\clahe.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\color.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\contours.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\convhull.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\corner.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\cornersubpix.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\deriv.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\distransform.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\emd.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\featureselect.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\filter.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\floodfill.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\gabor.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\generalized_hough.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\geometry.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\grabcut.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\histogram.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\hough.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\imgwarp.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\linefit.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\matchcontours.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\moments.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\morph.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\phasecorr.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\pyramids.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\rotcalipers.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\samplers.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\segmentation.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\shapedescr.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\smooth.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\subdivision2d.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\sumpixels.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\tables.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\templmatch.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\thresh.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\undistort.cpp" />
+    <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\utils.cpp" />
+    <ClCompile Include="..\..\src\core\movie\krmovie.cpp" />
+    <ClCompile Include="..\..\src\core\msg\MsgIntf.cpp" />
+    <ClCompile Include="..\..\src\core\msg\win32\MsgImpl.cpp" />
+    <ClCompile Include="..\..\src\core\msg\win32\MsgLoad.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\msg\win32\OptionsDesc.cpp" />
+    <ClCompile Include="..\..\src\core\msg\win32\ReadOptionDesc.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\CDDAIntf.cpp" />
+    <ClCompile Include="..\..\src\core\sound\FFWaveDecoder.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\MathAlgorithms.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\MIDIIntf.cpp" />
+    <ClCompile Include="..\..\src\core\sound\PhaseVocoderDSP.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\PhaseVocoderFilter.cpp" />
+    <ClCompile Include="..\..\src\core\sound\SoundBufferBaseIntf.cpp" />
+    <ClCompile Include="..\..\src\core\sound\VorbisWaveDecoder.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\WaveFormatConverter.cpp" />
+    <ClCompile Include="..\..\src\core\sound\WaveFormatConverter_SSE.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\sound\WaveIntf.cpp" />
+    <ClCompile Include="..\..\src\core\sound\WaveLoopManager.cpp" />
+    <ClCompile Include="..\..\src\core\sound\WaveSegmentQueue.cpp" />
+    <ClCompile Include="..\..\src\core\sound\win32\CDDAImpl.cpp" />
+    <ClCompile Include="..\..\src\core\sound\win32\MIDIImpl.cpp" />
+    <ClCompile Include="..\..\src\core\sound\win32\SoundBufferBaseImpl.cpp" />
+    <ClCompile Include="..\..\src\core\sound\win32\tvpsnd.cpp" />
+    <ClCompile Include="..\..\src\core\sound\win32\WaveImpl.cpp" />
+    <ClCompile Include="..\..\src\core\sound\win32\WaveMixer.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjs.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjs.tab.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsArray.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsBinarySerializer.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsByteCodeLoader.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsCompileControl.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsConfig.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsConstArrayData.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsDate.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsdate.tab.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsDateParser.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsDateWordMap.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tjs2\tjsDebug.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsDictionary.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsDisassemble.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsError.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsException.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsGlobalStringMap.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsInterCodeExec.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsInterCodeGen.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsInterface.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsLex.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsMath.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsMessage.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsMT19937ar-cok.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsNamespace.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsNative.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsObject.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsObjectExtendable.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsOctPack.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjspp.tab.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsRandomGenerator.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsRegExp.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsScriptBlock.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsScriptCache.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsString.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsUtils.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsVariant.cpp" />
+    <ClCompile Include="..\..\src\core\tjs2\tjsVariantString.cpp" />
+    <ClCompile Include="..\..\src\core\utils\ClipboardIntf.cpp" />
+    <ClCompile Include="..\..\src\core\utils\DebugIntf.cpp" />
+    <ClCompile Include="..\..\src\core\utils\encoding\gbk2unicode.c" />
+    <ClCompile Include="..\..\src\core\utils\encoding\jis2unicode.c" />
+    <ClCompile Include="..\..\src\core\utils\KAGParser.cpp" />
+    <ClCompile Include="..\..\src\core\utils\MathAlgorithms_Default.cpp" />
+    <ClCompile Include="..\..\src\core\utils\md5.c" />
+    <ClCompile Include="..\..\src\core\utils\minizip\ioapi.cpp" />
+    <ClCompile Include="..\..\src\core\utils\minizip\unzip.c" />
+    <ClCompile Include="..\..\src\core\utils\minizip\zip.c" />
+    <ClCompile Include="..\..\src\core\utils\MiscUtility.cpp" />
+    <ClCompile Include="..\..\src\core\utils\PadIntf.cpp" />
+    <ClCompile Include="..\..\src\core\utils\Random.cpp" />
+    <ClCompile Include="..\..\src\core\utils\RealFFT_Default.cpp" />
+    <ClCompile Include="..\..\src\core\utils\ThreadIntf.cpp" />
+    <ClCompile Include="..\..\src\core\utils\TickCount.cpp" />
+    <ClCompile Include="..\..\src\core\utils\TimerIntf.cpp" />
+    <ClCompile Include="..\..\src\core\utils\VelocityTracker.cpp" />
+    <ClCompile Include="..\..\src\core\utils\win32\ClipboardImpl.cpp" />
+    <ClCompile Include="..\..\src\core\utils\win32\DebugImpl.cpp" />
+    <ClCompile Include="..\..\src\core\utils\win32\PadImpl.cpp" />
+    <ClCompile Include="..\..\src\core\utils\win32\ThreadImpl.cpp" />
+    <ClCompile Include="..\..\src\core\utils\win32\TimerImpl.cpp" />
+    <ClCompile Include="..\..\src\core\utils\win32\TVPTimer.cpp" />
+    <ClCompile Include="..\..\src\core\visual\argb.cpp" />
+    <ClCompile Include="..\..\src\core\visual\ARM\tvpgl_arm.cpp" />
+    <ClCompile Include="..\..\src\core\visual\BitmapIntf.cpp" />
+    <ClCompile Include="..\..\src\core\visual\BitmapLayerTreeOwner.cpp" />
+    <ClCompile Include="..\..\src\core\visual\CharacterData.cpp" />
+    <ClCompile Include="..\..\src\core\visual\ComplexRect.cpp" />
+    <ClCompile Include="..\..\src\core\visual\FontImpl.cpp" />
+    <ClCompile Include="..\..\src\core\visual\FontSystem.cpp" />
+    <ClCompile Include="..\..\src\core\visual\FreeType.cpp" />
+    <ClCompile Include="..\..\src\core\visual\FreeTypeFontRasterizer.cpp" />
+    <ClCompile Include="..\..\src\core\visual\gl\blend_function.cpp" />
+    <ClCompile Include="..\..\src\core\visual\gl\ResampleImage.cpp" />
+    <ClCompile Include="..\..\src\core\visual\gl\WeightFunctor.cpp" />
+    <ClCompile Include="..\..\src\core\visual\GraphicsLoaderIntf.cpp" />
+    <ClCompile Include="..\..\src\core\visual\GraphicsLoadThread.cpp" />
+    <ClCompile Include="..\..\src\core\visual\ImageFunction.cpp" />
+    <ClCompile Include="..\..\src\core\visual\LayerBitmapIntf.cpp" />
+    <ClCompile Include="..\..\src\core\visual\LayerIntf.cpp" />
+    <ClCompile Include="..\..\src\core\visual\LayerManager.cpp" />
+    <ClCompile Include="..\..\src\core\visual\LayerTreeOwnerImpl.cpp" />
+    <ClCompile Include="..\..\src\core\visual\LoadBPG.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LoadJPEG.cpp" />
+    <ClCompile Include="..\..\src\core\visual\LoadJXR.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LoadPNG.cpp" />
+    <ClCompile Include="..\..\src\core\visual\LoadPVRv3.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\LoadTLG.cpp" />
+    <ClCompile Include="..\..\src\core\visual\LoadWEBP.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\MenuItemIntf.cpp" />
+    <ClCompile Include="..\..\src\core\visual\ogl\astcrt.cpp" />
+    <ClCompile Include="..\..\src\core\visual\ogl\etcpak.cpp" />
+    <ClCompile Include="..\..\src\core\visual\ogl\imagepacker.cpp" />
+    <ClCompile Include="..\..\src\core\visual\ogl\pvrtc.cpp" />
+    <ClCompile Include="..\..\src\core\visual\ogl\RenderManager_ogl.cpp" />
+    <ClCompile Include="..\..\src\core\visual\PrerenderedFont.cpp" />
+    <ClCompile Include="..\..\src\core\visual\RectItf.cpp" />
+    <ClCompile Include="..\..\src\core\visual\RenderManager.cpp" />
+    <ClCompile Include="..\..\src\core\visual\SaveTLG5.cpp" />
+    <ClCompile Include="..\..\src\core\visual\SaveTLG6.cpp" />
+    <ClCompile Include="..\..\src\core\visual\TransIntf.cpp" />
+    <ClCompile Include="..\..\src\core\visual\tvpgl.cpp" />
+    <ClCompile Include="..\..\src\core\visual\VideoOvlIntf.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\BasicDrawDevice.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\BitmapBitsAlloc.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\BitmapInfomation.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\DInputMgn.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\DrawDevice.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\GDIFontRasterizer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\GraphicsLoaderImpl.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\LayerBitmapImpl.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\LayerImpl.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\MenuItemImpl.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\NativeFreeTypeFace.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\PassThroughDrawDevice.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\TVPScreen.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\TVPSysFont.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\VideoOvlImpl.cpp" />
+    <ClCompile Include="..\..\src\core\visual\win32\VSyncTimingThread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\visual\win32\WindowImpl.cpp" />
+    <ClCompile Include="..\..\src\core\visual\WindowIntf.cpp" />
+    <ClCompile Include="..\..\src\plugins\addFont.cpp" />
+    <ClCompile Include="..\..\src\plugins\csvParser.cpp" />
+    <ClCompile Include="..\..\src\plugins\dirlist.cpp" />
+    <ClCompile Include="..\..\src\plugins\fftgraph.cpp" />
+    <ClCompile Include="..\..\src\plugins\getabout.cpp" />
+    <ClCompile Include="..\..\src\plugins\getSample.cpp" />
+    <ClCompile Include="..\..\src\plugins\InternalPlugins.cpp" />
+    <ClCompile Include="..\..\src\plugins\LayerExBase.cpp" />
+    <ClCompile Include="..\..\src\plugins\layerExMovie.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\plugins\layerExPerspective.cpp" />
+    <ClCompile Include="..\..\src\plugins\ncbind\ncbind.cpp" />
+    <ClCompile Include="..\..\src\plugins\saveStruct.cpp" />
+    <ClCompile Include="..\..\src\plugins\varfile.cpp" />
+    <ClCompile Include="..\..\src\plugins\win32dialog.cpp" />
+    <ClCompile Include="..\..\src\plugins\wutcwf.cpp" />
+    <ClCompile Include="..\..\src\plugins\xp3filter.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate_ori.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\core\base\BinaryStream.h" />
+    <ClInclude Include="..\..\src\core\base\CharacterSet.h" />
+    <ClInclude Include="..\..\src\core\base\common.h" />
+    <ClInclude Include="..\..\src\core\base\EventIntf.h" />
+    <ClInclude Include="..\..\src\core\base\PluginIntf.h" />
+    <ClInclude Include="..\..\src\core\base\ScriptMgnIntf.h" />
+    <ClInclude Include="..\..\src\core\base\StorageIntf.h" />
+    <ClInclude Include="..\..\src\core\base\SysInitIntf.h" />
+    <ClInclude Include="..\..\src\core\base\SystemIntf.h" />
+    <ClInclude Include="..\..\src\core\base\tar.h" />
+    <ClInclude Include="..\..\src\core\base\TextStream.h" />
+    <ClInclude Include="..\..\src\core\base\UserEvent.h" />
+    <ClInclude Include="..\..\src\core\base\UtilStreams.h" />
+    <ClInclude Include="..\..\src\core\base\win32\EventImpl.h" />
+    <ClInclude Include="..\..\src\core\base\win32\FileSelector.h" />
+    <ClInclude Include="..\..\src\core\base\win32\FuncStubs.h" />
+    <ClInclude Include="..\..\src\core\base\win32\NativeEventQueue.h" />
+    <ClInclude Include="..\..\src\core\base\win32\PluginImpl.h" />
+    <ClInclude Include="..\..\src\core\base\win32\ScriptMgnImpl.h" />
+    <ClInclude Include="..\..\src\core\base\win32\StorageImpl.h" />
+    <ClInclude Include="..\..\src\core\base\win32\SusieArchive.h" />
+    <ClInclude Include="..\..\src\core\base\win32\SysInitImpl.h" />
+    <ClInclude Include="..\..\src\core\base\win32\SystemImpl.h" />
+    <ClInclude Include="..\..\src\core\base\win32\win32io.h" />
+    <ClInclude Include="..\..\src\core\base\XP3Archive.h" />
+    <ClInclude Include="..\..\src\core\environ\android\AndroidUtils.h" />
+    <ClInclude Include="..\..\src\core\environ\Application.h" />
+    <ClInclude Include="..\..\src\core\environ\cocos2d\AppDelegate.h" />
+    <ClInclude Include="..\..\src\core\environ\cocos2d\CCKeyCodeConv.h" />
+    <ClInclude Include="..\..\src\core\environ\cocos2d\CustomFileUtils.h" />
+    <ClInclude Include="..\..\src\core\environ\cocos2d\MainScene.h" />
+    <ClInclude Include="..\..\src\core\environ\cocos2d\YUVSprite.h" />
+    <ClInclude Include="..\..\src\core\environ\combase.h" />
+    <ClInclude Include="..\..\src\core\environ\ConfigManager\GlobalConfigManager.h" />
+    <ClInclude Include="..\..\src\core\environ\ConfigManager\IndividualConfigManager.h" />
+    <ClInclude Include="..\..\src\core\environ\ConfigManager\LocaleConfigManager.h" />
+    <ClInclude Include="..\..\src\core\environ\cpu_types.h" />
+    <ClInclude Include="..\..\src\core\environ\DetectCPU.h" />
+    <ClInclude Include="..\..\src\core\environ\Platform.h" />
+    <ClInclude Include="..\..\src\core\environ\typedefine.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\BaseForm.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\ConsoleWindow.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\DebugViewLayerForm.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\extension\ActionExtension.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\extension\UIExtension.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\FileSelectorForm.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\GameMainMenu.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\GlobalPreferenceForm.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\IndividualPreferenceForm.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\InGameMenuForm.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\MainFileSelectorForm.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\MessageBox.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\PreferenceConfig.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\PreferenceForm.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\SeletListForm.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\SimpleMediaFilePlayer.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\TipsHelpForm.h" />
+    <ClInclude Include="..\..\src\core\environ\ui\XP3RepackForm.h" />
+    <ClInclude Include="..\..\src\core\environ\vkdefine.h" />
+    <ClInclude Include="..\..\src\core\environ\win32type.h" />
+    <ClInclude Include="..\..\src\core\environ\win32\ApplicationSpecialPath.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\CompatibleNativeFuncs.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\config.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\ConfigFormUnit.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\DetectCPU.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\EmergencyExit.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\HintWindow.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\ImeControl.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\MainFormUnit.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\MouseCursor.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\SystemControl.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\TouchPoint.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\TVPWindow.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\VersionFormUnit.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\WindowFormUnit.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\win32\WindowsUtil.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\environ\XP3ArchiveRepack.h" />
+    <ClInclude Include="..\..\src\core\extension\Extension.h" />
+    <ClInclude Include="..\..\src\core\external\onig\config.h" />
+    <ClInclude Include="..\..\src\core\external\onig\oniggnu.h" />
+    <ClInclude Include="..\..\src\core\external\onig\onigposix.h" />
+    <ClInclude Include="..\..\src\core\external\onig\oniguruma.h" />
+    <ClInclude Include="..\..\src\core\external\onig\regenc.h" />
+    <ClInclude Include="..\..\src\core\external\onig\regint.h" />
+    <ClInclude Include="..\..\src\core\external\onig\regparse.h" />
+    <ClInclude Include="..\..\src\core\external\onig\st.h" />
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\gl_core_3_1.hpp" />
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\precomp.hpp" />
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\avx2\imgwarp_avx2.hpp" />
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\avx\imgwarp_avx.hpp" />
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\gcgraph.hpp" />
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\precomp.hpp" />
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\_geom.h" />
+    <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\_list.h" />
+    <ClInclude Include="..\..\src\core\msg\MsgIntf.h" />
+    <ClInclude Include="..\..\src\core\msg\MsgIntfInc.h" />
+    <ClInclude Include="..\..\src\core\msg\win32\MsgImpl.h" />
+    <ClInclude Include="..\..\src\core\msg\win32\OptionsDesc.h" />
+    <ClInclude Include="..\..\src\core\msg\win32\ReadOptionDesc.h" />
+    <ClInclude Include="..\..\src\core\sound\CDDAIntf.h" />
+    <ClInclude Include="..\..\src\core\sound\FFWaveDecoder.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\MathAlgorithms.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\sound\MIDIIntf.h" />
+    <ClInclude Include="..\..\src\core\sound\PhaseVocoderDSP.h" />
+    <ClInclude Include="..\..\src\core\sound\PhaseVocoderFilter.h" />
+    <ClInclude Include="..\..\src\core\sound\RingBuffer.h" />
+    <ClInclude Include="..\..\src\core\sound\SoundBufferBaseIntf.h" />
+    <ClInclude Include="..\..\src\core\sound\VorbisWaveDecoder.h" />
+    <ClInclude Include="..\..\src\core\sound\WaveIntf.h" />
+    <ClInclude Include="..\..\src\core\sound\WaveLoopManager.h" />
+    <ClInclude Include="..\..\src\core\sound\WaveSegmentQueue.h" />
+    <ClInclude Include="..\..\src\core\sound\win32\CDDAImpl.h" />
+    <ClInclude Include="..\..\src\core\sound\win32\kmp_pi.h" />
+    <ClInclude Include="..\..\src\core\sound\win32\MIDIImpl.h" />
+    <ClInclude Include="..\..\src\core\sound\win32\oldwaveunpacker.h" />
+    <ClInclude Include="..\..\src\core\sound\win32\SoundBufferBaseImpl.h" />
+    <ClInclude Include="..\..\src\core\sound\win32\tvpsnd.h" />
+    <ClInclude Include="..\..\src\core\sound\win32\WaveImpl.h" />
+    <ClInclude Include="..\..\src\core\sound\win32\WaveMixer.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjs.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjs.tab.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjs.tab.hpp" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsArray.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsBinarySerializer.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsByteCodeLoader.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsCommHead.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsCompileControl.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsConfig.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsConstArrayData.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsDate.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsdate.tab.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsdate.tab.hpp" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsDateParser.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsDebug.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsDictionary.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsError.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsErrorDefs.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsErrorInc.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsError_jp.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsException.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsGlobalStringMap.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsHashSearch.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsInterCodeExec.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsInterCodeGen.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsInterface.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsLex.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsMath.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsMessage.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsMT19937ar-cok.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsNamespace.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsNative.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsObject.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsObjectExtendable.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsOctPack.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjspp.tab.hpp" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsRandomGenerator.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsRegExp.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsScriptBlock.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsScriptCache.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsString.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsTypes.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsUtils.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsVariant.h" />
+    <ClInclude Include="..\..\src\core\tjs2\tjsVariantString.h" />
+    <ClInclude Include="..\..\src\core\utils\ClipboardIntf.h" />
+    <ClInclude Include="..\..\src\core\utils\Debugger.h" />
+    <ClInclude Include="..\..\src\core\utils\DebugIntf.h" />
+    <ClInclude Include="..\..\src\core\utils\Exception.h" />
+    <ClInclude Include="..\..\src\core\utils\FilePathUtil.h" />
+    <ClInclude Include="..\..\src\core\utils\KAGParser.h" />
+    <ClInclude Include="..\..\src\core\utils\MathAlgorithms.h" />
+    <ClInclude Include="..\..\src\core\utils\MathAlgorithms_Default.h" />
+    <ClInclude Include="..\..\src\core\utils\md5.h" />
+    <ClInclude Include="..\..\src\core\utils\minizip\crypt.h" />
+    <ClInclude Include="..\..\src\core\utils\minizip\ioapi.h" />
+    <ClInclude Include="..\..\src\core\utils\minizip\unzip.h" />
+    <ClInclude Include="..\..\src\core\utils\minizip\zip.h" />
+    <ClInclude Include="..\..\src\core\utils\ObjectList.h" />
+    <ClInclude Include="..\..\src\core\utils\PadIntf.h" />
+    <ClInclude Include="..\..\src\core\utils\Random.h" />
+    <ClInclude Include="..\..\src\core\utils\RealFFT.h" />
+    <ClInclude Include="..\..\src\core\utils\StringUtil.h" />
+    <ClInclude Include="..\..\src\core\utils\ThreadIntf.h" />
+    <ClInclude Include="..\..\src\core\utils\TickCount.h" />
+    <ClInclude Include="..\..\src\core\utils\TimerIntf.h" />
+    <ClInclude Include="..\..\src\core\utils\VelocityTracker.h" />
+    <ClInclude Include="..\..\src\core\utils\win32\ClipboardImpl.h" />
+    <ClInclude Include="..\..\src\core\utils\win32\DebugImpl.h" />
+    <ClInclude Include="..\..\src\core\utils\win32\PadImpl.h" />
+    <ClInclude Include="..\..\src\core\utils\win32\ThreadImpl.h" />
+    <ClInclude Include="..\..\src\core\utils\win32\TimerImpl.h" />
+    <ClInclude Include="..\..\src\core\utils\win32\TVPTimer.h" />
+    <ClInclude Include="..\..\src\core\visual\argb.h" />
+    <ClInclude Include="..\..\src\core\visual\ARM\AlphaMovie_mjpeg.h" />
+    <ClInclude Include="..\..\src\core\visual\ARM\tvpgl_arm_intf.h" />
+    <ClInclude Include="..\..\src\core\visual\BitmapIntf.h" />
+    <ClInclude Include="..\..\src\core\visual\BitmapLayerTreeOwner.h" />
+    <ClInclude Include="..\..\src\core\visual\CharacterData.h" />
+    <ClInclude Include="..\..\src\core\visual\ComplexRect.h" />
+    <ClInclude Include="..\..\src\core\visual\drawable.h" />
+    <ClInclude Include="..\..\src\core\visual\FontImpl.h" />
+    <ClInclude Include="..\..\src\core\visual\FontRasterizer.h" />
+    <ClInclude Include="..\..\src\core\visual\FontSystem.h" />
+    <ClInclude Include="..\..\src\core\visual\FreeType.h" />
+    <ClInclude Include="..\..\src\core\visual\FreeTypeFace.h" />
+    <ClInclude Include="..\..\src\core\visual\FreeTypeFontRasterizer.h" />
+    <ClInclude Include="..\..\src\core\visual\gl\aligned_allocator.h" />
+    <ClInclude Include="..\..\src\core\visual\gl\blend_functor_c.h" />
+    <ClInclude Include="..\..\src\core\visual\gl\blend_util_func.h" />
+    <ClInclude Include="..\..\src\core\visual\gl\blend_variation.h" />
+    <ClInclude Include="..\..\src\core\visual\gl\ResampleImage.h" />
+    <ClInclude Include="..\..\src\core\visual\gl\ResampleImageInternal.h" />
+    <ClInclude Include="..\..\src\core\visual\gl\tvpgl_mathutil.h" />
+    <ClInclude Include="..\..\src\core\visual\gl\WeightFunctor.h" />
+    <ClInclude Include="..\..\src\core\visual\GraphicsLoaderIntf.h" />
+    <ClInclude Include="..\..\src\core\visual\GraphicsLoadThread.h" />
+    <ClInclude Include="..\..\src\core\visual\ImageFunction.h" />
+    <ClInclude Include="..\..\src\core\visual\LayerBitmapIntf.h" />
+    <ClInclude Include="..\..\src\core\visual\LayerIntf.h" />
+    <ClInclude Include="..\..\src\core\visual\LayerManager.h" />
+    <ClInclude Include="..\..\src\core\visual\LayerTreeOwner.h" />
+    <ClInclude Include="..\..\src\core\visual\LayerTreeOwnerImpl.h" />
+    <ClInclude Include="..\..\src\core\visual\LoadTLG.h" />
+    <ClInclude Include="..\..\src\core\visual\MenuItemIntf.h" />
+    <ClInclude Include="..\..\src\core\visual\ogl\astcrt.h" />
+    <ClInclude Include="..\..\src\core\visual\ogl\etcpak.h" />
+    <ClInclude Include="..\..\src\core\visual\ogl\imagepacker.h" />
+    <ClInclude Include="..\..\src\core\visual\ogl\ogl_common.h" />
+    <ClInclude Include="..\..\src\core\visual\ogl\pvr.h" />
+    <ClInclude Include="..\..\src\core\visual\ogl\pvrtc.h" />
+    <ClInclude Include="..\..\src\core\visual\ogl\RenderManager_ogl_test.hpp" />
+    <ClInclude Include="..\..\src\core\visual\PrerenderedFont.h" />
+    <ClInclude Include="..\..\src\core\visual\RectItf.h" />
+    <ClInclude Include="..\..\src\core\visual\RenderManager.h" />
+    <ClInclude Include="..\..\src\core\visual\RenderManager_software.h" />
+    <ClInclude Include="..\..\src\core\visual\SaveTLG.h" />
+    <ClInclude Include="..\..\src\core\visual\transhandler.h" />
+    <ClInclude Include="..\..\src\core\visual\TransIntf.h" />
+    <ClInclude Include="..\..\src\core\visual\tvpfontstruc.h" />
+    <ClInclude Include="..\..\src\core\visual\tvpgl.h" />
+    <ClInclude Include="..\..\src\core\visual\tvpgl_asm_init.h" />
+    <ClInclude Include="..\..\src\core\visual\tvphal.h" />
+    <ClInclude Include="..\..\src\core\visual\tvpinputdefs.h" />
+    <ClInclude Include="..\..\src\core\visual\VideoOvlIntf.h" />
+    <ClInclude Include="..\..\src\core\visual\voMode.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\BasicDrawDevice.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\BitmapBitsAlloc.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\BitmapInfomation.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\DInputMgn.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\DrawDevice.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\GDIFontRasterizer.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\GraphicsLoaderImpl.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\krmovie.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\LayerBitmapImpl.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\LayerImpl.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\MenuItemImpl.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\NativeFreeTypeFace.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\PassThroughDrawDevice.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\TVPColor.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\TVPScreen.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\TVPSysFont.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\VideoOvlImpl.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\VSyncTimingThread.h" />
+    <ClInclude Include="..\..\src\core\visual\win32\WindowImpl.h" />
+    <ClInclude Include="..\..\src\core\visual\WindowIntf.h" />
+    <ClInclude Include="..\..\src\plugins\LayerExBase.h" />
+    <ClInclude Include="..\..\src\plugins\layerExBase.hpp" />
+    <ClInclude Include="..\..\src\plugins\ncbind\ncbind.hpp" />
+    <ClInclude Include="..\..\src\plugins\ncbind\ncb_foreach.h" />
+    <ClInclude Include="..\..\src\plugins\ncbind\ncb_invoke.hpp" />
+    <ClInclude Include="..\..\src\plugins\PluginStub.h" />
+    <ClInclude Include="..\..\src\plugins\tp_stub.h" />
+    <ClInclude Include="..\..\src\plugins\xp3filter.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\AppMacros.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\cocos2d-x-3.6\cocos\2d\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\core\environ\cocos2d\CustomFileUtils.mm" />
+    <None Include="..\..\src\core\visual\tvpps.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
