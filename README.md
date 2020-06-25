@@ -18,4 +18,4 @@
 * Modify project\android\console.bat, point to NDK path.  
 * Run project\android\console.bat  
 * Run ndk-build  
-* Import, compile and run with Android ADT, see project\android\.project   
+* Import, compile and run with Android ADT, see project\android\ .project   
