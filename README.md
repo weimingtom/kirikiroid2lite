@@ -1,6 +1,16 @@
 # kirikiroid2lite
 [WIP] kirikiroid2 lite version, without audio and most dependencies
 
+
+  予谓菊，花之隐逸者也；  
+  牡丹，花之富贵者也；  
+  莲，花之君子者也。  
+  噫！菊之爱，陶后鲜有闻。  
+  莲之爱，同予者何人？  
+  牡丹之爱，宜乎众矣！  
+  ——周敦颐《爱莲说》    
+
+
 ## Status  
 * Working in progress.    
 * Windows support: Windows 7 success.  
