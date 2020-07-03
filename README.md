@@ -17,7 +17,11 @@
 * Android support: with many bugs now.    
 
 ## History  
-* 13:23 2020-6-25: first commit  
+* 2020-06-25 13:23 : first commit on github, migrated from gitee to github  
+* 2019-03-17 : (gitee) Merge pthread project  
+* 2019-02-02 : (gitee) Merge OpenCV2 project  
+* 2018-08-11 : (gitee) No boost depend, use pthread instead  
+* 2018-07-25 : (gitee) First available version with boost and vs2010  
 
 ## How to build for Windows  
 * WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
