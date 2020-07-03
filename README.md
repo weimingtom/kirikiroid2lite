@@ -17,7 +17,7 @@
 * Android support: with many bugs now.    
 
 ## History  
-* 2020-06-25 13:23 : first commit on github, migrated from gitee to github, first available version for Android with NDK and VS2013        
+* 2020-06-25 13:23 : first commit on github, migrated from gitee to github, first available version for Android NDK and Win7 VS2013        
 * 2019-03-17 : (gitee) Merge pthread project  
 * 2019-02-02 : (gitee) Merge OpenCV2 project  
 * 2018-08-11 : (gitee) No boost depend, use pthread instead  
