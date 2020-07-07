@@ -1,5 +1,6 @@
 # kirikiroid2lite
 [WIP] kirikiroid2 lite version, without audio and most dependencies
+NOTE: Kirikiroid2lite is a mod about kirikiroid2 and cocos2d-x framework, it's **NOT** a fork of kirikiri2 or kirikiriz, so it may be not what your want.       
 
 ```
   予谓菊，花之隐逸者也；  
@@ -33,3 +34,6 @@
 * Run project\android\console.bat  
 * Run ndk-build  
 * Import, compile and run with Android ADT, see project\android\ .project   
+
+## Minimum version of Cocos2d-x  
+TODO  
