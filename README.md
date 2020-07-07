@@ -1,6 +1,6 @@
 # kirikiroid2lite
 [WIP] kirikiroid2 lite version, without audio and most dependencies  
-NOTE: Kirikiroid2lite is a mod about kirikiroid2 and cocos2d-x framework, 
+NOTE: Kirikiroid2lite is a mod about kirikiroid2 and cocos2d-x framework,  
 it's **NOT** a fork of kirikiri2 or kirikiriz, so it may be not what your want.  
 
 ```
