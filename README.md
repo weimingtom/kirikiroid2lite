@@ -38,3 +38,7 @@ it's **NOT** a fork of kirikiri2 or kirikiriz, so it may be not what your want.
 
 ## Minimum version of Cocos2d-x  
 TODO  
+
+## Test Data  
+* https://gitee.com/weimingtom/kirikiroid2_fork/tree/master/test_data/atest3  
+* see TVPGetDriverPath (???)  
