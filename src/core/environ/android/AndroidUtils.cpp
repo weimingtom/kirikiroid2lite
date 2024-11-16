@@ -1219,7 +1219,7 @@ std::vector<std::string> TVPGetDriverPath() {
 	}
 #else
 	OutputDebugString(L"=========================>TVPGetDriverPath()\n");
-	ret.push_back("F:/");
+	ret.push_back("C:/");
 #endif
 	return ret; 
 #endif

@@ -6,7 +6,7 @@
 	See details of license at "license.txt"
 */
 //---------------------------------------------------------------------------
-//!@file 描画デバイス管理
+//!@file
 //---------------------------------------------------------------------------
 
 #include "tjsCommHead.h"
@@ -35,12 +35,6 @@ tTVPDrawDevice::tTVPDrawDevice()
 //---------------------------------------------------------------------------
 tTVPDrawDevice::~tTVPDrawDevice()
 {
-	// すべての managers を開放する
-	//TODO: プライマリレイヤ無効化、あるいはウィンドウ破棄時の終了処理が正しいか？
-	// managers は 開放される際、自身の登録解除を行うために
-	// RemoveLayerManager() を呼ぶかもしれないので注意。
-	// そのため、ここではいったん配列をコピーしてからそれぞれの
-	// Release() を呼ぶ。
 	std::vector<iTVPLayerManager *> backup = Managers;
 	for(std::vector<iTVPLayerManager *>::iterator i = backup.begin(); i != backup.end(); i++)
 		(*i)->Release();
@@ -55,12 +49,10 @@ bool tTVPDrawDevice::TransformToPrimaryLayerManager(tjs_int &x, tjs_int &y)
 	if(!manager) return false;
 	return true;
 
-	// プライマリレイヤマネージャのプライマリレイヤのサイズを得る
 	tjs_int pl_w = LockedWidth, pl_h = LockedHeight;
 	if(pl_w <= 0 && pl_h <= 0 && !manager->GetPrimaryLayerSize(pl_w, pl_h)) return false;
     //pl_w = WinWidth; pl_h = WinHeight;
 
-	// x , y は DestRect の 0, 0 を原点とした座標として渡されてきている
 	tjs_int w = DestRect.get_width();
 	tjs_int h = DestRect.get_height();
 	x = w ? ((x - DestRect.left) * pl_w / w) : 0;
@@ -78,12 +70,10 @@ bool tTVPDrawDevice::TransformFromPrimaryLayerManager(tjs_int &x, tjs_int &y)
 	if(!manager) return false;
 	return true;
 
-	// プライマリレイヤマネージャのプライマリレイヤのサイズを得る
 	tjs_int pl_w = LockedWidth, pl_h = LockedHeight;
 	if (pl_w <= 0 && pl_h <= 0 && !manager->GetPrimaryLayerSize(pl_w, pl_h)) return false;
     //pl_w = WinWidth; pl_h = WinHeight;
 
-	// x , y は DestRect の 0, 0 を原点とした座標として渡されてきている
 	x = pl_w ? (x * DestRect.get_width()  / pl_w) : 0;
 	y = pl_h ? (y * DestRect.get_height() / pl_h) : 0;
     x += DestRect.left;
@@ -98,11 +88,9 @@ bool tTVPDrawDevice::TransformToPrimaryLayerManager(tjs_real &x, tjs_real &y)
 	iTVPLayerManager * manager = GetLayerManagerAt(PrimaryLayerManagerIndex);
 	if(!manager) return false;
 
-	// プライマリレイヤマネージャのプライマリレイヤのサイズを得る
 	tjs_int pl_w, pl_h;
 	if(!manager->GetPrimaryLayerSize(pl_w, pl_h)) return false;
 
-	// x , y は DestRect の 0, 0 を原点とした座標として渡されてきている
 	tjs_int w = DestRect.get_width();
 	tjs_int h = DestRect.get_height();
 	x = w ? (x * pl_w / w) : 0.0;
@@ -131,7 +119,6 @@ void TJS_INTF_METHOD tTVPDrawDevice::SetWindowInterface(iTVPWindow * window)
 //---------------------------------------------------------------------------
 void TJS_INTF_METHOD tTVPDrawDevice::AddLayerManager(iTVPLayerManager * manager)
 {
-	// Managers に manager を push する。AddRefするのを忘れないこと。
 	Managers.push_back(manager);
 	manager->AddRef();
 }
@@ -141,7 +128,6 @@ void TJS_INTF_METHOD tTVPDrawDevice::AddLayerManager(iTVPLayerManager * manager)
 //---------------------------------------------------------------------------
 void TJS_INTF_METHOD tTVPDrawDevice::RemoveLayerManager(iTVPLayerManager * manager)
 {
-	// Managers から manager を削除する。Releaseする。
 	std::vector<iTVPLayerManager *>::iterator i = std::find(Managers.begin(), Managers.end(), manager);
 	if(i == Managers.end())
 		TVPThrowInternalError;
@@ -406,7 +392,7 @@ void TJS_INTF_METHOD tTVPDrawDevice::OnMultiTouch()
 //---------------------------------------------------------------------------
 void TJS_INTF_METHOD tTVPDrawDevice::OnDisplayRotate( tjs_int orientation, tjs_int rotate, tjs_int bpp, tjs_int width, tjs_int height )
 {
-	// 何もしない
+
 }
 //---------------------------------------------------------------------------
 
@@ -455,7 +441,6 @@ void TJS_INTF_METHOD tTVPDrawDevice::GetCursorPos(iTVPLayerManager * manager, tj
 	Window->GetCursorPos(x, y);
 	if(primary_manager != manager || !TransformToPrimaryLayerManager(x, y))
 	{
-		// プライマリレイヤマネージャ以外には座標 0,0 で渡しておく
 		 x = 0;
 		 y = 0;
 	}
@@ -593,7 +578,7 @@ void TJS_INTF_METHOD tTVPDrawDevice::RequestInvalidation(const tTVPRect & rect)
 	tjs_int l = rect.left, t = rect.top, r = rect.right, b = rect.bottom;
 	if(!TransformToPrimaryLayerManager(l, t)) return;
 	if(!TransformToPrimaryLayerManager(r, b)) return;
-	r ++; // 誤差の吸収(本当はもうちょっと厳密にやらないとならないがそれが問題になることはない)
+	r ++; 
 	b ++;
 
 	iTVPLayerManager * manager = GetLayerManagerAt(PrimaryLayerManagerIndex);
@@ -606,7 +591,6 @@ void TJS_INTF_METHOD tTVPDrawDevice::RequestInvalidation(const tTVPRect & rect)
 //---------------------------------------------------------------------------
 void TJS_INTF_METHOD tTVPDrawDevice::Update()
 {
-	// すべての layer manager の UpdateToDrawDevice を呼ぶ
 	for(std::vector<iTVPLayerManager *>::iterator i = Managers.begin(); i != Managers.end(); i++)
 	{
 		(*i)->UpdateToDrawDevice();
@@ -618,7 +602,7 @@ void TJS_INTF_METHOD tTVPDrawDevice::Update()
 //---------------------------------------------------------------------------
 void TJS_INTF_METHOD tTVPDrawDevice::Show()
 {
-	// なにもしない
+
 }
 //---------------------------------------------------------------------------
 bool TJS_INTF_METHOD tTVPDrawDevice::WaitForVBlank( tjs_int* in_vblank, tjs_int* delayed )
@@ -629,7 +613,6 @@ bool TJS_INTF_METHOD tTVPDrawDevice::WaitForVBlank( tjs_int* in_vblank, tjs_int*
 //---------------------------------------------------------------------------
 void TJS_INTF_METHOD tTVPDrawDevice::DumpLayerStructure()
 {
-	// すべての layer manager の DumpLayerStructure を呼ぶ
 	for(std::vector<iTVPLayerManager *>::iterator i = Managers.begin(); i != Managers.end(); i++)
 	{
 		(*i)->DumpLayerStructure();
@@ -641,7 +624,7 @@ void TJS_INTF_METHOD tTVPDrawDevice::DumpLayerStructure()
 //---------------------------------------------------------------------------
 void TJS_INTF_METHOD tTVPDrawDevice::SetShowUpdateRect(bool b)
 {
-	// なにもしない
+
 }
 
 void TJS_INTF_METHOD tTVPDrawDevice::SetWindowSize(tjs_int w, tjs_int h) {
@@ -653,7 +636,6 @@ bool TJS_INTF_METHOD tTVPDrawDevice::SwitchToFullScreen( int window, tjs_uint w,
 {
 	return true;
 #if 0
-	// ChangeDisplaySettings を使用したフルスクリーン化
 	bool success = false;
 	DEVMODE dm;
 	ZeroMemory(&dm, sizeof(DEVMODE));
@@ -697,7 +679,6 @@ bool TJS_INTF_METHOD tTVPDrawDevice::SwitchToFullScreen( int window, tjs_uint w,
 //---------------------------------------------------------------------------
 void TJS_INTF_METHOD tTVPDrawDevice::RevertFromFullScreen(int window, tjs_uint w, tjs_uint h, tjs_uint bpp, tjs_uint color)
 {
-	// ChangeDisplaySettings を使用したフルスクリーン解除
 //	::ChangeDisplaySettings(NULL, 0);
 }
 //---------------------------------------------------------------------------

@@ -24,22 +24,6 @@ static const char *copyright =
 #include "tjsNative.h"
 #include "RenderManager.h"
 #if 0
-/**
- * 透視変換コピー
- * @param src
- * @param sleft
- * @param stop
- * @param swidth
- * @param sheight
- * @param x1 左上隅
- * @param y1
- * @param x2 右上隅
- * @param y2
- * @param x3 左下隅
- * @param y3
- * @param x4 右下隅
- * @param y4
- */
 class tPerspectiveCopy : public tTJSDispatch
 {
 protected:
@@ -65,20 +49,18 @@ public:
 		double g_y2 = g_y1 + param[4]->AsReal();
 
 		double quad[8];
-        quad[0] = param[5]->AsReal(); // 左上
+        quad[0] = param[5]->AsReal();
         quad[1] = param[6]->AsReal();
-        quad[2] = param[7]->AsReal(); // 右上
+        quad[2] = param[7]->AsReal();
         quad[3] = param[8]->AsReal();
-		quad[4] = param[11]->AsReal(); // 右下
+		quad[4] = param[11]->AsReal();
         quad[5] = param[12]->AsReal(); 
-        quad[6] = param[9]->AsReal(); // 左下
+        quad[6] = param[9]->AsReal();
         quad[7] = param[10]->AsReal();
 
 
 		{
-			/// ソースの準備
 			unsigned char *buffer = src->_buffer;
-			// AGG 用に先頭位置に補正
 			if (src->_pitch < 0) {
 				buffer += int(src->_height - 1) * src->_pitch;
 			}
@@ -88,15 +70,12 @@ public:
             pixfmt pixbuf(rbufs);
 			source_type rbuf_src(pixbuf, agg::rgba_pre(0, 0, 0, 0)/*buffer, src->_width, src->_height, src->_pitch*/);
 
-			/// レンダリング用バッファ
 			buffer = dest->_buffer;
-			// AGG 用に先頭位置に補正
 			if (dest->_pitch < 0) {
 				buffer += int(dest->_height - 1) * dest->_pitch;
 			}
 			agg::rendering_buffer rbuf(buffer, dest->_width, dest->_height, dest->_pitch);
 
-			// レンダラの準備
 			pixfmt_pre  pixf_pre(rbuf);
 			renderer_base_pre rb_pre(pixf_pre);
 			
@@ -107,7 +86,6 @@ public:
 			g_rasterizer.line_to_d(quad[4], quad[5]);
 			g_rasterizer.line_to_d(quad[6], quad[7]);
 			
-			// 変形コピー
 			agg::trans_perspective tr(quad, g_x1, g_y1, g_x2, g_y2);
 			//if(tr.is_valid())
 			{
@@ -180,10 +158,10 @@ static tjs_error PerspectiveCopy_GL( tTJSVariant *result,
         { g_x2, g_y2 },
     };
     tTVPPointD dstpt[4] = {
-        { param[5 ]->AsReal(), param[6 ]->AsReal() }, // 左上
-        { param[7 ]->AsReal(), param[8 ]->AsReal() }, // 右上
-		{ param[9]->AsReal(), param[10]->AsReal() }, // 左下
-        { param[11]->AsReal(), param[12]->AsReal() }, // 右下
+        { param[5 ]->AsReal(), param[6 ]->AsReal() },
+        { param[7 ]->AsReal(), param[8 ]->AsReal() },
+		{ param[9]->AsReal(), param[10]->AsReal() },
+        { param[11]->AsReal(), param[12]->AsReal() },
     };
 	static iTVPRenderMethod *method = TVPGetRenderManager()->GetRenderMethod("PerspectiveAlphaBlend_a");
 	static int id_opa = method->EnumParameterID("opacity");
@@ -217,11 +195,11 @@ addMethod(iTJSDispatch2 *dispatch, const tjs_char *methodName, tTJSDispatch *met
 	tTJSVariant var = tTJSVariant(method);
 	method->Release();
 	dispatch->PropSet(
-		TJS_MEMBERENSURE, // メンバがなかった場合には作成するようにするフラグ
-		methodName, // メンバ名 ( かならず TJS_W( ) で囲む )
-		NULL, // ヒント ( 本来はメンバ名のハッシュ値だが、NULL でもよい )
-		&var, // 登録する値
-		dispatch // コンテキスト
+		TJS_MEMBERENSURE,
+		methodName,
+		NULL,
+		&var,
+		dispatch
 		);
 }
 
@@ -229,10 +207,10 @@ static void
 delMethod(iTJSDispatch2 *dispatch, const tjs_char *methodName)
 {
 	dispatch->DeleteMember(
-		0, // フラグ ( 0 でよい )
-		methodName, // メンバ名
-		NULL, // ヒント
-		dispatch // コンテキスト
+		0,
+		methodName,
+		NULL, 
+		dispatch 
 		);
 }
 
@@ -242,24 +220,19 @@ void InitPlugin_Perspective()
 // 	if (TVPGetRenderManager()->IsSoftware()) {
 // 	    TVPAddImportantLog(ttstr(copyright));
 // 	
-// 	    // クラスオブジェクトチェック
 // 	    if ((NI_LayerExBase::classId = TJSFindNativeClassID(TJS_W("LayerExBase"))) <= 0) {
 // 		    NI_LayerExBase::classId = TJSRegisterNativeClass(TJS_W("LayerExBase"));
 // 	    }
 // 	
 // 	    {
-// 		    // TJS のグローバルオブジェクトを取得する
 // 		    iTJSDispatch2 * global = TVPGetScriptDispatch();
 // 
-// 		    // Layer クラスオブジェクトを取得
 // 		    tTJSVariant varScripts;
 // 		    TVPExecuteExpression(TJS_W("Layer"), &varScripts);
 // 		    iTJSDispatch2 *dispatch = varScripts.AsObjectNoAddRef();
 // 		    if (dispatch) {
-// 			    // プロパティ初期化
 // 			    NI_LayerExBase::init(dispatch);
 // 
-// 			    // 専用メソッドの追加
 // 			    addMethod(dispatch, TJS_W("perspectiveCopy"), new tPerspectiveCopy());
 // 		    }
 // 

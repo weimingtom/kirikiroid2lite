@@ -12,20 +12,20 @@
 #pragma pack(push,1)
 struct TTCWFHeader
 {
-	char mark[6];  // = "TCWF0\x1a"
-	BYTE channels; // チャネル数
+	char mark[6];
+	BYTE channels;
 	BYTE reserved;
-	LONG frequency; // サンプリング周波数
-	LONG numblocks; // ブロック数
-	LONG bytesperblock; // ブロックごとのバイト数
-	LONG samplesperblock; // ブロックごとのサンプル数
+	LONG frequency; 
+	LONG numblocks; 
+	LONG bytesperblock;
+	LONG samplesperblock; 
 };
 struct TTCWUnexpectedPeak
 {
 	unsigned short int pos;
 	short int revise;
 };
-struct TTCWBlockHeader  // ブロックヘッダ ( ステレオの場合はブロックが右・左の順に２つ続く)
+struct TTCWBlockHeader  
 {
 	short int ms_sample0;
 	short int ms_sample1;
@@ -110,7 +110,6 @@ public:
     }
 };
 //---------------------------------------------------------------------------
-// TCWFDecoder インプリメンテーション #######################################
 //---------------------------------------------------------------------------
 TCWFDecoder::TCWFDecoder()
 {
@@ -137,7 +136,6 @@ void  TCWFDecoder::GetFormat(tTVPWaveFormat & format)
 //---------------------------------------------------------------------------
 bool  TCWFDecoder::Render(void *buf, tjs_uint bufsamplelen, tjs_uint& rendered)
 {
-	// 展開
 	unsigned long n;
 	short int *pbuf=(short int*)buf;
 	for(n=0;n<bufsamplelen;n++)
@@ -169,22 +167,17 @@ bool  TCWFDecoder::Render(void *buf, tjs_uint bufsamplelen, tjs_uint& rendered)
 //---------------------------------------------------------------------------
 bool  TCWFDecoder::SetPosition(tjs_uint64 samplepos)
 {
-	// pos (ms単位) に移動する
-	// 現在位置を保存
 	tjs_uint64 bytepossave=InputStream->GetPosition();
 	tjs_uint64 samplepossave=Pos;
 
-	// 新しい位置を特定
 	long newbytepos = samplepos / (Header.samplesperblock);
 	long remnant = samplepos - newbytepos * (Header.samplesperblock);
 	Pos = samplepos;
 	newbytepos *= Header.bytesperblock * Header.channels;
 
-	// シーク
     tjs_uint64 newpos = DataStart+newbytepos;
     if(InputStream->Seek(DataStart+newbytepos, TJS_BS_SEEK_SET) != newpos)
     {
-		// シーク失敗
 		newpos=bytepossave;
 		InputStream->SetPosition(newpos);
 		Pos=samplepossave;
@@ -207,23 +200,19 @@ bool  TCWFDecoder::SetPosition(tjs_uint64 samplepos)
 //---------------------------------------------------------------------------
 bool TCWFDecoder::Open(const ttstr & url)
 {
-	// url で指定された URL を開きます
 	InputStream = TVPCreateStream(url, TJS_BS_READ);
 	if(!InputStream)
 	{
 		return false;
 	}
 	InputStream->SetPosition(0);
-	// TCWF0 チェック
 	tjs_uint read = InputStream->Read(&Header, sizeof(Header));
 	if(read!=sizeof(Header)) return false;
 	if (memcmp(Header.mark, "TCWF0\x1a", 6)) return false; // マーク
 
-	// 現在位置を取得
 	StreamPos=InputStream->GetPosition();
 	DataStart=StreamPos;
 
-	// その他、初期化
 	BufferRemain=0;
 	Pos=0;
 
@@ -246,7 +235,6 @@ bool TCWFDecoder::Open(const ttstr & url)
 bool TCWFDecoder::ReadBlock(int numchans, int chan)
 {
 
-	// メモリ確保
 	if(!BlockBuffer)
 		BlockBuffer=new BYTE[Header.bytesperblock];
 	if(!this->Samples)
@@ -255,14 +243,12 @@ bool TCWFDecoder::ReadBlock(int numchans, int chan)
 	short int * Samples = this->Samples + chan;
 
 
-	// シーク
 	if(InputStream->GetPosition()!=StreamPos)
 	{
 		if(InputStream->Seek(StreamPos, TJS_BS_SEEK_SET) != StreamPos) return false;
 	}
 
 
-	// ブロックヘッダ読み込み
 	TTCWBlockHeader bheader;
 	ULONG read;
 	read = InputStream->Read(&bheader,sizeof(bheader));
@@ -272,7 +258,6 @@ bool TCWFDecoder::ReadBlock(int numchans, int chan)
 	StreamPos+=read;
 	if((ULONG)Header.bytesperblock- sizeof(bheader)!=read) return false;
 
-	// デコード
 	Samples[0*numchans] = bheader.ms_sample0;
 	Samples[1*numchans] = bheader.ms_sample1;
 	int idelta = bheader.ms_idelta;
@@ -282,7 +267,6 @@ bool TCWFDecoder::ReadBlock(int numchans, int chan)
 	int k;
 	int p;
 
-	//MS ADPCM デコード
 	int predict;
 	int bytecode;
 	for (k = 2, p = 0 ; k < Header.samplesperblock ; k ++, p++)
@@ -307,7 +291,6 @@ bool TCWFDecoder::ReadBlock(int numchans, int chan)
 		Samples [k*numchans] = (short int) current ;
 	};
 
-	//IMA ADPCM デコード
 	int step;
 	int stepindex = bheader.ima_stepindex;
 	int prev = 0;
@@ -349,7 +332,6 @@ bool TCWFDecoder::ReadBlock(int numchans, int chan)
 		Samples[k*numchans] =n;
 	};
 
-	// unexpected peak の修正
 	int i;
 	for(i=0; i<6; i++)
 	{

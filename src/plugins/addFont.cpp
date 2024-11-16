@@ -8,12 +8,6 @@ using namespace std;
 
 struct FontEx
 {
-	/**
-	 * プライベートフォントの追加
-	 * @param fontFileName フォントファイル名
-	 * @param extract アーカイブからテンポラリ展開する
-	 * @return void:ファイルを開くのに失敗 0:フォント登録に失敗 数値:登録したフォントの数
-	 */
 	static tjs_error TJS_INTF_METHOD addFont(tTJSVariant *result,
 											 tjs_int numparams,
 											 tTJSVariant **param,
@@ -32,7 +26,6 @@ struct FontEx
 	}
 };
 
-// フックつきアタッチ
 NCB_ATTACH_CLASS(FontEx, System) {
 	RawCallback("addFont", &FontEx::addFont, TJS_STATICMEMBER);
 }

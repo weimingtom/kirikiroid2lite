@@ -43,6 +43,11 @@ TODO
 * https://gitee.com/weimingtom/kirikiroid2_fork/tree/master/test_data/atest3  
 * see TVPGetDriverPath (???)  
 
+## Start folder C: shown when started     
+* Please Copy atest3 folder to C:\atest3  
+* C: is set in tests\cpp-empty-test\Classes\core\environ\android\AndroidUtils.cpp  
+* Search ret.push_back("C:/");  
+
 ## VS2013, Windows 7 development environment  
 * Visual Studio 2013旗舰版  
 * SDKDDKVer.h: No such file or directory  

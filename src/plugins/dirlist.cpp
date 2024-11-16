@@ -9,7 +9,6 @@
 
 
 //---------------------------------------------------------------------------
-// 指定されたディレクトリ内のファイルの一覧を得る関数
 //---------------------------------------------------------------------------
 class tGetDirListFunction : public tTJSDispatch
 {
@@ -20,7 +19,6 @@ class tGetDirListFunction : public tTJSDispatch
 	{
 		if(membername) return TJS_E_MEMBERNOTFOUND;
 
-		// 引数 : ディレクトリ
 		if(numparams < 1) return TJS_E_BADPARAMCOUNT;
 
 		ttstr dir(*param[0]);
@@ -28,10 +26,8 @@ class tGetDirListFunction : public tTJSDispatch
 		if(dir.GetLastChar() != TJS_W('/'))
 			TVPThrowExceptionMessage(TJS_W("'/' must be specified at the end of given directory name."));
 
-		// OSネイティブな表現に変換
 		dir = TVPNormalizeStorageName(dir);
 
-		// Array クラスのオブジェクトを作成
 		iTJSDispatch2 * array = TJSCreateArrayObject();
 		if (!result) return TJS_S_OK;
 		try {
@@ -57,7 +53,6 @@ class tGetDirListFunction : public tTJSDispatch
 #endif			
 		}
 
-		// 戻る
 		return TJS_S_OK;
 	}
 } * GetDirListFunction;
@@ -66,39 +61,28 @@ class tGetDirListFunction : public tTJSDispatch
 //---------------------------------------------------------------------------
 static void PostRegistCallback()
 {
-	// GetDirListFunction の作成と登録
 	tTJSVariant val;
 
-	// TJS のグローバルオブジェクトを取得する
 	iTJSDispatch2 * global = TVPGetScriptDispatch();
 
-	// 1 まずオブジェクトを作成
 	GetDirListFunction = new tGetDirListFunction();
 
-	// 2 GetDirListFunction を tTJSVariant 型に変換
 	val = tTJSVariant(GetDirListFunction);
 
-	// 3 すでに val が GetDirListFunction を保持しているので、GetDirListFunction は
-	//   Release する
 	GetDirListFunction->Release();
 
 
-	// 4 global の PropSet メソッドを用い、オブジェクトを登録する
 	global->PropSet(
-		TJS_MEMBERENSURE, // メンバがなかった場合には作成するようにするフラグ
-		TJS_W("getDirList"), // メンバ名 ( かならず TJS_W( ) で囲む )
-		NULL, // ヒント ( 本来はメンバ名のハッシュ値だが、NULL でもよい )
-		&val, // 登録する値
-		global // コンテキスト ( global でよい )
+		TJS_MEMBERENSURE, 
+		TJS_W("getDirList"), 
+		NULL,
+		&val, 
+		global
 		);
 
 
-	// - global を Release する
 	global->Release();
 
-	// val をクリアする。
-	// これは必ず行う。そうしないと val が保持しているオブジェクト
-	// が Release されず、次に使う TVPPluginGlobalRefCount が正確にならない。
 	val.Clear();
 }
 NCB_POST_REGIST_CALLBACK(PostRegistCallback);
