@@ -42,3 +42,10 @@ TODO
 ## Test Data  
 * https://gitee.com/weimingtom/kirikiroid2_fork/tree/master/test_data/atest3  
 * see TVPGetDriverPath (???)  
+
+## VS2013, Windows 7 development environment  
+* Visual Studio 2013旗舰版  
+* SDKDDKVer.h: No such file or directory  
+Need to install windowsdk81.rar (Windows Kits 8.1)    
+
+ 
