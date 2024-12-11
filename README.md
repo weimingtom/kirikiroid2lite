@@ -47,6 +47,11 @@ Please Copy atest3 folder to F:\atest3
 F: is set in tests\cpp-empty-test\Classes\core\environ\android\AndroidUtils.cpp
 Search ret.push_back("F:/");
 ```
+* Setup start folder C: shown when started     
+Please copy test folder like atest3 to C:\atest3  
+C: is set in src/core/environ/android/AndroidUtils.cpp  
+Search ret.push_back("C:/");  
+see https://github.com/weimingtom/kirikiroid2lite/blob/master/src/core/environ/android/AndroidUtils.cpp  
 ```
 关于程序启动后开始时，文件浏览器的起始路径（盘符），是修改src\core\environ\android\AndroidUtils.cpp的
 std::vector<std::string> TVPGetDriverPath()
@@ -58,12 +63,6 @@ std::vector<std::string> TVPGetDriverPath() {
 	return ret;
 }
 ```
-
-## Setup start folder C: shown when started     
-* Please copy test folder like atest3 to C:\atest3  
-* C: is set in src/core/environ/android/AndroidUtils.cpp  
-* Search ret.push_back("C:/");  
-* see https://github.com/weimingtom/kirikiroid2lite/blob/master/src/core/environ/android/AndroidUtils.cpp  
 
 ## VS2013, Windows 7 development environment  
 * Visual Studio 2013旗舰版  
