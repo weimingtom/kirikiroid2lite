@@ -36,10 +36,12 @@ it's **NOT** a fork of kirikiri2 or kirikiriz, so it may be not what your want.
 * Run ndk-build  
 * Import, compile and run with Android ADT, see project\android\ .project   
 
-## Minimum version of Cocos2d-x  
-TODO  
+## (TODO) Minimum version of Cocos2d-x  
+VC6 version cocos2d-x 2.2.6, see  
+https://github.com/weimingtom/cocos2dx226_vc6  
+cocos2d-x 3.6, TODO   
 
-## Test Data  
+## Test Data, and builtin file browser start path   
 * https://gitee.com/weimingtom/kirikiroid2_fork/tree/master/test_data/atest3  
 * see TVPGetDriverPath (???)  
 ```
