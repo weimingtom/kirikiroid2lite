@@ -72,8 +72,9 @@ std::vector<std::string> TVPGetDriverPath() {
 Need to install windowsdk81.rar (Windows Kits 8.1)    
 
 ## Sound playing function   
-* tTJSNI_WaveSoundBuffer::Open
-* TVPCreateWaveDecoder  
+* tTJSNI_WaveSoundBuffer::Open  
+see src\core\sound\win32\WaveImpl.cpp  
+* TVPCreateWaveDecoder   
 ```
 kirikiroid2研究，最近打算重新改这份代码（我非原作者），
 把声音功能重新加回去（因为我上次kirikiroid2lite把声音去掉了或者没调通）。
