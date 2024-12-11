@@ -54,4 +54,15 @@ TODO
 * SDKDDKVer.h: No such file or directory  
 Need to install windowsdk81.rar (Windows Kits 8.1)    
 
- 
+## Sound playing function   
+* tTJSNI_WaveSoundBuffer::Open
+* TVPCreateWaveDecoder  
+```
+kirikiroid2研究，最近打算重新改这份代码（我非原作者），
+把声音功能重新加回去（因为我上次kirikiroid2lite把声音去掉了或者没调通）。
+播放声音的后退调用堆栈很深，不过可以猜测到它的大概位置，
+例如我断点断在tTJSNI_WaveSoundBuffer::Open这个方法里面
+（或者搜索TVPCreateWaveDecoder），当我滑动鼠标到主菜单按钮上，
+就会调用这个方法，传入参数storagename是ogg文件名，
+至于怎么播放，我后面再研究
+```
