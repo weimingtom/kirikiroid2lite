@@ -42,6 +42,22 @@ TODO
 ## Test Data  
 * https://gitee.com/weimingtom/kirikiroid2_fork/tree/master/test_data/atest3  
 * see TVPGetDriverPath (???)  
+```
+Please Copy atest3 folder to F:\atest3
+F: is set in tests\cpp-empty-test\Classes\core\environ\android\AndroidUtils.cpp
+Search ret.push_back("F:/");
+```
+```
+关于程序启动后开始时，文件浏览器的起始路径（盘符），是修改src\core\environ\android\AndroidUtils.cpp的
+std::vector<std::string> TVPGetDriverPath()
+方法里面的ret.push_back，例如这样：
+std::vector<std::string> TVPGetDriverPath() {
+	std::vector<std::string> ret;
+	OutputDebugString(L"=========================>TVPGetDriverPath()\n");
+	ret.push_back("C:/");
+	return ret;
+}
+```
 
 ## Setup start folder C: shown when started     
 * Please copy test folder like atest3 to C:\atest3  
