@@ -83,4 +83,14 @@ kirikiroid2研究，最近打算重新改这份代码（我非原作者），
 （或者搜索TVPCreateWaveDecoder），当我滑动鼠标到主菜单按钮上，
 就会调用这个方法，传入参数storagename是ogg文件名，
 至于怎么播放，我后面再研究
+
+kirikiroid2研究。从我在所有try-catch输出日志（我魔改了代码）可以看到抛了C++异常，
+然后在VS2013中菜单-异常-把第一列和第二列的断点单选框全部勾上，然后重新进入调试模式，
+发现断点断在TVPCreateWaveDecoder这个函数，就是说在tTJSNI_WaveSoundBuffer::Open的开头
+TVPEnsurePrimaryBufferPlay找不到ogg的解码器，所以就没办法播放声音了。
+为什么要用VS的异常断点呢？因为krkr的代码用了rethrow，所以没办法从日志中清楚看到调用堆栈，
+然而第一次触发异常的地方才是最接近于出问题的地方。后续想办法解决，
+看能否修改到可以调用到Play和StartPlay方法
+
+search baidupan, libogg, libvorbis
 ```
