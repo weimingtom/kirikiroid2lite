@@ -40,6 +40,8 @@ it's **NOT** a fork of kirikiri2 or kirikiriz, so it may be not what your want.
 VC6 version cocos2d-x 2.2.6, see  
 https://github.com/weimingtom/cocos2dx226_vc6  
 cocos2d-x 3.6, TODO   
+VS2013 version cocos2d-x 3.6, see   
+cocos2d-x-3.6_hello_v11_migrate_finish.rar  
 
 ## Test Data, and builtin file browser start path   
 * https://gitee.com/weimingtom/kirikiroid2_fork/tree/master/test_data/atest3  
