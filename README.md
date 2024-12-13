@@ -96,4 +96,17 @@ TVPEnsurePrimaryBufferPlay找不到ogg的解码器，所以就没办法播放声
 看能否修改到可以调用到Play和StartPlay方法
 
 search baidupan, libogg, libvorbis
+kirikiroid2研究。上次的ogg问题，可以简单加入libogg和libvorbis代码，
+我直接就不用VS2013创建子工程了，直接加入到cpp-empty-test工程中。
+然后VorbisWaveDecoderCreator和vorbisWaveDecoderCreator相关的代码重新打开即可，
+还有VorbisWaveDecoder.cpp（除了opus和opusfile库）。运行的话依旧无法播放ogg声音，
+但可以看到Play和StartPlay已经能调用了，
+只是我的代码还没填充TVPInitDirectSound和TVPCreateSoundBuffer的实现，
+只要找时间补充代码到core\sound\win32\WaveMixer.cpp即可
+src\core\sound\VorbisWaveDecoder.cpp
+VorbisWaveDecoderCreator
+vorbisWaveDecoderCreator
+src\core\sound\win32\WaveMixer.cpp
+==================>TVPInitDirectSound not imp
+==================>TVPCreateSoundBuffer not imp
 ```
