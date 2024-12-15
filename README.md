@@ -117,4 +117,7 @@ kirikiroid2研究。关于TVPInitDirectSound和TVPCreateSoundBuffer的实现填�
 当然我应该是先研究windows版的，但SDL播放声音并不是很熟悉，所以可能要先琢磨较长时间。
 至于krkrsdl2是怎么播放声音？它可能也是SDL2，或者可能是通过openal和FAudio之类方法实现播放，
 具体以后会深入研究，但我不会用太复杂的写法，勉强能用就算了，可能只保留最简单的实现方法
+
+VideoProject_v2_play_audio_success.7z
+https://github.com/rururutan/np2s/blob/master/np2/sdl/win32s/SDLaudio.c
 ```
