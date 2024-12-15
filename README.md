@@ -109,4 +109,12 @@ vorbisWaveDecoderCreator
 src\core\sound\win32\WaveMixer.cpp
 ==================>TVPInitDirectSound not imp
 ==================>TVPCreateSoundBuffer not imp
+
+kirikiroid2研究。关于TVPInitDirectSound和TVPCreateSoundBuffer的实现填充问题，
+它本来应该是通过DirectSound实现（DirectX），然后它kirikiroid2原版是通过SDL或者Oboe实现。
+对我而言oboe和dsound应该不用考虑了，比较可行应该是SDL或者通过SDL的底层
+（例如waveOutWrite，winmm，或者安卓的AudioTrack）去实现播放，
+当然我应该是先研究windows版的，但SDL播放声音并不是很熟悉，所以可能要先琢磨较长时间。
+至于krkrsdl2是怎么播放声音？它可能也是SDL2，或者可能是通过openal和FAudio之类方法实现播放，
+具体以后会深入研究，但我不会用太复杂的写法，勉强能用就算了，可能只保留最简单的实现方法
 ```
