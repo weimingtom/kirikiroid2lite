@@ -38,7 +38,7 @@ it's **NOT** a fork of kirikiri2 or kirikiriz, so it may be not what your want.
 
 ## Minimum version of Cocos2d-x  
 * VS2013 version cocos2d-x 3.6, see   
-https://github.com/weimingtom/cocos2dx36_vs2013/tree/master  
+https://github.com/weimingtom/cocos2dx36_vs2013  
 ```
 cocos2d-x-3.6_hello_v11_migrate_finish.rar  
 https://github.com/weimingtom/CrossApp_mingw  
