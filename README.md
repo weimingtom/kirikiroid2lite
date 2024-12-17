@@ -36,13 +36,15 @@ it's **NOT** a fork of kirikiri2 or kirikiriz, so it may be not what your want.
 * Run ndk-build  
 * Import, compile and run with Android ADT, see project\android\ .project   
 
-## (TODO) Minimum version of Cocos2d-x  
-VC6 version cocos2d-x 2.2.6, see  
-https://github.com/weimingtom/cocos2dx226_vc6  
-cocos2d-x 3.6, TODO   
-VS2013 version cocos2d-x 3.6, see   
+## Minimum version of Cocos2d-x  
+* VS2013 version cocos2d-x 3.6, see   
+https://github.com/weimingtom/cocos2dx36_vs2013/tree/master  
+```
 cocos2d-x-3.6_hello_v11_migrate_finish.rar  
 https://github.com/weimingtom/CrossApp_mingw  
+```
+* VC6 version cocos2d-x 2.2.6, see  
+https://github.com/weimingtom/cocos2dx226_vc6  
 
 ## Test Data, and builtin file browser start path   
 * https://gitee.com/weimingtom/kirikiroid2_fork/tree/master/test_data/atest3  
