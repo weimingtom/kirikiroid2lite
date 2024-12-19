@@ -128,4 +128,11 @@ kirikiroid2研究。打算先从SDL2入手研究声音播放。我猜测声音�
 为什么是SDL2而不是SDL1.2呢？因为我发现它用的是SDL_OpenAudioDevice而不是SDL_OpenAudio，
 那很有可能它用的是更兼容安卓的SDL2，甚至可能直接用它播放声音都可以，
 而不只是拿来转换格式或者采样率
+
+kirikiroid2研究。我的天，我把声音功能弄出来了，代码看得我汗流浃背——
+其实kirikiroid2本身已经实现了SDL2声音播放，
+只是它弄得很长且复杂——难道是从哪里得到的代码，连ARM特定代码都来了，
+用于混音。不过跳过不执行这些看不懂的代码
+（src/core/sound/ARM/wavemix_arm.c），在windows下仍然是可以播放的，
+具体流程我后面再研究分析
 ```
