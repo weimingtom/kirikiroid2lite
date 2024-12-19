@@ -122,4 +122,10 @@ kirikiroid2研究。关于TVPInitDirectSound和TVPCreateSoundBuffer的实现填�
 
 VideoProject_v2_play_audio_success.7z
 https://github.com/rururutan/np2s/blob/master/np2/sdl/win32s/SDLaudio.c
+
+kirikiroid2研究。打算先从SDL2入手研究声音播放。我猜测声音问题（或者说运行原理）应该不会很难，
+可能就是格式有区别或者存在转换问题罢了（例如采样率，码率，单声道之类）。
+为什么是SDL2而不是SDL1.2呢？因为我发现它用的是SDL_OpenAudioDevice而不是SDL_OpenAudio，
+那很有可能它用的是更兼容安卓的SDL2，甚至可能直接用它播放声音都可以，
+而不只是拿来转换格式或者采样率
 ```
