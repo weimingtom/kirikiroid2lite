@@ -72,9 +72,9 @@ std::vector<std::string> TVPGetDriverPath() {
 ```
 
 ## VS2013, Windows 7 development environment  
-* Visual Studio 2013旗舰版  
+* Visual Studio 2013旗舰版, windowssdk81.rar    
 * SDKDDKVer.h: No such file or directory  
-Need to install windowsdk81.rar (Windows Kits 8.1)    
+Need to install windowssdk81.rar (Windows Kits 8.1)    
 
 ## Sound playing function   
 * tTJSNI_WaveSoundBuffer::Open  
