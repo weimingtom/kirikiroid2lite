@@ -114,6 +114,12 @@
     <Filter Include="opencv_imgproc\avx2">
       <UniqueIdentifier>{3419a85f-e683-471d-9abc-194dee32bac8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="libogg">
+      <UniqueIdentifier>{56a50bff-c41c-416c-b18f-9b6c543d892e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libvorbis">
+      <UniqueIdentifier>{f9e25b0f-5d6a-4ceb-bf74-312dca98cf95}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
@@ -1172,6 +1178,87 @@
     <ClCompile Include="..\..\src\core\external\opencv-2.4.13\modules\core\src\tables_core.cpp">
       <Filter>opencv_core</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libogg-1.1.3\src\bitwise.c">
+      <Filter>libogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libogg-1.1.3\src\framing.c">
+      <Filter>libogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\analysis.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\barkmel.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\bitrate.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\block.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\codebook.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\envelope.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\floor0.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\floor1.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\info.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\lookup.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\lpc.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\lsp.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\mapping0.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\mdct.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\psy.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\psytune.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\registry.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\res0.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\sharedbook.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\smallft.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\synthesis.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\tone.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\vorbisenc.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\vorbisfile.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\window.c">
+      <Filter>libvorbis</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h">
@@ -2007,6 +2094,63 @@
     </ClInclude>
     <ClInclude Include="..\..\src\core\external\opencv-2.4.13\modules\imgproc\src\precomp.hpp">
       <Filter>opencv_imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\backends.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\bitrate.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\codebook.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\codec_internal.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\envelope.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\highlevel.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\lookup.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\lookup_data.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\lpc.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\lsp.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\masking.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\mdct.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\misc.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\os.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\psy.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\registry.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\scales.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\smallft.h">
+      <Filter>libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\window.h">
+      <Filter>libvorbis</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

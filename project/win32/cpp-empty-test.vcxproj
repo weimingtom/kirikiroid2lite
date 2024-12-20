@@ -63,7 +63,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\src;..\..\src\core\utils;..\..\src\core\environ;..\..\src\core\external\onig;..\..\src\core\tjs2;..\..\src\core\visual;..\..\src\core\msg;..\..\src\core\external\zlib;..\..\src\core\msg\win32;..\..\src\core\base\win32;..\..\src\core\visual\win32;..\..\src\core\sound;..\..\src\core\sound\win32;..\..\src\core\utils\win32;..\..\src\core\environ\win32;..\..\src\core\extension;..\..\src\core\base;..\..\src\core;..\..\src\core\external\jxrlib\jxrgluelib;..\..\cocos2d-x-3.6\external\libpng-1.4.5;..\..\src\core\external\jxrlib\image\decode;..\..\src\core\external;..\..\cocos2d-x-3.6;..\..\cocos2d-x-3.6\extensions;..\..\src\plugins;..\..\src\core\external\freetype2;..\..\src\core\external\libjpeg-turbo;..\..\src\core\external\libjpeg-turbo\vcproj;..\..\src\core\external\opencv-2.4.13\modules\core\include;..\..\src\core\external\opencv-2.4.13\modules\imgproc\include;..\..\src\core\external\opencv-2.4.13\modules\dynamicuda\include;..\..\src\core\external\opencv-2.4.13;..\..\cocos2d-x-3.6\cocos\editor-support;..\..\cocos2d-x-3.6\cocos;..\..\cocos2d-x-3.6\cocos\platform;..\..\cocos2d-x-3.6\cocos\platform\desktop;..\..\cocos2d-x-3.6\external\glfw-3.0.4\include\GLFW;..\..\cocos2d-x-3.6\external\win32-specific\gles\include\OGLES;..\..\cocos2d-x-3.6\external\freetype2\include\win32\freetype2;..\..\cocos2d-x-3.6\external\freetype2\include\win32\;..\..\cocos2d-x-3.6\external\box2d;..\..\cocos2d-x-3.6\external\sqlite3\include;..\..\cocos2d-x-3.6\external\unzip;..\..\cocos2d-x-3.6\external\edtaa3func;..\..\cocos2d-x-3.6\external\tinyxml2;..\..\cocos2d-x-3.6\external\jpeg-9;..\..\cocos2d-x-3.6\external\freetype-2.5.0.1\include;..\..\cocos2d-x-3.6\external\zlib-1.2.5;..\..\cocos2d-x-3.6\external\xxhash;..\..\cocos2d-x-3.6\external\ConvertUTF;..\..\cocos2d-x-3.6\external\poly2tri\common;..\..\cocos2d-x-3.6\external\poly2tri\sweep;..\..\cocos2d-x-3.6\external\poly2tri;..\..\cocos2d-x-3.6\external;..\..\cocos2d-x-3.6\cocos\audio\include;..\..\cocos2d-x-3.6\;..\..\cocos2d-x-3.6\external\boost_1_55_0;..\..\cocos2d-x-3.6\external\pthreads;..\..\cocos2d-x-3.6\external\glew-1.7.0\include..\..\cocos2d-x-3.6\external;..\..\cocos2d-x-3.6\external\glew-1.7.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\src;..\..\src\core\utils;..\..\src\core\environ;..\..\src\core\external\onig;..\..\src\core\tjs2;..\..\src\core\visual;..\..\src\core\msg;..\..\src\core\external\zlib;..\..\src\core\msg\win32;..\..\src\core\base\win32;..\..\src\core\visual\win32;..\..\src\core\sound;..\..\src\core\sound\win32;..\..\src\core\utils\win32;..\..\src\core\environ\win32;..\..\src\core\extension;..\..\src\core\base;..\..\src\core;..\..\src\core\external\jxrlib\jxrgluelib;..\..\cocos2d-x-3.6\external\libpng-1.4.5;..\..\src\core\external\jxrlib\image\decode;..\..\src\core\external;..\..\cocos2d-x-3.6;..\..\cocos2d-x-3.6\extensions;..\..\src\plugins;..\..\src\core\external\freetype2;..\..\src\core\external\libjpeg-turbo;..\..\src\core\external\libjpeg-turbo\vcproj;..\..\src\core\external\opencv-2.4.13\modules\core\include;..\..\src\core\external\opencv-2.4.13\modules\imgproc\include;..\..\src\core\external\opencv-2.4.13\modules\dynamicuda\include;..\..\src\core\external\opencv-2.4.13;..\..\cocos2d-x-3.6\cocos\editor-support;..\..\cocos2d-x-3.6\cocos;..\..\cocos2d-x-3.6\cocos\platform;..\..\cocos2d-x-3.6\cocos\platform\desktop;..\..\cocos2d-x-3.6\external\glfw-3.0.4\include\GLFW;..\..\cocos2d-x-3.6\external\win32-specific\gles\include\OGLES;..\..\cocos2d-x-3.6\external\freetype2\include\win32\freetype2;..\..\cocos2d-x-3.6\external\freetype2\include\win32\;..\..\cocos2d-x-3.6\external\box2d;..\..\cocos2d-x-3.6\external\sqlite3\include;..\..\cocos2d-x-3.6\external\unzip;..\..\cocos2d-x-3.6\external\edtaa3func;..\..\cocos2d-x-3.6\external\tinyxml2;..\..\cocos2d-x-3.6\external\jpeg-9;..\..\cocos2d-x-3.6\external\freetype-2.5.0.1\include;..\..\cocos2d-x-3.6\external\zlib-1.2.5;..\..\cocos2d-x-3.6\external\xxhash;..\..\cocos2d-x-3.6\external\ConvertUTF;..\..\cocos2d-x-3.6\external\poly2tri\common;..\..\cocos2d-x-3.6\external\poly2tri\sweep;..\..\cocos2d-x-3.6\external\poly2tri;..\..\cocos2d-x-3.6\external;..\..\cocos2d-x-3.6\cocos\audio\include;..\..\cocos2d-x-3.6\;..\..\cocos2d-x-3.6\external\boost_1_55_0;..\..\cocos2d-x-3.6\external\pthreads;..\..\cocos2d-x-3.6\external\glew-1.7.0\include..\..\cocos2d-x-3.6\external;..\..\cocos2d-x-3.6\external\glew-1.7.0\include;..\..\src\core\external\libogg-1.1.3\include;..\..\src\core\external\libvorbis-1.2.0\include;..\..\src\core\external\SDL2-2.0.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;TJS_TEXT_OUT_CRLF;__STDC_CONSTANT_MACROS;USE_UNICODE_FSTRING;_7ZIP_ST;VC_EXTRALEAN;GLEW_STATIC;ONIG_EXTERN=extern;NOT_RUBY;EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -81,7 +81,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
-      <AdditionalDependencies>libcocos2d.lib;glew.lib;pthreadVC2.lib;opengl32.lib;zlib.lib;libpng.lib;jpeg.lib;glfw.lib;freetype.lib;winmm.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;libcocos2d.lib;glew.lib;pthreadVC2.lib;opengl32.lib;zlib.lib;libpng.lib;jpeg.lib;glfw.lib;freetype.lib;winmm.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -271,6 +271,42 @@ xcopy "$(OutDir)..\*.dll" "$(OutDir)" /D /Y</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\src\core\extension\Extension.cpp" />
+    <ClCompile Include="..\..\src\core\external\libogg-1.1.3\src\bitwise.c" />
+    <ClCompile Include="..\..\src\core\external\libogg-1.1.3\src\framing.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\analysis.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\barkmel.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\bitrate.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\block.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\codebook.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\envelope.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\floor0.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\floor1.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\info.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\lookup.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\lpc.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\lsp.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\mapping0.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\mdct.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\psy.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\psytune.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\registry.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\res0.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\sharedbook.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\smallft.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\synthesis.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\tone.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\vorbisenc.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\vorbisfile.c" />
+    <ClCompile Include="..\..\src\core\external\libvorbis-1.2.0\lib\window.c" />
     <ClCompile Include="..\..\src\core\external\onig\enc\ascii.c" />
     <ClCompile Include="..\..\src\core\external\onig\enc\big5.c" />
     <ClCompile Include="..\..\src\core\external\onig\enc\cp1251.c" />
@@ -422,8 +458,8 @@ xcopy "$(OutDir)..\*.dll" "$(OutDir)" /D /Y</Command>
     <ClCompile Include="..\..\src\core\sound\PhaseVocoderFilter.cpp" />
     <ClCompile Include="..\..\src\core\sound\SoundBufferBaseIntf.cpp" />
     <ClCompile Include="..\..\src\core\sound\VorbisWaveDecoder.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\src\core\sound\WaveFormatConverter.cpp" />
     <ClCompile Include="..\..\src\core\sound\WaveFormatConverter_SSE.cpp">
@@ -738,6 +774,25 @@ xcopy "$(OutDir)..\*.dll" "$(OutDir)" /D /Y</Command>
     </ClInclude>
     <ClInclude Include="..\..\src\core\environ\XP3ArchiveRepack.h" />
     <ClInclude Include="..\..\src\core\extension\Extension.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\backends.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\bitrate.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\codebook.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\codec_internal.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\envelope.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\highlevel.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\lookup.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\lookup_data.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\lpc.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\lsp.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\masking.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\mdct.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\misc.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\os.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\psy.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\registry.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\scales.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\smallft.h" />
+    <ClInclude Include="..\..\src\core\external\libvorbis-1.2.0\lib\window.h" />
     <ClInclude Include="..\..\src\core\external\onig\config.h" />
     <ClInclude Include="..\..\src\core\external\onig\oniggnu.h" />
     <ClInclude Include="..\..\src\core\external\onig\onigposix.h" />

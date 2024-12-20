@@ -746,8 +746,10 @@ struct tTVPWaveDecoderManager
 {
 	std::vector<tTVPWaveDecoderCreator *> Creators;
 	tTVPWDC_RIFFWave RIFFWaveDecoderCreator;
-#if 0
+#if 1
     VorbisWaveDecoderCreator vorbisWaveDecoderCreator;
+#endif
+#if 0
     FFWaveDecoderCreator ffWaveDecoderCreator;
     OpusWaveDecoderCreator opusWaveDecoderCreator;
 #endif
@@ -760,7 +762,7 @@ struct tTVPWaveDecoderManager
         TVPRegisterWaveDecoderCreator(&opusWaveDecoderCreator);
 #endif
 		TVPRegisterWaveDecoderCreator(&RIFFWaveDecoderCreator);
-#if 0
+#if 1
         TVPRegisterWaveDecoderCreator(&vorbisWaveDecoderCreator);
 #endif
 	}
