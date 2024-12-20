@@ -136,3 +136,26 @@ kirikiroid2研究。我的天，我把声音功能弄出来了，代码看得我
 （src/core/sound/ARM/wavemix_arm.c），在windows下仍然是可以播放的，
 具体流程我后面再研究分析
 ```
+* C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveImpl.cpp:3065  
+void tTJSNI_WaveSoundBuffer::Open(const ttstr & storagename)  
+* C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveMixer.cpp:437   
+void TVPInitDirectSound(int freq)  
+* C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveMixer.cpp:424  
+static iTVPAudioRenderer *CreateAudioRenderer()  
+* C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveMixer.cpp:405  
+bool tTVPAudioRendererSDL::Init() override  
+* C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveImpl.cpp:2998  
+void tTJSNI_WaveSoundBuffer::Play()  
+* C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveMixer.cpp:437  
+void TVPInitDirectSound(int freq)  
+* C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveImpl.cpp:2926  
+void tTJSNI_WaveSoundBuffer::StartPlay()  
+* C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveMixer.cpp:437   
+void TVPInitDirectSound(int freq)  
+* C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveMixer.cpp:458    
+iTVPSoundBuffer* TVPCreateSoundBuffer(tTVPWaveFormat &fmt, int bufcount)  
+* extern "C" void TVPWaveMixer_ASM_Init(FAudioMix **func16, FAudioMix **func32); not used  
+see C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveMixer.cpp:267   
+TVPWaveMixer_ASM_Init(_AudioMixS16, _AudioMixF32);    
+see C:\work\krkr\kirikiroid2lite-master\src\core\sound\ARM\wavemix_arm.c:98  
+void TVPWaveMixer_ASM_Init(FAudioMix **func16, FAudioMix **func32)  
