@@ -135,6 +135,15 @@ kirikiroid2研究。我的天，我把声音功能弄出来了，代码看得我
 用于混音。不过跳过不执行这些看不懂的代码
 （src/core/sound/ARM/wavemix_arm.c），在windows下仍然是可以播放的，
 具体流程我后面再研究分析
+
+2024-12-21
+kirikiroid2研究。我把关于声音部分的修改放到gh上：weimingtom/kirikiroid2lite，
+目前的解决办法是用原版的SDL2播放（不是我想出来的，是原版就有的功能），
+然后去掉一些可以省略的过程——其实我怀疑SDL2本身就有混音功能，似乎没必要写得那么复杂，不过我不清楚具体细节。
+注意kirikiroid2是半开源的，有很多问题，然后我又继续往里面改，所以有更多的问题和bug，
+所以这目前没什么实用，而且我也还没有把声音问题的解决用安卓跑通，
+现在只是windows版的大概能听到声音和背景音乐罢了，还有非常多的运行期报错。
+可能暂时先改到这里，以后再完善安卓端的声音功能
 ```
 * C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveImpl.cpp:3065  
 void tTJSNI_WaveSoundBuffer::Open(const ttstr & storagename)  
