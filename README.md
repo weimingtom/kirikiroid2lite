@@ -172,4 +172,10 @@ _spec.callback = [](void *p, Uint8 *s, int l) {
 void TVPInitDirectSound(int freq)
 void TVPUninitDirectSound()
 iTVPSoundBuffer* TVPCreateSoundBuffer(tTVPWaveFormat &fmt, int bufcount)
+
+//(done) TODO:
+//* (done, skip) TVPWaveMixer_ASM_Init not used
+//* (done, use pthread_mutex_t/pthread_mutex_init/pthread_mutex_lock/pthread_mutex_unlock) 
+//      boost::lock_guard<boost::mutex> not used
+//
 ```
