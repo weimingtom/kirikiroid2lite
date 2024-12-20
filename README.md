@@ -159,3 +159,17 @@ see C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveMixer.cpp:267
 TVPWaveMixer_ASM_Init(_AudioMixS16, _AudioMixF32);    
 see C:\work\krkr\kirikiroid2lite-master\src\core\sound\ARM\wavemix_arm.c:98  
 void TVPWaveMixer_ASM_Init(FAudioMix **func16, FAudioMix **func32)  
+* key code:
+```
+WaveMixer.cpp:
+_playback_id = SDL_OpenAudioDevice(nullptr, false, &_spec, &_spec, SDL_AUDIO_ALLOW_ANY_CHANGE);
+SDL_PauseAudioDevice(_playback_id, false);
+DoMixAudio(dst, src, samples, vol);
+_spec.callback = [](void *p, Uint8 *s, int l) {
+((iTVPAudioRenderer*)p)->FillBuffer(s, l);
+
+3 entries:
+void TVPInitDirectSound(int freq)
+void TVPUninitDirectSound()
+iTVPSoundBuffer* TVPCreateSoundBuffer(tTVPWaveFormat &fmt, int bufcount)
+```
