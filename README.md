@@ -188,3 +188,6 @@ iTVPSoundBuffer* TVPCreateSoundBuffer(tTVPWaveFormat &fmt, int bufcount)
 //      boost::lock_guard<boost::mutex> not used
 //
 ```
+
+## How to link SDL2 Android  
+* krkrsdl2_ndk_v4_run_success.7z  
