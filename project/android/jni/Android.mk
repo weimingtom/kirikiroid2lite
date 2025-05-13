@@ -219,7 +219,7 @@ LOCAL_CFLAGS += -DGL_GLEXT_PROTOTYPES
 #for SDL2
 # Warnings we haven't fixed (yet)
 #LOCAL_CFLAGS += -Wno-unused-parameter -Wno-sign-compare
-#LOCAL_LDLIBS := -ldl -lGLESv1_CM -lGLESv2 -lOpenSLES -llog -landroid
+LOCAL_LDLIBS := -ldl -lGLESv1_CM -lGLESv2 -lOpenSLES -llog -landroid
 
 ifeq ($(NDK_DEBUG),1)
     cmd-strip :=
@@ -227,7 +227,9 @@ endif
 
 LOCAL_STATIC_LIBRARIES := cpufeatures
 
-include $(BUILD_STATIC_LIBRARY)
+###include $(BUILD_STATIC_LIBRARY)
+###JNI_OnLoad, multiple definition of 'JNI_OnLoad'
+include $(BUILD_SHARED_LIBRARY)
 
 ####################################
 
@@ -684,7 +686,8 @@ LOCAL_CFLAGS := -DTJS_TEXT_OUT_CRLF
 #-DONIG_EXTERN=extern -DNOT_RUBY -DEXPORT
 
 #first top lib, next underly deps
-LOCAL_STATIC_LIBRARIES := cocos2dx_static vorbise ogg SDL2
+LOCAL_STATIC_LIBRARIES := cocos2dx_static vorbise ogg 
+LOCAL_SHARED_LIBRARIES := SDL2
 
 include $(BUILD_SHARED_LIBRARY)
 
