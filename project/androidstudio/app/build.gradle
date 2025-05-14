@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+}
+
+//Android Studio Dolphin | 2021.3.1 Patch 1
+android {
+    namespace 'org.cocos2dx.cpp_empty_test'
+    compileSdk 29//34 //compileSdk 32
+
+    defaultConfig {
+        applicationId "org.cocos2dx.cpp_empty_test"
+        minSdk 21
+        //noinspection ExpiredTargetSdkVersion
+        targetSdk 23//29//34 //targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+/*
+https://java.tutorialink.com/android-file-listfiles-returns-only-subdirectories/
+My fault, I missed something. In Android 11, you can only access media files. In my case,
+the files in external storage were not media files, so they were not displayed.
+But after changing the target api to 29 (Android 10) everything works fine.
+Thanks to everyone who tried to help!
+ */
+        //-----------------------
+        //added for compiling
+
+        //for jni so
+        ndk {
+            //https://www.cnblogs.com/zhangzhxb/p/14493600.html
+            abiFilters 'armeabi'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    //-----------------------
+    //added for compiling
+
+    //for dependencies
+//    configurations {
+//        all {
+//            exclude module: 'httpclient'
+//            exclude module: 'commons-logging'
+//        }
+//    }
+
+    //for jni so
+    //https://www.jianshu.com/p/12e9077d3fe9
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+
+    //implementation 'androidx.appcompat:appcompat:1.7.0'
+    //implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.0.1'
+    //1.4.1
+    //implementation 'com.google.android.material:material:1.5.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    //androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    //androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    
+}
