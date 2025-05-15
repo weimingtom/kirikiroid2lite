@@ -144,6 +144,24 @@ kirikiroid2研究。我把关于声音部分的修改放到gh上：weimingtom/ki
 所以这目前没什么实用，而且我也还没有把声音问题的解决用安卓跑通，
 现在只是windows版的大概能听到声音和背景音乐罢了，还有非常多的运行期报错。
 可能暂时先改到这里，以后再完善安卓端的声音功能
+
+大概把kirikiroid2lite的安卓版的声音输出跑通了
+（上一次大修改，未加声音输出的版本是五年前）。当然，
+还有别的很多bug，效果如下。我的修改方法是：
+把Cocos2dxActivity的基类改成SDLActivity，否则SDL_Init会失败；
+把目标平台改成安卓6：targetSdk 23，这样就能在安卓12上访问到sd卡
+（不过安卓13以上应该不行，这个问题暂时先不管），
+我测试过用ADT和用Android Studio都能编译，
+我很快会把两个工程都开源出去
+
+我把kirikiroid2lite的NDK兼容能力从r10e提升到r25的clang
+（最新的NDK移除了gcc只保留clang），改得头大，但可以改，
+我暂时测试这两个NDK版本。要同时兼容新旧NDK需要修改很多地方，
+包括cocos2d-x的代码和kirikiroid2的代码用clang编译都有问题，
+还需要分静态库才能链接动态库（NDK的bug，命令行不能太长），
+如果是最新版本的NDK好像是不需要考虑拆分出静态库来避免
+长命令行bug的，不过我还是拆分了。
+这些修改我稍后也会分开开源出去
 ```
 * C:\work\krkr\kirikiroid2lite-master\src\core\sound\win32\WaveImpl.cpp:3065  
 void tTJSNI_WaveSoundBuffer::Open(const ttstr & storagename)  
