@@ -262,7 +262,7 @@ LOCAL_EXPORT_CFLAGS   := -DUSE_FILE32API
 LOCAL_EXPORT_CPPFLAGS := -Wno-deprecated-declarations -Wno-extern-c-compat
 
 include $(BUILD_STATIC_LIBRARY)
-$(call import-module,cpufeatures)
+$(call import-module,android/cpufeatures)
 
 #==============================================================
 

@@ -19,6 +19,7 @@
 #include <float.h>
 #define isfinite _finite
 #else
+#include <cmath> //for std::isfinite
 #define isfinite std::isfinite
 #endif
 #else
@@ -29,6 +30,7 @@
 #define INTMAX_MAX		0x7fffffffffffffff
 #endif
 #include <assert.h>
+
 
 /*
  * core/utils/cp932_uni.cpp

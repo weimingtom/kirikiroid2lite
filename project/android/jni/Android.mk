@@ -231,16 +231,12 @@ LOCAL_STATIC_LIBRARIES := cpufeatures
 ###JNI_OnLoad, multiple definition of 'JNI_OnLoad'
 include $(BUILD_SHARED_LIBRARY)
 
+
 ####################################
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := cpp_empty_test_shared
-
-LOCAL_MODULE_FILENAME := libcpp_empty_test
-
-LOCAL_SRC_FILES := main.cpp
-
+LOCAL_MODULE := kirikiroid2ext
 
 LOCAL_SRC_FILES += ../../../src/core/external/opencv-2.4.13/modules/core/src/algorithm.cpp
 LOCAL_SRC_FILES += ../../../src/core/external/opencv-2.4.13/modules/core/src/alloc.cpp
@@ -359,6 +355,65 @@ LOCAL_SRC_FILES += ../../../src/core/external/onig/regsyntax.c
 LOCAL_SRC_FILES += ../../../src/core/external/onig/regtrav.c
 LOCAL_SRC_FILES += ../../../src/core/external/onig/regversion.c
 LOCAL_SRC_FILES += ../../../src/core/external/onig/st.c
+
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes \
+                    $(LOCAL_PATH)/../../../../extensions \
+                    $(LOCAL_PATH)/../../../.. \
+                    $(LOCAL_PATH)/../../../../cocos/editor-support \
+					$(LOCAL_PATH)/../../../vendor/libgdiplus/src \
+					$(LOCAL_PATH)/../../../vendor/google_breakpad/current/src \
+					$(LOCAL_PATH)/../../../vendor/google_breakpad/current/src/common/android/include \
+					$(LOCAL_PATH)/../../../src/core/environ \
+					$(LOCAL_PATH)/../../../src/core/environ/android \
+					$(LOCAL_PATH)/../../../src/core/tjs2 \
+					$(LOCAL_PATH)/../../../src/core/base \
+					$(LOCAL_PATH)/../../../src/core/visual \
+					$(LOCAL_PATH)/../../../src/core/visual/win32 \
+					$(LOCAL_PATH)/../../../src/core/sound \
+					$(LOCAL_PATH)/../../../src/core/sound/win32 \
+					$(LOCAL_PATH)/../../../src/core/utils \
+					$(LOCAL_PATH)/../../../src/plugins \
+					$(LOCAL_PATH)/../../../src/core/base/win32 \
+					$(LOCAL_PATH)/../../../src/core/msg \
+					$(LOCAL_PATH)/../../../src/core/msg/win32 \
+					$(LOCAL_PATH)/../../../src/core/utils/win32 \
+					$(LOCAL_PATH)/../../../src/core/environ/win32 \
+					$(LOCAL_PATH)/../../../src/core/extension \
+					$(LOCAL_PATH)/../../../src/core \
+					$(LOCAL_PATH)/../../../src/core/external/onig \
+					$(LOCAL_PATH)/../../../src/core/external/opencv-2.4.13/modules/core/include \
+					$(LOCAL_PATH)/../../../src/core/external/opencv-2.4.13/modules/dynamicuda/include \
+					$(LOCAL_PATH)/../../../src/core/external/opencv-2.4.13/modules/imgproc/include \
+					$(LOCAL_PATH)/../../../src/core/external/opencv-2.4.13 \
+					$(LOCAL_PATH)/../../../src/core/external/freetype-2.5.0.1/include \
+					$(LOCAL_PATH)/../../../src/core/external/SDL2-2.0.10/include \
+					$(LOCAL_PATH)/../../../src/core/external/libogg-1.1.3/include \
+					$(LOCAL_PATH)/../../../src/core/external/libvorbis-1.2.0/include
+
+					
+
+
+					
+# FIXME: src/core/extension, two extension.h
+# TODO: modify main.cpp				
+
+LOCAL_CPPFLAGS := -DTJS_TEXT_OUT_CRLF -fexceptions
+#-DONIG_EXTERN=extern -DNOT_RUBY -DEXPORT
+LOCAL_CFLAGS := -DTJS_TEXT_OUT_CRLF 
+#-DONIG_EXTERN=extern -DNOT_RUBY -DEXPORT
+
+include $(BUILD_STATIC_LIBRARY)
+
+
+####################################
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := cpp_empty_test_shared
+
+LOCAL_MODULE_FILENAME := libcpp_empty_test
+
+LOCAL_SRC_FILES := main.cpp
 
 LOCAL_SRC_FILES += ../../../src/core/visual/ARM/tvpgl_arm.cpp
 
@@ -680,17 +735,19 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes \
 # FIXME: src/core/extension, two extension.h
 # TODO: modify main.cpp				
 
-LOCAL_CPPFLAGS := -DTJS_TEXT_OUT_CRLF 
+LOCAL_CPPFLAGS := -DTJS_TEXT_OUT_CRLF -fexceptions
 #-DONIG_EXTERN=extern -DNOT_RUBY -DEXPORT
 LOCAL_CFLAGS := -DTJS_TEXT_OUT_CRLF 
 #-DONIG_EXTERN=extern -DNOT_RUBY -DEXPORT
 
 #first top lib, next underly deps
-LOCAL_STATIC_LIBRARIES := cocos2dx_static vorbise ogg 
+LOCAL_STATIC_LIBRARIES := kirikiroid2ext cocos2dx_static vorbise ogg 
 LOCAL_SHARED_LIBRARIES := SDL2
 
 include $(BUILD_SHARED_LIBRARY)
 
-$(call import-module,.)
+$(call import-module,android/cpufeatures)
+$(call import-module,cocos)
+#$(call import-module,.)
 #../../../src/core/
 #$(call import-module,SDL2-2.0.10)

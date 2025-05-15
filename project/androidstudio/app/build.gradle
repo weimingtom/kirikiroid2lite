@@ -29,7 +29,7 @@ Thanks to everyone who tried to help!
         //for jni so
         ndk {
             //https://www.cnblogs.com/zhangzhxb/p/14493600.html
-            abiFilters 'armeabi'
+            abiFilters 'armeabi-v7a'
         }
     }
 

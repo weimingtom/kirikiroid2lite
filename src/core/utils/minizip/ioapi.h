@@ -23,7 +23,10 @@
 
 //#include "platform/CCPlatformConfig.h"
 
-#if (!defined(_WIN32)) && (!defined(WIN32))
+//https://forum.cocos.org/t/cocos2d-x-3-17/60390/141
+//using ::fgetpos;
+//(!defined(ANDROID)) added 
+#if (!defined(_WIN32)) && (!defined(WIN32)) && (!defined(ANDROID))
 
   // Linux needs this to support file operation on files larger then 4+GB
   // But might need better if/def to select just the platforms that needs them.
