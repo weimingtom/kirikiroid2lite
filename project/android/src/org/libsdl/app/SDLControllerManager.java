@@ -418,14 +418,14 @@ class SDLHapticHandler_API26 extends SDLHapticHandler {
                 stop(device_id);
                 return;
             }
-            try {
-                haptic.vib.vibrate(VibrationEffect.createOneShot(length, vibeValue));
-            }
-            catch (Exception e) {
+//            try {
+//                haptic.vib.vibrate(VibrationEffect.createOneShot(length, vibeValue));
+//            }
+//            catch (Exception e) {
                 // Fall back to the generic method, which uses DEFAULT_AMPLITUDE, but works even if
                 // something went horribly wrong with the Android 8.0 APIs.
                 haptic.vib.vibrate(length);
-            }
+//            }
         }
     }
 }
@@ -623,9 +623,9 @@ class SDLGenericMotionListener_API24 extends SDLGenericMotionListener_API12 {
             if (event.getSource() == InputDevice.SOURCE_MOUSE) {
                 int action = event.getActionMasked();
                 if (action == MotionEvent.ACTION_HOVER_MOVE) {
-                    float x = event.getAxisValue(MotionEvent.AXIS_RELATIVE_X);
-                    float y = event.getAxisValue(MotionEvent.AXIS_RELATIVE_Y);
-                    SDLActivity.onNativeMouse(0, action, x, y, true);
+//                    float x = event.getAxisValue(MotionEvent.AXIS_RELATIVE_X);
+//                    float y = event.getAxisValue(MotionEvent.AXIS_RELATIVE_Y);
+//                    SDLActivity.onNativeMouse(0, action, x, y, true);
                     return true;
                 }
             }
@@ -653,22 +653,22 @@ class SDLGenericMotionListener_API24 extends SDLGenericMotionListener_API12 {
 
     @Override
     public float getEventX(MotionEvent event) {
-        if (mRelativeModeEnabled) {
-            return event.getAxisValue(MotionEvent.AXIS_RELATIVE_X);
-        }
-        else {
+//        if (mRelativeModeEnabled) {
+//            return event.getAxisValue(MotionEvent.AXIS_RELATIVE_X);
+//        }
+//        else {
             return event.getX(0);
-        }
+//        }
     }
 
     @Override
     public float getEventY(MotionEvent event) {
-        if (mRelativeModeEnabled) {
-            return event.getAxisValue(MotionEvent.AXIS_RELATIVE_Y);
-        }
-        else {
+//        if (mRelativeModeEnabled) {
+//            return event.getAxisValue(MotionEvent.AXIS_RELATIVE_Y);
+//        }
+//        else {
             return event.getY(0);
-        }
+//        }
     }
 }
 
@@ -710,25 +710,25 @@ class SDLGenericMotionListener_API26 extends SDLGenericMotionListener_API24 {
                 }
                 break;
 
-            case InputDevice.SOURCE_MOUSE_RELATIVE:
-                action = event.getActionMasked();
-                switch (action) {
-                    case MotionEvent.ACTION_SCROLL:
-                        x = event.getAxisValue(MotionEvent.AXIS_HSCROLL, 0);
-                        y = event.getAxisValue(MotionEvent.AXIS_VSCROLL, 0);
-                        SDLActivity.onNativeMouse(0, action, x, y, false);
-                        return true;
-
-                    case MotionEvent.ACTION_HOVER_MOVE:
-                        x = event.getX(0);
-                        y = event.getY(0);
-                        SDLActivity.onNativeMouse(0, action, x, y, true);
-                        return true;
-
-                    default:
-                        break;
-                }
-                break;
+//            case InputDevice.SOURCE_MOUSE_RELATIVE:
+//                action = event.getActionMasked();
+//                switch (action) {
+//                    case MotionEvent.ACTION_SCROLL:
+//                        x = event.getAxisValue(MotionEvent.AXIS_HSCROLL, 0);
+//                        y = event.getAxisValue(MotionEvent.AXIS_VSCROLL, 0);
+//                        SDLActivity.onNativeMouse(0, action, x, y, false);
+//                        return true;
+//
+//                    case MotionEvent.ACTION_HOVER_MOVE:
+//                        x = event.getX(0);
+//                        y = event.getY(0);
+//                        SDLActivity.onNativeMouse(0, action, x, y, true);
+//                        return true;
+//
+//                    default:
+//                        break;
+//                }
+//                break;
 
             default:
                 break;
@@ -750,27 +750,27 @@ class SDLGenericMotionListener_API26 extends SDLGenericMotionListener_API24 {
 
     @Override
     public boolean setRelativeMouseEnabled(boolean enabled) {
-        if (!SDLActivity.isDeXMode() || (Build.VERSION.SDK_INT >= 27)) {
-            if (enabled) {
-                SDLActivity.getContentView().requestPointerCapture();
-            }
-            else {
-                SDLActivity.getContentView().releasePointerCapture();
-            }
-            mRelativeModeEnabled = enabled;
-            return true;
-        }
-        else
-        {
+//        if (!SDLActivity.isDeXMode() || (Build.VERSION.SDK_INT >= 27)) {
+//            if (enabled) {
+//                SDLActivity.getContentView().requestPointerCapture();
+//            }
+//            else {
+//                SDLActivity.getContentView().releasePointerCapture();
+//            }
+//            mRelativeModeEnabled = enabled;
+//            return true;
+//        }
+//        else
+//        {
             return false;
-        }
+//        }
     }
 
     @Override
     public void reclaimRelativeMouseModeIfNeeded()
     {
         if (mRelativeModeEnabled && !SDLActivity.isDeXMode()) {
-            SDLActivity.getContentView().requestPointerCapture();
+//            SDLActivity.getContentView().requestPointerCapture();
         }
     }
 

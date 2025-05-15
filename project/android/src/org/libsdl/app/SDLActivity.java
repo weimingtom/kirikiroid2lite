@@ -81,7 +81,7 @@ public class SDLActivity extends Activity implements View.OnSystemUiVisibilityCh
     protected static boolean mScreenKeyboardShown;
     protected static ViewGroup mLayout;
     protected static SDLClipboardHandler mClipboardHandler;
-    protected static Hashtable<Integer, PointerIcon> mCursors;
+//    protected static Hashtable<Integer, PointerIcon> mCursors;
     protected static int mLastCursorID;
     protected static SDLGenericMotionListener_API12 mMotionListener;
     protected static HIDDeviceManager mHIDDeviceManager;
@@ -137,13 +137,13 @@ public class SDLActivity extends Activity implements View.OnSystemUiVisibilityCh
      */
     protected String[] getLibraries() {
         return new String[] {
-            "hidapi",
+            //"hidapi",
             "SDL2",
             // "SDL2_image",
             // "SDL2_mixer",
             // "SDL2_net",
             // "SDL2_ttf",
-            "main"
+            //"main"
         };
     }
 
@@ -172,7 +172,7 @@ public class SDLActivity extends Activity implements View.OnSystemUiVisibilityCh
         mTextEdit = null;
         mLayout = null;
         mClipboardHandler = null;
-        mCursors = new Hashtable<Integer, PointerIcon>();
+//        mCursors = new Hashtable<Integer, PointerIcon>();
         mLastCursorID = 0;
         mSDLThread = null;
         mBrokenLibraries = false;
@@ -1484,16 +1484,16 @@ public class SDLActivity extends Activity implements View.OnSystemUiVisibilityCh
         Bitmap bitmap = Bitmap.createBitmap(colors, width, height, Bitmap.Config.ARGB_8888);
         ++mLastCursorID;
 
-        if (Build.VERSION.SDK_INT >= 24) {
-            try {
-                mCursors.put(mLastCursorID, PointerIcon.create(bitmap, hotSpotX, hotSpotY));
-            } catch (Exception e) {
-                return 0;
-            }
-        } else {
+//        if (Build.VERSION.SDK_INT >= 24) {
+//            try {
+//                mCursors.put(mLastCursorID, PointerIcon.create(bitmap, hotSpotX, hotSpotY));
+//            } catch (Exception e) {
+//                return 0;
+//            }
+//        } else {
             return 0;
-        }
-        return mLastCursorID;
+//        }
+//        return mLastCursorID;
     }
 
     /**
@@ -1501,16 +1501,16 @@ public class SDLActivity extends Activity implements View.OnSystemUiVisibilityCh
      */
     public static boolean setCustomCursor(int cursorID) {
 
-        if (Build.VERSION.SDK_INT >= 24) {
-            try {
-                mSurface.setPointerIcon(mCursors.get(cursorID));
-            } catch (Exception e) {
-                return false;
-            }
-        } else {
+//        if (Build.VERSION.SDK_INT >= 24) {
+//            try {
+//                mSurface.setPointerIcon(mCursors.get(cursorID));
+//            } catch (Exception e) {
+//                return false;
+//            }
+//        } else {
             return false;
-        }
-        return true;
+//        }
+//        return true;
     }
 
     /**
@@ -1556,14 +1556,15 @@ public class SDLActivity extends Activity implements View.OnSystemUiVisibilityCh
             cursor_type = 1002; //PointerIcon.TYPE_HAND;
             break;
         }
-        if (Build.VERSION.SDK_INT >= 24) {
-            try {
-                mSurface.setPointerIcon(PointerIcon.getSystemIcon(SDL.getContext(), cursor_type));
-            } catch (Exception e) {
-                return false;
-            }
-        }
-        return true;
+//        if (Build.VERSION.SDK_INT >= 24) {
+//            try {
+//                mSurface.setPointerIcon(PointerIcon.getSystemIcon(SDL.getContext(), cursor_type));
+//            } catch (Exception e) {
+//                return false;
+//            }
+//        }
+//        return true;
+        return false;
     }
 }
 
@@ -1772,12 +1773,12 @@ class SDLSurface extends SurfaceView implements SurfaceHolder.Callback,
 
         // Don't skip in MultiWindow.
         if (skip) {
-            if (Build.VERSION.SDK_INT >= 24) {
-                if (SDLActivity.mSingleton.isInMultiWindowMode()) {
-                    Log.v("SDL", "Don't skip in Multi-Window");
-                    skip = false;
-                }
-            }
+//            if (Build.VERSION.SDK_INT >= 24) {
+//                if (SDLActivity.mSingleton.isInMultiWindowMode()) {
+//                    Log.v("SDL", "Don't skip in Multi-Window");
+//                    skip = false;
+//                }
+//            }
         }
 
         if (skip) {

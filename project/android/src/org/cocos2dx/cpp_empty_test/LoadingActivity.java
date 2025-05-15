@@ -27,16 +27,11 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
-import org.cocos2dx.lib.Cocos2dxActivity;
 
 public class LoadingActivity extends Activity {
     private int stateStarted_ = 0;
@@ -66,7 +61,7 @@ public class LoadingActivity extends Activity {
     }
 
     @Override
-    public void onSaveInstanceState(@NonNull Bundle outState) {
+    public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt(STATE_STARTED, 1);
     }
@@ -75,17 +70,21 @@ public class LoadingActivity extends Activity {
     //原文链接：https://blog.csdn.net/zuo_er_lyf/article/details/82659426
     //https://www.dev2qa.com/android-read-write-external-storage-file-example/
     private final int REQUEST_CODE_WRITE_EXTERNAL_STORAGE_PERMISSION = 100;
-    private void checkPermissioin(){
-        // Check whether this app has write external storage permission or not.
-        int writeExternalStoragePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        // If do not grant write external storage permission.
-        if (writeExternalStoragePermission!= PackageManager.PERMISSION_GRANTED) {
-            // Request user to grant write external storage permission.
-            ActivityCompat.requestPermissions(this, new String[]{
-                    Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CODE_WRITE_EXTERNAL_STORAGE_PERMISSION);
-        } else {
-            startActivity(new Intent(this, AppActivity.class));
-        }
+    private void checkPermissioin() {
+    	if (Build.VERSION.SDK_INT >= 23) { //for Android 6.0
+	        // Check whether this app has write external storage permission or not.
+	    	int writeExternalStoragePermission = this.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+	        // If do not grant write external storage permission.
+	        if (writeExternalStoragePermission!= PackageManager.PERMISSION_GRANTED) {
+	            // Request user to grant write external storage permission.
+	            this.requestPermissions(new String[]{
+	                    Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CODE_WRITE_EXTERNAL_STORAGE_PERMISSION);
+	        } else {
+	            startActivity(new Intent(this, AppActivity.class));
+	        }
+    	} else {
+    	    startActivity(new Intent(this, AppActivity.class));
+	    }
     }
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {

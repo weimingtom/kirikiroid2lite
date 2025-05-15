@@ -28,6 +28,8 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.egl.EGLDisplay;
 
 import org.cocos2dx.lib.Cocos2dxHelper.Cocos2dxHelperListener;
+import org.libsdl.app.SDLActivity;
+
 import com.chukong.cocosplay.client.CocosPlayClient;
 
 import android.app.Activity;
@@ -46,7 +48,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.opengl.GLSurfaceView;
 
-public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelperListener {
+public abstract class Cocos2dxActivity extends SDLActivity/*Activity*/ implements Cocos2dxHelperListener {
     // ===========================================================
     // Constants
     // ===========================================================

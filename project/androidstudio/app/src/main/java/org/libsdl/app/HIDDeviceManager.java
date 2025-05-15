@@ -31,11 +31,15 @@ public class HIDDeviceManager {
     private static int sManagerRefCount = 0;
 
     public static HIDDeviceManager acquire(Context context) {
-        if (sManagerRefCount == 0) {
-            sManager = new HIDDeviceManager(context);
-        }
-        ++sManagerRefCount;
-        return sManager;
+    	if (false) {
+	        if (sManagerRefCount == 0) {
+	            sManager = new HIDDeviceManager(context);
+	        }
+	        ++sManagerRefCount;
+	        return sManager;
+    	} else {
+    		return null;
+    	}
     }
 
     public static void release(HIDDeviceManager manager) {

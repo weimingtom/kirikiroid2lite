@@ -256,6 +256,7 @@ public:
 	void InitMixer() {
 		if (SDL_Init(SDL_INIT_AUDIO) < 0) { // for format converter
 			SDL_Log("Fail to initialize audio.");
+			SDL_Log("%s Fail to initialize audio : %s", "WaveMixer.cpp", SDL_GetError());
 			return;
 		}
 	}
@@ -781,6 +782,7 @@ public:
 	void InitMixer() {
 		if (SDL_Init(SDL_INIT_AUDIO) < 0) { // for format converter
 			SDL_Log("Fail to initialize audio.");
+			SDL_Log("%s Fail to initialize audio : %s", "WaveMixer.cpp", SDL_GetError());
 			return;
 		}
 	}
@@ -1325,6 +1327,7 @@ public:
 	void InitMixer() {
 		if (SDL_Init(SDL_INIT_AUDIO) < 0) { // for format converter
 			SDL_Log("Fail to initialize audio.");
+			SDL_Log("%s Fail to initialize audio : %s", "WaveMixer.cpp", SDL_GetError());
 			return;
 		}
 	}
@@ -1840,6 +1843,7 @@ public:
 	void InitMixer() {
 		if (SDL_Init(SDL_INIT_AUDIO) < 0) { // for format converter
 			SDL_Log("Fail to initialize audio.");
+			SDL_Log("%s Fail to initialize audio : %s", "WaveMixer.cpp", SDL_GetError());
 			return;
 		}
 	}
