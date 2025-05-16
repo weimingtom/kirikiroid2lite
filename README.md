@@ -20,6 +20,8 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * Android support: with many bugs now.    
 
 ## History  
+* 2025-05-15 : Adding Android audio function and migrate to NDK r25, but Windows version compiling status is unknown.  
+* 2024-12-21 : Adding Windows audio function.  
 * 2020-06-25 13:23 : first commit on github, migrated from gitee to github, first available version for Android NDK and Win7 VS2013        
 * 2019-03-17 : (gitee) Merge pthread project  
 * 2019-02-02 : (gitee) Merge OpenCV2 project  
