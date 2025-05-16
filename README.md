@@ -13,6 +13,10 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
   牡丹之爱，宜乎众矣！  
   ——周敦颐《爱莲说》    
 ```
+```
+  我自横刀向天笑，去留肝胆两昆仑
+  ——谭嗣同《狱中题壁》
+```
 
 ## Status  
 * Working in progress.    
