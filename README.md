@@ -40,8 +40,9 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 ## How to build for Android  
 * Modify project\android\console.bat, point to NDK path.  
 * Run project\android\console.bat  
-* Run ndk-build  
+* Run ndk-build, or ndk-build -j8, or ndk-build NDK_DEBUG=1 V=1.   
 * Import, compile and run with Android ADT, see project\android\ .project   
+* Or import, compile and run with Android Studio, see project\androidstudio     
 
 ## Minimum version of Cocos2d-x  
 * VS2013 version cocos2d-x 3.6, see   
