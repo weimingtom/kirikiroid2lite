@@ -2,7 +2,8 @@
 [WIP] kirikiroid2 lite version, without most dependencies.    
 Adding audio function for Android and Windows since 2025/5/15 and 2024/12/21.     
 NOTE: Kirikiroid2lite is a mod about kirikiroid2 and cocos2d-x framework,  
-it's **NOT** a fork of kirikiri2 or kirikiriz, so it may be not what you want.  
+it's **NOT** a fork of kirikiri2 and kirikiriz, so it may be not what you want.  
+It is just for hacking code. You had better use krkrsdl2 or other implementations instead: https://github.com/krkrsdl2/krkrsdl2   
 ```
   予谓菊，花之隐逸者也；  
   牡丹，花之富贵者也；  
