@@ -220,3 +220,7 @@ iTVPSoundBuffer* TVPCreateSoundBuffer(tTVPWaveFormat &fmt, int bufcount)
 
 ## Bugs
 * Only support software renderer (软件渲染器) in the global settings, not support OpenGL renderer（OpenGL渲染器，实验性）
+
+## SDCard permission check
+* If you want to skip permission check, you need to add android:requestLegacyExternalStorage, 
+* but not recommended, I use both
