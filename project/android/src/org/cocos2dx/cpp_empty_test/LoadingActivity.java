@@ -56,7 +56,7 @@ public class LoadingActivity extends Activity {
         }
 
         if (stateStarted == 0) {
-            checkPermissioin();
+            checkPermission();
         }
     }
 
@@ -67,10 +67,10 @@ public class LoadingActivity extends Activity {
     }
 
     private static final String STATE_STARTED = "STATE_STARTED";
-    //原文链接：https://blog.csdn.net/zuo_er_lyf/article/details/82659426
+    //https://blog.csdn.net/zuo_er_lyf/article/details/82659426
     //https://www.dev2qa.com/android-read-write-external-storage-file-example/
     private final int REQUEST_CODE_WRITE_EXTERNAL_STORAGE_PERMISSION = 100;
-    private void checkPermissioin() {
+    private void checkPermission() {
     	if (Build.VERSION.SDK_INT >= 23) { //for Android 6.0
 	        // Check whether this app has write external storage permission or not.
 	    	int writeExternalStoragePermission = this.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);
