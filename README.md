@@ -18,6 +18,10 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
   ——谭嗣同《狱中题壁》
 ```
 
+## Original code  
+* https://github.com/zeas2/Kirikiroid2/tree/1.3.8  
+* https://gitee.com/weimingtom/kirikiroid2_fork/blob/master/vendor/Kirikiroid2_1.3.8_github_20180625.rar   
+
 ## Status  
 * Working in progress.    
 * Windows support: Windows 7 success.  
