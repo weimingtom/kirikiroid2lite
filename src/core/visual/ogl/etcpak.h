@@ -1,5 +1,6 @@
 #pragma once
 #include <functional>
+#include <cstddef> //for size_t
 
 // from https://bitbucket.org/wolfpld/etcpak.git
 

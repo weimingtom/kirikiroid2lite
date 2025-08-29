@@ -80,12 +80,15 @@ public:
 	void fireReleaseUpEvent() {
 		bool newstat = !_isSelected;
 		setSelected(newstat);
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 		dispatchSelectChangedEvent(newstat);
 #else
 #if defined(_MSC_VER)
 		OutputDebugString(L"===============HackCheckBox fireReleaseUpEvent\n");
 		//__debugbreak(); throw;
+#elif defined(LINUX)
+		selectedEvent();
+		fprintf(stderr, "===============HackCheckBox fireReleaseUpEvent\n");
 #elif defined(ANDROID)
 		throw;
 #endif

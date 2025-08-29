@@ -32,7 +32,7 @@
 
 NS_CC_BEGIN
 
-class FontCharMap : public Font
+class FontCharMap : public Font_
 {  
 public:
     static FontCharMap * create(const std::string& charMapFile, int itemWidth, int itemHeight, int startCharMap);

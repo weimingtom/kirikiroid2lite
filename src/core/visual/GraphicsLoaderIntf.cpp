@@ -675,7 +675,7 @@ void TVPInternalLoadBMP(void *callbackdata,
 	catch(...)
 	{
 		TJSAlignedDealloc(readbuf);
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)	
 		__debugbreak(); throw;
@@ -766,7 +766,7 @@ void TVPLoadBMP(void* formatdata, void *callbackdata, tTVPGraphicSizeCallback si
 	catch(...)
 	{
 		if(palette) delete [] palette;
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)	
 		__debugbreak(); throw;
@@ -914,7 +914,7 @@ void TVPSaveAsBMP( void* formatdata, tTJSBinaryStream* dst, const iTVPBaseBitmap
 	catch(...)
 	{
 		if(buf) delete [] buf;
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)	
 		__debugbreak(); throw;
@@ -1270,7 +1270,7 @@ static void TVPMakeAlphaFromAdaptiveColor(tTVPBitmap *dest)
 	catch(...)
 	{
 		delete [] buffer;
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)	
 		__debugbreak(); throw;
@@ -1323,7 +1323,7 @@ iTJSDispatch2 * TVPMetaInfoPairsToDictionary(
 	catch(...)
 	{
 		dic->Release();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)	
 		__debugbreak(); throw;
@@ -1621,7 +1621,7 @@ void TVPPushGraphicCache( const ttstr& nname, tTVPBitmap* bmp, std::vector<tTVPG
 		} catch(...) {
 			if(meta) delete meta;
 			if(data) data->Release();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)	
 			__debugbreak(); throw;
@@ -1881,7 +1881,7 @@ static tTVPBitmap* TVPInternalLoadBitmap(const ttstr &_name,
 	    {
 			if(data.Buffer) delete [] data.Buffer;
             if(data.Dest) data.Dest->Release();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)	
 			__debugbreak(); throw;
@@ -1913,13 +1913,13 @@ static iTVPTexture2D *TVPInternalLoadTexture(const ttstr &_name,
 		return nullptr;
 	}
 	tTVPStreamHolder holder(name);
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 	return TVPLoadPVRv3(holder.Get(), [MetaInfo](const ttstr& k, const tTJSVariant& v) {
 		if (!*MetaInfo) *MetaInfo = new std::vector<tTVPGraphicMetaInfoPair>;
 		(*MetaInfo)->push_back(tTVPGraphicMetaInfoPair(k, v));
 	});
 #else
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 	throw;
 #elif defined(_MSC_VER)	
 	__debugbreak(); throw;
@@ -1987,7 +1987,7 @@ void TVPLoadGraphicProvince(tTVPBaseBitmap *dest, const ttstr &name, tjs_int key
     catch (...) {
         if (mi) delete mi;
         if (data) data->Release();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)	
 		__debugbreak(); throw;
@@ -2111,7 +2111,7 @@ int TVPLoadGraphic(iTVPBaseBitmap *dest, const ttstr &name, tjs_int32 keyidx,
 	{
 		if(mi) delete mi;
 		if(data) data->Release();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)	
 		__debugbreak(); throw;
@@ -2335,7 +2335,7 @@ private:
         {
             if(mi) delete mi;
             if(data) data->Release();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)	
 			__debugbreak(); throw;

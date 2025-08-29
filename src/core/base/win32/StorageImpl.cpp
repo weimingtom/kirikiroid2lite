@@ -901,7 +901,7 @@ tTVPLocalFileStream::tTVPLocalFileStream(const ttstr &origname,
 	case TJS_BS_UPDATE:
 		rw |= O_RDWR;			    break;
 	}
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 	;
 #elif defined(_MSC_VER)
 	rw |= O_BINARY;
@@ -914,7 +914,7 @@ tTVPLocalFileStream::tTVPLocalFileStream(const ttstr &origname,
 	if (Handle < 0) {
 		if (access == TJS_BS_APPEND || access == TJS_BS_UPDATE) {
 			// use whole file writing
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			Handle = open(holder, O_RDONLY, 0666);
 #elif defined(_MSC_VER)
 			Handle = open(holder, O_RDONLY | O_BINARY, 0666);

@@ -843,8 +843,10 @@ namespace cocostudio
         
         std::string titleText = options->text()->c_str();
         button->setTitleText(titleText);
-        
+printf("<<< ButtonReader: button->setTitleText == %s\n", titleText.c_str());        
         auto textColor = options->textColor();
+//Color4B titleColor(255, 255, 255, 255);        
+        //Color3B titleColor(0, 0, 0);
         Color3B titleColor(textColor->r(), textColor->g(), textColor->b());
         button->setTitleColor(titleColor);
         

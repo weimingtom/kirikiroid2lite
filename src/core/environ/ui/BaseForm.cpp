@@ -29,7 +29,8 @@ cocos2d::Node * NodeMap::findController<cocos2d::Node>(const std::string &name, 
 		std::string warntext("Node ");
 		warntext += name.c_str();
 		warntext += " not exist in ";
-		warntext += FileName;
+		warntext += FileName ? FileName : "<<nullptr>>";
+		fprintf(stderr, "<<<<<<< %s : %s\n", warntext.c_str(), "Fail to load ui");
 		TVPShowSimpleMessageBox(warntext, "Fail to load ui");
 	}
 	return nullptr;
@@ -50,6 +51,7 @@ void NodeMap::onLoadError(const std::string &name) const
 	warntext += name.c_str();
 	warntext += " wrong controller type in ";
 	warntext += FileName;
+	fprintf(stderr, "<<<<<<<2 %s : %s\n", warntext.c_str(), "Fail to load ui");
 	TVPShowSimpleMessageBox(warntext, "Fail to load ui");
 }
 
@@ -70,6 +72,7 @@ Node* CSBReader::Load(const char *filename) {
 		}
 	});
 	if (!ret) {
+		fprintf(stderr, "<<<<<<<3 %s : %s\n", filename, "Fail to load ui file");
 		TVPShowSimpleMessageBox(filename, "Fail to load ui file");
 	}
 	return ret;
@@ -114,18 +117,31 @@ bool iTVPBaseForm::initFromFile(const char *navibar, const char *body, const cha
 		//BottomBar.Panel = static_cast<ListView*>(reader.findController("panel"));
 		bindFooterController(reader);
 	}
+	if (body) {
 #if 1
 	RootNode = static_cast<Widget*>(reader.Load(body));
 #else
 	RootNode = dynamic_cast<Widget*>(reader.Load(body));
 #endif
+	}
+#if 0	
 	if (!RootNode) {
 		return false;
 	}
+#endif	
 	if (!parent) {
 		parent = this;
 	}
+if (RootNode) {	
 	parent->addChild(RootNode);
+}
+
+#if 0
+//auto
+	cocos2d::Node * test_NaviBar_Root = reader.Load("ui/NaviBarWithMenu2.csb");
+	parent->addChild(test_NaviBar_Root);
+#endif
+
 	if (NaviBar.Root) parent->addChild(NaviBar.Root);
 	if (BottomBar.Root) parent->addChild(BottomBar.Root);
 	rearrangeLayout();
@@ -134,37 +150,41 @@ bool iTVPBaseForm::initFromFile(const char *navibar, const char *body, const cha
 }
 
 void iTVPBaseForm::rearrangeLayout() {
-	float scale = TVPMainScene::GetInstance()->getUIScale();
-	Size sceneSize = TVPMainScene::GetInstance()->getUINodeSize();
+	//float scale = TVPMainScene::GetInstance()->getUIScale();
+	float scale = 1.0f; //FIXME:???why, use design resolution
+        Size sceneSize = TVPMainScene::GetInstance()->getUINodeSize();
 	setContentSize(sceneSize);
-	Size bodySize = RootNode->getParent()->getContentSize();
-	if (NaviBar.Root) {
-		Size size = NaviBar.Root->getContentSize();
-		size.width = bodySize.width / scale;
-		NaviBar.Root->setContentSize(size);
-		NaviBar.Root->setScale(scale);
-		ui::Helper::doLayout(NaviBar.Root);
-		size.height *= scale;
-		bodySize.height -= size.height;
-		NaviBar.Root->setPosition(0, bodySize.height);
-	}
-	if (BottomBar.Root) {
-		Size size = BottomBar.Root->getContentSize();
-		size.width = bodySize.width / scale;
-		BottomBar.Root->setContentSize(size);
-		BottomBar.Root->setScale(scale);
-		ui::Helper::doLayout(BottomBar.Root);
-		size.height *= scale;
-		bodySize.height -= size.height;
-		BottomBar.Root->setPosition(Vec2::ZERO);
-	}
-	if (RootNode) {
-		bodySize.height /= scale;
-		bodySize.width /= scale;
-		RootNode->setContentSize(bodySize);
-		RootNode->setScale(scale);
-		ui::Helper::doLayout(RootNode);
-		if (BottomBar.Root) RootNode->setPosition(Vec2(0, BottomBar.Root->getContentSize().height * scale));
+	if (RootNode)
+	{
+		Size bodySize = RootNode->getParent()->getContentSize();
+		if (NaviBar.Root) {
+			Size size = NaviBar.Root->getContentSize();
+			size.width = bodySize.width / scale;
+			NaviBar.Root->setContentSize(size);
+			NaviBar.Root->setScale(scale);
+			ui::Helper::doLayout(NaviBar.Root);
+			size.height *= scale;
+			bodySize.height -= size.height;
+			NaviBar.Root->setPosition(0, bodySize.height);
+		}
+		if (BottomBar.Root) {
+			Size size = BottomBar.Root->getContentSize();
+			size.width = bodySize.width / scale;
+			BottomBar.Root->setContentSize(size);
+			BottomBar.Root->setScale(scale);
+			ui::Helper::doLayout(BottomBar.Root);
+			size.height *= scale;
+			bodySize.height -= size.height;
+			BottomBar.Root->setPosition(Vec2::ZERO);
+		}
+		if (RootNode) {
+			bodySize.height /= scale;
+			bodySize.width /= scale;
+			RootNode->setContentSize(bodySize);
+			RootNode->setScale(scale);
+			ui::Helper::doLayout(RootNode);
+			if (BottomBar.Root) RootNode->setPosition(Vec2(0, BottomBar.Root->getContentSize().height * scale));
+		}
 	}
 }
 

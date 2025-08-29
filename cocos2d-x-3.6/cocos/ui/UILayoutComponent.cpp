@@ -31,7 +31,7 @@ NS_CC_BEGIN
 
 namespace ui {
     LayoutComponent::LayoutComponent()
-        :_horizontalEdge(HorizontalEdge::None)
+        :_horizontalEdge(HorizontalEdge::None__)
         , _verticalEdge(VerticalEdge::None_)
         , _leftMargin(0)
         , _rightMargin(0)
@@ -215,7 +215,7 @@ namespace ui {
         _usingPositionPercentX = isUsed;
         if (_usingPositionPercentX)
         {
-            _horizontalEdge = HorizontalEdge::None;
+            _horizontalEdge = HorizontalEdge::None__;
         }
     }
 
@@ -271,7 +271,7 @@ namespace ui {
     void LayoutComponent::setHorizontalEdge(HorizontalEdge hEage)
     {
         _horizontalEdge = hEage;
-        if (_horizontalEdge != HorizontalEdge::None)
+        if (_horizontalEdge != HorizontalEdge::None__)
         {
             _usingPositionPercentX = false;
         }
@@ -564,7 +564,7 @@ namespace ui {
 
         switch (this->_horizontalEdge)
         {
-        case HorizontalEdge::None:
+        case HorizontalEdge::None__:
             if (_usingStretchWidth && !_isPercentOnly)
             {
                 ownerSize.width = parentSize.width * _percentWidth;
@@ -592,7 +592,7 @@ namespace ui {
                 ownerSize.width = parentSize.width * _percentWidth;
             ownerPosition.x = parentSize.width - (_rightMargin + (1 - ownerAnchor.x) * ownerSize.width);
             break;
-        case HorizontalEdge::Center:
+        case HorizontalEdge::Center__:
             if (_isPercentOnly)
                 break;
             if (_usingStretchWidth)

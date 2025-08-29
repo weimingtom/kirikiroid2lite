@@ -66,7 +66,7 @@ tTVPLocalTempStorageHolder::tTVPLocalTempStorageHolder(const ttstr & name)
 			catch(...)
 			{
 				delete [] buffer;
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 				throw;
 #elif defined(_MSC_VER)
 				__debugbreak(); throw;
@@ -80,7 +80,7 @@ tTVPLocalTempStorageHolder::tTVPLocalTempStorageHolder(const ttstr & name)
 		{
 			if(FileMustBeDeleted) TVPRemoveFile(LocalName);
 			if(FolderMustBeDeleted) TVPRemoveFolder(LocalFolder);
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)
 			__debugbreak(); throw;
@@ -311,7 +311,7 @@ tTVPPartialStream::tTVPPartialStream(tTJSBinaryStream *stream, tjs_uint64 start,
 	{
 		delete Stream;
 		Stream = NULL;
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)
 		__debugbreak(); throw;
@@ -387,7 +387,7 @@ tjs_uint64 TJS_INTF_METHOD tTVPPartialStream::GetSize()
 //---------------------------------------------------------------------------
 
 
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 extern "C" {
 #include "libarchive/archive.h"
 #include "libarchive/archive_entry.h"
@@ -551,7 +551,7 @@ int tTVPUnpackArchive::Prepare(const std::string &path, const std::string &_outp
 	OutPath = _outpath + "/";
 	int file_count = 0;
 	tjs_uint64 size_count = 0;
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 	ArcObj = archive_read_new();
 	archive_read_support_filter_all(ArcObj);
 	archive_read_support_format_all(ArcObj);
@@ -623,7 +623,7 @@ void tTVPUnpackArchive::Process()
 {
 	if (StopRequired)
 		return;
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 	tjs_uint64 total_size = 0;
 	if (pTVPArc) {
 		int file_count = pTVPArc->GetCount();
@@ -752,7 +752,7 @@ tTVPUnpackArchive::~tTVPUnpackArchive()
 		FpIn = nullptr;
 	}
 	if (ArcObj) {
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 		archive_read_close(ArcObj);
 		archive_free(ArcObj);
 #endif

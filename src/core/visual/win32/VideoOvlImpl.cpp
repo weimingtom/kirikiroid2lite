@@ -170,7 +170,7 @@ void tTJSNI_VideoOverlay::Open(const ttstr &_name)
 		catch(...)
 		{
 			if(stream0) delete stream0;
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)	
 			__debugbreak(); throw;
@@ -196,7 +196,7 @@ void tTJSNI_VideoOverlay::Open(const ttstr &_name)
 				CachedOverlay->Release();
 				CachedOverlay = nullptr;
 			}
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 			if (Mode == vomLayer)
 				GetVideoLayerObject(EventQueue.GetOwner(), istream, name.c_str(), ext.c_str(), size, &VideoOverlay);
 			else if(Mode == vomMixer)
@@ -206,7 +206,7 @@ void tTJSNI_VideoOverlay::Open(const ttstr &_name)
 			else
 				GetVideoOverlayObject(EventQueue.GetOwner(), istream, name.c_str(), ext.c_str(), size, &VideoOverlay);
 #else
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)	
 			__debugbreak(); throw;
@@ -246,7 +246,7 @@ void tTJSNI_VideoOverlay::Open(const ttstr &_name)
 	{
 		if(istream) istream->Release();
 		Close();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)	
 		__debugbreak(); throw;
@@ -317,7 +317,7 @@ void tTJSNI_VideoOverlay::Shutdown()
 	catch(...)
 	{
 		CanDeliverEvents = c;
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)	
 		__debugbreak(); throw;

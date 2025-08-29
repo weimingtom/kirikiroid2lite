@@ -95,7 +95,8 @@ void Terrain::onDraw(const Mat4 &transform, uint32_t flags)
 {
     auto glProgram = getGLProgram();
     glProgram->use();
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) 
+//|| (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
     if(_isDrawWire)
     {
         glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
@@ -202,7 +203,8 @@ void Terrain::onDraw(const Mat4 &transform, uint32_t flags)
     {
         glEnable(GL_BLEND);
     }
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) 
+//|| (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
     if(_isDrawWire)//reset state.
     {
         glPolygonMode(GL_FRONT_AND_BACK,GL_FILL);

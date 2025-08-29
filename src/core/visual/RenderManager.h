@@ -81,7 +81,7 @@ public:
 
 struct TVPTextureFormat {
 	enum e {
-		None = 0,
+		None_ = 0,
 		Gray = 1,
 		RGB = 3,
 		RGBA = 4,

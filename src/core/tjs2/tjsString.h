@@ -419,7 +419,9 @@ public:
 
 	TJS_CONST_METHOD_DEF(tjs_int, GetLen, ())
 	{
-#ifdef __CODEGUARD__
+//#ifdef __CODEGUARD__
+//FIXME:#if defined(LINUX), if without this code, then gcc -O3 -g0 and run will crash
+#if 1
 		if(!Ptr) return 0; // tTJSVariantString::GetLength can return zero if 'this' is NULL
 #endif
 		return Ptr->GetLength();

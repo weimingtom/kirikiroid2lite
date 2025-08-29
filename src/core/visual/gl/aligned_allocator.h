@@ -3,7 +3,7 @@
 #ifndef __ALIGNED_ALLOCATOR_H__
 #define __ALIGNED_ALLOCATOR_H__
 
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 
 #else
 #include <intrin.h>
@@ -33,7 +33,7 @@ struct aligned_allocator : public std::allocator<T>
 };
 
 
-#elif defined(ANDROID)
+#elif defined(ANDROID) || defined(LINUX)
 //https://github.com/MegEngine/MegEngine/blob/b938b1cf3cd50cf46a746d416824bd0d3e70060a/dnn/src/common/cv/aligned_allocator.h
 
 // STL allocator

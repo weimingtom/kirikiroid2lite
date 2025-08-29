@@ -25,6 +25,10 @@ THE SOFTWARE.
 
 #include "CCGLViewImpl-desktop.h"
 
+#include <stdlib.h>
+#if !defined(_MSC_VER)
+#include <unistd.h>
+#endif
 #include <unordered_map>
 
 #include "platform/CCApplication.h"
@@ -37,11 +41,165 @@ THE SOFTWARE.
 #include "base/ccUtils.h"
 #include "base/ccUTF8.h"
 
+#define USE_SDL2 1
+#if USE_SDL2
+//SDL2, see SDL2/test/checkkeys.c and SDL2/test/loopwave.c
+#include <SDL2/SDL.h>
+SDL_Window *window;
+int done;
+
+/* Call this instead of exit(), so we can clean up SDL: atexit() is evil. */
+static void
+quit(int rc)
+{
+    SDL_Quit();
+    exit(rc);
+}
+
+static void
+print_string(char **text, size_t *maxlen, const char *fmt, ...)
+{
+    int len;
+    va_list ap;
+
+    va_start(ap, fmt);
+    len = SDL_vsnprintf(*text, *maxlen, fmt, ap);
+    if (len > 0) {
+        *text += len;
+        if ( ((size_t) len) < *maxlen ) {
+            *maxlen -= (size_t) len;
+        } else {
+            *maxlen = 0;
+        }
+    }
+    va_end(ap);
+}
+
+static void
+print_modifiers(char **text, size_t *maxlen)
+{
+    int mod;
+    print_string(text, maxlen, " modifiers:");
+    mod = SDL_GetModState();
+    if (!mod) {
+        print_string(text, maxlen, " (none)");
+        return;
+    }
+    if (mod & KMOD_LSHIFT)
+        print_string(text, maxlen, " LSHIFT");
+    if (mod & KMOD_RSHIFT)
+        print_string(text, maxlen, " RSHIFT");
+    if (mod & KMOD_LCTRL)
+        print_string(text, maxlen, " LCTRL");
+    if (mod & KMOD_RCTRL)
+        print_string(text, maxlen, " RCTRL");
+    if (mod & KMOD_LALT)
+        print_string(text, maxlen, " LALT");
+    if (mod & KMOD_RALT)
+        print_string(text, maxlen, " RALT");
+    if (mod & KMOD_LGUI)
+        print_string(text, maxlen, " LGUI");
+    if (mod & KMOD_RGUI)
+        print_string(text, maxlen, " RGUI");
+    if (mod & KMOD_NUM)
+        print_string(text, maxlen, " NUM");
+    if (mod & KMOD_CAPS)
+        print_string(text, maxlen, " CAPS");
+    if (mod & KMOD_MODE)
+        print_string(text, maxlen, " MODE");
+}
+
+static void
+PrintModifierState()
+{
+    char message[512];
+    char *spot;
+    size_t left;
+
+    spot = message;
+    left = sizeof(message);
+
+    print_modifiers(&spot, &left);
+    SDL_Log("Initial state:%s\n", message);
+}
+
+static void
+PrintKey(SDL_Keysym * sym, SDL_bool pressed, SDL_bool repeat)
+{
+    char message[512];
+    char *spot;
+    size_t left;
+
+    spot = message;
+    left = sizeof(message);
+
+    /* Print the keycode, name and state */
+    if (sym->sym) {
+        print_string(&spot, &left,
+                "Key %s:  scancode %d = %s, keycode 0x%08X = %s ",
+                pressed ? "pressed " : "released",
+                sym->scancode,
+                SDL_GetScancodeName(sym->scancode),
+                sym->sym, SDL_GetKeyName(sym->sym));
+    } else {
+        print_string(&spot, &left,
+                "Unknown Key (scancode %d = %s) %s ",
+                sym->scancode,
+                SDL_GetScancodeName(sym->scancode),
+                pressed ? "pressed " : "released");
+    }
+    print_modifiers(&spot, &left);
+    if (repeat) {
+        print_string(&spot, &left, " (repeat)");
+    }
+    SDL_Log("%s\n", message);
+}
+
+static void
+PrintText(char *eventtype, char *text)
+{
+    char *spot, expanded[1024];
+
+    expanded[0] = '\0';
+    for ( spot = text; *spot; ++spot )
+    {
+        size_t length = SDL_strlen(expanded);
+        SDL_snprintf(expanded + length, sizeof(expanded) - length, "\\x%.2x", (unsigned char)*spot);
+    }
+    SDL_Log("%s Text (%s): \"%s%s\"\n", eventtype, expanded, *text == '"' ? "\\" : "", text);
+}
+
+#endif
+
+// <EGL/egl.h> exists since android 2.3
+#include <EGL/egl.h>
+PFNGLGENVERTEXARRAYSOESPROC glGenVertexArraysOESEXT = 0;
+PFNGLBINDVERTEXARRAYOESPROC glBindVertexArrayOESEXT = 0;
+PFNGLDELETEVERTEXARRAYSOESPROC glDeleteVertexArraysOESEXT = 0;
+
+//PFNGLMAPBUFFEROESPROC glMapBufferOES = 0;
+//PFNGLUNMAPBUFFEROESPROC glUnmapBufferOES = 0;
+//PFNGLGETBUFFERPOINTERVOESPROC glGetBufferPointervOES = 0;
+
+void initExtensions() {
+     glGenVertexArraysOESEXT = (PFNGLGENVERTEXARRAYSOESPROC)eglGetProcAddress("glGenVertexArraysOES");
+     glBindVertexArrayOESEXT = (PFNGLBINDVERTEXARRAYOESPROC)eglGetProcAddress("glBindVertexArrayOES");
+     glDeleteVertexArraysOESEXT = (PFNGLDELETEVERTEXARRAYSOESPROC)eglGetProcAddress("glDeleteVertexArraysOES");
+
+
+ //   glMapBufferOES = (PFNGLMAPBUFFEROESPROC)eglGetProcAddress("glMapBufferOES");
+ //   glUnmapBufferOES = (PFNGLUNMAPBUFFEROESPROC)eglGetProcAddress("glUnmapBufferOES");
+ //   glGetBufferPointervOES = (PFNGLGETBUFFERPOINTERVOESPROC)eglGetProcAddress("glGetBufferPointervOES");
+}
+
 
 NS_CC_BEGIN
 
 // GLFWEventHandler
 
+#if USE_NO_GLFW
+
+#else
 class GLFWEventHandler
 {
 public:
@@ -257,6 +415,7 @@ static keyCodeItem g_keyCodeStructArray[] = {
     { GLFW_KEY_MENU            , EventKeyboard::KeyCode::KEY_MENU          },
     { GLFW_KEY_LAST            , EventKeyboard::KeyCode::KEY_NONE          }
 };
+#endif
 
 //////////////////////////////////////////////////////////////////////////
 // implement GLViewImpl
@@ -270,12 +429,20 @@ GLViewImpl::GLViewImpl()
 , _isRetinaEnabled(false)
 , _retinaFactor(1)
 , _frameZoomFactor(1.0f)
+#if USE_NO_GLFW
+
+#else
 , _mainWindow(nullptr)
 , _monitor(nullptr)
+#endif
 , _mouseX(0.0f)
 , _mouseY(0.0f)
 {
+initExtensions();
     _viewName = "cocos2dx";
+#if USE_NO_GLFW
+
+#else	
     g_keyCodeMap.clear();
     //for (auto& item : g_keyCodeStructArray)
     for (int i = 0; i < sizeof(g_keyCodeStructArray) / sizeof(g_keyCodeStructArray[0]); ++i)
@@ -288,19 +455,114 @@ GLViewImpl::GLViewImpl()
 
     glfwSetErrorCallback(GLFWEventHandler::onGLFWError);
     glfwInit();
+#endif
+
+#if USE_SDL2
+    /* Enable standard application logging */
+    SDL_LogSetPriority(SDL_LOG_CATEGORY_APPLICATION, SDL_LOG_PRIORITY_INFO);
+
+    /* Load the SDL library */
+    if (SDL_Init(SDL_INIT_AUDIO|SDL_INIT_EVENTS | SDL_INIT_JOYSTICK | SDL_INIT_GAMECONTROLLER ) < 0) {
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't initialize SDL: %s\n", SDL_GetError());
+        quit(1);
+    }
+
+//------testgamecontroller.c
+    int i;
+    int nController = 0;
+    int retcode = 0;
+    char guid[64];
+    SDL_GameController *gamecontroller;
+    /* Print information about the controller */
+    for (i = 0; i < SDL_NumJoysticks(); ++i) {
+        const char *name;
+        const char *description;
+
+        SDL_JoystickGetGUIDString(SDL_JoystickGetDeviceGUID(i),
+                                  guid, sizeof (guid));
+
+        if ( SDL_IsGameController(i) )
+        {
+            nController++;
+            name = SDL_GameControllerNameForIndex(i);
+            description = "Controller";
+        } else {
+            name = SDL_JoystickNameForIndex(i);
+            description = "Joystick";
+        }
+        SDL_Log("%s %d: %s (guid %s, VID 0x%.4x, PID 0x%.4x)\n",
+            description, i, name ? name : "Unknown", guid,
+            SDL_JoystickGetDeviceVendor(i), SDL_JoystickGetDeviceProduct(i));
+    }
+    SDL_Log("There are %d game controller(s) attached (%d joystick(s))\n", nController, SDL_NumJoysticks());
+
+
+char *argv1 = "0";
+ if (argv1) {
+        SDL_bool reportederror = SDL_FALSE;
+        SDL_bool keepGoing = SDL_TRUE;
+        SDL_Event event;
+        int device = atoi(argv1);
+        if (device >= SDL_NumJoysticks()) {
+            SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "%i is an invalid joystick index.\n", device);
+            retcode = 1;
+        } else {
+            SDL_JoystickGetGUIDString(SDL_JoystickGetDeviceGUID(device),
+                                      guid, sizeof (guid));
+            SDL_Log("Attempting to open device %i, guid %s\n", device, guid);
+            gamecontroller = SDL_GameControllerOpen(device);
+
+            if (gamecontroller != NULL) {
+                SDL_assert(SDL_GameControllerFromInstanceID(SDL_JoystickInstanceID(SDL_GameControllerGetJoystick(gamecontroller))) == gamecontroller);
+            }
+
+        }
+    }
+
+//getchar();
+
+
+//------testgamecontroller.c
+
+#if !USE_NO_GLFW
+    window = SDL_CreateWindow("SDL2 Joystick capture",//"CheckKeys Test",
+                              SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
+                              0, 0/*640, 480*/, SDL_WINDOW_INPUT_FOCUS/*SDL_WINDOW_INPUT_GRABBED*/ /*SDL_WINDOW_HIDDEN*/);
+    if (!window) {
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create 640x480 window: %s\n",
+                SDL_GetError());
+        quit(2);
+    }
+#else
+//FIXME:on linux handheld, SDL window by SDL_CreateWindow() will be 
+//empty and transparent, and no video output, 
+//so I must skip this here. 
+//But on X11, SDL_CreateWindow is OK.  
+#endif
+
+#endif
 }
 
 GLViewImpl::~GLViewImpl()
 {
     CCLOGINFO("deallocing GLViewImpl: %p", this);
+#if USE_NO_GLFW
+
+#else	
     GLFWEventHandler::setGLViewImpl(nullptr);
     glfwTerminate();
+#endif	
 }
 
 GLViewImpl* GLViewImpl::create(const std::string& viewName)
 {
     auto ret = new (std::nothrow) GLViewImpl;
+#if defined(USE_APP_WIDTH) && defined(USE_APP_HEIGHT)
+    if(ret && ret->initWithRect(viewName, Rect(0, 0, USE_APP_WIDTH, USE_APP_HEIGHT), 1)) {
+#else      
     if(ret && ret->initWithRect(viewName, Rect(0, 0, 960, 640), 1)) {
+	//if(ret && ret->initWithRect(viewName, Rect(0, 0, 640, 480), 1)) {
+#endif    
         ret->autorelease();
         return ret;
     }
@@ -319,6 +581,8 @@ GLViewImpl* GLViewImpl::createWithRect(const std::string& viewName, Rect rect, f
     return nullptr;
 }
 
+#if USE_NO_GLFW
+#else
 GLViewImpl* GLViewImpl::createWithFullScreen(const std::string& viewName)
 {
     auto ret = new (std::nothrow) GLViewImpl();
@@ -340,6 +604,20 @@ GLViewImpl* GLViewImpl::createWithFullScreen(const std::string& viewName, const 
     
     return nullptr;
 }
+#endif
+
+#if USE_NO_GLFW
+EGLDisplay display = EGL_NO_DISPLAY;
+EGLSurface surface = EGL_NO_SURFACE;
+EGLContext context = EGL_NO_CONTEXT;
+
+
+GLfloat vVertices[] = {
+ 0.0f,  0.5f, 0.0f,
+-0.5f, -0.5f, 0.0f,
+ 0.5f, -0.5f, 0.0f
+};
+#endif
 
 bool GLViewImpl::initWithRect(const std::string& viewName, Rect rect, float frameZoomFactor)
 {
@@ -347,6 +625,122 @@ bool GLViewImpl::initWithRect(const std::string& viewName, Rect rect, float fram
 
     _frameZoomFactor = frameZoomFactor;
 
+#if USE_NO_GLFW
+	EGLint egl_major = 0;
+    EGLint egl_minor = 0;
+    EGLint num_configs = 0;
+    EGLConfig configs = {0};
+    EGLint config_attribs[] = {
+        EGL_SURFACE_TYPE,    EGL_WINDOW_BIT,
+        EGL_RENDERABLE_TYPE, EGL_OPENGL_ES2_BIT,
+        EGL_RED_SIZE,   8,//5,  
+        EGL_GREEN_SIZE, 8,//6,
+        EGL_BLUE_SIZE,  8,//5,  
+        EGL_ALPHA_SIZE, 8,//0,
+        EGL_NONE
+    };
+/*
+    glfwWindowHint(GLFW_RED_BITS,_glContextAttrs.redBits);
+    glfwWindowHint(GLFW_GREEN_BITS,_glContextAttrs.greenBits);
+    glfwWindowHint(GLFW_BLUE_BITS,_glContextAttrs.blueBits);
+    glfwWindowHint(GLFW_ALPHA_BITS,_glContextAttrs.alphaBits);
+    glfwWindowHint(GLFW_DEPTH_BITS,_glContextAttrs.depthBits);
+    glfwWindowHint(GLFW_STENCIL_BITS,_glContextAttrs.stencilBits);
+*/	
+    EGLint window_attributes[] = { 
+        EGL_RENDER_BUFFER, EGL_BACK_BUFFER,
+        EGL_NONE
+    };
+    EGLint const context_attributes[] = {
+        EGL_CONTEXT_CLIENT_VERSION, 2,
+        EGL_NONE,
+    };
+    display = eglGetDisplay(EGL_DEFAULT_DISPLAY);
+    eglInitialize(display, &egl_major, &egl_minor);
+    eglChooseConfig(display, config_attribs, &configs, 1, &num_configs);
+    surface = eglCreateWindowSurface(display, configs, 0, window_attributes);
+    context = eglCreateContext(display, configs, EGL_NO_CONTEXT, context_attributes);
+    eglMakeCurrent(display, surface, surface, context);
+	
+const char *vShaderSrc =
+    "attribute vec4 vPosition;  \n"
+    "void main()                \n"
+    "{                          \n"
+    "  gl_Position = vPosition; \n"
+    "}                          \n";
+ 
+const char *fShaderSrc =
+    "precision mediump float;                       \n"
+    "void main()                                    \n"
+    "{                                              \n"
+    "   gl_FragColor = vec4(0.7, 0.85, 0.97, 1.0);    \n"
+    "}                                              \n"; 
+
+    GLuint vShader = 0;
+    GLuint fShader = 0;
+    GLuint pObject = 0;
+    GLint compiled = 0;
+    
+    vShader = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(vShader, 1, &vShaderSrc, NULL);
+    glCompileShader(vShader);
+    glGetShaderiv(vShader, GL_COMPILE_STATUS, &compiled);
+ 
+    fShader = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(fShader, 1, &fShaderSrc, NULL);
+    glCompileShader(fShader);
+    glGetShaderiv(fShader, GL_COMPILE_STATUS, &compiled);
+  
+    pObject = glCreateProgram();
+    glAttachShader(pObject, vShader);
+    glAttachShader(pObject, fShader);
+    glLinkProgram(pObject);
+    glUseProgram(pObject);
+
+#if 0
+#define LCD_W   480
+#define LCD_H   640
+    glViewport(0, 0, LCD_W, LCD_H);
+    glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+	eglSwapBuffers(display, surface);
+CCLOGINFO("setFrameSize %f, %f", width, height);
+
+//while(1) {
+    glViewport(0, 0, LCD_W, LCD_H);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, vVertices);
+    glEnableVertexAttribArray(0);
+    glDrawArrays(GL_TRIANGLES, 0, 3);
+    eglSwapBuffers(display, surface);
+    sleep(3);
+//}
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#else
     glfwWindowHint(GLFW_RESIZABLE,GL_FALSE);
     glfwWindowHint(GLFW_RED_BITS,_glContextAttrs.redBits);
     glfwWindowHint(GLFW_GREEN_BITS,_glContextAttrs.greenBits);
@@ -360,6 +754,7 @@ bool GLViewImpl::initWithRect(const std::string& viewName, Rect rect, float fram
                                    _viewName.c_str(),
                                    _monitor,
                                    nullptr);
+glfwSetWindowPos(_mainWindow, 0, 0); //FIXME:added, show on left top of the screen
     glfwMakeContextCurrent(_mainWindow);
 
     glfwSetMouseButtonCallback(_mainWindow, GLFWEventHandler::onGLFWMouseCallBack);
@@ -371,9 +766,13 @@ bool GLViewImpl::initWithRect(const std::string& viewName, Rect rect, float fram
     glfwSetFramebufferSizeCallback(_mainWindow, GLFWEventHandler::onGLFWframebuffersize);
     glfwSetWindowSizeCallback(_mainWindow, GLFWEventHandler::onGLFWWindowSizeFunCallback);
     glfwSetWindowIconifyCallback(_mainWindow, GLFWEventHandler::onGLFWWindowIconifyCallback);
-
+#endif
+	
     setFrameSize(rect.size.width, rect.size.height);
 
+#if USE_NO_GLFW
+//OpenGL version too old: OpenGL 1.5 or higher is required (your version is OpenGL ES 3.0 Mesa 18.0.5). Please upgrade the driver of your video card.
+#else
     // check OpenGL version at first
     const GLubyte* glVersion = glGetString(GL_VERSION);
 
@@ -386,8 +785,13 @@ bool GLViewImpl::initWithRect(const std::string& viewName, Rect rect, float fram
         MessageBox(strComplain, "OpenGL version too old");
         return false;
     }
+#endif
 
     initGlew();
+
+#ifndef GL_VERTEX_PROGRAM_POINT_SIZE
+#define GL_VERTEX_PROGRAM_POINT_SIZE 0x8642 
+#endif
 
     // Enable point size by default.
     glEnable(GL_VERTEX_PROGRAM_POINT_SIZE);
@@ -398,14 +802,25 @@ bool GLViewImpl::initWithRect(const std::string& viewName, Rect rect, float fram
 bool GLViewImpl::initWithFullScreen(const std::string& viewName)
 {
     //Create fullscreen window on primary monitor at its current video mode.
+#if USE_NO_GLFW
+#if defined(USE_APP_WIDTH) && defined(USE_APP_HEIGHT)
+        return initWithRect(viewName, Rect(0, 0, USE_APP_WIDTH, USE_APP_HEIGHT), 1.0f);
+#else 
+	return initWithRect(viewName, Rect(0, 0, 640, 480), 1.0f);
+#endif
+#else	
     _monitor = glfwGetPrimaryMonitor();
     if (nullptr == _monitor)
         return false;
 
     const GLFWvidmode* videoMode = glfwGetVideoMode(_monitor);
     return initWithRect(viewName, Rect(0, 0, videoMode->width, videoMode->height), 1.0f);
+#endif
 }
 
+#if USE_NO_GLFW
+
+#else
 bool GLViewImpl::initWithFullscreen(const std::string &viewname, const GLFWvidmode &videoMode, GLFWmonitor *monitor)
 {
     //Create fullscreen on specified monitor at the specified video mode.
@@ -421,40 +836,420 @@ bool GLViewImpl::initWithFullscreen(const std::string &viewname, const GLFWvidmo
     
     return initWithRect(viewname, Rect(0, 0, videoMode.width, videoMode.height), 1.0f);
 }
+#endif
+
+bool _ready = true;
 
 bool GLViewImpl::isOpenGLReady()
 {
+#if USE_NO_GLFW
+    return true;
+#else
     return nullptr != _mainWindow;
+#endif
 }
 
 void GLViewImpl::end()
 {
+#if USE_NO_GLFW
+    eglMakeCurrent(display, EGL_NO_SURFACE, EGL_NO_SURFACE, EGL_NO_CONTEXT);
+    eglDestroyContext(display, context);
+    eglDestroySurface(display, surface);
+    eglTerminate(display);
+#else
     if(_mainWindow)
     {
         glfwSetWindowShouldClose(_mainWindow,1);
         _mainWindow = nullptr;
     }
+#endif	
     // Release self. Otherwise, GLViewImpl could not be freed.
     release();
 }
 
 void GLViewImpl::swapBuffers()
 {
-    if(_mainWindow)
+CCLOGINFO("swapBuffers");
+#if USE_NO_GLFW	
+//    glViewport(0, 0, LCD_W, LCD_H);
+//    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+//   glClear(GL_COLOR_BUFFER_BIT);
+//    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, vVertices);
+//    glEnableVertexAttribArray(0);
+//    glDrawArrays(GL_TRIANGLES, 0, 3);
+    if (display && surface) {
+	eglSwapBuffers(display, surface);
+    }
+#else		
+    if(_mainWindow) {
         glfwSwapBuffers(_mainWindow);
+    }
+#endif	
 }
 
 bool GLViewImpl::windowShouldClose()
 {
+#if USE_NO_GLFW	
+	return false;
+#else	
     if(_mainWindow)
         return glfwWindowShouldClose(_mainWindow) ? true : false;
     else
         return true;
+#endif	
+}
+
+static void convertTo(cocos2d::EventKeyboard::KeyCode key, bool press) {
+        EventKeyboard event(key, press);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
 }
 
 void GLViewImpl::pollEvents()
 {
+#if USE_NO_GLFW	
+//skip???
+#else	
     glfwPollEvents();
+#endif
+
+#if USE_SDL2
+    SDL_Event event;
+    /* Check for events */
+    /*SDL_WaitEvent(&event); emscripten does not like waiting*/
+
+    while (SDL_PollEvent(&event)) {
+        switch (event.type) {
+        case SDL_KEYDOWN:
+        case SDL_KEYUP: 
+	{
+            PrintKey(&event.key.keysym, (event.key.state == SDL_PRESSED) ? SDL_TRUE : SDL_FALSE, (event.key.repeat) ? SDL_TRUE : SDL_FALSE);
+
+#if USE_NO_GLFW	
+#else
+//FIXME: added, to escape for PC
+if (event.key.keysym.sym == SDLK_ESCAPE)
+{
+	exit(0);
+}
+#endif
+
+//miyoo a30 key translate:
+//A=44=SPACE
+//B=224/0x400000E0=LCTRL
+//Y=226/0x400000E2=LALT
+//X=225/0x400000E1=LSHIFT
+//Left/0x40000050=80
+//Right/0x4000004F=79
+//Up/0x40000052=82
+//Down/0x40000051=81
+//L1=43=TAB
+//L2=8=E
+//R1=42=BACKSPACE
+//R2=23=T
+//Vol-=129/0x40000081=VOLUMEDOWN
+//Vol+=128/0x40000080=VOLUMEUP
+//Menu=27/(41?)/0x0000001B=ESCAPE
+//Select=228/0x400000E4=RCTRL
+//Start=40=RETURN
+//Power=102/0x40000066=POWER
+
+//SDL_Keysym:
+//SDL_ScanCode scancode = event.key.keysym.scancode;
+SDL_Keycode key = event.key.keysym.sym;
+
+/*UP*/if (key == 82 || key == 0x40000052) convertTo(EventKeyboard::KeyCode::KEY_TAB/*KEY_UP_ARROW*/, event.key.state == SDL_PRESSED);
+/*DOWN*/if (key == 81 || key == 0x40000051) convertTo(EventKeyboard::KeyCode::KEY_TAB/*KEY_DOWN_ARROW*/, event.key.state == SDL_PRESSED);
+/*LEFT*/if (key == 80 || key == 0x40000050) convertTo(EventKeyboard::KeyCode::KEY_LEFT_ARROW, event.key.state == SDL_PRESSED);
+/*RIGHT*/if (key == 79 || key == 0x4000004F) convertTo(EventKeyboard::KeyCode::KEY_RIGHT_ARROW, event.key.state == SDL_PRESSED);
+
+/*A*/if (key == 44) return convertTo(EventKeyboard::KeyCode::KEY_RETURN, event.key.state == SDL_PRESSED);
+/*B*/if (key == 224 || key == 0x400000E0) convertTo(EventKeyboard::KeyCode::KEY_SPACE, event.key.state == SDL_PRESSED);
+/*X*/if (key == 225 || key == 0x400000E1) convertTo(EventKeyboard::KeyCode::KEY_R, event.key.state == SDL_PRESSED); //history log
+/*Y*/if (key == 226 || key == 0x400000E2) convertTo(EventKeyboard::KeyCode::KEY_ESCAPE, event.key.state == SDL_PRESSED); //game menu //or 
+
+/*L1*/if (key == 43) convertTo(EventKeyboard::KeyCode::KEY_F, event.key.state == SDL_PRESSED); //auto fast forward
+/*R1*/if (key == 42) convertTo(EventKeyboard::KeyCode::KEY_CTRL, event.key.state == SDL_PRESSED); //manual fast forward, not good
+/*Start*/if (key == 40) convertTo(EventKeyboard::KeyCode::KEY_A, event.key.state == SDL_PRESSED); //auto not good
+// /*Select*/if (key == 228 || key == 0x400000E4) return ?;
+/*Menu*/if (key == 27 || key == 41 || key == 0x0000001B) exit(0);
+	}
+        break;
+        
+	case SDL_TEXTEDITING:
+            PrintText("EDIT", event.text.text);
+            break;
+        case SDL_TEXTINPUT:
+            PrintText("INPUT", event.text.text);
+            break;
+        case SDL_MOUSEBUTTONDOWN:
+            /* Left button quits the app, other buttons toggles text input */
+            if (event.button.button == SDL_BUTTON_LEFT) {
+                done = 1;
+            } else {
+                if (SDL_IsTextInputActive()) {
+                    SDL_Log("Stopping text input\n");
+                    SDL_StopTextInput();
+                } else {
+                    SDL_Log("Starting text input\n");
+                    SDL_StartTextInput();
+                }
+            }
+            break;
+        case SDL_QUIT:
+            done = 1;
+            break;
+
+
+
+	case SDL_CONTROLLERBUTTONDOWN:
+	case SDL_CONTROLLERBUTTONUP: {
+#if 1//defined(USE_DEBUG_INPUT)
+SDL_Log("%s, %s, %d\n", 
+(event.type == SDL_CONTROLLERBUTTONDOWN) ? 
+"SDL_CONTROLLERBUTTONDOWN" : 
+"SDL_CONTROLLERBUTTONUP", 
+(event.cbutton.state == SDL_PRESSED) ? 
+"SDL_PRESSED" : 
+"SDL_RELEASED", 
+event.cbutton.button);
+#endif				
+		switch (event.cbutton.state) {
+			case SDL_PRESSED:
+#if 1						
+				//TVPPostInputEvent(new tTVPOnKeyDownInputEvent(TJSNativeInstance, sdl_gamecontrollerbutton_to_vk_key(event.cbutton.button, &isQuit, s, 0, TJSNativeInstance), s));
+#endif
+
+//trimui smart pro:
+//UP:11
+//DOWN:12
+//LEFT:13
+//RIGHT:14
+//A:1(joy 1, only up)
+//B:0(joy 0)
+//X:3(joy 3)
+//Y:2(joy 2)
+//L1:9(Joy 4)
+//L2:10(Joy 5)
+//Start:6(Joy 7)
+//Select:4(Joy 6)
+//Menu:5(Joy 8)
+//joy: joyaxismotion
+//key: Power(102, VolumeUp(128), VolumeDown(129)
+//===
+//plan:
+//A=return=kag3.Return
+//B=space=kag3.Space
+//X=fast=kag3.F(#'F')
+//Y=menu=kag3.ESC=message history
+//
+//Select=????
+//Start=auto=kag3.A
+//Menu=exit=???kage3.exit
+//
+//L1=left?=?kag3.B=back?
+//R1=right?
+//
+//?=kage3.S=save?
+//?=kage3.L=load?
+
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_DPAD_UP)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_UP_ARROW, true);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_DPAD_DOWN)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_DOWN_ARROW, true);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_DPAD_LEFT)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_LEFT_ARROW, true);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_DPAD_RIGHT)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_RIGHT_ARROW, true);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_A)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_RETURN, true);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_B)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_SPACE, true);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_X)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_R, true);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_Y)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_ESCAPE, true);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_START)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_A, true);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_BACK)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_TAB, true);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == 9)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_F, true);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == 10)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_CTRL, true);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == 5)
+{
+exit(0);//Menu
+}
+
+				break;
+				
+			case SDL_RELEASED:
+#if 1
+				if (!SDL_IsTextInputActive())
+				{
+					//TVPPostInputEvent(new tTVPOnKeyPressInputEvent(TJSNativeInstance, sdl_gamecontrollerbutton_to_vk_key(event.cbutton.button, &isQuit, s, 0, TJSNativeInstance)));
+				}						
+				//TVPPostInputEvent(new tTVPOnKeyUpInputEvent(TJSNativeInstance, sdl_gamecontrollerbutton_to_vk_key(event.cbutton.button, &isQuit, s, 1, TJSNativeInstance), s));
+#else
+//sdl_gamecontrollerbutton_to_vk_key(event.cbutton.button, &isQuit, s, 1, TJSNativeInstance);
+#endif								
+				//if (isQuit) {
+					//TVPPostInputEvent(new tTVPOnCloseInputEvent(TJSNativeInstance));
+				//}
+
+
+
+
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_DPAD_UP)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_UP_ARROW, false);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_DPAD_DOWN)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_DOWN_ARROW, false);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_DPAD_LEFT)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_LEFT_ARROW, false);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_DPAD_RIGHT)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_RIGHT_ARROW, false);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_A)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_RETURN, false);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_B)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_SPACE, false);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_X)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_R, false);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_Y)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_ESCAPE, false);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_START)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_A, false);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == SDL_CONTROLLER_BUTTON_BACK)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_TAB, false);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == 9)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_F, false);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == 10)
+{
+        EventKeyboard event(EventKeyboard::KeyCode::KEY_CTRL, false);
+        auto dispatcher = Director::getInstance()->getEventDispatcher();
+        dispatcher->dispatchEvent(&event);
+}
+if (event.cbutton.button == 5)
+{
+exit(0);//Menu
+}
+
+				break;
+		}
+	}
+	break;
+	
+	case SDL_JOYBUTTONDOWN:
+		//SDL_Log("%s, %d\n", "SDL_JOYBUTTONDOWN", event.jbutton.button);
+		break;
+ 
+	case SDL_JOYBUTTONUP:
+		//SDL_Log("%s, %d\n", "SDL_JOYBUTTONUP", event.jbutton.button);
+		break;
+
+	case SDL_JOYAXISMOTION:
+		//SDL_Log("%s, %d\n", "SDL_JOYAXISMOTION");
+		break;
+
+        default:
+            break;
+        }
+    }
+#endif
 }
 
 void GLViewImpl::enableRetina(bool enabled)
@@ -481,6 +1276,9 @@ void GLViewImpl::setIMEKeyboardState(bool /*bOpen*/)
 
 void GLViewImpl::setCursorVisible( bool isVisible )
 {
+#if USE_NO_GLFW
+
+#else		
     if( _mainWindow == NULL )
         return;
     
@@ -488,6 +1286,7 @@ void GLViewImpl::setCursorVisible( bool isVisible )
         glfwSetInputMode(_mainWindow, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
     else
         glfwSetInputMode(_mainWindow, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+#endif	
 }
 
 void GLViewImpl::setFrameZoomFactor(float zoomFactor)
@@ -510,6 +1309,9 @@ float GLViewImpl::getFrameZoomFactor() const
 
 void GLViewImpl::updateFrameSize()
 {
+#if USE_NO_GLFW	
+//skip???
+#else	
     if (_screenSize.width > 0 && _screenSize.height > 0)
     {
         int w = 0, h = 0;
@@ -543,6 +1345,7 @@ void GLViewImpl::updateFrameSize()
             _isInRetinaMonitor = false;
         }
     }
+#endif	
 }
 
 void GLViewImpl::setFrameSize(float width, float height)
@@ -553,20 +1356,41 @@ void GLViewImpl::setFrameSize(float width, float height)
 
 void GLViewImpl::setViewPortInPoints(float x , float y , float w , float h)
 {
+#if !USE_ROTATE90
     glViewport((GLint)(x * _scaleX * _retinaFactor * _frameZoomFactor + _viewPortRect.origin.x * _retinaFactor * _frameZoomFactor),
                (GLint)(y * _scaleY * _retinaFactor  * _frameZoomFactor + _viewPortRect.origin.y * _retinaFactor * _frameZoomFactor),
                (GLsizei)(w * _scaleX * _retinaFactor * _frameZoomFactor),
                (GLsizei)(h * _scaleY * _retinaFactor * _frameZoomFactor));
+#else
+    glViewport(
+    	(GLint)(y * _scaleY * _retinaFactor * _frameZoomFactor + _viewPortRect.origin.y * _retinaFactor * _frameZoomFactor),
+    	(GLint)(x * _scaleX * _retinaFactor * _frameZoomFactor + _viewPortRect.origin.x * _retinaFactor * _frameZoomFactor),
+               (GLsizei)(h * _scaleY * _retinaFactor * _frameZoomFactor),
+               (GLsizei)(w * _scaleX * _retinaFactor * _frameZoomFactor)
+              );
+#endif
 }
 
 void GLViewImpl::setScissorInPoints(float x , float y , float w , float h)
 {
+#if !USE_ROTATE90
     glScissor((GLint)(x * _scaleX * _retinaFactor * _frameZoomFactor + _viewPortRect.origin.x * _retinaFactor * _frameZoomFactor),
                (GLint)(y * _scaleY * _retinaFactor  * _frameZoomFactor + _viewPortRect.origin.y * _retinaFactor * _frameZoomFactor),
                (GLsizei)(w * _scaleX * _retinaFactor * _frameZoomFactor),
                (GLsizei)(h * _scaleY * _retinaFactor * _frameZoomFactor));
+#else
+    glScissor(
+    	(GLint)(y * _scaleY * _retinaFactor  * _frameZoomFactor + _viewPortRect.origin.y * _retinaFactor * _frameZoomFactor),
+        (GLint)(x * _scaleX * _retinaFactor * _frameZoomFactor + _viewPortRect.origin.x * _retinaFactor * _frameZoomFactor),
+        (GLsizei)(h * _scaleY * _retinaFactor * _frameZoomFactor),
+        (GLsizei)(w * _scaleX * _retinaFactor * _frameZoomFactor)
+       );
+#endif
 }
 
+#if USE_NO_GLFW
+
+#else	
 void GLViewImpl::onGLFWError(int errorID, const char* errorDesc)
 {
     CCLOGERROR("GLFWError #%d Happen, %s\n", errorID, errorDesc);
@@ -750,6 +1574,7 @@ void GLViewImpl::onGLFWWindowIconifyCallback(GLFWwindow* window, int iconified)
         Application::getInstance()->applicationWillEnterForeground();
     }
 }
+#endif
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
 static bool glew_dynamic_binding()
@@ -818,6 +1643,7 @@ static bool glew_dynamic_binding()
 // helper
 bool GLViewImpl::initGlew()
 {
+#if 0
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_MAC)
     GLenum GlewInitResult = glewInit();
     if (GLEW_OK != GlewInitResult)
@@ -853,7 +1679,7 @@ bool GLViewImpl::initGlew()
 #endif
 
 #endif // (CC_TARGET_PLATFORM != CC_PLATFORM_MAC)
-
+#endif
     return true;
 }
 

@@ -1311,7 +1311,7 @@ void TVPOutputDebugString(const char *str) {
 
 
 
-#elif defined(ANDROID)
+#elif defined(ANDROID) || defined(LINUX)
 
 
 #include "cocos2d.h"
@@ -1352,7 +1352,11 @@ std::string TVPGetDeviceID();
 //#include "base/CCScheduler.h"
 #include <unistd.h>
 //#include <fcntl.h>
+#if defined(LINUX)
+#include <stdio.h>
+#else
 #include <android/log.h>
+#endif
 //#include "TickCount.h"
 //#include "StorageImpl.h"
 //#include "ConfigManager/IndividualConfigManager.h"
@@ -1365,7 +1369,11 @@ std::string TVPGetDeviceID();
 #include <wchar.h>
 
 # define LOG_TAG "AndroidUtils"
+#if defined(LINUX)
+# define LOGE(...) ((void)printf(__VA_ARGS__),(void)printf("\n"))
+#else
 # define LOGE(...) ((void)__android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__))
+#endif
 
 int TVPShowSimpleMessageBox(const ttstr & text, const ttstr & caption, const std::vector<ttstr> &vecButtons)
 {
@@ -1382,7 +1390,9 @@ static std::wstring strInputBoxText;
 
 int TVPShowSimpleInputBox(ttstr &text, const ttstr &caption, const ttstr &prompt, const std::vector<ttstr> &vecButtons) {
 	LOGE("TVPShowSimpleInputBox: %s, %s", text.AsStdString().c_str(), caption.AsStdString().c_str());
+#if !defined(LINUX)	
 	throw;
+#endif	
 	return 0;
 }
 
@@ -1513,7 +1523,11 @@ void TVPControlAdDialog(int adType, int arg1, int arg2) {
 std::vector<std::string> TVPGetDriverPath() {
 	//throw;
 	std::vector<std::string> ret;
+#if defined(LINUX)
+	ret.push_back("/mnt/SDCARD");
+#else		
 	ret.push_back("/mnt/sdcard");
+#endif	
 	return ret;
 }
 
@@ -1576,15 +1590,27 @@ void TVPOutputDebugString(const char *str) {
 //NOTE:added
 static int GetExternalStoragePath(std::vector<std::string> &ret) {
 	int count = 0;
+#if defined(LINUX)
+	ret.push_back(std::string("/mnt/SDCARD"));
+#else	
 	ret.push_back(std::string("/mnt/sdcard"));
+#endif	
 	++count;
 	return count;
 }
 static std::string GetInternalStoragePath() {
+#if defined(LINUX)
+	return std::string("/mnt/SDCARD/");
+#else	
 	return std::string("/mnt/sdcard/");
+#endif
 }
 static std::string GetApkStoragePath() {
+#if defined(LINUX)
+	return std::string("/mnt/SDCARD/");
+#else	
 	return std::string("/mnt/sdcard/");
+#endif
 }
 
 std::vector<ttstr> Android_GetExternalStoragePath() {

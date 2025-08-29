@@ -28,6 +28,7 @@
 /// @cond DO_NOT_SHOW
 
 #include <string>
+#include <cstdint> //for uintptr_t, intptr_t
 
 #include "platform/CCPlatformMacros.h"
 #include "base/allocator/CCAllocatorMacros.h"

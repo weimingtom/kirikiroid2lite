@@ -76,10 +76,10 @@ namespace ui {
          */
         enum HorizontalEdge
         {
-            None,
+            None__,
             Left,
             Right,
-            Center
+            Center__
         };
 
         /**

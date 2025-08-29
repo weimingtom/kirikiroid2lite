@@ -25,7 +25,7 @@
 #define lseek64 lseek
 
 
-#elif defined(ANDROID)
+#elif defined(ANDROID) || defined(LINUX)
 #include <unistd.h>
 #include <fcntl.h>
 
@@ -113,7 +113,16 @@ static voidpf ZCALLBACK fopen_file_func (voidpf opaque, const char* filename, in
 	rw |= O_BINARY;
 #endif
     int Handle;
+#if defined(LINUX)
+/*
+/usr/include/x86_64-linux-gnu/bits/fcntl2.h:50:24: error: call to ¡®__open_missing_mode¡¯ declared with attribute error: open with O_CREAT or O_TMPFILE in second argument needs 3 arguments
+   50 |    __open_missing_mode ();
+      |    ~~~~~~~~~~~~~~~~~~~~^~
+*/
+    Handle = open(filename, rw, 0600);
+#else
     Handle = open(filename, rw);
+#endif
 
     return (voidpf)Handle;
 }

@@ -1,3 +1,6 @@
+#define USE_HELLO_2 0
+#define USE_HELLO_DESIGN_RES_2 1
+
 #include "MainScene.h"
 #include "cocos2d.h"
 #include "cocos-ext.h"
@@ -456,7 +459,8 @@ public:
 		return PrimaryLayerArea;
 	}
 
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+//FIXME:
 	virtual Vec2 minContainerOffset() override {
 #else
 	virtual Vec2 minContainerOffset() {
@@ -479,7 +483,8 @@ public:
 		return ret;
 	}
 
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+//FIXME:
 	virtual Vec2 maxContainerOffset() override {
 #else
 	virtual Vec2 maxContainerOffset() {
@@ -1356,7 +1361,7 @@ public:
 				case caNone:
 					break;
 				case caHide:
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 					throw;
 #elif defined(_MSC_VER)
 					__debugbreak(); throw;
@@ -1379,7 +1384,7 @@ public:
 		}
 		catch (...) {
 			ProgramClosing = false;
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)
 			__debugbreak(); throw;
@@ -1629,7 +1634,9 @@ void TVPMainScene::initialize() {
 	Size screenSize = glview->getFrameSize();
 	Size designSize = glview->getDesignResolutionSize();
 	ScreenRatio = screenSize.height / designSize.height;
+#if !USE_HELLO_DESIGN_RES_2
 	designSize.width = designSize.height * screenSize.width / screenSize.height;
+#endif
 	initWithSize(designSize);
 	addChild(LayerColor::create(Color4B::BLACK, designSize.width, designSize.height));
 	GameNode = cocos2d::Node::create();

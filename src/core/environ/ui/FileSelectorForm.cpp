@@ -114,6 +114,7 @@ void TVPBaseFileSelectorForm::bindHeaderController(const NodeMap &allNodes)
 
 void TVPBaseFileSelectorForm::bindBodyController(const NodeMap &allNodes) {
 	Node *TableNode = allNodes.findController<cocos2d::Node>("table");
+	if (TableNode == nullptr) return;
 	FileList = TableView::create(this, TableNode->getContentSize());
 	FileList->setVerticalFillOrder(TableView::VerticalFillOrder::TOP_DOWN);
 	FileList->setAnchorPoint(Vec2::ZERO);
@@ -351,7 +352,7 @@ void TVPBaseFileSelectorForm::onTitleClicked(cocos2d::Ref *owner) {
 	{
 		const auto& path = *p_path;
 		CSBReader reader;
-#ifndef  _MSC_VER
+#if !defined( _MSC_VER) && !defined(LINUX)
 		Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));
 #else
 		Node *node = reader.Load("ui/ListItem.csb");
@@ -844,7 +845,7 @@ void TVPListForm::initFromInfo(const std::vector<cocos2d::ui::Widget*> &cells) {
 		Size size = cell->getContentSize();
 		size.width = width;
 		cell->setContentSize(size);
-#ifdef _MSC_VER
+#if defined(_MSC_VER) || defined(LINUX)
 		Node *nodeChild = cell->getChildByName("_nodeChild");
 		nodeChild->setPositionX((width - nodeChild->getContentSize().width) / 2.0f);
 #endif
@@ -852,7 +853,7 @@ void TVPListForm::initFromInfo(const std::vector<cocos2d::ui::Widget*> &cells) {
 		//LayoutParameter* param = cell->getLayoutParameter();
 		listview->pushBackCustomItem(cell);
 	}
-	if (listview->getItems().back()->getBottomBoundary() < 0) {
+	if (listview->getItems().size() > 0 && listview->getItems().back()->getBottomBoundary() < 0) {
 		listview->setClippingEnabled(true);
 	} else {
 		listview->setBounceEnabled(false);
@@ -896,6 +897,7 @@ std::string TVPShowFileSelector(const std::string &title, const std::string &ini
 	});
 	TVPMainScene::GetInstance()->pushUIForm(_fileSelector);
 	Director* director = Director::getInstance();
+//int i = 0;	
 	while (_fileSelector) {
 		TVPProcessInputEvents();
 		int remain = TVPDrawSceneOnce(30); // 30 fps
@@ -907,6 +909,7 @@ std::string TVPShowFileSelector(const std::string &title, const std::string &ini
 			Sleep(remain);
 #endif
 		}
+//printf("<<<<<<<<test %d\n", i++);		
 	}
 	return _fileSelectorResult;
 }
@@ -1006,7 +1009,7 @@ void TVPBaseFileSelectorForm::FileItemCellImpl::initFromFile(const char * filena
 	static const std::string str_highlight("highlight");
 	Widget *HighLight = static_cast<Widget *>(reader.findController<cocos2d::Node>(str_highlight));
 	if (HighLight) {
-#if defined(_MSC_VER) || defined(ANDROID)
+#if defined(_MSC_VER) || defined(ANDROID) || defined(LINUX)
 		//https://blog.csdn.net/iamlegendary/article/details/76977723
 		//¹ö¶¯ÎÊÌâ
 		HighLight->setSwallowTouches(false);
@@ -1031,9 +1034,13 @@ void TVPBaseFileSelectorForm::FileItemCellImpl::initFromFile(const char * filena
 #endif
 				break;
 
-#ifdef _MSC_VER
+#if defined(_MSC_VER) || defined(LINUX)
 			case Widget::TouchEventType::MOVED:
+#if defined(_MSC_VER)
 				OutputDebugString(L"===================>HighLight Widget::TouchEventType::MOVED\n");
+#else
+				printf("===================>HighLight Widget::TouchEventType::MOVED\n");
+#endif				
 				if (sender->isHighlighted()) {
 					sender->setHighlighted(false);
 				}
@@ -1041,8 +1048,12 @@ void TVPBaseFileSelectorForm::FileItemCellImpl::initFromFile(const char * filena
 #endif
 
 			case Widget::TouchEventType::CANCELED:
-#ifdef _MSC_VER
+#if defined(_MSC_VER) || defined(LINUX)
+#if defined(_MSC_VER)
 				OutputDebugString(L"===================>HighLight Widget::TouchEventType::CANCELED\n");
+#else
+				printf("===================>HighLight Widget::TouchEventType::CANCELED\n");
+#endif				
 				if (sender->isHighlighted()) {
 					sender->setHighlighted(false);
 				}
@@ -1078,7 +1089,7 @@ void TVPBaseFileSelectorForm::FileItemCellImpl::setInfo(int idx, const FileInfo 
 
 void TVPBaseFileSelectorForm::FileItemCellImpl::onClicked(cocos2d::Ref* p) {
 	Widget* sender = static_cast<Widget*>(p);
-#ifdef _MSC_VER
+#if defined(_MSC_VER) || defined(LINUX)
 	if (sender->isHighlighted()) {
 		return;
 	}

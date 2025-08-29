@@ -213,6 +213,19 @@ bool Camera::initPerspective(float fieldOfView, float aspectRatio, float nearPla
         setAdditionalProjection(view->getOrientationMatrix());
     }
 #endif
+
+//see /cocos2dx/platform/wp8/CCEGLView.cpp
+#if USE_ROTATE90 //rotate screen 90 degrees
+//see below USE_ROTATE90, normally not run to here
+{
+Mat4 m_orientationMatrix;
+m_orientationMatrix.setIdentity();
+m_orientationMatrix.rotateZ(M_PI_2);//-M_PI_2);
+//if needed, we need to add a rotation for Landscape orientations on Windows Phone 8 since it is always in Portrait Mode
+setAdditionalProjection(m_orientationMatrix);
+}
+#endif
+
     _viewProjectionDirty = true;
     _frustumDirty = true;
     
@@ -234,6 +247,19 @@ bool Camera::initOrthographic(float zoomX, float zoomY, float nearPlane, float f
         setAdditionalProjection(view->getOrientationMatrix());
     }
 #endif
+
+//see /cocos2dx/platform/wp8/CCEGLView.cpp
+#if USE_ROTATE90 //rotate screen 90 degrees
+//see below USE_ROTATE90, normally not run to here
+{
+Mat4 m_orientationMatrix;
+m_orientationMatrix.setIdentity();
+m_orientationMatrix.rotateZ(M_PI_2);//-M_PI_2);
+//if needed, we need to add a rotation for Landscape orientations on Windows Phone 8 since it is always in Portrait Mode
+setAdditionalProjection(m_orientationMatrix);
+}
+#endif
+
     _viewProjectionDirty = true;
     _frustumDirty = true;
     

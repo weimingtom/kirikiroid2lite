@@ -1045,7 +1045,7 @@ CC_DEPRECATED_ATTRIBUTE typedef __Float Float;
 CC_DEPRECATED_ATTRIBUTE typedef __Float CCFloat;
 CC_DEPRECATED_ATTRIBUTE typedef __Integer Integer;
 CC_DEPRECATED_ATTRIBUTE typedef __Integer CCInteger;
-CC_DEPRECATED_ATTRIBUTE typedef __Bool Bool;
+//CC_DEPRECATED_ATTRIBUTE typedef __Bool Bool;
 CC_DEPRECATED_ATTRIBUTE typedef __Bool CCBool;
 CC_DEPRECATED_ATTRIBUTE typedef __String CCString;
 CC_DEPRECATED_ATTRIBUTE typedef __String String;

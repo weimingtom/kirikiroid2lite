@@ -30,6 +30,7 @@
 #include "base/CCRef.h"
 #include "base/ccMacros.h"
 #include <type_traits>
+//#include <cstddef>
 
 NS_CC_BEGIN
 
@@ -194,7 +195,7 @@ public:
     
     inline bool operator == (typename std::remove_const<T>::type * other) const { return _ptr == other; }
     
-    inline bool operator == (const std::nullptr_t other) const { return _ptr == other; }
+    inline bool operator == (const std::nullptr_t other) const { return _ptr == other/*((T *)0) other*/; }
     
     
     inline bool operator != (const RefPtr<T> & other) const { return _ptr != other._ptr; }
@@ -203,7 +204,7 @@ public:
     
     inline bool operator != (typename std::remove_const<T>::type * other) const { return _ptr != other; }
     
-    inline bool operator != (const std::nullptr_t other) const { return _ptr != other; }
+    inline bool operator != (const std::nullptr_t other) const { return _ptr != other/*((T *)0) other*/; }
     
     
     inline bool operator > (const RefPtr<T> & other) const { return _ptr > other._ptr; }

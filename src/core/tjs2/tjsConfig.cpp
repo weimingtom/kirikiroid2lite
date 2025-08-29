@@ -9,7 +9,9 @@
 // configuration
 //---------------------------------------------------------------------------
 
-
+#if defined(LINUX)
+#include <math.h>
+#endif
 #include "tjsCommHead.h"
 #include <errno.h>
 #include <clocale>
@@ -19,7 +21,9 @@
 #include <float.h>
 #define isfinite _finite
 #else
+#if !defined(LINUX)
 #include <cmath> //for std::isfinite
+#endif
 #define isfinite std::isfinite
 #endif
 #else
@@ -31,6 +35,9 @@
 #endif
 #include <assert.h>
 
+#if defined(LINUX)
+#include <climits>
+#endif
 
 /*
  * core/utils/cp932_uni.cpp
@@ -750,7 +757,11 @@ tjs_char *TJS_strrchr(const tjs_char *s, int c)
 #include <stdarg.h>
 //#include <inttypes.h>
 #include <stdint.h>
+#if defined(LINUX)
+//#include <math.h> //see upper
+#else
 #include <math.h>
+#endif
 #include <float.h>
 
 /* Some useful macros */
@@ -1341,33 +1352,33 @@ union arg
 	void *p;
 };
 
-static void pop_arg(union arg *arg, int type, va_list *ap)
+static void pop_arg(union arg *arg, int type, va_list ap)
 {
 	/* Give the compiler a hint for optimizing the switch. */
 	if ((unsigned)type > MAXSTATE) return;
 	switch (type) {
-	       case PTR:	arg->p = va_arg(*ap, void *);
-	break; case INT:	arg->i = va_arg(*ap, int);
-	break; case UINT:	arg->i = va_arg(*ap, unsigned int);
+	       case PTR:	arg->p = va_arg(ap, void *);
+	break; case INT:	arg->i = va_arg(ap, int);
+	break; case UINT:	arg->i = va_arg(ap, unsigned int);
 #ifndef LONG_IS_INT
-	break; case LONG:	arg->i = va_arg(*ap, long);
-	break; case ULONG:	arg->i = va_arg(*ap, unsigned long);
+	break; case LONG:	arg->i = va_arg(ap, long);
+	break; case ULONG:	arg->i = va_arg(ap, unsigned long);
 #endif
-	break; case ULLONG:	arg->i = va_arg(*ap, unsigned long long);
-	break; case SHORT:	arg->i = (short)va_arg(*ap, int);
-	break; case USHORT:	arg->i = (unsigned short)va_arg(*ap, int);
-	break; case CHAR:	arg->i = (signed char)va_arg(*ap, int);
-	break; case UCHAR:	arg->i = (unsigned char)va_arg(*ap, int);
+	break; case ULLONG:	arg->i = va_arg(ap, unsigned long long);
+	break; case SHORT:	arg->i = (short)va_arg(ap, int);
+	break; case USHORT:	arg->i = (unsigned short)va_arg(ap, int);
+	break; case CHAR:	arg->i = (signed char)va_arg(ap, int);
+	break; case UCHAR:	arg->i = (unsigned char)va_arg(ap, int);
 #ifdef ODD_TYPES
-	break; case LLONG:	arg->i = va_arg(*ap, long long);
-	break; case SIZET:	arg->i = va_arg(*ap, size_t);
-	break; case IMAX:	arg->i = va_arg(*ap, intmax_t);
-	break; case UMAX:	arg->i = va_arg(*ap, uintmax_t);
-	break; case PDIFF:	arg->i = va_arg(*ap, ptrdiff_t);
-	break; case UIPTR:	arg->i = (uintptr_t)va_arg(*ap, void *);
+	break; case LLONG:	arg->i = va_arg(ap, long long);
+	break; case SIZET:	arg->i = va_arg(ap, size_t);
+	break; case IMAX:	arg->i = va_arg(ap, intmax_t);
+	break; case UMAX:	arg->i = va_arg(ap, uintmax_t);
+	break; case PDIFF:	arg->i = va_arg(ap, ptrdiff_t);
+	break; case UIPTR:	arg->i = (uintptr_t)va_arg(ap, void *);
 #endif
-	break; case DBL:	arg->f = va_arg(*ap, double);
-	break; case LDBL:	arg->f = va_arg(*ap, long double);
+	break; case DBL:	arg->f = va_arg(ap, double);
+	break; case LDBL:	arg->f = va_arg(ap, long double);
 	}
 }
 
@@ -1384,13 +1395,20 @@ static void out(_tFILE *f, const tjs_char *s, size_t l)
 
 static void pad(_tFILE *f, tjs_char c, int w, int l, int fl)
 {
+#if defined(LINUX)
 	tjs_char pad[256];
+#else
+	tjs_char pad[256];
+#endif	
 	if (fl & (LEFT_ADJ | ZERO_PAD) || l >= w) return;
 	l = w - l;
-    int n = l >sizeof pad / sizeof(pad[0])? sizeof pad / sizeof(pad[0]): l;
-    while(n--) pad[n] = c;
-	for (; l >= sizeof pad; l -= sizeof pad)
+    	int n = l >sizeof pad / sizeof(pad[0])? sizeof pad / sizeof(pad[0]): l;
+    	while(n--) pad[n] = c;
+	printf("<<<<<<<<================= %d\n", l);
+	for (; l >= sizeof pad; l -= sizeof pad) {
+		printf(">>>><<<< %d\n", l);
 		out(f, pad, sizeof pad / sizeof(pad[0]));
+	}
 	out(f, pad, l);
 }
 
@@ -1723,8 +1741,13 @@ static int getint(tjs_char **s) {
     return i;
 }
 
-static int printf_core(_tFILE *f, const tjs_char *fmt, va_list *ap, union arg *nl_arg, int *nl_type)
+static int printf_core(_tFILE *f, const tjs_char *fmt, va_list ap, union arg *nl_arg, int *nl_type)
 {
+#if defined(LINUX)
+//va_list* ap=&ap_;
+//printf("<<<<<<<snprintf int %d\n", va_arg(ap, int)); //should be 2, but become 3145765, don't use va_list*, use va_list instead
+#endif
+
     tjs_char *a, *z, *s=(tjs_char *)fmt;
     unsigned l10n=0, fl;
     int w, p;
@@ -1738,6 +1761,8 @@ static int printf_core(_tFILE *f, const tjs_char *fmt, va_list *ap, union arg *n
     int t, pl;
     tjs_char wc[2], *ws;
     tjs_char mb[4];
+   
+    
 
     for (;;) {
         /* Update output count, end loop when fmt is exhausted */
@@ -1775,9 +1800,15 @@ static int printf_core(_tFILE *f, const tjs_char *fmt, va_list *ap, union arg *n
                 l10n=1;
                 nl_type[s[1]-'0'] = INT;
                 w = nl_arg[s[1]-'0'].i;
+#if defined(LINUX)
+printf("<<<<<<<1 w == %d\n", w);
+#endif
                 s+=3;
             } else if (!l10n) {
-                w = f ? va_arg(*ap, int) : 0;
+                w = f ? va_arg(ap, int) : 0;
+#if defined(LINUX)
+printf("<<<<<<<2 w == %d\n", w); //run here
+#endif                
                 s++;
             } else return -1;
             if (w<0) fl|=LEFT_ADJ, w=-w;
@@ -1790,7 +1821,10 @@ static int printf_core(_tFILE *f, const tjs_char *fmt, va_list *ap, union arg *n
                 p = nl_arg[s[2]-'0'].i;
                 s+=4;
             } else if (!l10n) {
-                p = f ? va_arg(*ap, int) : 0;
+                p = f ? va_arg(ap, int) : 0;
+#if defined(LINUX)
+printf("<<<<<<<2.1 w == %d\n", w); //run here
+#endif                  
                 s+=2;
             } else return -1;
         } else if (*s=='.') {
@@ -1813,7 +1847,12 @@ static int printf_core(_tFILE *f, const tjs_char *fmt, va_list *ap, union arg *n
             else if (!f) continue;
         } else {
             if (argpos>=0) nl_type[argpos]=st, arg=nl_arg[argpos];
-            else if (f) pop_arg(&arg, st, ap);
+            else if (f) {
+            pop_arg(&arg, st, ap);
+#if defined(LINUX)
+printf("<<<<<<<2.2 w == %d\n", w); //run here
+#endif               
+            }
             else return 0;
         }
 
@@ -1913,7 +1952,12 @@ static int printf_core(_tFILE *f, const tjs_char *fmt, va_list *ap, union arg *n
 
         if (p < z-a) p = z-a;
         if (w < pl+p) w = pl+p;
-
+#if defined(LINUX)
+printf("<<<<<<<3 w == %d\n", w);
+#endif        
+#if defined(LINUX)
+printf("<<<<<<<pl == %d, p == %d, sum == %d\n", pl, p, pl + p);
+#endif
         pad(f, ' ', w, pl+p, fl);
         out(f, prefix, pl);
         pad(f, '0', w, pl+p, fl^ZERO_PAD);
@@ -1943,8 +1987,8 @@ int _vsnprintf(tjs_char * s, size_t n, const tjs_char * fmt, va_list ap)
     int nl_type[NL_ARGMAX+1] = {0};
     union arg nl_arg[NL_ARGMAX+1];
     unsigned char internal_buf[80], *saved_buf = 0;
-    va_list *pap = (va_list *)&ap;
-    r = printf_core(&f, fmt, pap, nl_arg, nl_type);
+    //va_list *pap = (va_list *)&ap;
+    r = printf_core(&f, fmt, ap/*pap*/, nl_arg, nl_type);
 
     /* Null-terminate, overwriting last char if dest buffer is full */
     return r;
@@ -1955,6 +1999,7 @@ static int snprintf(tjs_char *s, size_t n, const tjs_char *fmt, ...)
     int ret;
     va_list ap;
     va_start(ap, fmt);
+//printf("<<<<<<<snprintf int %d", va_arg(ap, int));    
     ret = _vsnprintf(s, n, fmt, ap);
     va_end(ap);
     return ret;
@@ -2344,6 +2389,9 @@ const tjs_char *__strftime_fmt_1(tjs_char (*s)[100], size_t *l, int f, const tm 
         return 0;
     }
 number:
+#if defined(LINUX)
+printf("<<<<<<<<<<<snprintf %d, %lld\n", width, val);
+#endif
     *l = snprintf(*s, sizeof *s, TJS_W("%0*lld"), width, val);
     return *s;
 nl_strcat:

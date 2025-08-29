@@ -37,7 +37,7 @@
 
 NS_CC_BEGIN
 
-class Font;
+class Font_;
 class Texture2D;
 class EventCustom;
 class EventListenerCustom;
@@ -68,7 +68,7 @@ public:
     /**
      * @js ctor
      */
-    FontAtlas(Font &theFont);
+    FontAtlas(Font_ &theFont);
     /**
      * @js NA
      * @lua NA
@@ -86,7 +86,7 @@ public:
     void  setCommonLineHeight(float newHeight);
     
     Texture2D* getTexture(int slot);
-    const Font* getFont() const;
+    const Font_* getFont() const;
 
     /** listen the event that renderer was recreated on Android/WP8
      It only has effect on Android and WP8.
@@ -115,7 +115,7 @@ protected:
     std::unordered_map<ssize_t, Texture2D*> _atlasTextures;
     std::unordered_map<unsigned short, FontLetterDefinition> _fontLetterDefinitions;
     float _commonLineHeight;
-    Font * _font;
+    Font_ * _font;
 
     // Dynamic GlyphCollection related stuff
     int _currentPage;

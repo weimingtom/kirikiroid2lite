@@ -603,6 +603,7 @@ void Director::setProjection(Projection projection)
     {
         case Projection::_2D:
         {
+printf("<<<<setProjection(Projection::_2D)\n");            
             loadIdentityMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_PROJECTION);
 #if CC_TARGET_PLATFORM == CC_PLATFORM_WP8
             if(getOpenGLView() != nullptr)
@@ -610,6 +611,18 @@ void Director::setProjection(Projection projection)
                 multiplyMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_PROJECTION, getOpenGLView()->getOrientationMatrix());
             }
 #endif
+//see /cocos2dx/platform/wp8/CCEGLView.cpp
+#if USE_ROTATE90 //rotate screen 90 degrees
+//see below USE_ROTATE90, normally not run to here
+
+Mat4 m_orientationMatrix;
+m_orientationMatrix.setIdentity();
+m_orientationMatrix.rotateZ(M_PI_2);//-M_PI_2);
+//if needed, we need to add a rotation for Landscape orientations on Windows Phone 8 since it is always in Portrait Mode
+multiplyMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_PROJECTION, m_orientationMatrix);
+
+#endif
+
             Mat4 orthoMatrix;
             Mat4::createOrthographicOffCenter(0, size.width, 0, size.height, -1024, 1024, &orthoMatrix);
             multiplyMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_PROJECTION, orthoMatrix);
@@ -619,6 +632,7 @@ void Director::setProjection(Projection projection)
             
         case Projection::_3D:
         {
+printf("<<<<setProjection(Projection::_3D)\n");            
             float zeye = this->getZEye();
 
             Mat4 matrixPerspective, matrixLookup;
@@ -632,6 +646,17 @@ void Director::setProjection(Projection projection)
             {
                 multiplyMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_PROJECTION, getOpenGLView()->getOrientationMatrix());
             }
+#endif
+//see /cocos2dx/platform/wp8/CCEGLView.cpp
+#if USE_ROTATE90 //rotate screen 90 degrees
+//see below USE_ROTATE90, normally not run to here
+
+Mat4 m_orientationMatrix;
+m_orientationMatrix.setIdentity();
+m_orientationMatrix.rotateZ(M_PI_2);//-M_PI_2);
+//if needed, we need to add a rotation for Landscape orientations on Windows Phone 8 since it is always in Portrait Mode
+multiplyMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_PROJECTION, m_orientationMatrix);
+
 #endif
             // issue #1334
             Mat4::createPerspective(60, (GLfloat)size.width/size.height, 10, zeye+size.height/2, &matrixPerspective);
@@ -720,6 +745,17 @@ static void GLToClipTransform(Mat4 *transformOut)
 #if CC_TARGET_PLATFORM == CC_PLATFORM_WP8
     //if needed, we need to undo the rotation for Landscape orientation in order to get the correct positions
     projection = Director::getInstance()->getOpenGLView()->getReverseOrientationMatrix() * projection;
+#endif
+
+#if USE_ROTATE90 //rotate screen 90 degrees
+
+//see below USE_ROTATE90, normally not run to here
+Mat4 m_reverseOrientationMatrix;
+m_reverseOrientationMatrix.setIdentity();
+m_reverseOrientationMatrix.rotateZ(-M_PI_2);
+
+projection = m_reverseOrientationMatrix * projection;
+
 #endif
 
     auto modelview = director->getMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);

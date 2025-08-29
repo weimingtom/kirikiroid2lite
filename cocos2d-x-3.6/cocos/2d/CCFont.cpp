@@ -28,18 +28,18 @@
 
 NS_CC_BEGIN
 
-const char * Font::_glyphASCII = "\"!#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ ";
+const char * Font_::_glyphASCII = "\"!#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ ";
 
-const char * Font::_glyphNEHE =  "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ";
+const char * Font_::_glyphNEHE =  "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ";
 
 
-Font::Font() : 
+Font_::Font_() : 
 _usedGlyphs(GlyphCollection::ASCII)
 , _customGlyphs(nullptr)
 {
 }
 
-const char * Font::getGlyphCollection(GlyphCollection glyphs) const
+const char * Font_::getGlyphCollection(GlyphCollection glyphs) const
 {
     switch (glyphs)
     {
@@ -57,7 +57,7 @@ const char * Font::getGlyphCollection(GlyphCollection glyphs) const
     }
 }
 
-void Font::setCurrentGlyphCollection(GlyphCollection glyphs, const char *customGlyphs)
+void Font_::setCurrentGlyphCollection(GlyphCollection glyphs, const char *customGlyphs)
 {
     if (_customGlyphs)
         delete [] _customGlyphs;
@@ -88,7 +88,7 @@ void Font::setCurrentGlyphCollection(GlyphCollection glyphs, const char *customG
     _usedGlyphs = glyphs;
 }
 
-const char * Font::getCurrentGlyphCollection() const
+const char * Font_::getCurrentGlyphCollection() const
 {
     if (_customGlyphs)
     {

@@ -1,3 +1,6 @@
+#define USE_HELLO 0
+#define USE_HELLO_DESIGN_RES 1
+
 #include "AppDelegate.h"
 #include "MainScene.h"
 #include "ui/MainFileSelectorForm.h"
@@ -33,8 +36,12 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 	FileUtils::setDelegate(TVPCreateCustomFileUtils());
 	auto director = Director::getInstance();
 	auto glview = director->getOpenGLView();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
+#if defined(LINUX)
+	printf("*** *** applicationDidFinishLaunching 001\n");
+#else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 001");
+#endif
 #endif
 	if (!glview) {
 		glview = GLViewImpl::create("kirikiri2 frame");
@@ -43,14 +50,24 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 		glview->setFrameSize(960, 640);
 #endif
 	}
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
+#if defined(LINUX)
+	printf("*** *** applicationDidFinishLaunching 002\n");
+#else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 002");
 #endif
+#endif
+
+#if USE_HELLO_DESIGN_RES
+	//FIXME: why have to use design solution ? would change it back
+	glview->setDesignResolutionSize(1280, 720, ResolutionPolicy::SHOW_ALL);
+#else
 	// Set the design resolution
 	Size screenSize = glview->getFrameSize();
 	Size designSize = designResolutionSize;
 	designSize.height = designSize.width * screenSize.height / screenSize.width;
 	glview->setDesignResolutionSize(designSize.width, designSize.height, ResolutionPolicy::SHOW_ALL);
+#endif
 
 	Size frameSize = glview->getFrameSize();
 
@@ -62,8 +79,12 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 	// this can make sure that the resource's height could fit for the height of design resolution.
 	searchPath.push_back("res");
 
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
+#if defined(LINUX)
+	printf("*** *** applicationDidFinishLaunching 003\n");
+#else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 003");
+#endif
 #endif
 
 	std::string skinpath = GlobalConfigManager::GetInstance()->GetValue<std::string>("skin_path", "");
@@ -72,7 +93,7 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 			GlobalConfigManager::GetInstance()->SetValue("skin_path", "");
 		} else {
 
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 
 			throw;
 #elif !defined(_MSC_VER)
@@ -83,49 +104,77 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 		}
 	}
 
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
+#if defined(LINUX)
+	printf("*** *** applicationDidFinishLaunching 004\n");
+#else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004");
+#endif
 #endif
 
 	// set searching path
 	FileUtils::getInstance()->setSearchPaths(searchPath);
 
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
+#if defined(LINUX)
+	printf("*** *** applicationDidFinishLaunching 004-1\n");
+#else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004-1");
+#endif
 #endif
 
 	// turn on display FPS
 	director->setDisplayStats(false);
 
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
+#if defined(LINUX)
+	printf("*** *** applicationDidFinishLaunching 004-2\n");
+#else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004-2");
+#endif
 #endif
 
 	// set FPS. the default value is 1.0/60 if you don't call this
 	director->setAnimationInterval(1.0 / 60);
 
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
+#if defined(LINUX)
+	printf("*** *** applicationDidFinishLaunching 004-3\n");
+#else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004-3");
+#endif
 #endif
 
 	TVPInitUIExtension();
 
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
+#if defined(LINUX)
+	printf("*** *** applicationDidFinishLaunching 004-4\n");
+#else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004-4");
+#endif
 #endif
 
 	// initialize something
 	LocaleConfigManager::GetInstance()->Initialize(TVPGetCurrentLanguage());
 
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
+#if defined(LINUX)
+	printf("*** *** applicationDidFinishLaunching 004-5\n");
+#else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004-5");
+#endif
 #endif
 
 	// create a scene. it's an autorelease object
 	TVPMainScene *scene = TVPMainScene::CreateInstance();
 
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
+#if defined(LINUX)
+	printf("*** *** applicationDidFinishLaunching 004-6\n");
+#else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004-6");
+#endif
 #endif
 
 	// run
@@ -133,8 +182,12 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 
 	//director->getConsole()->listenOnTCP(16006);
 
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
+#if defined(LINUX)
+	printf("*** *** applicationDidFinishLaunching 005\n");
+#else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 005");
+#endif
 #endif
 
 	scene->scheduleOnce([](float dt){

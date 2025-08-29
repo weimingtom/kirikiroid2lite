@@ -37,7 +37,7 @@ void tTVPGraphicHandlerType::Load( void* formatdata, void *callbackdata, tTVPGra
 		} catch(...) {
 			istream->ClearStream();
 			istream->Release();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)	
 			__debugbreak(); throw;
@@ -70,7 +70,7 @@ void tTVPGraphicHandlerType::Save( const ttstr & storagename, const ttstr & mode
 			SaveHandlerPlugin( FormatData, (void*)image, istream, mode, w, h, tTVPBitmapScanLineCallbackForSave, meta );
 		} catch(...) {
 			istream->Release();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)	
 			__debugbreak(); throw;
@@ -87,7 +87,7 @@ void tTVPGraphicHandlerType::Save( const ttstr & storagename, const ttstr & mode
 			SaveHandler( FormatData, stream, image, mode, meta );
 		} catch(...) {
 			delete stream;
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)	
 			__debugbreak(); throw;
@@ -110,7 +110,7 @@ void tTVPGraphicHandlerType::Header( tTJSBinaryStream *src, iTJSDispatch2** dic 
 		} catch(...) {
 			istream->ClearStream();
 			istream->Release();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)	
 			__debugbreak(); throw;
@@ -336,7 +336,7 @@ void tTVPSusiePicturePlugin::Load(void *callbackdata,
 		if(bitmap) LocalFree(bitmap);
 		if(infolocked) LocalUnlock(info);
 		if(info) LocalFree(info);
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)	
 		__debugbreak(); throw;

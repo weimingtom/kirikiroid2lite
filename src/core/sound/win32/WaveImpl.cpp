@@ -46,7 +46,7 @@
 #include "UserEvent.h"
 #include "NativeEventQueue.h"
 #include "Platform.h"
-#if defined(_MSC_VER) || defined(ANDROID)
+#if defined(_MSC_VER) || defined(ANDROID) || defined(LINUX)
 //#include <Windows.h>
 extern void TVPOutputDebugString(const char *); 
 #endif
@@ -2281,7 +2281,7 @@ void tTJSNI_WaveSoundBuffer::CreateSoundBuffer()
 		}
 		catch(...)
 		{
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)	
 			__debugbreak(); throw;
@@ -3092,7 +3092,7 @@ void tTJSNI_WaveSoundBuffer::Open(const ttstr & storagename)
 	catch(...)
 	{
 		Clear();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)	
 		__debugbreak(); throw;
@@ -3122,7 +3122,7 @@ void tTJSNI_WaveSoundBuffer::Open(const ttstr & storagename)
 		{
 			delete [] buffer;
 			Clear();
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)	
 			__debugbreak(); throw;

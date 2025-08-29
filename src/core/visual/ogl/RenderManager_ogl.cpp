@@ -1,4 +1,4 @@
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 #include "renderer/CCTexture2D.h"
 #include "renderer/CCGLProgramCache.h"
 #include "renderer/CCGLProgram.h"
@@ -4038,7 +4038,7 @@ REGISTER_RENDERMANAGER(TVPRenderManager_OpenGL, opengl);
 #include "tjsCommHead.h"
 
 void TVPInitTextureFormatList() {
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 	throw;
 #elif defined(_MSC_VER)	
 	__debugbreak(); throw;
@@ -4048,7 +4048,7 @@ void TVPInitTextureFormatList() {
 }
 
 bool TVPIsSupportTextureFormat(GLenum fmt) {
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 	throw;
 #elif defined(_MSC_VER)	
 	__debugbreak(); throw;
@@ -4059,7 +4059,7 @@ bool TVPIsSupportTextureFormat(GLenum fmt) {
 }
 
 std::string TVPGetOpenGLInfo() {
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 	throw;
 #elif defined(_MSC_VER)	
 	__debugbreak(); throw;

@@ -57,7 +57,11 @@
     #if defined ANDROID
         #include <sys/sysconf.h>
     #else
+#if defined(LINUX)
+        //#include <sys/sysctl.h>
+#else	
         #include <sys/sysctl.h>
+#endif		
     #endif
 #endif
 

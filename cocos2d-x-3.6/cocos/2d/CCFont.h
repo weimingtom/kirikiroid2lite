@@ -35,7 +35,7 @@ NS_CC_BEGIN
 
 class FontAtlas;
 
-class CC_DLL Font : public Ref
+class CC_DLL Font_ : public Ref
 {
 public:
     virtual  FontAtlas *createFontAtlas() = 0;
@@ -48,12 +48,12 @@ public:
     
 protected:
     
-    Font();
+    Font_();
     /**
      * @js NA
      * @lua NA
      */
-    virtual ~Font() {}
+    virtual ~Font_() {}
     void setCurrentGlyphCollection(GlyphCollection glyphs, const char *customGlyphs = 0);
     const char * getGlyphCollection(GlyphCollection glyphs) const;
     

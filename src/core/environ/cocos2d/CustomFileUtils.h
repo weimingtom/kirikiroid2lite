@@ -7,6 +7,8 @@
 #import "platform/apple/CCFileUtils-apple.h"
 #elif CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
 #include "platform/android/CCFileUtils-android.h"
+#elif CC_TARGET_PLATFORM == CC_PLATFORM_LINUX
+#include "platform/linux/CCFileUtils-linux.h"
 #endif
 #ifdef MINIZIP_FROM_SYSTEM
 #include <minizip/unzip.h>
@@ -35,7 +37,7 @@ NS_CC_BEGIN
 class FileUtilsAndroid_mod : public FileUtils
 {
 	friend class FileUtils;
-public:
+public: //FIXME: modify here
 	FileUtilsAndroid_mod();
 	/**
 	* @js NA
@@ -87,7 +89,7 @@ protected:
 //! @brief  Helper class to handle file operations
 class FileUtilsWin32_mod : public FileUtils
 {
-public:
+public: //FIXME: modify here
     friend class FileUtils;
     FileUtilsWin32_mod();
     /* override funtions */
@@ -144,6 +146,24 @@ protected:
 
 };
 
+//! @brief  Helper class to handle file operations
+class CC_DLL FileUtilsLinux_mod : public FileUtils
+{
+public: //FIXME: modify here
+    friend class FileUtils;
+    FileUtilsLinux_mod();
+    std::string _writablePath;
+public:
+    /* override funtions */
+    bool init();
+//    virtual std::string getWritablePath() const;
+    std::string getWritablePath() const;
+//private: //FIXME: modify here
+//protected:
+//    virtual bool isFileExistInternal(const std::string& strFilePath) const;
+     bool isFileExistInternal(const std::string& strFilePath) const;
+};
+
 typedef
 #if CC_TARGET_PLATFORM == CC_PLATFORM_WIN32
 FileUtilsWin32_mod
@@ -151,6 +171,8 @@ FileUtilsWin32_mod
 FileUtilsApple
 #elif CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
 FileUtilsAndroid_mod
+#elif CC_TARGET_PLATFORM == CC_PLATFORM_LINUX
+FileUtilsLinux_mod
 #endif
 FileUtilsInherit;
 

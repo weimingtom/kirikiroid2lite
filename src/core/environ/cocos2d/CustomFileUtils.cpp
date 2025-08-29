@@ -1037,6 +1037,275 @@ bool TVPCopyFile(const std::string &from, const std::string &to)
 }
 
 
+#elif defined(LINUX)
+#include "CustomFileUtils.h"
+#include "platform/CCCommon.h"
+#include <cstdlib>
+
+
+#include "CCFileUtils-linux.h"
+#include "CCApplication-linux.h"
+#include "platform/CCCommon.h"
+#include "base/ccMacros.h"
+#include "deprecated/CCString.h"
+#include <unistd.h>
+#include <sys/stat.h>
+#include <stdio.h>
+#include <errno.h>
+
+#ifndef CC_RESOURCE_FOLDER_LINUX
+#define CC_RESOURCE_FOLDER_LINUX ("/Resources/")
+#endif
+
+using namespace std;
+
+NS_CC_BEGIN
+
+#if 0
+FileUtils* FileUtils::getInstance()
+{
+    if (s_sharedFileUtils == NULL)
+    {
+        s_sharedFileUtils = new FileUtilsLinux();
+        if(!s_sharedFileUtils->init())
+        {
+          delete s_sharedFileUtils;
+          s_sharedFileUtils = NULL;
+          CCLOG("ERROR: Could not init CCFileUtilsLinux");
+        }
+    }
+    return s_sharedFileUtils;
+}
+#endif
+
+FileUtilsLinux_mod::FileUtilsLinux_mod()
+{}
+
+bool FileUtilsLinux_mod::init()
+{
+    // get application path
+    char fullpath[256] = {0};
+    ssize_t length = readlink("/proc/self/exe", fullpath, sizeof(fullpath)-1);
+
+    if (length <= 0) {
+        return false;
+    }
+
+    fullpath[length] = '\0';
+    std::string appPath = fullpath;
+    _defaultResRootPath = appPath.substr(0, appPath.find_last_of("/"));
+    _defaultResRootPath += CC_RESOURCE_FOLDER_LINUX;
+
+    // Set writable path to $XDG_CONFIG_HOME or ~/.config/<app name>/ if $XDG_CONFIG_HOME not exists.
+    const char* xdg_config_path = getenv("XDG_CONFIG_HOME");
+    std::string xdgConfigPath;
+    if (xdg_config_path == NULL) {
+        xdgConfigPath = getenv("HOME");
+        xdgConfigPath += "/.config";
+    } else {
+        xdgConfigPath  = xdg_config_path;
+    }
+    _writablePath = xdgConfigPath;
+    _writablePath += appPath.substr(appPath.find_last_of("/"));
+    _writablePath += "/";
+
+    return FileUtils::init();
+}
+
+string FileUtilsLinux_mod::getWritablePath() const
+{
+    struct stat st;
+    stat(_writablePath.c_str(), &st);
+    if (!S_ISDIR(st.st_mode)) {
+        mkdir(_writablePath.c_str(), 0744);
+    }
+
+    return _writablePath;
+}
+
+bool FileUtilsLinux_mod::isFileExistInternal(const std::string& strFilePath) const
+{
+    if (strFilePath.empty())
+    {
+        return false;
+    }
+
+    std::string strPath = strFilePath;
+    if (!isAbsolutePath(strPath))
+    { // Not absolute path, add the default root path at the beginning.
+        strPath.insert(0, _defaultResRootPath);
+    }
+    
+    struct stat sts;
+    return (stat(strPath.c_str(), &sts) != -1) ? true : false;
+}
+
+//NS_CC_END
+
+
+//#ifndef _MSC_VER
+//CustomFileUtils::CustomFileUtils()
+//{
+//}
+//#endif
+
+void CustomFileUtils::addAutoSearchArchive(const std::string& path)
+{
+	if (!this->isFileExist(path)) return;
+	unzFile file = nullptr;
+	file = unzOpen(path.c_str());
+	unz_file_info file_info;
+	do {
+		unz_file_pos entry;
+		if (unzGetFilePos(file, &entry) == UNZ_OK) {
+			char filename_inzip[1024];
+			if (unzGetCurrentFileInfo(file, &file_info, filename_inzip, sizeof(filename_inzip), NULL, 0, NULL, 0) == UNZ_OK) {
+				_autoSearchArchive[filename_inzip] = std::make_pair(file, entry);
+			}
+		}
+	} while (unzGoToNextFile(file) == UNZ_OK);
+}
+
+std::string CustomFileUtils::fullPathForFilename(const std::string &filename) const
+{
+	auto it = _autoSearchArchive.find(filename);
+	if (_autoSearchArchive.end() != it) {
+		return filename;
+	}
+	return FileUtilsInherit::fullPathForFilename(filename);
+}
+
+unsigned char* CustomFileUtils::getFileData(const std::string& filename, const char* mode, ssize_t *size)
+{
+	unsigned char* ret = getFileDataFromArchive(filename, size);
+	if (ret) return ret;
+	return FileUtilsInherit::getFileData(filename, mode, size);
+}
+
+bool CustomFileUtils::isFileExistInternal(const std::string& strFilePath) const
+{
+#if defined(ANDROID)
+	__android_log_print(ANDROID_LOG_ERROR, "CustomFileUtils.cpp", "%s", "*** *** CustomFileUtils::isFileExistInternal 001");
+#endif
+	auto it = _autoSearchArchive.find(strFilePath);
+	if (_autoSearchArchive.end() != it) {
+		return true;
+	}
+#if defined(ANDROID)
+	__android_log_print(ANDROID_LOG_ERROR, "CustomFileUtils.cpp", "%s", "*** *** CustomFileUtils::isFileExistInternal 002");
+#endif
+	return FileUtilsInherit::isFileExistInternal(strFilePath);
+}
+
+bool CustomFileUtils::isDirectoryExistInternal(const std::string& dirPath) const
+{
+	//for (auto &it : _autoSearchArchive) {
+	for (auto p_it = _autoSearchArchive.begin(); p_it != _autoSearchArchive.end(); ++p_it)
+	{
+		const auto& it = *p_it;
+		if (it.first.size() <= dirPath.size()) continue;
+		if (!strncmp(it.first.c_str(), dirPath.c_str(), dirPath.size()) && it.first[dirPath.size()] == '/') {
+			return true;
+		}
+	}
+	return FileUtilsInherit::isDirectoryExistInternal(dirPath);
+}
+
+unsigned char* CustomFileUtils::getFileDataFromArchive(const std::string& filename, ssize_t *size)
+{
+	auto it = _autoSearchArchive.find(filename);
+	if (_autoSearchArchive.end() != it) {
+		pthread_mutex_lock(&_lock);
+		if (unzGoToFilePos(it->second.first, &it->second.second) != UNZ_OK) {
+			pthread_mutex_unlock(&_lock); //FIXME:added
+			return nullptr;
+		}
+		unz_file_info fileInfo;
+		if (unzGetCurrentFileInfo(it->second.first, &fileInfo, NULL, 0, NULL, 0, NULL, 0) != UNZ_OK) return nullptr;
+		unsigned char *buffer = (unsigned char*)malloc(fileInfo.uncompressed_size);
+		int readedSize = unzReadCurrentFile(it->second.first, buffer, static_cast<unsigned>(fileInfo.uncompressed_size));
+		pthread_mutex_unlock(&_lock);
+		CCASSERT(readedSize == 0 || readedSize == (int)fileInfo.uncompressed_size, "the file size is wrong");
+		*size = fileInfo.uncompressed_size;
+		return buffer;
+	}
+	return nullptr;
+}
+
+cocos2d::Data CustomFileUtils::getDataFromFile(const std::string& filename)
+{
+	ssize_t size;
+	unsigned char* buffer = getFileDataFromArchive(filename, &size);
+	if (buffer) {
+		Data ret;
+		ret.fastSet(buffer, size);
+		return ret;
+	}
+	return FileUtilsInherit::getDataFromFile(filename);
+}
+
+std::string CustomFileUtils::getStringFromFile(const std::string& filename)
+{
+	Data data = getDataFromFile(filename);
+	if (data.isNull())
+		return "";
+
+	std::string ret((const char*)data.getBytes());
+	return ret;
+}
+
+NS_CC_END
+
+
+cocos2d::CustomFileUtils *TVPCreateCustomFileUtils() {
+	cocos2d::CustomFileUtils *ret = new cocos2d::CustomFileUtils; //FIXME:
+	ret->init();
+	return ret;
+}
+
+
+#include "StorageImpl.h"
+#include "Platform.h"
+static bool TVPCopyFolder(const std::string &from, const std::string &to) {
+	if (!TVPCheckExistentLocalFolder(to) && !TVPCreateFolders(to)) {
+		return false;
+	}
+
+	bool success = true;
+	TVPListDir(from, [&](const std::string &_name, int mask) {
+		if (_name == "." || _name == "..") return;
+		if (!success) return;
+		if (mask & S_IFREG) {
+			success = TVPCopyFile(from + "/" + _name, to + "/" + _name);
+		}
+		else if (mask & S_IFDIR) {
+			success = TVPCopyFolder(from + "/" + _name, to + "/" + _name);
+		}
+	});
+	return success;
+}
+bool TVPCopyFile(const std::string &from, const std::string &to)
+{
+	FILE * ffrom = fopen(from.c_str(), "rb");
+	if (!ffrom) { // try folder copy
+		return TVPCopyFolder(from, to);
+	}
+	FILE * fto = fopen(to.c_str(), "wb");
+	if (!fto) {
+		if (ffrom) fclose(ffrom);
+		return false;
+	}
+	const int bufSize = 1 * 1024 * 1024;
+	std::vector<char> buffer; buffer.resize(bufSize);
+	int readed = 0;
+	while ((readed = fread(&buffer.front(), 1, bufSize, ffrom))) {
+		fwrite(&buffer.front(), 1, readed, fto);
+	}
+	fclose(ffrom);
+	fclose(fto);
+	return true;
+}
+
 
 #else
 #error unknown platform

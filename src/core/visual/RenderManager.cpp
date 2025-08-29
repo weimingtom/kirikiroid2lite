@@ -1,4 +1,4 @@
-#if defined(_MSC_VER) || defined(ANDROID)
+#if defined(_MSC_VER) || defined(ANDROID) || defined(LINUX)
 /*=================================*/
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -292,7 +292,7 @@ void tTVPBitmap::Allocate(tjs_uint width, tjs_uint height, tjs_uint bpp)
 	} catch (...)
 	{
 		free(BitmapInfo), BitmapInfo = NULL;
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		throw;
 #elif defined(_MSC_VER)	
 		__debugbreak(); throw;
@@ -2149,7 +2149,7 @@ struct TDoBoxBlurLoop {
 					TJSAlignedDealloc(dest_buf[i]);
 				}
 			}
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 			throw;
 #elif defined(_MSC_VER)	
 			__debugbreak(); throw;
@@ -2684,7 +2684,7 @@ public:
 		, _drawCount(0)
 	{
 		_createStaticTexture2D = tTVPSoftwareTexture2D::Create;
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 		std::string compTexMethod = IndividualConfigManager::GetInstance()->GetValue<std::string>("software_compress_tex", "none");
 		if (compTexMethod == "halfline") _createStaticTexture2D = tTVPSoftwareTexture2D_half::Create;
 		else if (compTexMethod == "lz4") _createStaticTexture2D = tTVPSoftwareTexture2D_lz4::Create;
@@ -3201,7 +3201,7 @@ public:
 				TVP_DoBilinearAffineLoop_ARGS);
 		};
 #else/*=================================*/
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 		CCLOG("=====================>GetStretchFunction not imp");
 		throw;
 #elif defined(_MSC_VER)	
@@ -4570,7 +4570,7 @@ extern "C" {
 iTVPRenderManager * TVPGetRenderManager()
 {
 #if 0
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 	throw;
 #elif defined(_MSC_VER)	
 	__debugbreak(); throw;
@@ -4589,7 +4589,7 @@ iTVPRenderManager * TVPGetRenderManager()
 }
 
 iTVPRenderMethod* iTVPRenderManager::GetRenderMethod(const char *name, tjs_uint32 *hint) {
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 	throw;
 #elif defined(_MSC_VER)	
 	__debugbreak(); throw;
@@ -4600,7 +4600,7 @@ iTVPRenderMethod* iTVPRenderManager::GetRenderMethod(const char *name, tjs_uint3
 }
 
 iTVPRenderManager * TVPGetSoftwareRenderManager() {
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 	throw;
 #elif defined(_MSC_VER)	
 	__debugbreak(); throw;
@@ -4612,7 +4612,7 @@ iTVPRenderManager * TVPGetSoftwareRenderManager() {
 
 iTVPRenderMethod* iTVPRenderManager::GetRenderMethod(tjs_int opa, bool hda, int/*tTVPBBBltMethod*/ method)
 {
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 	throw;
 #elif defined(_MSC_VER)	
 	__debugbreak(); throw;
@@ -4624,7 +4624,7 @@ iTVPRenderMethod* iTVPRenderManager::GetRenderMethod(tjs_int opa, bool hda, int/
 
 bool TVPIsSoftwareRenderManager() {
 #if 0
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 	throw;
 #elif defined(_MSC_VER)	
 	__debugbreak(); throw;
@@ -4647,7 +4647,7 @@ bool TVPIsSoftwareRenderManager() {
 void iTVPTexture2D::RecycleProcess()
 {
 #if 0
-#if defined(ANDROID)
+#if defined(ANDROID) || defined(LINUX)
 	throw;
 #elif defined(_MSC_VER)	
 	__debugbreak(); throw;

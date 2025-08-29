@@ -766,7 +766,12 @@ void Button::setTitleColor(const Color3B& color)
     {
         this->createTitleRenderer();
     }
+#if !MY_USE_UIBUTTON_SETTITLECOLOR
     _titleRenderer->setTextColor(Color4B(color));
+#else
+//bug see forum.cocosengine.org/t/uibutton-settitlecolor-method-bug/11347
+    _titleRenderer->setColor(color);
+#endif
 }
 
 Color3B Button::getTitleColor() const

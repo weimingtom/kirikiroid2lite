@@ -48,7 +48,7 @@
 
 NS_CC_BEGIN
 
-class CC_DLL FontFreeType : public Font
+class CC_DLL FontFreeType : public Font_
 {
 public:
     static const int DistanceMapSpread;

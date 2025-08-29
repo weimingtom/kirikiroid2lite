@@ -555,7 +555,7 @@ namespace cocostudio
         layoutComponent->setPercentHeight(sizeYPercent);
         layoutComponent->setStretchWidthEnabled(stretchHorizontalEnabled);
         layoutComponent->setStretchHeightEnabled(stretchVerticalEnabled);
-        ui::LayoutComponent::HorizontalEdge horizontalEdgeType = ui::LayoutComponent::HorizontalEdge::None;
+        ui::LayoutComponent::HorizontalEdge horizontalEdgeType = ui::LayoutComponent::HorizontalEdge::None__;
         if (horizontalEdge == Layout_LeftEdge)
         {
             horizontalEdgeType = ui::LayoutComponent::HorizontalEdge::Left;
@@ -566,7 +566,7 @@ namespace cocostudio
         }
         else if (horizontalEdge == Layout_BothEdge)
         {
-            horizontalEdgeType = ui::LayoutComponent::HorizontalEdge::Center;
+            horizontalEdgeType = ui::LayoutComponent::HorizontalEdge::Center__;
         }
         layoutComponent->setHorizontalEdge(horizontalEdgeType);
         ui::LayoutComponent::VerticalEdge verticalEdgeType = ui::LayoutComponent::VerticalEdge::None_;

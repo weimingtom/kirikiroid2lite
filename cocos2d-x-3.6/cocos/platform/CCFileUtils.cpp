@@ -1308,6 +1308,7 @@ bool FileUtils::renameFile(const std::string &path, const std::string &oldname, 
  
     // Rename a file
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT || CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
+#if 0
     boost::regex pat("\\/");
     std::string _old = boost::regex_replace(oldPath, pat, "\\");
     std::string _new = boost::regex_replace(newPath, pat, "\\");
@@ -1318,6 +1319,16 @@ bool FileUtils::renameFile(const std::string &path, const std::string &oldname, 
         return true;
     }
     return false;
+#else
+    int errorCode = rename(oldPath.c_str(), newPath.c_str());
+
+    if (0 != errorCode)
+    {
+        CCLOGERROR("Fail to rename file %s to %s !Error code is %d", oldPath.c_str(), newPath.c_str(), errorCode);
+        return false;
+    }
+    return true;
+#endif	
 #elif (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) 
 #if 0
     boost::regex pat("\\/");

@@ -29,7 +29,14 @@ THE SOFTWARE.
 #include "base/CCRef.h"
 #include "platform/CCCommon.h"
 #include "platform/CCGLView.h"
+
+#ifdef USE_NO_GLFW
+#include <EGL/egl.h>
+#include <GLES2/gl2.h>
+#else
+#define GLFW_INCLUDE_ES2
 #include "glfw3.h"
+#endif
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
 #ifndef GLFW_EXPOSE_NATIVE_WIN32
@@ -59,7 +66,10 @@ public:
     static GLViewImpl* create(const std::string& viewName);
     static GLViewImpl* createWithRect(const std::string& viewName, Rect size, float frameZoomFactor = 1.0f);
     static GLViewImpl* createWithFullScreen(const std::string& viewName);
+#if USE_NO_GLFW
+#else		
     static GLViewImpl* createWithFullScreen(const std::string& viewName, const GLFWvidmode &videoMode, GLFWmonitor *monitor);
+#endif
 
     /*
      *frameZoomFactor for frame. This method is for debugging big resolution (e.g.new ipad) app on desktop.
@@ -76,7 +86,10 @@ public:
 
     bool windowShouldClose() override;
     void pollEvents() override;
+#if USE_NO_GLFW
+#else		
     GLFWwindow* getWindow() const { return _mainWindow; }
+#endif
 
     /* override functions */
     virtual bool isOpenGLReady() override;
@@ -103,6 +116,9 @@ public:
     /** Get retina factor */
     int getRetinaFactor() const override { return _retinaFactor; }
     
+#if USE_NO_GLFW
+//skip
+#else	
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
     HWND getWin32Window() { return glfwGetWin32Window(_mainWindow); }
 #endif /* (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) */
@@ -110,6 +126,7 @@ public:
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
     id getCocoaWindow() { return glfwGetCocoaWindow(_mainWindow); }
 #endif // #if (CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
+#endif
 
 protected:
     GLViewImpl();
@@ -117,12 +134,17 @@ protected:
 
     bool initWithRect(const std::string& viewName, Rect rect, float frameZoomFactor);
     bool initWithFullScreen(const std::string& viewName);
+#if USE_NO_GLFW
+#else		
     bool initWithFullscreen(const std::string& viewname, const GLFWvidmode &videoMode, GLFWmonitor *monitor);
+#endif
 
     bool initGlew();
 
     void updateFrameSize();
 
+#if USE_NO_GLFW
+#else		
     // GLFW callbacks
     void onGLFWError(int errorID, const char* errorDesc);
     void onGLFWMouseCallBack(GLFWwindow* window, int button, int action, int modify);
@@ -134,6 +156,7 @@ protected:
     void onGLFWframebuffersize(GLFWwindow* window, int w, int h);
     void onGLFWWindowSizeFunCallback(GLFWwindow *window, int width, int height);
     void onGLFWWindowIconifyCallback(GLFWwindow* window, int iconified);
+#endif
 
     bool _captured;
     bool _supportTouch;
@@ -143,13 +166,19 @@ protected:
 
     float _frameZoomFactor;
 
+#if USE_NO_GLFW
+#else		
     GLFWwindow* _mainWindow;
     GLFWmonitor* _monitor;
+#endif
 
     float _mouseX;
     float _mouseY;
 
+#if USE_NO_GLFW
+#else		
     friend class GLFWEventHandler;
+#endif
 
 private:
     CC_DISALLOW_COPY_AND_ASSIGN(GLViewImpl);

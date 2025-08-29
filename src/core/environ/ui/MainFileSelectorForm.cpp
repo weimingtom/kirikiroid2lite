@@ -1,3 +1,6 @@
+#define USE_HELLO_3 0
+#define USE_HELLO_DESIGN_RES_3 1
+
 #include "MainFileSelectorForm.h"
 #include "cocos2d.h"
 #include "cocostudio/CocoLoader.h"
@@ -20,12 +23,20 @@
 #include "StorageImpl.h"
 #include "TipsHelpForm.h"
 //#include "XP3RepackForm.h"
+#if !defined(_MSC_VER)
+#include <unistd.h> //readlink
+#endif
+#include <fstream> //.good
 
 using namespace cocos2d;
 using namespace cocos2d::ui;
 
 const float UI_ACTION_DUR = 0.3f;
+#if USE_HELLO_DESIGN_RES_3
+const char * const FileName_NaviBar = "ui/NaviBarWithMenu2.csb";
+#else
 const char * const FileName_NaviBar = "ui/NaviBarWithMenu.csb";
+#endif
 const char * const FileName_Body = "ui/TableView.csb";
 //const char * const FileName_BottomBar = "ui/BottomBar.csb";
 //const char * const FileName_BtnPref = "ui/button/Pref.csb";
@@ -168,7 +179,11 @@ void TVPMainFileSelectorForm::show() {
 #ifdef _DEBUG
 	TVPGL_ASM_Test();
 #endif
+#if !USE_HELLO_DESIGN_RES_3
 	ListHistory(); // filter history data
+#else
+	ListHistory(); // filter history data
+#endif
 
 	bool first = true;
 	std::string lastpath;
@@ -185,8 +200,41 @@ void TVPMainFileSelectorForm::show() {
 	if (lastpath.size() <= RootPathLen) {
 		lastpath = TVPGetDriverPath()[0];
 	}
+//FIXME:
+#if !USE_HELLO_DESIGN_RES_3 //see FileName_NaviBar, if skip it, skip here
 	ListDir(lastpath); // getCurrentDir()
+#else
+	ListDir(lastpath); // getCurrentDir()
+#endif
 	// TODO show usage
+	//TVPMainScene::GetInstance()->startupFrom("/mnt/SDCARD/Data.xp3");
+	TVPMainScene::GetInstance()->scheduleOnce([this](float dt){
+//printf("<<<<<hellodemo\n");
+		//startup("/mnt/SDCARD/Data.xp3");
+#if 0
+		TVPMainScene::GetInstance()->startupFrom("/mnt/SDCARD/Data.xp3");
+#else
+    // get application path
+    static char fullpath[1024 * 4] = {0};
+    ssize_t length = readlink("/proc/self/exe", fullpath, sizeof(fullpath)-1);
+
+    std::string dataPath;//fontPath;
+    if (length <= 0) {
+        dataPath = "./data.xp3";
+    } else {
+        fullpath[length] = '\0';
+        std::string appPath = fullpath;
+        dataPath = appPath.substr(0, appPath.find_last_of("/"));
+        dataPath += "/data.xp3";
+    }
+std::ifstream f(dataPath);
+if (f) {
+	TVPMainScene::GetInstance()->startupFrom(dataPath.c_str());
+} else {
+	fprintf(stderr, "<<< data.xp3 not found: %s\n", dataPath.c_str());
+}
+#endif
+	}, 0, "hellodemo");
 }
 
 static const std::string str_startup_tjs("startup.tjs");
@@ -213,7 +261,7 @@ void TVPMainFileSelectorForm::onCellClicked(int idx) {
 	}
 	else if ((archiveType = TVPCheckArchive(info.FullPath.c_str())) == 1) {
 		startup(info.FullPath);
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 	} else if (archiveType == 0 && TVPCheckIsVideoFile(info.FullPath.c_str())) {
 		SimpleMediaFilePlayer *player = SimpleMediaFilePlayer::create();
 		TVPMainScene::GetInstance()->addChild(player, 10);// pushUIForm(player);
@@ -266,7 +314,12 @@ void TVPMainFileSelectorForm::initFromFile()
 		root->setContentSize(sceneSize);
 		ui::Helper::doLayout(root);
 	}
+#if !USE_HELLO_DESIGN_RES_3 
+//skip FileName_NaviBar, that will cause screen white and button green 
 	inherit::initFromFile(FileName_NaviBar, FileName_Body, nullptr/*FileName_BottomBar*/, _fileList);
+#else
+	inherit::initFromFile(FileName_NaviBar, FileName_Body, nullptr/*FileName_BottomBar*/, _fileList);
+#endif
 }
 
 // std::string _getLastPathFilePath() {
@@ -421,7 +474,7 @@ void TVPMainFileSelectorForm::showMenu(Ref*) {
 			});
 		}
 		reader.findWidget("btnRepack")->addClickEventListener([this](Ref*) {
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 			TVPProcessXP3Repack(CurrentPath);
 #endif
 			hideMenu(nullptr);
@@ -517,7 +570,7 @@ void TVPMainFileSelectorForm::ListHistory()
 {
 	if (!_historyList) return;
 	_historyList->removeAllChildren();
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 	HistoryCell *nullcell = new HistoryCell();
 	nullcell->init();
 #else
@@ -555,7 +608,7 @@ void TVPMainFileSelectorForm::ListHistory()
 			continue;
 		}
 	}
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
 	nullcell = new HistoryCell();
 	nullcell->init();
 #else
@@ -616,7 +669,8 @@ void TVPMainFileSelectorForm::HistoryCell::initInfo(const std::string &fullpath,
 	_file = static_cast<cocos2d::ui::Text*>(reader.findController<cocos2d::Node>("file"));
 	_panel_delete = reader.findController<cocos2d::Node>("panel_delete");
 	if (!_panel_delete) _panel_delete = _btn_delete;
-#if !defined(_MSC_VER) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+//FIXME:
 	_scrollview->setScrollBarEnabled(false);
 #else
 	//_scrollview->setInertiaScrollEnabled(false);
