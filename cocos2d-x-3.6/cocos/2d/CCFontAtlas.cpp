@@ -313,7 +313,7 @@ void  FontAtlas::setCommonLineHeight(float newHeight)
     _commonLineHeight = newHeight;
 }
 
-const Font * FontAtlas::getFont() const
+const Font_ * FontAtlas::getFont() const
 {
     return _font;
 }

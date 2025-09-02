@@ -28,6 +28,7 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * Android support: with many bugs now.    
 
 ## History  
+* 2025-09-02 ：Merge kirikiroid2-miyoo-a30 sources and compile linux version successfully.
 * 2025-05-15 : Adding Android audio function and migrate to NDK r25, but Windows version compiling status is unknown.  
 * 2024-12-21 : Adding Windows audio function.  
 * 2020-06-25 13:23 : first commit on github, migrated from gitee to github, first available version for Android NDK and Win7 VS2013        
@@ -47,6 +48,19 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * Run ndk-build, or ndk-build -j8, or ndk-build NDK_DEBUG=1 V=1.   
 * Import, compile and run with Android ADT, see project\android\ .project   
 * Or import, compile and run with Android Studio, see project\androidstudio     
+* (FIXME) Change android permission toast to dialog, like this
+```
+Toast.makeText(getApplicationContext(), "You grant write external storage permission. Please restart to continue.", Toast.LENGTH_LONG).show();
+```
+
+## (TODO) How to build for Linux (Xubuntu 20.04 64bit)
+* (FIXME) Fix initWithRect and setDesignResolutionSize problems
+* (FIXME) Two SDL windows, need to remove 'SDL2 joystick capture'
+* $ sudo apt install libglfw3-dev libfreetype-dev
+* $ make clean
+* $ make -j8
+* $ make test
+* $ ./project/kirikiroid2
 
 ## Minimum version of Cocos2d-x  
 * VS2013 version cocos2d-x 3.6, see   
@@ -228,3 +242,24 @@ iTVPSoundBuffer* TVPCreateSoundBuffer(tTVPWaveFormat &fmt, int bufcount)
 ## SDCard permission check
 * If you want to skip permission check, you need to add android:requestLegacyExternalStorage, 
 * but not recommended, I use both
+
+## (TODO) Linux Windows Size, if need 640x480, change to USE_APP_WIDTH
+* cocos2d-x-3.6/cocos/platform/desktop/CCGLViewImpl-desktop.cpp, see #if 0
+```
+GLViewImpl* GLViewImpl::create(const std::string& viewName)
+{
+    auto ret = new (std::nothrow) GLViewImpl;
+#if 0 //defined(USE_APP_WIDTH) && defined(USE_APP_HEIGHT)
+    if(ret && ret->initWithRect(viewName, Rect(0, 0, USE_APP_WIDTH, USE_APP_HEIGHT), 1)) {
+#else      
+    if(ret && ret->initWithRect(viewName, Rect(0, 0, 960, 640), 1)) {
+    //if(ret && ret->initWithRect(viewName, Rect(0, 0, 640, 480), 1)) {
+#endif    
+        ret->autorelease();
+        return ret;
+    }
+
+    return nullptr;
+}
+```
+

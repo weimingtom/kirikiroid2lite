@@ -12,6 +12,12 @@
 #pragma warning(disable : 4127) // conditional expression is constant
 #endif
 
+#if defined(LINUX)
+//FIXME:????
+//for EGL/egl.h, and EGL/eglplatform.h
+#undef Bool
+#endif
+
 namespace rapidjson {
 
 //! JSON writer

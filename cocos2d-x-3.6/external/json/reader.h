@@ -29,6 +29,12 @@
 	RAPIDJSON_MULTILINEMACRO_END
 #endif
 
+#if defined(LINUX)
+//FIXME:????
+//for EGL/egl.h, and EGL/eglplatform.h
+#undef Bool
+#endif
+
 namespace rapidjson {
 
 ///////////////////////////////////////////////////////////////////////////////
