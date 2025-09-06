@@ -27,8 +27,15 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * Windows support: Windows 7 success.  
 * Android support: with many bugs now.    
 
+## Bugs
+* Only support software renderer (软件渲染器) in the global settings, not support OpenGL renderer（OpenGL渲染器，实验性）  
+* Android version: enter demo game->bottom bar->right button close->no response   
+* Linux version: windowEx.dll System.getMonitorInfo is not found, it makes application crashing       
+see https://github.com/weimingtom/kirikiroid2lite/issues/1  
+https://github.com/krkrz/krkr2/blob/master/kirikiri2/trunk/kirikiri2/src/plugins/win32/windowEx/main.cpp  
+
 ## History  
-* 2025-09-02 ：Merge kirikiroid2-miyoo-a30 sources and compile linux version successfully.
+* 2025-09-02 : Merge kirikiroid2-miyoo-a30 sources and compile linux version successfully.
 * 2025-05-15 : Adding Android audio function and migrate to NDK r25, but Windows version compiling status is unknown.  
 * 2024-12-21 : Adding Windows audio function.  
 * 2020-06-25 13:23 : first commit on github, migrated from gitee to github, first available version for Android NDK and Win7 VS2013        
@@ -43,8 +50,16 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * Open project\win32\cocos2d-win32.vs2013.sln with vs2013.  
 
 ## How to build for Android  
-* Modify project\android\console.bat, point to NDK path.  
+* Modify project\android\console.bat, point to NDK path. Recommended NDK r25 (you can also try NDK r10e)    
 * Run project\android\console.bat  
+```
+::@set PATH=D:\android-ndk-r10e;%PATH%
+@set PATH=D:\home\soft\android_studio_sdk\ndk\25.2.9519653;%PATH%
+::@set PATH=D:\home\soft\android_studio_sdk\ndk\20.0.5594570;%PATH%
+::@set PATH=D:\home\soft\android_studio_sdk\ndk\20.1.5948944;%PATH%
+@set NDK_MODULE_PATH=%CD%\..\..\cocos2d-x-3.6\cocos;%CD%\..\..\cocos2d-x-3.6\external;%CD%\..\..\cocos2d-x-3.6
+@cmd
+```
 * Run ndk-build, or ndk-build -j8, or ndk-build NDK_DEBUG=1 V=1.   
 * Import, compile and run with Android ADT, see project\android\ .project   
 * Or import, compile and run with Android Studio, see project\androidstudio     
@@ -235,9 +250,6 @@ iTVPSoundBuffer* TVPCreateSoundBuffer(tTVPWaveFormat &fmt, int bufcount)
 
 ## How to link SDL2 Android  
 * krkrsdl2_ndk_v4_run_success.7z  
-
-## Bugs
-* Only support software renderer (软件渲染器) in the global settings, not support OpenGL renderer（OpenGL渲染器，实验性）
 
 ## SDCard permission check
 * If you want to skip permission check, you need to add android:requestLegacyExternalStorage, 
