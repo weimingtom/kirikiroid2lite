@@ -23,9 +23,10 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * https://gitee.com/weimingtom/kirikiroid2_fork/blob/master/vendor/Kirikiroid2_1.3.8_github_20180625.rar   
 
 ## Status  
-* Working in progress.    
-* Windows support: Windows 7 success.  
-* Android support: with many bugs now.    
+* Working in progress. No windowEx.dll support (No System.getMonitorInfo implementation), just be able to run a very simple demo data.xp3 (see top folder)      
+* Windows support: (current not tested) Windows 7 success.  
+* Android support: tested in MuMu emulator (emulate android x86 ?) under Win11 (Android 6.0.1), with many bugs now.    
+* Linux support: only tested under Xubuntu 20.04   
 
 ## Bugs
 * Only support software renderer (软件渲染器) in the global settings, not support OpenGL renderer（OpenGL渲染器，实验性）  
