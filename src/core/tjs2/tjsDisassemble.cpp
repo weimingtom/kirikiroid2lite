@@ -582,7 +582,7 @@ void tTJSInterCodeContext::_output_func(const tjs_char *msg,
 {
 	tjs_int buflen = (tjs_int)(TJS_strlen(msg) + TJS_strlen(comment) + 20);
 	tjs_char *buf = new tjs_char[buflen];
-
+//printf(L"\n<<<< tTJSInterCodeContext::_output_func msg %d, %p<<<<<<<<\n", (int)addr, msg);
 	TJS_snprintf(buf, buflen, TJS_W("%08d %ls"), addr, msg);
 	if(comment[0])
 	{

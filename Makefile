@@ -1046,7 +1046,7 @@ cocos2dx.a : $(OBJS)
 	$(RANLIB) $@
 
 project/kirikiroid2: cocos2dx.a $(KIRIKIROID2_OBJS)
-	$(CPP) ./project/proj.linux/main.cpp $(KIRIKIROID2_OBJS) cocos2dx.a -o $@ -I./project/Classes $(CPPFLAGS) $(LDFLAGS)
+	$(CPP) $(CPPFLAGS2) ./project/proj.linux/main.cpp $(KIRIKIROID2_OBJS) cocos2dx.a -o $@ -I./project/Classes $(CPPFLAGS) $(LDFLAGS)
 
 %.o : %.cpp
 	$(CPP) $(CPPFLAGS2) $(CPPFLAGS) -o $@ -c $<

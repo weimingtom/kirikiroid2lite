@@ -77,6 +77,17 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 * $ make -j8
 * $ make test
 * $ ./project/kirikiroid2
+* $ make debug
+
+## (TODO) How to build for Linux (Ubuntu 16.04 32bit, require libglfw3-dev support)
+* (FIXME) Fix initWithRect and setDesignResolutionSize problems
+* (FIXME) Two SDL windows, need to remove 'SDL2 joystick capture'
+* $ sudo apt install libglfw3-dev libfreetype6-dev libbz2-dev
+* $ make clean
+* $ make -j8
+* $ make test
+* $ ./project/kirikiroid2
+* $ make debug
 
 ## Minimum version of Cocos2d-x  
 * VS2013 version cocos2d-x 3.6, see   

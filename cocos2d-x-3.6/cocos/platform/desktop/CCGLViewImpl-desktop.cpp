@@ -490,9 +490,11 @@ initExtensions();
             name = SDL_JoystickNameForIndex(i);
             description = "Joystick";
         }
+#if SDL_VERSION_ATLEAST(2, 0, 6)
         SDL_Log("%s %d: %s (guid %s, VID 0x%.4x, PID 0x%.4x)\n",
             description, i, name ? name : "Unknown", guid,
             SDL_JoystickGetDeviceVendor(i), SDL_JoystickGetDeviceProduct(i));
+#endif
     }
     SDL_Log("There are %d game controller(s) attached (%d joystick(s))\n", nController, SDL_NumJoysticks());
 

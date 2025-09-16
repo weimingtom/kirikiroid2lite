@@ -1352,13 +1352,29 @@ union arg
 	void *p;
 };
 
+//see https://blog.csdn.net/whatday/article/details/100055076
+//for Linux, va_list structure in 32bit and 64bit are not same
+#if 0
 static void pop_arg(union arg *arg, int type, va_list ap)
 {
+//void *pp;
+//void *pp2;
+//printf("\n<<<<<pop_arg va_arg %p<<<<\n", ap);
 	/* Give the compiler a hint for optimizing the switch. */
 	if ((unsigned)type > MAXSTATE) return;
 	switch (type) {
-	       case PTR:	arg->p = va_arg(ap, void *);
-	break; case INT:	arg->i = va_arg(ap, int);
+	       case PTR:	arg->p = va_arg(ap, void *); //printf("\n<<<<<ap =%p, arg->p = %p<<<<\n", ap, arg->p); fflush(stdout);
+//if (arg->p == (void *)0x06) {
+//pp = va_arg(ap, void *);
+//printf("\n<<<<<pp = %p<<<<\n", pp);
+//fflush(stdout);
+//}
+	break; case INT:	arg->i = va_arg(ap, int); //printf("\n<<<<<ap =%p, arg->i = %p<<<<\n", ap, arg->i); fflush(stdout);
+//if (arg->i == 0x06) {
+//pp2 = va_arg(ap, void *);
+//printf("\n<<<<<pp2 = %p<<<<\n", pp2);
+//fflush(stdout);
+//}
 	break; case UINT:	arg->i = va_arg(ap, unsigned int);
 #ifndef LONG_IS_INT
 	break; case LONG:	arg->i = va_arg(ap, long);
@@ -1380,7 +1396,35 @@ static void pop_arg(union arg *arg, int type, va_list ap)
 	break; case DBL:	arg->f = va_arg(ap, double);
 	break; case LDBL:	arg->f = va_arg(ap, long double);
 	}
+//printf("\n<<<<<end pop_arg va_arg %p<<<<\n", ap);
 }
+#else
+#define pop_arg(arg, type, ap) \
+do { \
+	if ((unsigned)type > MAXSTATE) break;  \
+	if (type == PTR) {	(arg)->p = va_arg(ap, void *); \
+	} else if (type == INT) {	(arg)->i = va_arg(ap, int); \
+	} else if (type == UINT) {	(arg)->i = va_arg(ap, unsigned int); \
+	} else if (type == LONG) {	(arg)->i = va_arg(ap, long); \
+	} else if (type == ULONG) {	(arg)->i = va_arg(ap, unsigned long); \
+	} else if (type == ULLONG) {	(arg)->i = va_arg(ap, unsigned long long); \
+	} else if (type == SHORT) {	(arg)->i = (short)va_arg(ap, int); \
+	} else if (type == USHORT) {	(arg)->i = (unsigned short)va_arg(ap, int); \
+	} else if (type == CHAR) {	(arg)->i = (signed char)va_arg(ap, int); \
+	} else if (type == UCHAR) {	(arg)->i = (unsigned char)va_arg(ap, int); \
+	} else if (type == LLONG) {	(arg)->i = va_arg(ap, long long); \
+	} else if (type == SIZET) {	(arg)->i = va_arg(ap, size_t); \
+	} else if (type == IMAX) {	(arg)->i = va_arg(ap, intmax_t); \
+	} else if (type == UMAX) {	(arg)->i = va_arg(ap, uintmax_t); \
+	} else if (type == PDIFF) {	(arg)->i = va_arg(ap, ptrdiff_t); \
+	} else if (type == UIPTR) {	(arg)->i = (uintptr_t)va_arg(ap, void *); \
+	} else if (type == DBL) {	(arg)->f = va_arg(ap, double); \
+	} else if (type == LDBL) {	(arg)->f = va_arg(ap, long double); \
+	} \
+}while(0)
+
+
+#endif
 
 struct _tFILE
 {
@@ -1404,9 +1448,9 @@ static void pad(_tFILE *f, tjs_char c, int w, int l, int fl)
 	l = w - l;
     	int n = l >sizeof pad / sizeof(pad[0])? sizeof pad / sizeof(pad[0]): l;
     	while(n--) pad[n] = c;
-	printf("<<<<<<<<================= %d\n", l);
+	//printf("<<<<<<<<================= %d\n", l);
 	for (; l >= sizeof pad; l -= sizeof pad) {
-		printf(">>>><<<< %d\n", l);
+		//printf(">>>><<<< %d\n", l);
 		out(f, pad, sizeof pad / sizeof(pad[0]));
 	}
 	out(f, pad, l);
@@ -1801,13 +1845,13 @@ static int printf_core(_tFILE *f, const tjs_char *fmt, va_list ap, union arg *nl
                 nl_type[s[1]-'0'] = INT;
                 w = nl_arg[s[1]-'0'].i;
 #if defined(LINUX)
-printf("<<<<<<<1 w == %d\n", w);
+//printf("<<<<<<<1 w == %d\n", w);
 #endif
                 s+=3;
             } else if (!l10n) {
                 w = f ? va_arg(ap, int) : 0;
 #if defined(LINUX)
-printf("<<<<<<<2 w == %d\n", w); //run here
+//printf("<<<<<<<2 w == %d, va_arg, %p\n", w, f); //run here
 #endif                
                 s++;
             } else return -1;
@@ -1823,7 +1867,7 @@ printf("<<<<<<<2 w == %d\n", w); //run here
             } else if (!l10n) {
                 p = f ? va_arg(ap, int) : 0;
 #if defined(LINUX)
-printf("<<<<<<<2.1 w == %d\n", w); //run here
+//printf("<<<<<<<2.1 w == %d, va_arg, %p\n", w, f); //run here
 #endif                  
                 s+=2;
             } else return -1;
@@ -1850,7 +1894,7 @@ printf("<<<<<<<2.1 w == %d\n", w); //run here
             else if (f) {
             pop_arg(&arg, st, ap);
 #if defined(LINUX)
-printf("<<<<<<<2.2 w == %d\n", w); //run here
+//printf("<<<<<<<2.2 w == %d\n", w); //run here
 #endif               
             }
             else return 0;
@@ -1953,10 +1997,10 @@ printf("<<<<<<<2.2 w == %d\n", w); //run here
         if (p < z-a) p = z-a;
         if (w < pl+p) w = pl+p;
 #if defined(LINUX)
-printf("<<<<<<<3 w == %d\n", w);
+//printf("<<<<<<<3 w == %d\n", w);
 #endif        
 #if defined(LINUX)
-printf("<<<<<<<pl == %d, p == %d, sum == %d\n", pl, p, pl + p);
+//printf("<<<<<<<pl == %d, p == %d, sum == %d\n", pl, p, pl + p);
 #endif
         pad(f, ' ', w, pl+p, fl);
         out(f, prefix, pl);
@@ -1985,8 +2029,8 @@ int _vsnprintf(tjs_char * s, size_t n, const tjs_char * fmt, va_list ap)
     _tFILE f = {s };
     
     int nl_type[NL_ARGMAX+1] = {0};
-    union arg nl_arg[NL_ARGMAX+1];
-    unsigned char internal_buf[80], *saved_buf = 0;
+    union arg nl_arg[NL_ARGMAX+1] = {0};
+//    unsigned char internal_buf[80] = {0}, *saved_buf = 0;
     //va_list *pap = (va_list *)&ap;
     r = printf_core(&f, fmt, ap/*pap*/, nl_arg, nl_type);
 
@@ -2390,7 +2434,7 @@ const tjs_char *__strftime_fmt_1(tjs_char (*s)[100], size_t *l, int f, const tm 
     }
 number:
 #if defined(LINUX)
-printf("<<<<<<<<<<<snprintf %d, %lld\n", width, val);
+//printf("<<<<<<<<<<<snprintf %d, %lld\n", width, val);
 #endif
     *l = snprintf(*s, sizeof *s, TJS_W("%0*lld"), width, val);
     return *s;
@@ -2771,6 +2815,7 @@ int TJS_vsnprintf( tjs_char *string, size_t count, const tjs_char *format, va_li
 
 tjs_int TJS_snprintf(tjs_char *s, size_t count, const tjs_char *format, ...)
 {
+//printf("\n>>>>================== TJS_snprintf format ==================<<<\n");
 	tjs_int r;
 	va_list param;
 	va_start(param, format);

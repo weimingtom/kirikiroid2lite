@@ -639,9 +639,9 @@ void TVPLoadHeaderPNG(void* formatdata, tTJSBinaryStream *src, iTJSDispatch2** d
 		int offset_unit_type;
 		if( png_get_oFFs(png_ptr, info_ptr, &offset_x, &offset_y, &offset_unit_type) )
 		{
-			val = tTJSVariant(offset_x);
+			val = tTJSVariant((tjs_int32)offset_x);
 			(*dic)->PropSet(TJS_MEMBERENSURE, TJS_W("offset x"), 0, &val, (*dic) );
-			val = tTJSVariant(offset_y);
+			val = tTJSVariant((tjs_int32)offset_y);
 			(*dic)->PropSet(TJS_MEMBERENSURE, TJS_W("offset y"), 0, &val, (*dic) );
 			switch(offset_unit_type)
 			{
