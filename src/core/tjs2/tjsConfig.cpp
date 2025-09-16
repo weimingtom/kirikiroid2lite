@@ -2029,8 +2029,8 @@ int _vsnprintf(tjs_char * s, size_t n, const tjs_char * fmt, va_list ap)
     _tFILE f = {s };
     
     int nl_type[NL_ARGMAX+1] = {0};
-    union arg nl_arg[NL_ARGMAX+1];
-    unsigned char internal_buf[80], *saved_buf = 0;
+    union arg nl_arg[NL_ARGMAX+1]/* = {0}*/;
+    unsigned char internal_buf[80]/* = {0}*/, *saved_buf = 0;/*can remove this line*/
     //va_list *pap = (va_list *)&ap;
     r = printf_core(&f, fmt, ap/*pap*/, nl_arg, nl_type);
 
