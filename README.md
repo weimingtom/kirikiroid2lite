@@ -34,6 +34,7 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * Linux version: windowEx.dll System.getMonitorInfo is not found, it makes application crashing       
 see https://github.com/weimingtom/kirikiroid2lite/issues/1  
 https://github.com/krkrz/krkr2/blob/master/kirikiri2/trunk/kirikiri2/src/plugins/win32/windowEx/main.cpp  
+* (TODO, not checked in msys2) _title->setTitleText("/"); //FIXME: don't display empty title button //FIXME: not test / in msys2
 
 ## History  
 * 2025-09-02 : Merge kirikiroid2-miyoo-a30 sources and compile linux version successfully.
