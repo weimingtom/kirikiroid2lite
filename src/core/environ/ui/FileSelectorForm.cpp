@@ -52,6 +52,9 @@ static bool IsPathExist(const std::string &path) {
 std::pair<std::string, std::string> TVPBaseFileSelectorForm::PathSplit(const std::string &path) {
 	std::pair<std::string, std::string> ret;
 	if (path.size() <= 1) {
+#if CC_PLATFORM_WIN32 != CC_TARGET_PLATFORM && CC_PLATFORM_WINRT != CC_TARGET_PLATFORM && CC_PLATFORM_WP8 != CC_TARGET_PLATFORM
+	if (ret.first.empty()) ret.first = "/"; // posix root //FIXME: added, fix title button empty bug
+#endif	
 		ret.second = path;
 		return ret;
 	}
@@ -80,6 +83,9 @@ std::pair<std::string, std::string> TVPBaseFileSelectorForm::PathSplit(const std
 			break;
 		}
 	}
+#if CC_PLATFORM_WIN32 != CC_TARGET_PLATFORM && CC_PLATFORM_WINRT != CC_TARGET_PLATFORM && CC_PLATFORM_WP8 != CC_TARGET_PLATFORM
+	if (ret.first.empty()) ret.first = "/"; // posix root //FIXME: added, fix title button empty bug
+#endif		
 	ret.second = path;
 	return ret;
 }
@@ -138,6 +144,7 @@ static const std::string str_diricon("dir_icon");
 static const std::string str_select("select_check");
 static const std::string str_filename("filename");
 void TVPBaseFileSelectorForm::ListDir(std::string path) {
+printf("<<<<<<<< TVPBaseFileSelectorForm::ListDir path == %s\n", path.c_str());
 	std::pair<std::string, std::string> split_path = PathSplit(path);
 	ParentPath = split_path.first;
 	if (_title) {
@@ -147,13 +154,18 @@ void TVPBaseFileSelectorForm::ListDir(std::string path) {
 		if (!split_path.second.empty() && (split_path.second.back() == '/' || split_path.second.back() == '\\')) {
 			split_path.second.pop_back();
 		}
+#else
+//FIXME: added, for linux, /home->home
+		if (!split_path.second.empty() && (split_path.second.front() == '/')) {
+			split_path.second.erase(0, 1);
+		}
 #endif
     	if (path == "/") {
     		_title->setTitleText("/"); //FIXME: don't display empty title button //FIXME: not test / in msys2
         } else {
         	_title->setTitleText(split_path.second);
         }
-
+printf("<<<<<<<< TVPBaseFileSelectorForm::ListDir setTitleText == %s\n", split_path.second.c_str());
 		Size dispSize = _title->getTitleRenderer()->getContentSize();
 		Size realSize = _title->getContentSize();
 		if (dispSize.width > realSize.width) {
@@ -414,6 +426,7 @@ void TVPBaseFileSelectorForm::onTitleClicked(cocos2d::Ref *owner) {
 }
 
 void TVPBaseFileSelectorForm::onBackClicked(cocos2d::Ref *owner) {
+printf("<<<<<<<<<TVPBaseFileSelectorForm::onBackClicked()\n");
 	ListDir(ParentPath);
 }
 
