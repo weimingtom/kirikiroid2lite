@@ -360,6 +360,18 @@ void TVPBaseFileSelectorForm::onTitleClicked(cocos2d::Ref *owner) {
 		Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));
 #else
 		Node *node = reader.Load("ui/ListItem.csb");
+
+#if 1
+	float scale = TVPMainScene::GetInstance()->getUIScale();
+	cocos2d::Size sceneSize =
+	TVPMainScene::GetInstance()->getUINodeSize() / scale;
+	sceneSize.width *= 0.8f;
+	sceneSize.height *= 0.8f;	
+
+	Size size1 = node->getContentSize();
+	size1.width = sceneSize.width; //FIXME: added, title button pop list width
+	node->setContentSize(size1);
+#endif   
 		Widget *cell = Widget::create();
 		LinearLayoutParameter* lp1 = LinearLayoutParameter::create();
 		//lp1->setMargin(Margin(0, 10, 0, 10));
@@ -370,6 +382,11 @@ void TVPBaseFileSelectorForm::onTitleClicked(cocos2d::Ref *owner) {
 		cell->setContentSize(node->getContentSize());
 #endif
 		Button *item = dynamic_cast<Button*>(reader.findController<cocos2d::Node>("item"));
+#if 1
+	Size size2 = item->getContentSize();
+	size2.width = sceneSize.width; //FIXME: added, title button pop list width
+	item->setContentSize(size2);
+#endif        
 		item->setCallbackName(path);
 		item->setTitleText(path);
 		item->addClickEventListener(func);
