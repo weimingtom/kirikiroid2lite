@@ -73,6 +73,7 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 ## (TODO) How to build for Linux (Xubuntu 20.04 64bit)
 * (FIXME) Fix initWithRect and setDesignResolutionSize problems
 * (FIXME) Two SDL windows, need to remove 'SDL2 joystick capture'
+* $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
 * $ sudo apt install libsdl2-dev libglfw3-dev libfreetype-dev
 * $ make clean
 * $ make -j8
@@ -83,6 +84,7 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 ## (TODO) How to build for Linux (Ubuntu 16.04 32bit, require libglfw3-dev support)
 * (FIXME) Fix initWithRect and setDesignResolutionSize problems
 * (FIXME) Two SDL windows, need to remove 'SDL2 joystick capture'
+* $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
 * $ sudo apt install libsdl2-dev libglfw3-dev libfreetype6-dev libbz2-dev
 * $ make clean
 * $ make -j8
