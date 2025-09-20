@@ -22,6 +22,11 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * https://github.com/zeas2/Kirikiroid2/tree/1.3.8  
 * https://gitee.com/weimingtom/kirikiroid2_fork/blob/master/vendor/Kirikiroid2_1.3.8_github_20180625.rar   
 
+## NOTE
+* It should not be used to play any commercial Japanese kirikiri2 game, although it's not very possible so far. It's not recommended to do this, no reason.
+* It's not my effort, for any code modified by me. I just want to hack this code base.
+* For me, I just want to know more about kirikiri2, just this.
+
 ## Status  
 * Working in progress. No windowEx.dll support (No System.getMonitorInfo implementation), just be able to run a very simple demo data.xp3 (see top folder)      
 * Windows support: (current not tested) Windows 7 success.  
