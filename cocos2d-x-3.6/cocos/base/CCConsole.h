@@ -45,6 +45,7 @@ typedef SSIZE_T ssize_t;
 #include <functional>
 #include <string>
 #include <stdarg.h>
+#include <cstdint> //for intptr_t
 
 #include "base/CCRef.h"
 #include "base/ccMacros.h"
