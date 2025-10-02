@@ -295,3 +295,8 @@ GLViewImpl* GLViewImpl::create(const std::string& viewName)
 }
 ```
 
+## macos
+* if !defined( _MSC_VER) && !defined(LINUX)  
+Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));  
+
+## TODO, msys2

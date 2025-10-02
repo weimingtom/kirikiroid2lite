@@ -752,7 +752,7 @@ void Renderer::drawBatchedTriangles()
 
         // option 3: orphaning + glMapBuffer
         glBufferData(GL_ARRAY_BUFFER, sizeof(_verts[0]) * _filledVertex, nullptr, GL_DYNAMIC_DRAW);
-#if 0
+#if defined(__APPLE__)
         void *buf = glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);
         memcpy(buf, _verts, sizeof(_verts[0])* _filledVertex);
         glUnmapBuffer(GL_ARRAY_BUFFER);
@@ -863,7 +863,7 @@ void Renderer::drawBatchedQuads()
         
         // option 3: orphaning + glMapBuffer
         glBufferData(GL_ARRAY_BUFFER, sizeof(_quadVerts[0]) * _numberQuads * 4, nullptr, GL_DYNAMIC_DRAW);
-#if 0
+#if defined(__APPLE__)
         void *buf = glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);
         memcpy(buf, _quadVerts, sizeof(_quadVerts[0])* _numberQuads * 4);
         glUnmapBuffer(GL_ARRAY_BUFFER);
