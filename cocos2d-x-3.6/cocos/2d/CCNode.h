@@ -36,6 +36,8 @@
 #include "math/CCAffineTransform.h"
 #include "math/CCMath.h"
 
+#define MY_USE_NODE_REGXP 0
+
 NS_CC_BEGIN
 
 class GridBase;
@@ -814,10 +816,10 @@ public:
      *
      * @since v3.2
      */
-#if 0
+#if MY_USE_NODE_REGXP
     virtual void enumerateChildren(const std::string &name, std::function<bool(Node* node)> callback) const;
 #endif
-	/**
+    /**
      * Returns the array of the node's children.
      *
      * @return the array the node's children.
@@ -1736,9 +1738,9 @@ protected:
     virtual void updateCascadeColor();
     virtual void disableCascadeColor();
     virtual void updateColor() {}
-#if 0    
+#if MY_USE_NODE_REGXP
     bool doEnumerate(std::string name, std::function<bool (Node *)> callback) const;
-	bool doEnumerateRecursive(const Node* node, const std::string &name, std::function<bool (Node *)> callback) const;
+    bool doEnumerateRecursive(const Node* node, const std::string &name, std::function<bool (Node *)> callback) const;
 #endif
     
     //check whether this camera mask is visible by the current visiting camera

@@ -664,7 +664,7 @@ bool Console::listenOnTCP(int port)
 #if defined(__MINGW32__) || defined(_MSC_VER)		
         if( _inet_ntop(res->ai_family, &sin->sin_addr, buf, sizeof(buf)) != nullptr )
 #else
-		if( inet_ntop(res->ai_family, &sin->sin_addr, buf, sizeof(buf)) != nullptr )
+        if( inet_ntop(res->ai_family, &sin->sin_addr, buf, sizeof(buf)) != nullptr )
 #endif		
             cocos2d::log("Console: listening on  %s : %d", buf, ntohs(sin->sin_port));
         else
@@ -675,7 +675,7 @@ bool Console::listenOnTCP(int port)
 #if defined(__MINGW32__) || defined(_MSC_VER)		
         if( _inet_ntop(res->ai_family, &sin->sin6_addr, buf, sizeof(buf)) != nullptr )
 #else
-		if( inet_ntop(res->ai_family, &sin->sin6_addr, buf, sizeof(buf)) != nullptr )
+        if( inet_ntop(res->ai_family, &sin->sin6_addr, buf, sizeof(buf)) != nullptr )
 #endif		
             cocos2d::log("Console: listening on  %s : %d", buf, ntohs(sin->sin6_port));
         else

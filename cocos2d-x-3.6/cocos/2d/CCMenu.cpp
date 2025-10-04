@@ -394,7 +394,7 @@ void Menu::alignItemsInColumnsWithArray(const ValueVector& rows)
 	for (auto p_child = _children.begin(); p_child != _children.end(); ++p_child)
 	{
 		const auto& child = *p_child;
-		CCASSERT(row < rows.size(), "");
+        CCASSERT(row < rows.size(), "");
         
         rowColumns = rows[row].asInt();
         // can not have zero columns on a row

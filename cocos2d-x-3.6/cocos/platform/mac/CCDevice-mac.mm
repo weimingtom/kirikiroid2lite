@@ -221,7 +221,9 @@ static bool _initWithString(const char * text, Device::TextAlign align, const ch
 			info->hasAlpha = true;
 			info->isPremultipliedAlpha = true;
 			ret = true;
-NSLog(@"<<<<<<<CCDevice-mac.mm [string:%@], [font:%@] %p\n", string, fntName, font);
+#if MY_USE_FONT_HIDE_BUG
+//NSLog(@"<<<<<<<CCDevice-mac.mm [string:%@], [font:%@] %p\n", string, fntName, font);
+#endif
 		}
 		[bitmap release];
 		[image release];
@@ -239,14 +241,18 @@ Data Device::getTextureDataForText(const char * text, const FontDefinition& text
         
         if (! _initWithString(text, align, textDefinition._fontName.c_str(), textDefinition._fontSize, &info, &textDefinition._fontFillColor, textDefinition._fontAlpha))
         {
-NSLog(@"<<<<<<<CCDevice-mac.mm getTextureDataForText false");
+#if MY_USE_FONT_HIDE_BUG
+//NSLog(@"<<<<<<<CCDevice-mac.mm getTextureDataForText false");
+#endif
             break;
         }
         height = (short)info.height;
         width = (short)info.width;
         ret.fastSet(info.data,width * height * 4);
         hasPremultipliedAlpha = true;
-NSLog(@"<<<<<<<CCDevice-mac.mm getTextureDataForText OK");
+#if MY_USE_FONT_HIDE_BUG
+//NSLog(@"<<<<<<<CCDevice-mac.mm getTextureDataForText OK");
+#endif
     } while (0);
     
     return ret;

@@ -25,6 +25,10 @@
 #include "renderer/CCRenderer.h"
 
 #include <algorithm>
+#if MY_USE_TIME_REPORT
+#include <unistd.h>
+#include <sys/time.h>
+#endif
 
 #include "renderer/CCTrianglesCommand.h"
 #include "renderer/CCQuadCommand.h"
@@ -339,6 +343,7 @@ void Renderer::setupVBOAndVAO()
 
 void Renderer::setupVBO()
 {
+//printf("glGenBuffers == %p\n", glGenBuffers); // __glewGenBuffers, need call glewInit
     glGenBuffers(2, &_buffersVBO[0]);
     glGenBuffers(2, &_quadbuffersVBO[0]);
     mapBuffers();
@@ -402,8 +407,23 @@ int Renderer::createRenderQueue()
     return (int)_renderGroups.size() - 1;
 }
 
+#if MY_USE_TIME_REPORT
+static long getCurrentMillSecond() {
+    long lLastTime;
+    struct timeval stCurrentTime;
+
+    gettimeofday(&stCurrentTime,NULL);
+    lLastTime = stCurrentTime.tv_sec*1000+stCurrentTime.tv_usec*0.001; //millseconds
+    return lLastTime;
+}
+#endif
+
 void Renderer::processRenderCommand(RenderCommand* command)
 {
+#if MY_USE_TIME_REPORT
+//long lastTime = getCurrentMillSecond();
+//long curTime = 0;
+#endif
     auto commandType = command->getType();
     if( RenderCommand::Type::TRIANGLES_COMMAND == commandType)
     {
@@ -488,15 +508,29 @@ void Renderer::processRenderCommand(RenderCommand* command)
     }
     else if(RenderCommand::Type::GROUP_COMMAND == commandType)
     {
+#if MY_USE_TIME_REPORT	
+//4 very slow group
+//#if 1    
+#endif
         flush();
         int renderQueueID = ((GroupCommand*) command)->getRenderQueueID();
         visitRenderQueue(_renderGroups[renderQueueID]);
+#if MY_USE_TIME_REPORT
+//#endif
+#endif
     }
     else if(RenderCommand::Type::CUSTOM_COMMAND == commandType)
     {
+#if MY_USE_TIME_REPORT
+//2 very slow custom
+//#if 1        
+#endif
         flush();
         auto cmd = static_cast<CustomCommand*>(command);
         cmd->execute();
+#if MY_USE_TIME_REPORT
+//#endif       
+#endif
     }
     else if(RenderCommand::Type::BATCH_COMMAND == commandType)
     {
@@ -514,10 +548,19 @@ void Renderer::processRenderCommand(RenderCommand* command)
     {
         CCLOGERROR("Unknown commands in renderQueue");
     }
+#if MY_USE_TIME_REPORT	
+//curTime = getCurrentMillSecond();
+//printf("<<<<<<<<<<<<<<<< Renderer::processRenderCommand %d, curTime - lastTime == %ld\n", (int)commandType, (curTime - lastTime));
+//fflush(stdout);       
+#endif
 }
 
 void Renderer::visitRenderQueue(RenderQueue& queue)
 {
+#if MY_USE_TIME_REPORT
+//long lastTime = getCurrentMillSecond();
+//long curTime = getCurrentMillSecond();
+#endif
     queue.saveRenderState();
     
     //
@@ -542,7 +585,13 @@ void Renderer::visitRenderQueue(RenderQueue& queue)
         }
         flush();
     }
-    
+#if MY_USE_TIME_REPORT	
+//curTime = getCurrentMillSecond();
+//printf("<<<<<<<<<<<<<<<< Renderer::visitRenderQueue 1, curTime - lastTime == %ld\n", (curTime - lastTime));
+//fflush(stdout);      
+//
+//lastTime = getCurrentMillSecond();    
+#endif
     //
     //Process Opaque Object
     //
@@ -559,7 +608,13 @@ void Renderer::visitRenderQueue(RenderQueue& queue)
         }
         flush();
     }
-    
+#if MY_USE_TIME_REPORT	
+//curTime = getCurrentMillSecond();
+//printf("<<<<<<<<<<<<<<<< Renderer::visitRenderQueue 2, curTime - lastTime == %ld\n", (curTime - lastTime));
+//fflush(stdout);      
+//
+//lastTime = getCurrentMillSecond();    
+#endif
     //
     //Process 3D Transparent object
     //
@@ -575,7 +630,13 @@ void Renderer::visitRenderQueue(RenderQueue& queue)
         }
         flush();
     }
-    
+#if MY_USE_TIME_REPORT	
+//curTime = getCurrentMillSecond();
+//printf("<<<<<<<<<<<<<<<< Renderer::visitRenderQueue 3, curTime - lastTime == %ld\n", (curTime - lastTime));
+//fflush(stdout);      
+//
+//lastTime = getCurrentMillSecond();    
+#endif
     //
     //Process Global-Z = 0 Queue
     //
@@ -598,7 +659,13 @@ void Renderer::visitRenderQueue(RenderQueue& queue)
         }
         flush();
     }
-    
+#if MY_USE_TIME_REPORT	
+//curTime = getCurrentMillSecond();
+//printf("<<<<<<<<<<<<<<<< Renderer::visitRenderQueue 4, curTime - lastTime == %ld, slow\n", (curTime - lastTime));
+//fflush(stdout);      
+//
+//lastTime = getCurrentMillSecond();    
+#endif
     //
     //Process Global-Z > 0 Queue
     //
@@ -613,6 +680,11 @@ void Renderer::visitRenderQueue(RenderQueue& queue)
     }
     
     queue.restoreRenderState();
+#if MY_USE_TIME_REPORT	
+//curTime = getCurrentMillSecond();
+//printf("<<<<<<<<<<<<<<<< Renderer::visitRenderQueue 5, curTime - lastTime == %ld\n", (curTime - lastTime));
+//fflush(stdout);        
+#endif
 }
 
 void Renderer::render()
@@ -752,7 +824,7 @@ void Renderer::drawBatchedTriangles()
 
         // option 3: orphaning + glMapBuffer
         glBufferData(GL_ARRAY_BUFFER, sizeof(_verts[0]) * _filledVertex, nullptr, GL_DYNAMIC_DRAW);
-#if defined(__APPLE__)
+#if defined(__APPLE__) || MY_USE_MAC_BLACK_SCREEN_BUG
         void *buf = glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);
         memcpy(buf, _verts, sizeof(_verts[0])* _filledVertex);
         glUnmapBuffer(GL_ARRAY_BUFFER);
@@ -863,7 +935,7 @@ void Renderer::drawBatchedQuads()
         
         // option 3: orphaning + glMapBuffer
         glBufferData(GL_ARRAY_BUFFER, sizeof(_quadVerts[0]) * _numberQuads * 4, nullptr, GL_DYNAMIC_DRAW);
-#if defined(__APPLE__)
+#if defined(__APPLE__) || MY_USE_MAC_BLACK_SCREEN_BUG
         void *buf = glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);
         memcpy(buf, _quadVerts, sizeof(_quadVerts[0])* _numberQuads * 4);
         glUnmapBuffer(GL_ARRAY_BUFFER);

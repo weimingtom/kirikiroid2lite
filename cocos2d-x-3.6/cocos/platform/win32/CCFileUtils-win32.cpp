@@ -60,6 +60,8 @@ static void _checkPath()
 {
     if (0 == s_resourcePath.length())
     {
+#if !defined(__MINGW32__)		
+		//only for wmain and wWinMain, see https://learn.microsoft.com/zh-cn/cpp/c-runtime-library/reference/get-wpgmptr?view=msvc-170
         WCHAR *pUtf16ExePath = nullptr;
         _get_wpgmptr(&pUtf16ExePath);
 
@@ -70,6 +72,35 @@ static void _checkPath()
         int nNum = WideCharToMultiByte(CP_UTF8, 0, pUtf16ExePath, pUtf16DirEnd-pUtf16ExePath+1, utf8ExeDir, sizeof(utf8ExeDir), nullptr, nullptr);
 
         s_resourcePath = convertPathFormatToUnixStyle(utf8ExeDir);
+#else
+//#include <windows.h>
+//#include <stdio.h>
+ 
+char *pUtf16ExePath = nullptr;
+_get_pgmptr(&pUtf16ExePath);
+/*
+    char path[CC_MAX_PATH] = { 0 };
+    if (GetModuleFileName(NULL, path, CC_MAX_PATH) != 0) {
+        printf("Executable path: %s\n", path);
+		pUtf16ExePath = path;
+    } else {
+        printf("Failed to get the executable path.\n");
+    }
+*/
+
+        // We need only directory part without exe
+        char *pUtf16DirEnd = strrchr(pUtf16ExePath, '\\');
+
+        char utf8ExeDir[CC_MAX_PATH] = { 0 };
+        char *ptr = pUtf16ExePath;
+		for (;ptr < pUtf16DirEnd + 1; ptr++) {
+			utf8ExeDir[ptr - pUtf16ExePath] = *ptr;
+		}
+
+        s_resourcePath = convertPathFormatToUnixStyle(utf8ExeDir);	
+		
+//printf("s_resourcePath: %s\n", s_resourcePath.c_str());		
+#endif
     }
 }
 

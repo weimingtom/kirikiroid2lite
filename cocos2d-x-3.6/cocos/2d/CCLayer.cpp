@@ -592,6 +592,9 @@ void LayerColor::draw(Renderer *renderer, const Mat4 &transform, uint32_t flags)
 
 void LayerColor::onDraw(const Mat4& transform, uint32_t flags)
 {
+#if MY_USE_TIME_REPORT
+//begin	
+#endif
     getGLProgram()->use();
     getGLProgram()->setUniformsForBuiltins(transform);
     
@@ -617,6 +620,9 @@ void LayerColor::onDraw(const Mat4& transform, uint32_t flags)
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 
     CC_INCREMENT_GL_DRAWN_BATCHES_AND_VERTICES(1,4);
+#if MY_USE_TIME_REPORT
+//end	
+#endif
 }
 
 std::string LayerColor::getDescription() const

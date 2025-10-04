@@ -181,8 +181,8 @@ protected:
                 if(_stop)
                 {
                     pthread_mutex_unlock(&_queueMutex);
-					CC_ASSERT(0 && "already stop");
-					return;
+                    CC_ASSERT(0 && "already stop");
+                    return;
                 }
                 
                 AsyncTaskCallBack taskCallBack;

@@ -24,6 +24,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ****************************************************************************/
+#if MY_USE_TIME_REPORT
+#include <unistd.h>
+#include <sys/time.h>
+#endif
 
 #include "2d/CCScene.h"
 #include "base/CCDirector.h"
@@ -126,6 +130,17 @@ static bool camera_cmp(const Camera* a, const Camera* b)
     return a->getDepth() < b->getDepth();
 }
 
+#if MY_USE_TIME_REPORT
+static long getCurrentMillSecond() {
+    long lLastTime;
+    struct timeval stCurrentTime;
+
+    gettimeofday(&stCurrentTime,NULL);
+    lLastTime = stCurrentTime.tv_sec*1000+stCurrentTime.tv_usec*0.001; //millseconds
+    return lLastTime;
+}
+#endif
+
 void Scene::render(Renderer* renderer)
 {
     auto director = Director::getInstance();
@@ -155,8 +170,15 @@ void Scene::render(Renderer* renderer)
         
         //visit the scene
         visit(renderer, transform, 0);
+#if MY_USE_TIME_REPORT		
+//long lastTime = getCurrentMillSecond();
+#endif
         renderer->render();
-        
+#if MY_USE_TIME_REPORT		
+//long curTime = getCurrentMillSecond();
+//printf("<<<<<<<<<<<<<<<< Scene::render, curTime - lastTime == %ld\n", (curTime - lastTime));
+//fflush(stdout);          
+#endif
         director->popMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_PROJECTION);
     }
 

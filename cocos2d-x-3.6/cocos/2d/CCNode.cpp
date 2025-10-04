@@ -32,6 +32,13 @@ THE SOFTWARE.
 
 #include <algorithm>
 #include <string>
+#if MY_USE_NODE_REGXP
+#include <regex>
+#endif
+#if MY_USE_TIME_REPORT
+#include <unistd.h>
+#include <sys/time.h>
+#endif
 
 #include "base/CCDirector.h"
 #include "base/CCScheduler.h"
@@ -913,7 +920,7 @@ Node* Node::getChildByName(const std::string& name) const
     return nullptr;
 }
 
-#if 0
+#if MY_USE_NODE_REGXP
 void Node::enumerateChildren(const std::string &name, std::function<bool (Node *)> callback) const
 {
     CCASSERT(name.length() != 0, "Invalid name");
@@ -1364,8 +1371,22 @@ bool Node::isVisitableByVisitingCamera() const
     return visibleByCamera;
 }
 
+#if MY_USE_TIME_REPORT
+static long getCurrentMillSecond() {
+    long lLastTime;
+    struct timeval stCurrentTime;
+
+    gettimeofday(&stCurrentTime,NULL);
+    lLastTime = stCurrentTime.tv_sec*1000+stCurrentTime.tv_usec*0.001; //millseconds
+    return lLastTime;
+}
+#endif
+
 void Node::visit(Renderer* renderer, const Mat4 &parentTransform, uint32_t parentFlags)
 {
+#if MY_USE_TIME_REPORT
+//long lastTime = getCurrentMillSecond();
+#endif
     // quick return if not visible. children won't be drawn.
     if (!_visible)
     {
@@ -1397,20 +1418,42 @@ void Node::visit(Renderer* renderer, const Mat4 &parentTransform, uint32_t paren
             else
                 break;
         }
+#if MY_USE_TIME_REPORT		
+//            long lastTime = getCurrentMillSecond();
+#endif
         // self draw
         if (visibleByCamera)
             this->draw(renderer, _modelViewTransform, flags);
+#if MY_USE_TIME_REPORT			
+//        long curTime = getCurrentMillSecond();
+//printf("<<<<<<<<<<<<<<<< Node::visit1 curTime - lastTime == %ld\n", (curTime - lastTime));
+//fflush(stdout);
+#endif
 
-        for(auto it=_children.cbegin()+i; it != _children.cend(); ++it)
+
+        for(auto it=_children.cbegin()+i; it != _children.cend(); ++it) {
             (*it)->visit(renderer, _modelViewTransform, flags);
+       	}
     }
     else if (visibleByCamera)
     {
+#if MY_USE_TIME_REPORT	
+        //long lastTime = getCurrentMillSecond();
+#endif		
         this->draw(renderer, _modelViewTransform, flags);
+#if MY_USE_TIME_REPORT		
+        //long curTime = getCurrentMillSecond();
+//printf("<<<<<<<<<<<<<<<< Node::visit2 curTime - lastTime == %ld\n", (curTime - lastTime));
+//fflush(stdout);
+#endif
     }
 
     _director->popMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
-    
+#if MY_USE_TIME_REPORT	
+//        long curTime = getCurrentMillSecond();
+//printf("<<<<<<<<<<<<<<<< Node::visit popMatrix curTime - lastTime == %ld\n", (curTime - lastTime));
+//fflush(stdout);
+#endif    
     // FIX ME: Why need to set _orderOfArrival to 0??
     // Please refer to https://github.com/cocos2d/cocos2d-x/pull/6920
     // reset for next frame

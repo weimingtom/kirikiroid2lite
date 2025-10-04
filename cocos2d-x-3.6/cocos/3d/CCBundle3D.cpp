@@ -2000,7 +2000,7 @@ NTextureData::Usage Bundle3D::parseGLTextureType(const std::string& str)
     }
     else if(str == "NONE")
     {
-        return NTextureData::Usage::None;
+        return NTextureData::Usage::None_;
     }
     else if (str == "NORMAL")
     {

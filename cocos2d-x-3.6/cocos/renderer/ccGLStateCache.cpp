@@ -106,6 +106,9 @@ void useProgram( GLuint program )
 
 static void SetBlending(GLenum sfactor, GLenum dfactor)
 {
+#if MY_USE_TIME_REPORT
+//#if 1
+#endif
 	if (sfactor == GL_ONE && dfactor == GL_ZERO)
     {
 		glDisable(GL_BLEND);
@@ -115,6 +118,9 @@ static void SetBlending(GLenum sfactor, GLenum dfactor)
 		glEnable(GL_BLEND);
 		glBlendFunc(sfactor, dfactor);
 	}
+#if MY_USE_TIME_REPORT	
+//#endif	
+#endif
 }
 
 void blendFunc(GLenum sfactor, GLenum dfactor)

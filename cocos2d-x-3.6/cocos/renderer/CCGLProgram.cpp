@@ -433,7 +433,7 @@ bool GLProgram::compileShader(GLuint * shader, GLenum type, const GLchar* source
     const GLchar *sources[] = {
 #if CC_TARGET_PLATFORM == CC_PLATFORM_WINRT
         (type == GL_VERTEX_SHADER ? "precision mediump float;\n precision mediump int;\n" : "precision mediump float;\n precision mediump int;\n"),
-#elif (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32 && CC_TARGET_PLATFORM != CC_PLATFORM_MAC && CC_TARGET_PLATFORM != CC_PLATFORM_LINUX) || USE_NO_GLFW
+#elif (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32 && CC_TARGET_PLATFORM != CC_PLATFORM_MAC && CC_TARGET_PLATFORM != CC_PLATFORM_LINUX) || USE_NO_GLFW || MY_USE_GLES_GLFW3
 //FIXME:not need || USE_SHADER_PRECISION
         (type == GL_VERTEX_SHADER ? "precision highp float;\n precision highp int;\n" : "precision mediump float;\n precision mediump int;\n"),
 #endif
@@ -458,7 +458,7 @@ bool GLProgram::compileShader(GLuint * shader, GLenum type, const GLchar* source
     glCompileShader(*shader);
 
     glGetShaderiv(*shader, GL_COMPILE_STATUS, &status);
-
+//CCLOG("==================cocos2d: ERROR: Failed to compile shader: %d, %d\n", status, GL_TRUE);
     if (! status)
     {
         GLsizei length;
@@ -478,7 +478,7 @@ bool GLProgram::compileShader(GLuint * shader, GLenum type, const GLchar* source
         }
         free(src);
 
-        return false;;
+        return false;
     }
     return (status == GL_TRUE);
 }
@@ -543,7 +543,15 @@ void GLProgram::updateUniforms()
 
 bool GLProgram::link()
 {
+#if 1
+//MY_USE_GLES_GLFW3
     CCASSERT(_program != 0, "Cannot link invalid program");
+#else
+//MY_USE_FONT_HIDE_BUG
+	if (_program == 0) {
+		fprintf(stderr, "Cannot link invalid program\n");
+	}
+#endif
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
     if(!_hasShaderCompiler)

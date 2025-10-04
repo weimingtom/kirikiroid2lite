@@ -48,6 +48,9 @@ CPPFLAGS += -stdlib=libc++
 CPPFLAGS += -DCOCOS2D_DEBUG=1 
 #CPPFLAGS += -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk 
 
+# mac black screen bug
+#CPPFLAGS += MY_USE_MAC_BLACK_SCREEN_BUG
+
 #CPPFLAGS += -I/Users/macmini/cmake_macos/cocos2d-x-3.6/cocos 
 #CPPFLAGS += -I/Users/macmini/cmake_macos/cocos2d-x-3.6 
 #CPPFLAGS += -I/Users/macmini/cmake_macos/cocos2d-x-3.6/deprecated 
@@ -148,8 +151,7 @@ CPPFLAGS += -Iexternal_macos/include
 CPPFLAGS += -Iexternal_macos/include/webp
 CPPFLAGS += -Iexternal_macos/include/freetype2
 CPPFLAGS += -Iexternal_macos/include/GLFW
-
-
+###########
 
 LDFLAGS := 
 #LDFLAGS += -lGLU 
@@ -456,6 +458,7 @@ OBJS += cocos2d-x-3.6/external/unzip/unzip.o
 
 #LDFLAGS += ../../lib/libxxhash.a 
 OBJS += cocos2d-x-3.6/external/xxhash/xxhash.o
+
 
 #ui
 OBJS += cocos2d-x-3.6/cocos/ui/UIWidget.o

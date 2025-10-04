@@ -69,7 +69,19 @@ else
 #pc
 CPPFLAGS += -DUSE_APP_WIDTH=640
 CPPFLAGS += -DUSE_APP_HEIGHT=480
+
+#sudo apt install libglew-dev libglfw3-dev
+USEGLEW:=0
+
+ifeq ($(USEGLEW),1)
+#opengl on x11
+CPPFLAGS += -DUSE_GLEW=1 -DUSE_SHADER_PRECISION=1 
+#-DGLEW_STATIC not need under linux
+else
+#gles on x11
 CPPFLAGS += -DUSE_NO_GLFW=0 -DUSE_SHADER_PRECISION=1
+endif
+
 #if PC use OpenGLES to replace OpenGL, need USE_SHADER_PRECISION
 #cocos2d-x debug info [cocos2d: 0:1(1): error: No precision specified in this scope for type `mat4'
 CPPFLAGS += -DUSE_ROTATE90=0
@@ -235,7 +247,11 @@ LDFLAGS += -lpthread
 LDFLAGS += -lz 
 LDFLAGS += -ljpeg 
 LDFLAGS += -lpng 
+ifeq ($(USEGLEW),1)
+LDFLAGS += -lGL
+else
 LDFLAGS += -lGLESv2 -lEGL
+endif
 
 #kirikiroid2
 LDFLAGS += -latomic
@@ -253,7 +269,12 @@ LDFLAGS += -L/home/wmt/work_a30/staging_dir/target/usr/lib
 else
 #xubuntu 16, need glfw3 and EGL
 #sudo apt install libglfw3-dev libpng-dev zlib1g-dev libjpeg-dev libfreetype-dev libbz2-dev
+ifeq ($(USEGLEW),1)
+LDFLAGS += -lglfw -lGLEW #cocos2dx/platform/linux/CCEGLView.cpp
+else
 LDFLAGS += -lglfw #cocos2dx/platform/linux/CCEGLView.cpp
+endif
+
 endif
 
 

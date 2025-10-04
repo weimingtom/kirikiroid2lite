@@ -68,7 +68,7 @@
 NS_CC_BEGIN
 NS_CC_ALLOCATOR_BEGIN
 
-// so we cannot use boost::mutex because it allocates memory
+// so we cannot use std::mutex because it allocates memory
 // which causes an infinite loop of death and exceptions.
 class AllocatorMutex
 {

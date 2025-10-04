@@ -456,7 +456,6 @@ initExtensions();
 		const auto& item = g_keyCodeStructArray[i];
         g_keyCodeMap[item.glfwKeyCode] = item.keyCode;
     }
-
     GLFWEventHandler::setGLViewImpl(this);
 
     glfwSetErrorCallback(GLFWEventHandler::onGLFWError);
@@ -625,6 +624,12 @@ GLfloat vVertices[] = {
 -0.5f, -0.5f, 0.0f,
  0.5f, -0.5f, 0.0f
 };
+#else
+GLfloat vVertices[] = {
+ 0.0f,  0.5f, 0.0f,
+-0.5f, -0.5f, 0.0f,
+ 0.5f, -0.5f, 0.0f
+};
 #endif
 
 bool GLViewImpl::initWithRect(const std::string& viewName, Rect rect, float frameZoomFactor)
@@ -757,6 +762,12 @@ CCLOGINFO("setFrameSize %f, %f", width, height);
     glfwWindowHint(GLFW_DEPTH_BITS,_glContextAttrs.depthBits);
     glfwWindowHint(GLFW_STENCIL_BITS,_glContextAttrs.stencilBits);
 
+#if MY_USE_GLES_GLFW3
+    glfwWindowHint(GLFW_CLIENT_API, GLFW_OPENGL_ES_API);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 2);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
+#endif
+
     _mainWindow = glfwCreateWindow(rect.size.width * _frameZoomFactor,
                                    rect.size.height * _frameZoomFactor,
                                    _viewName.c_str(),
@@ -774,12 +785,44 @@ glfwSetWindowPos(_mainWindow, 0, 0); //FIXME:added, show on left top of the scre
     glfwSetFramebufferSizeCallback(_mainWindow, GLFWEventHandler::onGLFWframebuffersize);
     glfwSetWindowSizeCallback(_mainWindow, GLFWEventHandler::onGLFWWindowSizeFunCallback);
     glfwSetWindowIconifyCallback(_mainWindow, GLFWEventHandler::onGLFWWindowIconifyCallback);
+
+
+#if 0
+#define LCD_W   480
+#define LCD_H   640
+    glViewport(0, 0, LCD_W, LCD_H);
+    glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    if(_mainWindow) {
+        glfwSwapBuffers(_mainWindow);
+    }
+CCLOGINFO("setFrameSize %f, %f", width, height);
+
+
+while(1) {
+glfwPollEvents();
+    glViewport(0, 0, LCD_W, LCD_H);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, vVertices);
+    glEnableVertexAttribArray(0);
+    glDrawArrays(GL_TRIANGLES, 0, 3);
+    if(_mainWindow) {
+        glfwSwapBuffers(_mainWindow);
+    }
+    usleep(100);
+}
+#endif
+
 #endif
 	
     setFrameSize(rect.size.width, rect.size.height);
 
-#if USE_NO_GLFW
+#if USE_NO_GLFW || MY_USE_GLES_GLFW3
 //OpenGL version too old: OpenGL 1.5 or higher is required (your version is OpenGL ES 3.0 Mesa 18.0.5). Please upgrade the driver of your video card.
+
+//for visionfive2
+//OpenGL version too old: OpenGL 1.5 or higher is required (your version is OpenGL ES 3.2 build 1.19@6345021). Please upgrade the driver of your video card.
 #else
     // check OpenGL version at first
     const GLubyte* glVersion = glGetString(GL_VERSION);
@@ -888,7 +931,15 @@ CCLOGINFO("swapBuffers");
     if (display && surface) {
 	eglSwapBuffers(display, surface);
     }
-#else		
+#else	
+//#define LCD_W   480
+//#define LCD_H   640
+//    glViewport(0, 0, LCD_W, LCD_H);
+//    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+//   glClear(GL_COLOR_BUFFER_BIT);
+//    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, vVertices);
+//    glEnableVertexAttribArray(0);
+//    glDrawArrays(GL_TRIANGLES, 0, 3);	
     if(_mainWindow) {
         glfwSwapBuffers(_mainWindow);
     }

@@ -320,3 +320,18 @@ Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));
 * include <OpenGLES/ES2/gl.h>
 
 ## TODO, msys2
+
+## TODO
+* _spriteFramesAliases.reserve(20);
+* define CC_USE_PHYSICS 0 //1
+* _data.reserve(capacity);
+* std::vector<Node*> findChildren(const Node &node, const std::string &name)
+* std::vector<Node*> CC_DLL findChildren(const Node &node, const std::string &name);
+* if(ret && ret->initWithRect(viewName, Rect(0, 0, 960, 640), 1)) {
+* if CC_USE_TIFF
+* if CC_USE_WEBP
+* if defined(CC_USE_WIC)
+* elif defined(CC_USE_TIFF)
+* include "physics/CCPhysicsBody.h", add macro check
+* //for EGL/egl.h, and EGL/eglplatform.h, undef Bool
+

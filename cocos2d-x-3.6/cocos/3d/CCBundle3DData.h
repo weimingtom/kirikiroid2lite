@@ -327,7 +327,7 @@ struct NTextureData
 {
     enum Usage {
         Unknown = 0,
-        None = 1,
+        None_ = 1,
         Diffuse = 2, 
         Emissive = 3,
         Ambient = 4,

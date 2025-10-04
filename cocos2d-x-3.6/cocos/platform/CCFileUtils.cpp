@@ -774,7 +774,8 @@ std::string FileUtils::fullPathForFilename(const std::string &filename) const
 	for (auto p_searchIt = _searchPathArray.begin(); p_searchIt != _searchPathArray.end(); ++p_searchIt)
 	{
 		const auto& searchIt = *p_searchIt;
-        CCLOG("cocos2d: searchIt : %s, newFilename : %s, _searchResolutionsOrderArray : %d", searchIt.c_str(), newFilename.c_str(), _searchResolutionsOrderArray.size());
+//CCLOG("cocos2d: searchIt : %s", searchIt.c_str());	
+CCLOG("cocos2d: searchIt : %s, newFilename : %s, _searchResolutionsOrderArray : %d", searchIt.c_str(), newFilename.c_str(), _searchResolutionsOrderArray.size());
         //for (const auto& resolutionIt : _searchResolutionsOrderArray)
         for (auto p_resolutionIt = _searchResolutionsOrderArray.begin(); p_resolutionIt != _searchResolutionsOrderArray.end(); ++p_resolutionIt)
 		{
@@ -992,7 +993,7 @@ bool FileUtils::isFileExist(const std::string& filename) const
 #if defined(ANDROID)
 		__android_log_print(ANDROID_LOG_ERROR, "CCFileUtils.cpp", "%s", "*** *** FileUtils::isFileExist 002");
 #endif
-		return isFileExistInternal(filename);
+        return isFileExistInternal(filename);
     }
     else
     {
