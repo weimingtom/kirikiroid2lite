@@ -368,7 +368,7 @@ void TVPBaseFileSelectorForm::onTitleClicked(cocos2d::Ref *owner) {
 	{
 		const auto& path = *p_path;
 		CSBReader reader;
-#if 0 //!defined( _MSC_VER) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(LINUX) && !defined(__APPLE__) && !defined(ANDROID)
 		Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));
 #else
 		Node *node = reader.Load("ui/ListItem.csb");

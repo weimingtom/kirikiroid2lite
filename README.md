@@ -334,4 +334,5 @@ Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));
 * elif defined(CC_USE_TIFF)
 * include "physics/CCPhysicsBody.h", add macro check
 * //for EGL/egl.h, and EGL/eglplatform.h, undef Bool
-
+* FIXME: I don't know why crash in cocos2d-x 3.6
+* selectedEvent();
