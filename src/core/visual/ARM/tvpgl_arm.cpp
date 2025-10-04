@@ -1,4 +1,4 @@
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
 
 
 #include "tvpgl_arm_intf.h"

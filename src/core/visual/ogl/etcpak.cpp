@@ -9,6 +9,9 @@
 #include <pthread.h>
 #include "ThreadIntf.h"
 #include "tvpgl.h"
+//#if defined(__APPLE__)
+//#include <smmintrin.h> //__SSE4_1__
+//#endif
 
 #define _bswap(x) ((x&0xFF)<<24)|((x&0xFF00)<<8)|((x&0xFF0000)>>8)|(x>>24)
 namespace std {
@@ -734,7 +737,7 @@ typedef std::array<uint16, 4> v4i;
 
 void Average( const uint8* data, v4i* a )
 {
-#ifdef __SSE4_1__
+#if defined(__SSE4_1__) && !defined(__APPLE__)
     __m128i d0 = _mm_loadu_si128(((__m128i*)data) + 0);
     __m128i d1 = _mm_loadu_si128(((__m128i*)data) + 1);
     __m128i d2 = _mm_loadu_si128(((__m128i*)data) + 2);
@@ -809,7 +812,7 @@ void Average( const uint8* data, v4i* a )
 
 void CalcErrorBlock( const uint8* data, uint err[4][4] )
 {
-#ifdef __SSE4_1__
+#if defined(__SSE4_1__) && !defined(__APPLE__)
     __m128i d0 = _mm_loadu_si128(((__m128i*)data) + 0);
     __m128i d1 = _mm_loadu_si128(((__m128i*)data) + 1);
     __m128i d2 = _mm_loadu_si128(((__m128i*)data) + 2);
@@ -903,7 +906,7 @@ uint CalcError( const uint block[4], const v4i& average )
 
 void ProcessAverages( v4i* a )
 {
-#ifdef __SSE4_1__
+#if defined(__SSE4_1__) && !defined(__APPLE__)
     for( int i=0; i<2; i++ )
     {
         __m128i d = _mm_loadu_si128((__m128i*)a[i*2].data());
@@ -994,7 +997,7 @@ void EncodeAverages( uint64& _d, const v4i* a, size_t idx )
 
 uint64 CheckSolid( const uint8* src )
 {
-#ifdef __SSE4_1__
+#if defined(__SSE4_1__) && !defined(__APPLE__)
     __m128i d0 = _mm_loadu_si128(((__m128i*)src) + 0);
     __m128i d1 = _mm_loadu_si128(((__m128i*)src) + 1);
     __m128i d2 = _mm_loadu_si128(((__m128i*)src) + 2);
@@ -1064,7 +1067,7 @@ void FindBestFit( uint64 terr[2][8], uint16 tsel[16][8], v4i a[8], const uint32*
         int dg = a[bid][1] - g;
         int db = a[bid][2] - b;
 
-#ifdef __SSE4_1__
+#if defined(__SSE4_1__) && !defined(__APPLE__)
         // Reference implementation
 
         __m128i pix = _mm_set1_epi32(dr * 77 + dg * 151 + db * 28);
@@ -1143,7 +1146,7 @@ void FindBestFit( uint64 terr[2][8], uint16 tsel[16][8], v4i a[8], const uint32*
     }
 }
 
-#ifdef __SSE4_1__
+#if defined(__SSE4_1__) && !defined(__APPLE__)
 // Non-reference implementation, but faster. Produces same results as the AVX2 version
 void FindBestFit( uint32 terr[2][8], uint16 tsel[16][8], v4i a[8], const uint32* id, const uint8* data )
 {
@@ -1387,7 +1390,7 @@ uint64 ProcessRGB( const uint8* src )
     size_t idx = GetLeastError( err, 4 );
     EncodeAverages( d, a, idx );
 
-#if defined __SSE4_1__ && !defined REFERENCE_IMPLEMENTATION
+#if defined(__SSE4_1__) && !defined(__APPLE__) && !defined REFERENCE_IMPLEMENTATION
     uint32 terr[2][8] = {};
 #else
     uint64 terr[2][8] = {};
@@ -1411,7 +1414,7 @@ uint64 ProcessRGB_ETC2( const uint8* src )
     size_t idx = GetLeastError( err, 4 );
     EncodeAverages( d, a, idx );
 
-#if defined __SSE4_1__ && !defined REFERENCE_IMPLEMENTATION
+#if defined(__SSE4_1__) && !defined(__APPLE__) && !defined REFERENCE_IMPLEMENTATION
     uint32 terr[2][8] = {};
 #else
     uint64 terr[2][8] = {};
@@ -1698,7 +1701,7 @@ static uint64 _f_rgb(uint8* ptr)
 	return ProcessRGB(ptr);
 }
 
-#ifdef __SSE4_1__
+#if defined(__SSE4_1__) && !defined(__APPLE__)
 static uint64 _f_rgb_avx2(uint8* ptr)
 {
 	return ProcessRGB_AVX2(ptr);
@@ -1711,7 +1714,7 @@ static uint64 _f_rgb_dither(uint8* ptr)
 	return ProcessRGB(ptr);
 }
 
-#ifdef __SSE4_1__
+#if defined(__SSE4_1__) && !defined(__APPLE__)
 static uint64 _f_rgb_dither_avx2(uint8* ptr)
 {
 	Dither(ptr);
@@ -1724,7 +1727,7 @@ static uint64 _f_rgb_etc2(uint8* ptr)
 	return ProcessRGB_ETC2(ptr);
 }
 
-#ifdef __SSE4_1__
+#if defined(__SSE4_1__) && !defined(__APPLE__)
 static uint64 _f_rgb_etc2_avx2(uint8* ptr)
 {
 	return ProcessRGB_ETC2_AVX2(ptr);
@@ -1737,7 +1740,7 @@ static uint64 _f_rgb_etc2_dither(uint8* ptr)
 	return ProcessRGB_ETC2(ptr);
 }
 
-#ifdef __SSE4_1__
+#if defined(__SSE4_1__) && !defined(__APPLE__)
 static uint64 _f_rgb_etc2_dither_avx2(uint8* ptr)
 {
 	Dither(ptr);

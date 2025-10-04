@@ -38,7 +38,7 @@ bool TVPAcceptSaveAsJPG(void* formatdata, const ttstr & type, class iTJSDispatch
 	return result;
 }
 
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
 extern "C"
 {
 #include <turbojpeg.h>
@@ -129,7 +129,7 @@ fill_input_buffer(j_decompress_ptr cinfo)
 
   if(nbytes <= 0)
   {
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
 	if(src->start_of_file)
 		ERREXIT(cinfo, JERR_INPUT_EMPTY);
 	WARNMS(cinfo, JWRN_JPEG_EOF);
@@ -655,7 +655,7 @@ void TVPSaveAsJPG(void* formatdata, tTJSBinaryStream* dst, const iTVPBaseBitmap*
 		cinfo.image_width = width;
 		cinfo.image_height = height;
 		cinfo.input_components = 4;
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
 		cinfo.in_color_space = JCS_EXT_RGBX;//JCS_RGB;
 #else
 		cinfo.in_color_space = JCS_RGB;

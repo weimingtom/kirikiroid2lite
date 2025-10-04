@@ -39,20 +39,25 @@
 #include "FilePathUtil.h"
 #include "Platform.h"
 #include "platform/CCPlatformConfig.h"
+
 #ifndef _MSC_VER
 #include "dirent.h"
 #else
 #endif
+
 #include "TickCount.h"
 #include <fcntl.h>
+
 #ifndef _MSC_VER
 #include <unistd.h>
 #else
 #include <io.h>
 #endif
+
 #include "combase.h"
 #include "win32io.h"
-#ifndef _MSC_VER
+
+#if !defined(_MSC_VER) && !defined(__APPLE__)
 #else
 #undef lseek64
 #define lseek64 lseek
@@ -901,7 +906,7 @@ tTVPLocalFileStream::tTVPLocalFileStream(const ttstr &origname,
 	case TJS_BS_UPDATE:
 		rw |= O_RDWR;			    break;
 	}
-#if defined(ANDROID) || defined(LINUX)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
 	;
 #elif defined(_MSC_VER)
 	rw |= O_BINARY;
@@ -914,7 +919,7 @@ tTVPLocalFileStream::tTVPLocalFileStream(const ttstr &origname,
 	if (Handle < 0) {
 		if (access == TJS_BS_APPEND || access == TJS_BS_UPDATE) {
 			// use whole file writing
-#if defined(ANDROID) || defined(LINUX)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
 			Handle = open(holder, O_RDONLY, 0666);
 #elif defined(_MSC_VER)
 			Handle = open(holder, O_RDONLY | O_BINARY, 0666);

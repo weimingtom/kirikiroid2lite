@@ -171,6 +171,8 @@ PrintText(char *eventtype, char *text)
 
 #endif
 
+//FIXME:???!defined(__MINGW32__)
+#if !defined(__MINGW32__) && !USE_GLEW && !defined(__APPLE__)
 // <EGL/egl.h> exists since android 2.3
 #include <EGL/egl.h>
 PFNGLGENVERTEXARRAYSOESPROC glGenVertexArraysOESEXT = 0;
@@ -191,6 +193,7 @@ void initExtensions() {
  //   glUnmapBufferOES = (PFNGLUNMAPBUFFEROESPROC)eglGetProcAddress("glUnmapBufferOES");
  //   glGetBufferPointervOES = (PFNGLGETBUFFERPOINTERVOESPROC)eglGetProcAddress("glGetBufferPointervOES");
 }
+#endif
 
 
 NS_CC_BEGIN
@@ -438,7 +441,10 @@ GLViewImpl::GLViewImpl()
 , _mouseX(0.0f)
 , _mouseY(0.0f)
 {
+//FIXME:!defined(__MINGW32__)
+#if !defined(__MINGW32__) && !USE_GLEW && !defined(__APPLE__)
 initExtensions();
+#endif
     _viewName = "cocos2dx";
 #if USE_NO_GLFW
 
@@ -1645,7 +1651,7 @@ static bool glew_dynamic_binding()
 // helper
 bool GLViewImpl::initGlew()
 {
-#if 0
+#if defined(__MINGW32__) || USE_GLEW
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_MAC)
     GLenum GlewInitResult = glewInit();
     if (GLEW_OK != GlewInitResult)

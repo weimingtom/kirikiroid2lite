@@ -298,5 +298,25 @@ GLViewImpl* GLViewImpl::create(const std::string& viewName)
 ## macos
 * if !defined( _MSC_VER) && !defined(LINUX)  
 Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));  
+* include <freetype/freetype.h>, make two folders freetype and freetype2 in external_macos
+* -I./src/core/external/freetype-2.5.0.1/include, not exists
+* adding -Iexternal_macos/include/GLFW
+* remove if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
+* remove defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
+* remove !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
+* 1 //defined(__MACOS__)
+* cannot be captured because it does not have automatic storage duration
+* ./src/core/environ/cocos2d/CustomFileUtils.cpp
+* rw |= O_BINARY;
+* duplicate symbol 'DeinterleaveApplyingWindow(float**, float const*, float*, int, unsigned long, unsigned long)' in:
+*    ./src/core/utils/MathAlgorithms_Default.o
+*    ./src/core/sound/MathAlgorithms.o
+* duplicate symbol 'InterleaveOverlappingWindow(float*, float const* const*, float*, int, unsigned long, unsigned long)' in:
+*    ./src/core/utils/MathAlgorithms_Default.o
+*    ./src/core/sound/MathAlgorithms.o
+* readlink("/proc/self/exe", this is useless under macos
+* check other places: //if (length <= 0) {
+* += appPath.substr, need check pos param
+* include <OpenGLES/ES2/gl.h>
 
 ## TODO, msys2

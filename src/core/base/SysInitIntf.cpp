@@ -18,7 +18,7 @@
 #include "SysInitIntf.h"
 #include "ScriptMgnIntf.h"
 #include "tvpgl.h"
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
 #include "Protect.h"
 #endif
 

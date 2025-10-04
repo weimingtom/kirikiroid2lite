@@ -196,7 +196,7 @@ void tTJSNI_VideoOverlay::Open(const ttstr &_name)
 				CachedOverlay->Release();
 				CachedOverlay = nullptr;
 			}
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
 			if (Mode == vomLayer)
 				GetVideoLayerObject(EventQueue.GetOwner(), istream, name.c_str(), ext.c_str(), size, &VideoOverlay);
 			else if(Mode == vomMixer)

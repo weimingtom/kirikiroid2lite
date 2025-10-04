@@ -30,7 +30,7 @@
 #include <pthread.h>
 #include "ConfigManager/LocaleConfigManager.h"
 #include "StorageIntf.h"
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
 extern "C" {
 #include <libavutil/avstring.h>
 }
@@ -112,7 +112,7 @@ extern "C" {
 	void __real_free(void*);
 	void* __real_realloc(void*, size_t);
 	void* __real_calloc(size_t nmemb, size_t size);
-#if defined(WIN32) || defined(ANDROID) || defined(LINUX)
+#if defined(WIN32) || defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
 	void* tc_malloc(size_t size) { return nullptr; }
 	void tc_free(void* ptr) {}
 	void* tc_realloc(void* ptr, size_t size){ return nullptr; }
@@ -1160,7 +1160,7 @@ void TVPInitWindowOptions() {
 }
 
 std::string ExtractFileDir(const std::string & FileName) {
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
 	return av_dirname((char*)FileName.c_str());
 #else
 	return std::string((char*)FileName.c_str());

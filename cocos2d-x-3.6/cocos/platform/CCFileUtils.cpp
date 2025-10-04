@@ -543,6 +543,10 @@ bool FileUtils::init()
 {
     _searchPathArray.push_back(_defaultResRootPath);
     _searchResolutionsOrderArray.push_back("");
+    
+printf("<<<<<<< FileUtils::init size: %d\n", _searchResolutionsOrderArray.size());
+fflush(stdout); //don't use CCLOG
+    
     return true;
 }
 
@@ -735,7 +739,7 @@ std::string FileUtils::getPathForFilename(const std::string& filename, const std
     std::string path = searchPath;
     path += file_path;
     path += resolutionDirectory;
-    
+//CCLOG("getPathForFilename, mid path = %s", path.c_str());
     path = getFullPathForDirectoryAndFilename(path, file);
     
     //CCLOG("getPathForFilename, fullPath = %s", path.c_str());
@@ -770,6 +774,7 @@ std::string FileUtils::fullPathForFilename(const std::string &filename) const
 	for (auto p_searchIt = _searchPathArray.begin(); p_searchIt != _searchPathArray.end(); ++p_searchIt)
 	{
 		const auto& searchIt = *p_searchIt;
+        CCLOG("cocos2d: searchIt : %s, newFilename : %s, _searchResolutionsOrderArray : %d", searchIt.c_str(), newFilename.c_str(), _searchResolutionsOrderArray.size());
         //for (const auto& resolutionIt : _searchResolutionsOrderArray)
         for (auto p_resolutionIt = _searchResolutionsOrderArray.begin(); p_resolutionIt != _searchResolutionsOrderArray.end(); ++p_resolutionIt)
 		{
@@ -826,6 +831,7 @@ void FileUtils::setSearchResolutionsOrder(const std::vector<std::string>& search
     {
         _searchResolutionsOrderArray.push_back("");
     }
+CCLOG("cocos2d: setSearchResolutionsOrder size: %d", searchResolutionsOrder.size());
 }
 
 void FileUtils::addSearchResolutionsOrder(const std::string &order,const bool front)
@@ -839,10 +845,12 @@ void FileUtils::addSearchResolutionsOrder(const std::string &order,const bool fr
     } else {
         _searchResolutionsOrderArray.push_back(resOrder);
     }
+CCLOG("cocos2d: addSearchResolutionsOrder size: %d", _searchResolutionsOrderArray.size());
 }
 
 const std::vector<std::string>& FileUtils::getSearchResolutionsOrder() const
 {
+CCLOG("cocos2d: getSearchResolutionsOrder size: %d", _searchResolutionsOrderArray.size());
     return _searchResolutionsOrderArray;
 }
 

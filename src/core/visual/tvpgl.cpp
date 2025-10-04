@@ -16,7 +16,7 @@
 #include <math.h>
 #include "tjsTypes.h"
 #include "tvpgl.h"
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
 #include "Protect.h"
 #endif
 #include <float.h>
@@ -12311,7 +12311,7 @@ TVP_GL_FUNC_PTR_DECL(void, TVPUpscale65_255, (tjs_uint8 *dest, tjs_int len));
 TVP_GL_FUNC_PTR_DECL(void, TVPConvert32BitTo24Bit, (tjs_uint8 *dest, const tjs_uint8 *buf, tjs_int len));
 
 /* suffix "_c" : function is written in C */
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
 #include "tvpgl_route.h"
 #endif
 

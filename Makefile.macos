@@ -147,7 +147,7 @@ CPPFLAGS += -DTJS_TEXT_OUT_CRLF
 CPPFLAGS += -Iexternal_macos/include
 CPPFLAGS += -Iexternal_macos/include/webp
 CPPFLAGS += -Iexternal_macos/include/freetype2
-#CPPFLAGS += -Iexternal_macos/include/GLFW
+CPPFLAGS += -Iexternal_macos/include/GLFW
 
 
 
@@ -213,6 +213,29 @@ LDFLAGS += -framework Foundation
 LDFLAGS += external_macos/lib/libwebp.a 
 #LDFLAGS += ../../../external/chipmunk/prebuilt/mac/libchipmunk.a 
 LDFLAGS += external_macos/lib/libz.a 
+
+LDFLAGS += external_macos/lib/libSDL2.a 
+
+#LDFLAGS += -framework AVFoundation 
+#AudioUnit or AVFoundation
+#SDL2, AudioObjectAddPropertyListener
+#
+# SDL2-2.24.0
+# $ ./configure --disable-video-metal
+# 
+LDFLAGS += -lm -liconv  
+LDFLAGS += -Wl,-framework,CoreAudio 
+LDFLAGS += -Wl,-framework,AudioToolbox 
+LDFLAGS += -Wl,-weak_framework,CoreHaptics 
+LDFLAGS += -Wl,-weak_framework,GameController 
+LDFLAGS += -Wl,-framework,ForceFeedback 
+LDFLAGS += -lobjc 
+LDFLAGS += -Wl,-framework,CoreVideo 
+LDFLAGS += -Wl,-framework,Cocoa 
+LDFLAGS += -Wl,-framework,Carbon 
+LDFLAGS += -Wl,-framework,IOKit 
+LDFLAGS += -Wl,-weak_framework,QuartzCore 
+LDFLAGS += -Wl,-weak_framework,Metal
 #############
 
 OBJS := 
@@ -1024,6 +1047,9 @@ project/kirikiroid2: cocos2dx.a $(KIRIKIROID2_OBJS)
 	
 test:
 	./project/kirikiroid2
+
+#(cd ./project/Resources; ./kirikiroid2;)
+#./project/Resources/kirikiroid2
 
 debug:
 	lldb ./project/kirikiroid2

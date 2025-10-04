@@ -1311,7 +1311,7 @@ void TVPOutputDebugString(const char *str) {
 
 
 
-#elif defined(ANDROID) || defined(LINUX)
+#elif defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
 
 
 #include "cocos2d.h"
@@ -1352,7 +1352,7 @@ std::string TVPGetDeviceID();
 //#include "base/CCScheduler.h"
 #include <unistd.h>
 //#include <fcntl.h>
-#if defined(LINUX)
+#if defined(LINUX) || defined(__APPLE__)
 #include <stdio.h>
 #else
 #include <android/log.h>
@@ -1369,7 +1369,7 @@ std::string TVPGetDeviceID();
 #include <wchar.h>
 
 # define LOG_TAG "AndroidUtils"
-#if defined(LINUX)
+#if defined(LINUX) || defined(__APPLE__)
 # define LOGE(...) ((void)printf(__VA_ARGS__),(void)printf("\n"))
 #else
 # define LOGE(...) ((void)__android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__))
@@ -1390,7 +1390,7 @@ static std::wstring strInputBoxText;
 
 int TVPShowSimpleInputBox(ttstr &text, const ttstr &caption, const ttstr &prompt, const std::vector<ttstr> &vecButtons) {
 	LOGE("TVPShowSimpleInputBox: %s, %s", text.AsStdString().c_str(), caption.AsStdString().c_str());
-#if !defined(LINUX)	
+#if !defined(LINUX)	&& !defined(__APPLE__)
 	throw;
 #endif	
 	return 0;
@@ -1523,7 +1523,7 @@ void TVPControlAdDialog(int adType, int arg1, int arg2) {
 std::vector<std::string> TVPGetDriverPath() {
 	//throw;
 	std::vector<std::string> ret;
-#if defined(LINUX)
+#if defined(LINUX) || defined(__APPLE__)
 	ret.push_back("/mnt/SDCARD");
 #else		
 	ret.push_back("/mnt/sdcard");
@@ -1590,7 +1590,7 @@ void TVPOutputDebugString(const char *str) {
 //NOTE:added
 static int GetExternalStoragePath(std::vector<std::string> &ret) {
 	int count = 0;
-#if defined(LINUX)
+#if defined(LINUX) || defined(__APPLE__)
 	ret.push_back(std::string("/mnt/SDCARD"));
 #else	
 	ret.push_back(std::string("/mnt/sdcard"));
@@ -1599,14 +1599,14 @@ static int GetExternalStoragePath(std::vector<std::string> &ret) {
 	return count;
 }
 static std::string GetInternalStoragePath() {
-#if defined(LINUX)
+#if defined(LINUX) || defined(__APPLE__)
 	return std::string("/mnt/SDCARD/");
 #else	
 	return std::string("/mnt/sdcard/");
 #endif
 }
 static std::string GetApkStoragePath() {
-#if defined(LINUX)
+#if defined(LINUX) || defined(__APPLE__)
 	return std::string("/mnt/SDCARD/");
 #else	
 	return std::string("/mnt/sdcard/");

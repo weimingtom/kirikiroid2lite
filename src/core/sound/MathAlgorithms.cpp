@@ -13,6 +13,9 @@
 #include "tjsCommHead.h"
 #include <stdlib.h>
 
+#if !defined(__APPLE__)
+//dumplicated, see ./src/core/sound/MathAlgorithms.cpp and ./src/core/utils/MathAlgorithms_Default.cpp
+
 //---------------------------------------------------------------------------
 
 //---------------------------------------------------------------------------
@@ -106,5 +109,5 @@ void  InterleaveOverlappingWindow(float * __restrict dest,
 
 
 //---------------------------------------------------------------------------
-
+#endif /*__APPLE__*/
 

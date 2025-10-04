@@ -4,7 +4,9 @@
 #include <assert.h>
 #include <string.h>
 #ifndef _MSC_VER
+#if !defined(__APPLE__)
 #include <sys/sysinfo.h>
+#endif
 #include <sys/time.h>
 #include <sys/resource.h>
 #else

@@ -459,7 +459,7 @@ public:
 		return PrimaryLayerArea;
 	}
 
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
 //FIXME:
 	virtual Vec2 minContainerOffset() override {
 #else
@@ -483,7 +483,7 @@ public:
 		return ret;
 	}
 
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
 //FIXME:
 	virtual Vec2 maxContainerOffset() override {
 #else
@@ -851,6 +851,7 @@ public:
 		if (DrawSprite) {
 			Size size = getContentSize();
 			float scale = (float)ActualZoomNumer / ActualZoomDenom;
+#if defined(_MSC_VER) || defined(_WIN32) || defined(__MINGW32__)
 #ifdef _DEBUG
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_INTENSITY);
 			printf("reset sprite: size=(%f,%f), Numer=%d, Denom=%d Layer=(%d,%d)\n",
@@ -859,6 +860,7 @@ public:
 			if (!LayerWidth || !LayerHeight) {
 				LayerHeight = LayerHeight;
 			}
+#endif
 #endif
 			size = size / scale;
 			//DrawSprite->setTextureRect(Rect(0, 0, size.width, size.height));
@@ -1361,7 +1363,7 @@ public:
 				case caNone:
 					break;
 				case caHide:
-#if defined(ANDROID) || defined(LINUX)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
 					throw;
 #elif defined(_MSC_VER)
 					__debugbreak(); throw;
@@ -1384,7 +1386,7 @@ public:
 		}
 		catch (...) {
 			ProgramClosing = false;
-#if defined(ANDROID) || defined(LINUX)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
 			throw;
 #elif defined(_MSC_VER)
 			__debugbreak(); throw;
@@ -1757,12 +1759,17 @@ void TVPMainScene::popUIForm(cocos2d::Node *form, eLeaveAni ani) {
 ui_ = ui;            
         this->runAction(Sequence::createWithTwoActions(
             DelayTime::create(UI_CHANGE_DURATION),
+#if defined(__APPLE__)
+//cannot be captured because it does not have automatic storage duration
+            CallFunc::create([=] {ui->removeFromParent();})));
+#else
             CallFunc::create([&ui_] { 
             if (ui_) {
             ui_->removeFromParent();
             ui_ = NULL;
             } 
             })));
+#endif
 #endif			
 	} else if (ani == eLeaveToBottom) {
 		cocos2d::Node *ColorMask = children.back();
@@ -1775,6 +1782,10 @@ printf("<<<<<<<<<<<<<<<< runAction ColorMask->removeFromParent()\n");
 ColorMask_ = ColorMask;
         runAction(Sequence::createWithTwoActions(
             DelayTime::create(UI_CHANGE_DURATION),
+ #if defined(__APPLE__)
+ //cannot be captured because it does not have automatic storage duration
+             CallFunc::create([=] {ColorMask->removeFromParent();})));
+ #else
             CallFunc::create([&ColorMask_]() {
             //FIXME: click title button and then click blank area crash here 
             printf("<<<<<<<<<<<<<<<< ColorMask->removeFromParent()\n");
@@ -1783,7 +1794,8 @@ ColorMask_ = ColorMask;
             ColorMask_ = NULL; 
             } 
             })));
-#endif   
+#endif
+#endif
 	}
 }
 

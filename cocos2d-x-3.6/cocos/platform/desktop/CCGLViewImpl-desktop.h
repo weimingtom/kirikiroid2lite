@@ -34,8 +34,10 @@ THE SOFTWARE.
 #include <EGL/egl.h>
 #include <GLES2/gl2.h>
 #else
+#if !defined(__MINGW32__) && !USE_GLEW	
 #define GLFW_INCLUDE_ES2
-#include "glfw3.h"
+#endif
+#include <GLFW/glfw3.h>
 #endif
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)

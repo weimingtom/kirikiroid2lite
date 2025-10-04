@@ -25,9 +25,14 @@
 #define lseek64 lseek
 
 
-#elif defined(ANDROID) || defined(LINUX)
+#elif defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
 #include <unistd.h>
 #include <fcntl.h>
+
+#if defined(__APPLE__)
+#undef lseek64
+#define lseek64 lseek
+#endif
 
 #else
 #error unknown platform
