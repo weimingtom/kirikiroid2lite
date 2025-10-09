@@ -66,6 +66,7 @@ CPPFLAGS += -DCOCOS2D_DEBUG=1
 CPPFLAGS2 := 
 CPPFLAGS2 += -std=c++11 
 
+#CPPFLAGS += -fno-exceptions 
 CPPFLAGS += -fexceptions 
 
 CPPFLAGS += -Wno-deprecated-declarations 
