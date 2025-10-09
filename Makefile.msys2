@@ -931,13 +931,13 @@ KIRIKIROID2_OBJS += ./src/core/external/libvorbis-1.2.0/lib/window.o
 
 
 
-all : project/kirikiroid2
+all : project/Resources/kirikiroid2
 
 cocos2dx.a : $(OBJS)
 	$(AR) $@ $(OBJS)
 	$(RANLIB) $@
 
-project/kirikiroid2: cocos2dx.a $(KIRIKIROID2_OBJS)
+project/Resources/kirikiroid2: cocos2dx.a $(KIRIKIROID2_OBJS)
 	$(CPP) $(CPPFLAGS2) $(CPPFLAGS) ./project/proj.linux/main.cpp $(KIRIKIROID2_OBJS) cocos2dx.a -o $@ -I./project/Classes $(CPPFLAGS) $(LDFLAGS)
 
 %.o : %.cpp
@@ -950,10 +950,10 @@ project/kirikiroid2: cocos2dx.a $(KIRIKIROID2_OBJS)
 	$(CC) $(CPPFLAGS) -o $@ -c $<
 	
 test:
-	./project/kirikiroid2
+	./project/Resources/kirikiroid2
 
 debug:
-	gdb ./project/kirikiroid2
+	gdb ./project/Resources/kirikiroid2
 
 clean:
-	$(RM) $(OBJS) $(KIRIKIROID2_OBJS) cocos2dx.a project/kirikiroid2
+	$(RM) $(OBJS) $(KIRIKIROID2_OBJS) cocos2dx.a project/Resources/kirikiroid2

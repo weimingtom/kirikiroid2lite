@@ -42,6 +42,7 @@ https://github.com/krkrz/krkr2/blob/master/kirikiri2/trunk/kirikiri2/src/plugins
 * (TODO, not checked in msys2) _title->setTitleText("/"); //FIXME: don't display empty title button //FIXME: not test / in msys2
 
 ## History  
+* 2025-10-09 : First running msys2 version successfully.
 * 2025-09-02 : Merge kirikiroid2-miyoo-a30 sources and compile linux version successfully.
 * 2025-05-15 : Adding Android audio function and migrate to NDK r25, but Windows version compiling status is unknown.  
 * 2024-12-21 : Adding Windows audio function.  

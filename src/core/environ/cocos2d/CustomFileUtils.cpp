@@ -36,8 +36,14 @@ static void _checkPath()
     if (0 == s_resourcePath.length())
     {
         WCHAR *pUtf16ExePath = nullptr;
+#if defined(__MINGW32__)
+		wchar_t fullpath[256] = {0};
+		GetModuleFileNameW(NULL, fullpath, sizeof(fullpath)/sizeof(fullpath[0])-1);
+		pUtf16ExePath = fullpath;
+#else		
         _get_wpgmptr(&pUtf16ExePath);
-
+#endif
+	
         // We need only directory part without exe
         WCHAR *pUtf16DirEnd = wcsrchr(pUtf16ExePath, L'\\');
 

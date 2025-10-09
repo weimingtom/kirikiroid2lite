@@ -773,7 +773,16 @@ CCLOGINFO("setFrameSize %f, %f", width, height);
                                    _viewName.c_str(),
                                    _monitor,
                                    nullptr);
+								   
+#if !defined(__MINGW32__)
+//For msys2, win11:
+//if use this in Msys2, it will hide the window title
+								   
+//For Intel N3150, Ubuntu 25.04:
+//GLFWError #65548 Happen, Wayland: The Platform does not support setting the window position
 glfwSetWindowPos(_mainWindow, 0, 0); //FIXME:added, show on left top of the screen
+#endif
+
     glfwMakeContextCurrent(_mainWindow);
 
     glfwSetMouseButtonCallback(_mainWindow, GLFWEventHandler::onGLFWMouseCallBack);
