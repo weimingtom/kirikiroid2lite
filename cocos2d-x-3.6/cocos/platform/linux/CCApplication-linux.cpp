@@ -88,8 +88,8 @@ int Application::run()
 
         curTime = getCurrentMillSecond();
 #if MY_USE_TIME_REPORT		
-printf("<<<<<<<<<<<<<<<< curTime - lastTime == %ld\n", (curTime - lastTime));
-fflush(stdout);
+//printf("<<<<<<<<<<<<<<<< curTime - lastTime == %ld\n", (curTime - lastTime));
+//fflush(stdout);
 #endif
         if (curTime - lastTime < _animationInterval)
         {
