@@ -131,7 +131,7 @@ static void* SendDumps_entry(void *pthis) {
 
 #define FLAG_UTF8 (1<<11)
 static void SendDumps(std::string dumpdir, std::vector<std::string> allDumps, std::string packageName, std::string versionStr) {
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__) && !defined(__MINGW32__)
 	boost::mutex _mutex;
 	boost::condition_variable _cond;
 	//for (const std::string &filename : allDumps) {
@@ -229,7 +229,7 @@ static void SendDumps(std::string dumpdir, std::vector<std::string> allDumps, st
 	}
 	//allDumps.clear();
 #else
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 	throw;
 #elif defined(_MSC_VER)	
 	__debugbreak(); throw;

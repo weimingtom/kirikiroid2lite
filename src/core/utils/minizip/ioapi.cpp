@@ -11,7 +11,8 @@
 */
 
 #include "ioapi.h"
-#if defined(_MSC_VER)
+//#include <cstdint> //? is it common ?
+#if defined(_MSC_VER) || defined(__MINGW32__)
 #include <io.h>
 
 #ifdef WIN32

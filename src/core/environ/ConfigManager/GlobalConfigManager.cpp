@@ -11,7 +11,7 @@ class XMLMemPrinter : public tinyxml2::XMLPrinter {
 	char _buffer[4096];
 
 public:
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__) && !defined(__MINGW32__)
 //FIXME:
 	virtual void Print(const char* format, ...) override { 
 #else

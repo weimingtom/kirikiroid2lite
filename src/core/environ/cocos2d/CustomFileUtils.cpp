@@ -1,7 +1,7 @@
-#if defined(_MSC_VER)
+#if defined(_MSC_VER) || defined(__MINGW32__)
 #include "CustomFileUtils.h"
 #include "platform/CCCommon.h"
-#if defined(_MSC_VER)
+#if defined(_MSC_VER) || defined(__MINGW32__)
 #include <Shlobj.h>
 #endif
 #include <cstdlib>
@@ -307,7 +307,8 @@ std::string FileUtilsWin32_mod::getWritablePath() const
 
 
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) && !defined(__MINGW32__)
+//FIXME:not need?
 CustomFileUtils::CustomFileUtils()
 {
 }
@@ -317,7 +318,8 @@ void CustomFileUtils::addAutoSearchArchive(const std::string& path)
 {
 	if (!this->isFileExist(path)) return;
 	unzFile file = nullptr;
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) && !defined(__MINGW32__) 
+//FIXME:not need?
 	file = unzOpen(FileUtils::getInstance()->getSuitableFOpen(path).c_str());
 #else
 	file = unzOpen(path.c_str());
@@ -1102,7 +1104,14 @@ bool FileUtilsLinux_mod::init()
 {
     // get application path
     char fullpath[256] = {0};
+#if defined(__MINGW32__)
+	 ssize_t length = GetModuleFileName(NULL, fullpath, sizeof(fullpath)-1);
+	 if (length == 0) {
+	 	return false;
+	 }
+#else	
     ssize_t length = readlink("/proc/self/exe", fullpath, sizeof(fullpath)-1);
+#endif
 
     //if (length <= 0) {
     //    return false;
@@ -1137,7 +1146,11 @@ string FileUtilsLinux_mod::getWritablePath() const
     struct stat st;
     stat(_writablePath.c_str(), &st);
     if (!S_ISDIR(st.st_mode)) {
+#if defined(__MINGW32__)
+        mkdir(_writablePath.c_str());
+#else	
         mkdir(_writablePath.c_str(), 0744);
+#endif		
     }
 
     return _writablePath;

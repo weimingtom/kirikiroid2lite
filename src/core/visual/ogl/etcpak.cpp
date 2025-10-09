@@ -13,6 +13,10 @@
 //#include <smmintrin.h> //__SSE4_1__
 //#endif
 
+#if defined(__MINGW32__)
+#define M_LN2       0.693147180559945309417
+#endif
+
 #define _bswap(x) ((x&0xFF)<<24)|((x&0xFF00)<<8)|((x&0xFF0000)>>8)|(x>>24)
 namespace std {
 #if _MSC_VER > 1600

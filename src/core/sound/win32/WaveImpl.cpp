@@ -46,7 +46,7 @@
 #include "UserEvent.h"
 #include "NativeEventQueue.h"
 #include "Platform.h"
-#if defined(_MSC_VER) || defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
+#if defined(_MSC_VER) || defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 //#include <Windows.h>
 extern void TVPOutputDebugString(const char *); 
 #endif

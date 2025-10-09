@@ -38,7 +38,7 @@ bool TVPAcceptSaveAsJPG(void* formatdata, const ttstr & type, class iTJSDispatch
 	return result;
 }
 
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__) && !defined(__MINGW32__)
 extern "C"
 {
 #include <turbojpeg.h>
@@ -56,8 +56,9 @@ extern "C"
 extern "C"
 {
 #include <jpeglib.h>
+#include <jerror.h>
 }
-
+#undef TVP_USE_TURBO_JPEG_API
 
 
 

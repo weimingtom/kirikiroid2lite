@@ -4,11 +4,19 @@
 #include <assert.h>
 #include <string.h>
 #ifndef _MSC_VER
-#if !defined(__APPLE__)
+#if !defined(__APPLE__) && !defined(__MINGW32__)
 #include <sys/sysinfo.h>
 #endif
 #include <sys/time.h>
+
+#if defined(__MINGW32__)
+#include <sys/utime.h> //for mingw's utime(), but no utimes()
+#endif
+
+#if !defined(__MINGW32__)
 #include <sys/resource.h>
+#endif
+
 #else
 #include <Windows.h>
 #include <sys/utime.h>
@@ -93,13 +101,22 @@ void TVPRelinquishCPU(){
 }
 
 void TVP_utime(const char *name, time_t modtime) {
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) //&& !defined(__MINGW32__)
+
+#if defined(__MINGW32__)
+    struct utimbuf new_times = {0};
+    new_times.actime = modtime;
+    new_times.modtime = modtime;
+    utime(name, &new_times);	
+#else
 	timeval mt[2];
 	mt[0].tv_sec = modtime;
 	mt[0].tv_usec = 0;
 	mt[1].tv_sec = modtime;
 	mt[1].tv_usec = 0;
-	utimes(name, mt);
+	utimes(name, mt);	
+#endif	
+
 #else
 	_utimbuf utb;
 	utb.modtime = modtime;

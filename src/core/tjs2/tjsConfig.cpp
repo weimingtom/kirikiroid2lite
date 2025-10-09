@@ -9,7 +9,7 @@
 // configuration
 //---------------------------------------------------------------------------
 
-#if defined(LINUX)
+#if defined(LINUX) || defined(__MINGW32__)
 #include <math.h>
 #endif
 #include "tjsCommHead.h"
@@ -757,8 +757,8 @@ tjs_char *TJS_strrchr(const tjs_char *s, int c)
 #include <stdarg.h>
 //#include <inttypes.h>
 #include <stdint.h>
-#if defined(LINUX)
-//#include <math.h> //see upper
+#if defined(LINUX) || defined(__MINGW32__)
+//#include <math.h> //see upper, move to upper to stop compile errors
 #else
 #include <math.h>
 #endif

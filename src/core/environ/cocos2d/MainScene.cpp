@@ -459,7 +459,7 @@ public:
 		return PrimaryLayerArea;
 	}
 
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__) && !defined(__MINGW32__)
 //FIXME:
 	virtual Vec2 minContainerOffset() override {
 #else
@@ -483,7 +483,7 @@ public:
 		return ret;
 	}
 
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__) && !defined(__MINGW32__)
 //FIXME:
 	virtual Vec2 maxContainerOffset() override {
 #else
@@ -1363,7 +1363,7 @@ public:
 				case caNone:
 					break;
 				case caHide:
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 					throw;
 #elif defined(_MSC_VER)
 					__debugbreak(); throw;
@@ -1386,7 +1386,7 @@ public:
 		}
 		catch (...) {
 			ProgramClosing = false;
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 			throw;
 #elif defined(_MSC_VER)
 			__debugbreak(); throw;
@@ -2391,7 +2391,11 @@ void TVPConsoleLog(const ttstr &l, bool important) {
 #ifdef _WIN32
 	//cocos2d::log("%s", utf8.c_str());
 	char buf[16384] = { 0 };
+#if defined(__MINGW32__)
+	WideCharToMultiByte(CP_ACP, 0, (const wchar_t*)l.c_str(), -1, buf, sizeof(buf), nullptr, FALSE);
+#else	
 	WideCharToMultiByte(CP_ACP, 0, l.c_str(), -1, buf, sizeof(buf), nullptr, FALSE);
+#endif
 	puts(buf);
 #else
 	std::string utf8;

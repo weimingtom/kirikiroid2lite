@@ -29,7 +29,7 @@ typedef struct _IID
 #endif
 
 #ifndef STDMETHODCALLTYPE
-#ifdef WIN32
+#if defined(WIN32) && !defined(__MINGW32__)
 #define STDMETHODCALLTYPE __stdcall
 #else
 #define STDMETHODCALLTYPE

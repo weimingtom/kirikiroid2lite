@@ -1160,7 +1160,7 @@ void TVPInitWindowOptions() {
 }
 
 std::string ExtractFileDir(const std::string & FileName) {
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__) && !defined(__MINGW32__)
 	return av_dirname((char*)FileName.c_str());
 #else
 	return std::string((char*)FileName.c_str());

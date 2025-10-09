@@ -519,7 +519,7 @@ iTVPSoundBuffer* TVPCreateSoundBuffer(tTVPWaveFormat &fmt, int bufcount)
 
 
 
-#elif defined(LINUX) || defined(__APPLE__)
+#elif defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 
 //#include <Windows.h>
 #include "tjsCommHead.h"

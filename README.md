@@ -319,7 +319,13 @@ Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));
 * += appPath.substr, need check pos param
 * include <OpenGLES/ES2/gl.h>
 
-## TODO, msys2
+## TODO, msys2  
+* (TODO) Compare to kirikiroid2_fork3   
+* (TODO) Check kirikiroid2_fork3 sound impl, src/core/sound/win32/WaveMixer.cpp
+* static_assert(sizeof(t.st_size) == 8, "");
+* TVPAddAutoSearchArchive(skinpath);
+* getcwd(buf, sizeof(buf) / sizeof(buf[0]));
+* av_dirname, FIXME: return std::string((char*)FileName.c_str()); not dirname
 
 ## TODO
 * _spriteFramesAliases.reserve(20);
@@ -336,3 +342,6 @@ Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));
 * //for EGL/egl.h, and EGL/eglplatform.h, undef Bool
 * FIXME: I don't know why crash in cocos2d-x 3.6
 * selectedEvent();
+
+## TODO, visionfive2
+* (TODO) build with -g0 -O3

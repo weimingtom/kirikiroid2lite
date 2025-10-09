@@ -36,8 +36,8 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 	FileUtils::setDelegate(TVPCreateCustomFileUtils());
 	auto director = Director::getInstance();
 	auto glview = director->getOpenGLView();
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
-#if defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
+#if defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 	printf("*** *** applicationDidFinishLaunching 001\n");
 #else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 001");
@@ -50,8 +50,8 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 		glview->setFrameSize(960, 640);
 #endif
 	}
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
-#if defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
+#if defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 	printf("*** *** applicationDidFinishLaunching 002\n");
 #else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 002");
@@ -79,8 +79,8 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 	// this can make sure that the resource's height could fit for the height of design resolution.
 	searchPath.push_back("res");
 
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
-#if defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
+#if defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 	printf("*** *** applicationDidFinishLaunching 003\n");
 #else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 003");
@@ -93,7 +93,7 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 			GlobalConfigManager::GetInstance()->SetValue("skin_path", "");
 		} else {
 
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 
 			throw;
 #elif !defined(_MSC_VER)
@@ -115,8 +115,8 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 	// set searching path
 	FileUtils::getInstance()->setSearchPaths(searchPath);
 
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
-#if defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
+#if defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 	printf("*** *** applicationDidFinishLaunching 004-1\n");
 #else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004-1");
@@ -126,8 +126,8 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 	// turn on display FPS
 	director->setDisplayStats(false);
 
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
-#if defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
+#if defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 	printf("*** *** applicationDidFinishLaunching 004-2\n");
 #else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004-2");
@@ -137,8 +137,8 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 	// set FPS. the default value is 1.0/60 if you don't call this
 	director->setAnimationInterval(1.0 / 60);
 
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
-#if defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
+#if defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 	printf("*** *** applicationDidFinishLaunching 004-3\n");
 #else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004-3");
@@ -147,8 +147,8 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 
 	TVPInitUIExtension();
 
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
-#if defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
+#if defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 	printf("*** *** applicationDidFinishLaunching 004-4\n");
 #else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004-4");
@@ -158,8 +158,8 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 	// initialize something
 	LocaleConfigManager::GetInstance()->Initialize(TVPGetCurrentLanguage());
 
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
-#if defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
+#if defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 	printf("*** *** applicationDidFinishLaunching 004-5\n");
 #else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004-5");
@@ -169,8 +169,8 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 	// create a scene. it's an autorelease object
 	TVPMainScene *scene = TVPMainScene::CreateInstance();
 
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
-#if defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
+#if defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 	printf("*** *** applicationDidFinishLaunching 004-6\n");
 #else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 004-6");
@@ -182,8 +182,8 @@ bool TVPAppDelegate::applicationDidFinishLaunching() {
 
 	//director->getConsole()->listenOnTCP(16006);
 
-#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
-#if defined(LINUX) || defined(__APPLE__)
+#if defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
+#if defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 	printf("*** *** applicationDidFinishLaunching 005\n");
 #else
 	__android_log_print(ANDROID_LOG_ERROR, "AppDelegate.cpp", "%s", "*** *** applicationDidFinishLaunching 005");

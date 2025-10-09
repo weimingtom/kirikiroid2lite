@@ -216,7 +216,11 @@ void TVPMainFileSelectorForm::show() {
 #else
     // get application path
     static char fullpath[1024 * 4] = {0};
+#if defined(__MINGW32__)
+    ssize_t length = GetModuleFileName(NULL, fullpath, sizeof(fullpath)-1);
+#else	
     ssize_t length = readlink("/proc/self/exe", fullpath, sizeof(fullpath)-1);
+#endif
 
     std::string dataPath;//fontPath;
     if (length <= 0) {
@@ -261,7 +265,7 @@ void TVPMainFileSelectorForm::onCellClicked(int idx) {
 	}
 	else if ((archiveType = TVPCheckArchive(info.FullPath.c_str())) == 1) {
 		startup(info.FullPath);
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__) && !defined(__MINGW32__)
 	} else if (archiveType == 0 && TVPCheckIsVideoFile(info.FullPath.c_str())) {
 		SimpleMediaFilePlayer *player = SimpleMediaFilePlayer::create();
 		TVPMainScene::GetInstance()->addChild(player, 10);// pushUIForm(player);

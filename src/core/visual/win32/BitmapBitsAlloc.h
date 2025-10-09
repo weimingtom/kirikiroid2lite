@@ -9,7 +9,11 @@ class iTVPMemoryAllocator {
 public:
 	virtual ~iTVPMemoryAllocator() {};
 	virtual void* allocate( size_t size ) = 0;
+#if defined(__MINGW32__)	
+    virtual void free_( void *mem ) = 0;
+#else
 	virtual void free( void* mem ) = 0;
+#endif
 };
 //---------------------------------------------------------------------------
 // heap allocation functions for bitmap bits
