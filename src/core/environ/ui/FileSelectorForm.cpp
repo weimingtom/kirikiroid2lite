@@ -368,7 +368,7 @@ void TVPBaseFileSelectorForm::onTitleClicked(cocos2d::Ref *owner) {
 	{
 		const auto& path = *p_path;
 		CSBReader reader;
-#if !defined(_MSC_VER) && !defined(LINUX) && !defined(__APPLE__) && !defined(ANDROID)
+#if !defined(_MSC_VER) && !defined(LINUX) && !defined(__APPLE__) && !defined(ANDROID) && !defined(__MINGW32__)
 		Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));
 #else
 		Node *node = reader.Load("ui/ListItem.csb");
@@ -879,7 +879,7 @@ void TVPListForm::initFromInfo(const std::vector<cocos2d::ui::Widget*> &cells) {
 		Size size = cell->getContentSize();
 		size.width = width;
 		cell->setContentSize(size);
-#if defined(_MSC_VER) || defined(LINUX) || defined(__APPLE__)
+#if defined(_MSC_VER) || defined(LINUX) || defined(__APPLE__) || defined(ANDROID) || defined(__MINGW32__)
 		Node *nodeChild = cell->getChildByName("_nodeChild");
 		nodeChild->setPositionX((width - nodeChild->getContentSize().width) / 2.0f);
 #endif
@@ -1043,7 +1043,7 @@ void TVPBaseFileSelectorForm::FileItemCellImpl::initFromFile(const char * filena
 	static const std::string str_highlight("highlight");
 	Widget *HighLight = static_cast<Widget *>(reader.findController<cocos2d::Node>(str_highlight));
 	if (HighLight) {
-#if defined(_MSC_VER) || defined(ANDROID) || defined(LINUX) || defined(__APPLE__)
+#if defined(_MSC_VER) || defined(ANDROID) || defined(LINUX) || defined(__APPLE__) || defined(__MINGW32__)
 		//https://blog.csdn.net/iamlegendary/article/details/76977723
 		//scroll problem
 		HighLight->setSwallowTouches(false);
@@ -1068,7 +1068,7 @@ void TVPBaseFileSelectorForm::FileItemCellImpl::initFromFile(const char * filena
 #endif
 				break;
 
-#if defined(_MSC_VER) || defined(LINUX) || defined(__APPLE__)
+#if defined(_MSC_VER) || defined(LINUX) || defined(__APPLE__) || defined(ANDROID) || defined(__MINGW32__)
 //scroll problem
 			case Widget::TouchEventType::MOVED:
 #if defined(_MSC_VER)
@@ -1083,7 +1083,7 @@ void TVPBaseFileSelectorForm::FileItemCellImpl::initFromFile(const char * filena
 #endif
 
 			case Widget::TouchEventType::CANCELED:
-#if defined(_MSC_VER) || defined(LINUX) || defined(__APPLE__)
+#if defined(_MSC_VER) || defined(LINUX) || defined(__APPLE__) || defined(ANDROID) || defined(__MINGW32__)
 //scroll problem
 #if defined(_MSC_VER)
 				OutputDebugString(L"===================>HighLight Widget::TouchEventType::CANCELED\n");
@@ -1125,7 +1125,7 @@ void TVPBaseFileSelectorForm::FileItemCellImpl::setInfo(int idx, const FileInfo 
 
 void TVPBaseFileSelectorForm::FileItemCellImpl::onClicked(cocos2d::Ref* p) {
 	Widget* sender = static_cast<Widget*>(p);
-#if defined(_MSC_VER) || defined(LINUX) || defined(__APPLE__)
+#if defined(_MSC_VER) || defined(LINUX) || defined(__APPLE__) || defined(ANDROID) || defined(__MINGW32__)
 //scroll problem
 	if (sender->isHighlighted()) {
 		return;

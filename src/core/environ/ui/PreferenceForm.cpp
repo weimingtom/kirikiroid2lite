@@ -80,7 +80,7 @@ public:
 	void fireReleaseUpEvent() {
 		bool newstat = !_isSelected;
 		setSelected(newstat);
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__) && !defined(__MINGW32__)
 		dispatchSelectChangedEvent(newstat);
 #else
 #if defined(_MSC_VER)
