@@ -25,6 +25,14 @@
 void TVPGetMemoryInfo(TVPMemoryInfo &m)
 {
 #ifndef _MSC_VER
+#if defined(__APPLE__)
+    m.MemTotal = 4000 * 1000 * 1024 / 1024;
+    m.MemFree = 4000 * 1000 * 1024 / 1024;
+    m.SwapTotal = 4000 * 1000 * 1024 / 1024;
+    m.SwapFree = 4000 * 1000 * 1024 / 1024;
+    m.VirtualTotal = 4000 * 1000 * 1024 / 1024;
+    m.VirtualUsed = (4000 * 1000 * 1024 - 4000 * 1000 * 1024) / 1024;
+#else
     /* to read /proc/meminfo */
     FILE* meminfo;
     char buffer[100] = {0};
@@ -81,6 +89,8 @@ void TVPGetMemoryInfo(TVPMemoryInfo &m)
         }
     }
     fclose(meminfo);
+#endif /*__APPLE__*/
+    
 #else
 	MEMORYSTATUS status;
 	status.dwLength = sizeof(status);

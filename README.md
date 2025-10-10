@@ -42,6 +42,7 @@ https://github.com/krkrz/krkr2/blob/master/kirikiri2/trunk/kirikiri2/src/plugins
 * (TODO, not checked in msys2) _title->setTitleText("/"); //FIXME: don't display empty title button //FIXME: not test / in msys2
 
 ## History  
+* 2025-10-11 : First running macos version on old MAC MINI successfully.  
 * 2025-10-10 : Building and running VisionFive2 and BPI-F3 versions successfully with OpenGL ES hardware accelerated, not softpipe, just with -Os not -O2 and -O3.  
 * 2025-10-09 : First running msys2 version successfully.
 * 2025-09-02 : Merge kirikiroid2-miyoo-a30 sources and compile linux version successfully.
@@ -320,6 +321,10 @@ Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));
 * check other places: //if (length <= 0) {
 * += appPath.substr, need check pos param
 * include <OpenGLES/ES2/gl.h>
+* if(ret && ret->initWithRect(viewName, Rect(0, 0, 640, 480), 1)) {
+* m.MemTotal = 4000 * 1000 * 1024 / 1024;
+* include <jerror.h>
+* TVPGetMemoryInfo
 
 ## TODO, msys2  
 * (TODO) Compare to kirikiroid2_fork3   

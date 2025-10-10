@@ -56,7 +56,9 @@ extern "C"
 extern "C"
 {
 #include <jpeglib.h>
+#if !defined(__APPLE__)
 #include <jerror.h>
+#endif
 }
 #undef TVP_USE_TURBO_JPEG_API
 

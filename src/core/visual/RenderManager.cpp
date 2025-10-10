@@ -1,4 +1,4 @@
-#if defined(_MSC_VER) || defined(ANDROID) || defined(LINUX) || defined(__MINGW32__)
+#if defined(_MSC_VER) || defined(ANDROID) || defined(LINUX) || defined(__MINGW32__) || defined(__APPLE__)
 /*=================================*/
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -2684,7 +2684,7 @@ public:
 		, _drawCount(0)
 	{
 		_createStaticTexture2D = tTVPSoftwareTexture2D::Create;
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__MINGW32__)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__MINGW32__) && !defined(__APPLE__)
 		std::string compTexMethod = IndividualConfigManager::GetInstance()->GetValue<std::string>("software_compress_tex", "none");
 		if (compTexMethod == "halfline") _createStaticTexture2D = tTVPSoftwareTexture2D_half::Create;
 		else if (compTexMethod == "lz4") _createStaticTexture2D = tTVPSoftwareTexture2D_lz4::Create;

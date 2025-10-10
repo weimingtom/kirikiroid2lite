@@ -566,9 +566,13 @@ GLViewImpl* GLViewImpl::create(const std::string& viewName)
     auto ret = new (std::nothrow) GLViewImpl;
 #if 0 //defined(USE_APP_WIDTH) && defined(USE_APP_HEIGHT)
     if(ret && ret->initWithRect(viewName, Rect(0, 0, USE_APP_WIDTH, USE_APP_HEIGHT), 1)) {
-#else      
+#else
+#if defined(__APPLE__)
+    if(ret && ret->initWithRect(viewName, Rect(0, 0, 640, 480), 1)) {
+#else
     if(ret && ret->initWithRect(viewName, Rect(0, 0, 960, 640), 1)) {
     //if(ret && ret->initWithRect(viewName, Rect(0, 0, 640, 480), 1)) {
+#endif
 #endif    
         ret->autorelease();
         return ret;
