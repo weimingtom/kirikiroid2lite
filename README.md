@@ -325,6 +325,13 @@ Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));
 * m.MemTotal = 4000 * 1000 * 1024 / 1024;
 * include <jerror.h>
 * TVPGetMemoryInfo
+```
+现在我终于可以编译运行macos版的kirikiroid2lite（旧mac mini），
+虽然似乎有一些问题，例如我把窗口弄小了，还有游戏屏幕有时候会定住不动，
+但其实还能响应鼠标事件的，可能显示有问题。应该基本上大部分计划都完成了，
+已经可以新移植到macos和vf2和bpi-f3，这三种新的硬件上，
+目标只有ios版还没移植成功（大概要下一年）
+```
 
 ## TODO, msys2  
 * (TODO) Compare to kirikiroid2_fork3   
