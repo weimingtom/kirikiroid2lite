@@ -73,7 +73,8 @@ CPPFLAGS += -DUSE_NO_GLFW=0 -DUSE_SHADER_PRECISION=1
 #if PC use OpenGLES to replace OpenGL, need USE_SHADER_PRECISION
 #cocos2d-x debug info [cocos2d: 0:1(1): error: No precision specified in this scope for type `mat4'
 CPPFLAGS += -DUSE_ROTATE90=0
-CPPFLAGS += -g3 -O0 #unable to change to -g0 -O3 because R_RISCV_PCREL_HI20 link error if build bpi-f3 version
+#CPPFLAGS += -g3 -O0 #unable to change to -g0 -O3 because R_RISCV_PCREL_HI20 link error if build bpi-f3 version
+CPPFLAGS += -g0 -Os
 endif
 
 CPPFLAGS += -DCC_ENABLE_BOX2D_INTEGRATION=0 
@@ -93,7 +94,7 @@ CPPFLAGS += -DMY_USE_UIBUTTON_SETTITLECOLOR=1
 
 CPPFLAGS += -DMY_USE_XMLUTIL_TOUNSIGNED_D=1   #./cocos2d-x-3.6/external/tinyxml2/tinyxml2.cpp
 #CPPFLAGS += -mcmodel=medany #tinyxml2.cpp:(.text+0x15e6): relocation truncated to fit: R_RISCV_PCREL_HI20 against `.LC4'
-CPPFLAGS += -fPIC
+#CPPFLAGS += -fPIC
 
 #VisionFive2 test time and speed
 CPPFLAGS += -DMY_USE_TIME_REPORT=1
@@ -257,7 +258,7 @@ LDFLAGS += -latomic
 LDFLAGS += -lSDL2
 
 #LDFLAGS += -mcmodel=medany #tinyxml2.cpp:(.text+0x15e6): relocation truncated to fit: R_RISCV_PCREL_HI20 against `.LC4'
-LDFLAGS += -fPIC
+#LDFLAGS += -fPIC
 
 ifeq ($(MIYOO),3)
 #trimui brick replace glfw3 with EGL
