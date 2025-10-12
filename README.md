@@ -103,11 +103,12 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 * $ make debug
 
 ## (TODO) How to build for VisionFive2 Debian RISC-V 64 bit TFCard boot, just -Os
+* You need a CPU fan to make sure the CPU temperature is not over 85 degrees, see also https://www.waveshare.net/wiki/VisionFive2   
 * $ sudo apt update
 * $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
 * $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype6-dev libbz2-dev
 * $ make -f Makefile.visionfive2 clean
-* $ make -f Makefile.visionfive2 -j8
+* $ make -f Makefile.visionfive2 -j3
 * $ make -f Makefile.visionfive2 test
 
 ## (TODO) How to build for BPI-F3 Bianbu 2.0 RISC-V 64 bit eMMC boot, actually almost same as VisionFive2, just -Os
@@ -115,7 +116,7 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 * $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
 * $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype6-dev libbz2-dev
 * $ make -f Makefile.bpif3 clean
-* $ make -f Makefile.bpif3 -j8
+* $ make -f Makefile.bpif3 -j3
 * $ make -f Makefile.bpif3 test
 
 ## (TODO) How to build for macOS old MAC MINI Intel version
