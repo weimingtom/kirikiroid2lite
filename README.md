@@ -124,7 +124,7 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 * $ make -f Makefile.macos -j8
 * $ make -f Makefile.macos test
 
-## (TODO) How to build for msys2
+## (TODO) How to build for msys2, on Windows 11 64bit
 * Make sure msys2 dev packages headers are installed to c:/msys64/mingw64/include, otherwise need to modify Makefile.msys2
 * Launch MSYS2 MSYS shell
 * $ pacman -Sy
