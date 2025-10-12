@@ -81,6 +81,7 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 ## (TODO) How to build for Linux (Xubuntu 20.04 64bit)
 * (FIXME) Fix initWithRect and setDesignResolutionSize problems
 * (FIXME) Two SDL windows, need to remove 'SDL2 joystick capture'
+* $ sudo apt update
 * $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
 * $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype-dev
 * $ make clean
@@ -92,6 +93,7 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 ## (TODO) How to build for Linux (Ubuntu 16.04 32bit, require libglfw3-dev support)
 * (FIXME) Fix initWithRect and setDesignResolutionSize problems
 * (FIXME) Two SDL windows, need to remove 'SDL2 joystick capture'
+* $ sudo apt update
 * $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
 * $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype6-dev libbz2-dev
 * $ make clean
@@ -99,6 +101,27 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 * $ make test
 * $ ./project/kirikiroid2
 * $ make debug
+
+## (TODO) How to build for VisionFive2 Debian RISC-V 64 bit TFCard boot, just -Os
+* $ sudo apt update
+* $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
+* $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype6-dev libbz2-dev
+* $ make -f Makefile.visionfive2 clean
+* $ make -f Makefile.visionfive2 -j8
+* $ make -f Makefile.visionfive2 test
+
+## (TODO) How to build for BPI-F3 Bianbu 2.0 RISC-V 64 bit eMMC boot, actually almost same as VisionFive2, just -Os
+* $ sudo apt update
+* $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
+* $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype6-dev libbz2-dev
+* $ make -f Makefile.bpif3 clean
+* $ make -f Makefile.bpif3 -j8
+* $ make -f Makefile.bpif3 test
+
+## (TODO) How to build for macOS old MAC MINI Intel version
+* $ make -f Makefile.macos clean
+* $ make -f Makefile.macos -j8
+* $ make -f Makefile.macos test
 
 ## Minimum version of Cocos2d-x  
 * VS2013 version cocos2d-x 3.6, see   
