@@ -126,6 +126,14 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 ## (TODO) How to build for msys2
 * Make sure msys2 dev packages headers are installed to c:/msys64/mingw64/include, otherwise need to modify Makefile.msys2
 * Launch MSYS2 MSYS shell
+* $ pacman -Sy
+* $ pacman -S mingw-w64-x86_64-libpng
+* $ pacman -S mingw-w64-x86_64-libjpeg
+* $ pacman -S mingw-w64-x86_64-libwebp
+* $ pacman -S mingw-w64-x86_64-zlib
+* $ pacman -S mingw-w64-x86_64-glew
+* $ pacman -S mingw-w64-x86_64-glfw
+* $ pacman -S mingw-w64-x86_64-gdb
 * $ mingw32-make.exe -f Makefile.msys2 clean
 * $ mingw32-make.exe -f Makefile.msys2 -j8
 * $ mingw32-make.exe -f Makefile.msys2 test
