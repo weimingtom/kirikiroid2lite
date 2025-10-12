@@ -82,7 +82,7 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 * (FIXME) Fix initWithRect and setDesignResolutionSize problems
 * (FIXME) Two SDL windows, need to remove 'SDL2 joystick capture'
 * $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
-* $ sudo apt install libsdl2-dev libglfw3-dev libfreetype-dev
+* $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype-dev
 * $ make clean
 * $ make -j8
 * $ make test
@@ -93,7 +93,7 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 * (FIXME) Fix initWithRect and setDesignResolutionSize problems
 * (FIXME) Two SDL windows, need to remove 'SDL2 joystick capture'
 * $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
-* $ sudo apt install libsdl2-dev libglfw3-dev libfreetype6-dev libbz2-dev
+* $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype6-dev libbz2-dev
 * $ make clean
 * $ make -j8
 * $ make test
