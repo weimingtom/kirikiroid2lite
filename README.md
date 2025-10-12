@@ -119,6 +119,7 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 * $ make -f Makefile.bpif3 test
 
 ## (TODO) How to build for macOS old MAC MINI Intel version
+* You need to install Xcode and Xcode Command Line Tools (I use macos big sur 11 + xcode 11.7 + Command Line Tools 12)
 * $ make -f Makefile.macos clean
 * $ make -f Makefile.macos -j8
 * $ make -f Makefile.macos test
