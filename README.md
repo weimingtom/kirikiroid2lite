@@ -123,6 +123,13 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 * $ make -f Makefile.macos -j8
 * $ make -f Makefile.macos test
 
+## (TODO) How to build for msys2
+* Make sure msys2 dev packages headers are installed to c:/msys64/mingw64/include, otherwise need to modify Makefile.msys2
+* Launch MSYS2 MSYS shell
+* $ mingw32-make.exe -f Makefile.msys2 clean
+* $ mingw32-make.exe -f Makefile.msys2 -j8
+* $ mingw32-make.exe -f Makefile.msys2 test
+
 ## Minimum version of Cocos2d-x  
 * VS2013 version cocos2d-x 3.6, see   
 https://github.com/weimingtom/cocos2dx36_vs2013  
