@@ -183,7 +183,7 @@ CPPFLAGS += -I./src/core/external/opencv-2.4.13/modules/core/include
 CPPFLAGS += -I./src/core/external/opencv-2.4.13/modules/dynamicuda/include
 CPPFLAGS += -I./src/core/external/opencv-2.4.13/modules/imgproc/include
 CPPFLAGS += -I./src/core/external/opencv-2.4.13
-CPPFLAGS += -I./src/core/external/freetype-2.5.0.1/include
+###CPPFLAGS += -I./src/core/external/freetype-2.5.0.1/include
 
 #vorbis
 CPPFLAGS += -I./src/core/external/libvorbis-1.2.0/include/
