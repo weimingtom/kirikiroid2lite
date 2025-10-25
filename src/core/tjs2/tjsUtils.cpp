@@ -32,6 +32,12 @@ struct tTJSCriticalSectionImpl {
 	}
 	virtual ~tTJSCriticalSectionImpl() {
 		pthread_mutex_destroy(&_mutex);
+#if 1
+if (_tid) {
+delete _tid;
+_tid = NULL;
+}
+#endif
 	}
 	bool lock();
 	void unlock();
@@ -40,15 +46,25 @@ struct tTJSCriticalSectionImpl {
 bool tTJSCriticalSectionImpl::lock() {
 	pthread_t *id = new pthread_t();
 	*id = pthread_self();
+#if 0	
+	pthread_mutex_lock(&_mutex);
+	if (_tid != NULL && pthread_equal(*_tid, *id)) {
+		return false;
+	}
+#else
+//original method
 	if (_tid != NULL && pthread_equal(*_tid, *id)) return false;
 	pthread_mutex_lock(&_mutex);
+#endif	
 	_tid = id;
 	return true;
 }
 
 void tTJSCriticalSectionImpl::unlock() {
+#if 0	
 	delete _tid;
 	_tid = NULL;
+#endif	
 	pthread_mutex_unlock(&_mutex);
 }
 

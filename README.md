@@ -40,6 +40,8 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 see https://github.com/weimingtom/kirikiroid2lite/issues/1  
 https://github.com/krkrz/krkr2/blob/master/kirikiri2/trunk/kirikiri2/src/plugins/win32/windowEx/main.cpp  
 * (TODO, not checked in msys2) _title->setTitleText("/"); //FIXME: don't display empty title button //FIXME: not test / in msys2
+* (TODO) no cmake support
+* src/core/tjs2/tjsUtils.cpp:struct tTJSCriticalSectionImpl written with pthread is too bad, need reimplementation
 
 ## History  
 * 2025-10-11 : First running macos version on old MAC MINI successfully.  
@@ -78,7 +80,7 @@ https://github.com/krkrz/krkr2/blob/master/kirikiri2/trunk/kirikiri2/src/plugins
 Toast.makeText(getApplicationContext(), "You grant write external storage permission. Please restart to continue.", Toast.LENGTH_LONG).show();
 ```
 
-## (TODO) How to build for Linux (Xubuntu 20.04 64bit)
+## (TODO) How to build for Linux (Xubuntu 20.04 64bit, Xubuntu 25.04 64bit)
 * (FIXME) Fix initWithRect and setDesignResolutionSize problems
 * (FIXME) Two SDL windows, need to remove 'SDL2 joystick capture'
 * $ sudo apt update
