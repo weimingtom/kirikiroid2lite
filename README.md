@@ -56,6 +56,13 @@ https://github.com/krkrz/krkr2/blob/master/kirikiri2/trunk/kirikiri2/src/plugins
 * 2018-08-11 : (gitee) No boost depend, use pthread instead  
 * 2018-07-25 : (gitee) First available version with boost and vs2010  
 
+## (Please Buy Steam Game if possible) Tested and Playable Supported Games
+* Spring Days  
+https://code.google.com/archive/p/godxq1986/downloads    
+* 第九日-the 9th day-, 试玩版 V2.0 (20160102)  
+9th-trial - Exe(2016.1.12).rar       
+https://the9thday.net/works/w1/download.php  
+
 ## How to build for Windows  
 * WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
 * If you download zip or tar.gz source file from github web page, you should use notepad++ to batch replace \n with \r\n.  
