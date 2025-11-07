@@ -408,3 +408,6 @@ Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));
 
 ## TODO, visionfive2
 * (TODO) build with -g0 -O3
+
+## TODO, some cocosstudio files go to here, but not merged  
+* https://github.com/weimingtom/kirikiroid2-miyoo-a30/tree/master/cocosstudio/kr2
