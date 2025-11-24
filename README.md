@@ -421,3 +421,16 @@ https://github.com/weimingtom/kirikiroid2-miyoo-a30/tree/master/cocosstudio/kr2
 * https://github.com/tsukumijima/libmali-rockchip
 * https://github.com/radxa-pkg/rockchip-prebuilt
 * https://github.com/lihuang1111/wayland-glesv2-demo
+
+## Planned supported devices
+* LCPI-H3, a.k.a Orangepi PC Plus, armv7l, with GPU driver Mali400 by Lima, the temperature should not be too high and over 100 degrees     
+LCPI-H3_2.2.2_ubuntu_focal_desktop_linux5.4.65.img    
+* Radxa Dragon Q6A, QCS6490, aarch64, with GPU driver FD643 by notfreedreno  
+radxa-dragon-q6a_noble_kde_t5.output_512.img.xz  
+* Orangepi 5, aarch64, official OS with llvmpipe and libmali GLESv2     
+Orangepi5_1.2.2_ubuntu_jammy_desktop_xfce_linux5.10.160.7z  
+* Orangepi 5, aarch64, ubuntu-rockchip with Panfrost  
+ubuntu-24.04-preinstalled-desktop-arm64-orangepi-5.img.xz  
+(Joshua-Riek/ubuntu-rockchip, don't use 24.10 because it's not LTS apt update may fail)   
+* Orangepi 5, aarch64, Armbian with Panfrost     
+Armbian_25.11.1_Orangepi5_noble_current_6.12.58_xfce_desktop.img.xz  
