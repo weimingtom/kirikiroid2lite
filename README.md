@@ -423,11 +423,21 @@ https://github.com/weimingtom/kirikiroid2-miyoo-a30/tree/master/cocosstudio/kr2
 * https://github.com/lihuang1111/wayland-glesv2-demo
 
 ## Planned supported devices  
-* VisionFive2, with GPU GLESv2 driver PowerVR B-Series BXE-4-32 by Imagination Technologies and software GPU driver softpipe (TOO SLOW 1 second per frame)    
+* Steam Deck LCD version, with GPU driver AMD Custom GPU 0405 (radeonsi, vangogh, LLVM 19.1.7, DRM 3.61, 6.14.0-15-generic) by AMD  
+ubuntu-25.04-desktop-amd64.iso, LiveCD mode  
+* Intel(R) Core(TM) i3-10100 CPU @ 3.60GHz, GPU driver NVIDIA GeForce RTX 2080/PCIe/SSE2 by NVIDIA Corporation  
+ubuntu-25.04-desktop-amd64.iso    
+xubuntu-25.04-desktop-amd64.iso  
+xubuntu-20.04-desktop-amd64.iso  
+* GIGABYTE GB-BACE-3150，N3150, GPU driver Intel HD Graphics 400 by Intel  
+ubuntu-25.04-desktop-amd64.iso    
+xubuntu-25.04-desktop-amd64.iso  
+xubuntu-20.04-desktop-amd64.iso  
+* Vision Five2, with GPU GLESv2 driver PowerVR B-Series BXE-4-32 by Imagination Technologies and software GPU driver softpipe (TOO SLOW 1 second per frame)    
 starfive-jh7110-202409-SD-minimal-desktop-wayland.img.bz2  
 * BPI-F3, need eMMC boot (don't use TF Card boot, bacause it will fail when second boot), with GPU GLESv2 driver PowerVR (PVR) B-Series BXE-2-32 by Imagination Technologies  
-titantools_for_windows-2.0.7-Rc.exe
-bianbu-24.04-desktop-k1-v2.0-release-20241021195251.zip  
+titantools_for_windows-2.0.7-Rc.exe  
+bianbu-24.04-desktop-k1-v2.0-release-20241021195251.zip   
 * BPI-F3, use Armbian noble   
 (???) 2024-08-12-Armbian-bpi-SpacemiT_24.5.0-trunk_Bananapif3_noble_legacy_6.1.15_xfce_desktop.img.xz  
 * LCPI-H3, a.k.a Orangepi PC Plus, armv7l, with GPU driver Mali400 by Lima, the temperature should not be too high and over 100 degrees     
