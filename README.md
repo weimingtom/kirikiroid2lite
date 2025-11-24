@@ -413,3 +413,11 @@ Widget *cell = dynamic_cast<Widget*>(reader.Load("ui/ListItem.csb"));
 * some cocosstudio files go to here, but not merged    
 https://github.com/weimingtom/kirikiroid2-miyoo-a30/tree/master/cocosstudio/kr2  
 * android build failed: CallFunc::create([&ui_] {  
+
+## gles and glfw3 test code
+* testgles_20241128.tar.gz
+* kirikiroid2lite_gles_failed_001.tar.gz and glfw-3.4_gles_failed_001.tar.gz
+* https://github.com/nickdesaulniers/opengles2-book
+* https://github.com/tsukumijima/libmali-rockchip
+* https://github.com/radxa-pkg/rockchip-prebuilt
+* https://github.com/lihuang1111/wayland-glesv2-demo
