@@ -422,7 +422,14 @@ https://github.com/weimingtom/kirikiroid2-miyoo-a30/tree/master/cocosstudio/kr2
 * https://github.com/radxa-pkg/rockchip-prebuilt
 * https://github.com/lihuang1111/wayland-glesv2-demo
 
-## Planned supported devices
+## Planned supported devices  
+* VisionFive2, with GPU GLESv2 driver PowerVR B-Series BXE-4-32 by Imagination Technologies and software GPU driver softpipe (TOO SLOW 1 second per frame)    
+starfive-jh7110-202409-SD-minimal-desktop-wayland.img.bz2  
+* BPI-F3, need eMMC boot (don't use TF Card boot, bacause it will fail when second boot), with GPU GLESv2 driver PowerVR (PVR) B-Series BXE-2-32 by Imagination Technologies  
+titantools_for_windows-2.0.7-Rc.exe
+bianbu-24.04-desktop-k1-v2.0-release-20241021195251.zip  
+* BPI-F3, use Armbian noble   
+(???) 2024-08-12-Armbian-bpi-SpacemiT_24.5.0-trunk_Bananapif3_noble_legacy_6.1.15_xfce_desktop.img.xz  
 * LCPI-H3, a.k.a Orangepi PC Plus, armv7l, with GPU driver Mali400 by Lima, the temperature should not be too high and over 100 degrees     
 LCPI-H3_2.2.2_ubuntu_focal_desktop_linux5.4.65.img    
 * Radxa Dragon Q6A, QCS6490, aarch64, with GPU driver FD643 by notfreedreno  
