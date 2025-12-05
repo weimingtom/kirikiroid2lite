@@ -456,5 +456,5 @@ Armbian_25.11.1_Orangepi5_noble_current_6.12.58_xfce_desktop.img.xz
 * (TODO) RPI4, Raspberry Pi 4B and CM4  
 2023-05-03-raspios-bullseye-arm64.img   
 2023-05-03-raspios-bullseye-armhf.img  
-* (TODO) OGA 1.1, OdroidGo Advance 1.1 black version     
+* (TODO) OGA 1.1, ODROID-GO Advance 1.1 black version     
 ubuntu-18.04.3-4.4-es-odroid-goA-20200923.img  
