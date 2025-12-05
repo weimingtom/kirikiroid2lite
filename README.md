@@ -451,3 +451,10 @@ ubuntu-24.04-preinstalled-desktop-arm64-orangepi-5.img.xz
 (Joshua-Riek/ubuntu-rockchip, don't use 24.10 because it's not LTS apt update may fail)   
 * Orangepi 5, aarch64, Armbian with Panfrost     
 Armbian_25.11.1_Orangepi5_noble_current_6.12.58_xfce_desktop.img.xz  
+* (TODO) RPI3, Raspberry Pi 3B and CM3    
+2020-05-27-raspios-buster-armhf.img  
+* (TODO) RPI4, Raspberry Pi 4B and CM4  
+2023-05-03-raspios-bullseye-arm64.img   
+2023-05-03-raspios-bullseye-armhf.img  
+* (TODO) OGA 1.1, OdroidGo Advance 1.1 black version     
+ubuntu-18.04.3-4.4-es-odroid-goA-20200923.img  
