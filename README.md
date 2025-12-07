@@ -63,6 +63,13 @@ https://code.google.com/archive/p/godxq1986/downloads
 9th-trial - Exe(2016.1.12).rar       
 https://the9thday.net/works/w1/download.php  
 
+## (TODO, Please buy steam games) Not tested unencrypted or encrypted kirikiri2 games
+* 恋がさくころ桜どき 体验版, sakusaku_trial.zip
+* (?) 恋课金, koikakinTR.zip, koikakinTRH.zip
+* LIKExLOVE2, https://github.com/weimingtom/kirikiroid2lite/issues/1
+* [encrypted] 实妹相伴的大泉君
+* 时停社, 嫁探, 不是体验版  
+
 ## How to build for Windows  
 * WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
 * If you download zip or tar.gz source file from github web page, you should use notepad++ to batch replace \n with \r\n.  
