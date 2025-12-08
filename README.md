@@ -64,11 +64,11 @@ https://code.google.com/archive/p/godxq1986/downloads
 https://the9thday.net/works/w1/download.php  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Japanese kirikiri2 or kirikiriz games  
-* [Unencrypted] 恋がさくころ桜どき 体验版, sakusaku_trial.zip
-* (?) 恋课金, 我的未来是恋爱与氪金, koikakinTR.zip, koikakinTRH.zip
+* [Unencrypted] 恋がさくころ桜どき 体験版, sakusaku_trial.zip, https://palette.clearrave.co.jp/product/sakusaku/download.html  
+* (TODO, ? 普通版, 可能不能用体验版) 恋课金, 我的未来是恋爱与氪金, 体验版: koikakinTR.zip, koikakinTRH.zip
 * [Encrypted] LIKE×LOVE ～色川 鈴音～, LIKExLOVE2, LIKExLOVE2.zip, https://github.com/weimingtom/kirikiroid2lite/issues/1
-* [Encrypted] 实妹相伴的大泉君
-* 时停社, 嫁探, 不是体验版  
+* [Encrypted] 实妹相伴的大泉君, cheng141_with_xp3filter_complete_files.7z, cheng141_with_xp3filter_complete_files.7z
+* (TODO, 可能不能用体验版) 时停社, 嫁探, 不是体验版  
 
 ## How to build for Windows  
 * WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
