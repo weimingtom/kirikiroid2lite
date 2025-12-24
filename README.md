@@ -70,6 +70,8 @@ https://the9thday.net/works/w1/download.php
 * [Encrypted] リアル妹がいる大泉くんのばあい, 实妹相伴的大泉君, cheng141_with_xp3filter_complete_files.7z, cheng141_with_xp3filter_complete_files.7z
 * (TODO, 可能不能用体验版) 时停社, 嫁探, 不是体验版  
 * (TODO, ? 普通版, 可能不能用体验版) 恋课金, 我的未来是恋爱与氪金, 体验版: koikakinTR.zip, koikakinTRH.zip
+* (TODO) g弦  
+* (TODO) 谁杀死了知更鸟  
 
 ## How to build for Windows  
 * WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
