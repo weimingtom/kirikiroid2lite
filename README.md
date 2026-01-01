@@ -80,7 +80,20 @@ https://the9thday.net/works/w1/download.php
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * ===NOTE, 以下仅记录===
-* (TODO) 雾之本境twisty-destiny  
+* (TODO) 雾之本境twisty-destiny, twisty-destiny    
+```
+   《雾之本境》是一款原创游戏，而非商业游戏，制作人分散在全国各地，请不要将她和其他商业游戏作品进行苛刻的比较。
+    这个游戏制作时间长达一年多，其中经历了许多困难，我们没有投资，没有做商业宣传。就算这样，有的成员甚至为了制作而放弃
+考试，为了团队进度而努力。经过一年的制作，无数昼夜的长期鏖战才有了今天您看到的一款小小的国产游戏。
+     请尊重我们的劳动成果。
+     请不要在网络中放出游戏下载，制作成盗版，以及破解改造。
+     最后，谢谢您给予我们的这份支持，我们会继续努力，制作更多有趣的游戏。 
+                                                                              SP-time制作组 主催  小仆         
+官方博客：http://blog.sina.com.cn/sptime
+官方微博：http://t.sina.com.cn/sptime
+官方主页：www.sp-time.com
+正式版订购地址：http://sptime.taobao.com
+```
 
 ## How to build for Windows  
 * WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
