@@ -57,9 +57,9 @@ https://github.com/krkrz/krkr2/blob/master/kirikiri2/trunk/kirikiri2/src/plugins
 * 2018-07-25 : (gitee) First available version with boost and vs2010  
 
 ## (Please Buy Steam Game if possible) Tested and Playable Supported Games
-* Spring Days  
+* [Unencrypted] Spring Days  
 https://code.google.com/archive/p/godxq1986/downloads    
-* 第九日-the 9th day-, 试玩版 V2.0 (20160102)  
+* [Unencrypted] 第九日-the 9th day-, 试玩版 V2.0 (20160102)  
 9th-trial - Exe(2016.1.12).rar       
 https://the9thday.net/works/w1/download.php  
 
@@ -80,7 +80,7 @@ https://the9thday.net/works/w1/download.php
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * ===NOTE, 以下仅记录===
-* (TODO) 雾之本境twisty-destiny, twisty-destiny, (same as 默示version) 雾之本境正式版.iso, (黙示, 默示version) [110723][SP-time]雾之本境 [中文硬盘版+RR3].rar      
+* [Encrypted] 雾之本境twisty-destiny, twisty-destiny, (same as 默示version) 雾之本境正式版.iso, (黙示, 默示version) [110723][SP-time]雾之本境 [中文硬盘版+RR3].rar      
 ```
    《雾之本境》是一款原创游戏，而非商业游戏，制作人分散在全国各地，请不要将她和其他商业游戏作品进行苛刻的比较。
     这个游戏制作时间长达一年多，其中经历了许多困难，我们没有投资，没有做商业宣传。就算这样，有的成员甚至为了制作而放弃
