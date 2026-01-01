@@ -70,8 +70,17 @@ https://the9thday.net/works/w1/download.php
 * [Encrypted] リアル妹がいる大泉くんのばあい, 实妹相伴的大泉君, cheng141_with_xp3filter_complete_files.7z, cheng141_with_xp3filter_complete_files.7z
 * (TODO, 可能不能用体验版) 时停社, 嫁探, 不是体验版  
 * (TODO, ? 普通版, 可能不能用体验版) 恋课金, 我的未来是恋爱与氪金, 体验版: koikakinTR.zip, koikakinTRH.zip
-* (TODO) g弦  
-* (TODO) 谁杀死了知更鸟  
+* (TODO) g弦上的魔王, g线上的魔王, [あかべぇそふとつぅ]Ｇ線上の魔王     
+* (TODO, 已散佚, 中文版和日文版都未找到文件) 谁杀死了知更鸟, (NOT FOUND) 誰が殺したコマドリを_zh, (NOT FOUND) [スマイル戦機]_誰が殺したコマドリを   
+* ===NOTE, 以下仅记录===
+* (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
+* (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
+* (TODO) [WHEEL] ひのまるっ
+* (TODO) [Wheel-Soft]大宇宙の誇り
+
+## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
+* ===NOTE, 以下仅记录===
+* (TODO) 雾之本境twisty-destiny  
 
 ## How to build for Windows  
 * WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
