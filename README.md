@@ -67,7 +67,7 @@ https://the9thday.net/works/w1/download.php
 * [Unencrypted] 恋がさくころ桜どき 体験版, 恋花绽放樱飞时 体验版, sakusaku_trial.zip, https://palette.clearrave.co.jp/product/sakusaku/download.html  
 * [Unencrypted] from touchgal, 恋花绽放樱飞时.zip
 * [Encrypted] LIKE×LOVE ～色川 鈴音～, LIKExLOVE2, LIKExLOVE2.zip, https://github.com/weimingtom/kirikiroid2lite/issues/1
-* [Encrypted] リアル妹がいる大泉くんのばあい, 实妹相伴的大泉君, cheng141_with_xp3filter_complete_files.7z, cheng141_with_xp3filter_complete_files.7z
+* [Encrypted] リアル妹がいる大泉くんのばあい, 实妹相伴的大泉君, cheng141_with_xp3filter_complete_files.7z, cheng141_with_xp3filter_complete_files.7z, realsister_ons
 * (TODO, 可能不能用体验版) 时停社, 嫁探, 不是体验版  
 * (TODO, ? 普通版, 可能不能用体验版) 恋课金, 我的未来是恋爱与氪金, 体验版: koikakinTR.zip, koikakinTRH.zip
 * (TODO) g弦上的魔王, g线上的魔王, [あかべぇそふとつぅ]Ｇ線上の魔王     
