@@ -94,7 +94,7 @@ https://the9thday.net/works/w1/download.php
 官方主页：www.sp-time.com
 正式版订购地址：http://sptime.taobao.com
 
-NOTE: Only tested with Crass-source.7z tpm2=xxx
+NOTE: Only tested with Crass-source.7z txxx=xxx
 param under windows xp
 and 雾之本境正式版.iso,
 don't use old Crass version 0.4.10.1  
