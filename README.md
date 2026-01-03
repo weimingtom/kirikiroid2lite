@@ -70,7 +70,7 @@ https://the9thday.net/works/w1/download.php
 * [Encrypted] リアル妹がいる大泉くんのばあい, 实妹相伴的大泉君, cheng141_with_xp3filter_complete_files.7z, cheng141_with_xp3filter_complete_files.7z, realsister_ons
 * (TODO, 可能不能用体验版) 时停社, 嫁探, 不是体验版  
 * (TODO, ? 普通版, 可能不能用体验版) 恋课金, 我的未来是恋爱与氪金, 体验版: koikakinTR.zip, koikakinTRH.zip
-* [Unencrypted (Chinese patch is Encrypted) ] g弦上的魔王, g线上的魔王, (NOT FOUND) [あかべぇそふとつぅ]Ｇ線上の魔王, (ONLY PATCH, NOT GOOD, no data.xp3) [080529] [あかべぇそふとつぅ] G線上の魔王 中文补丁1.00＋SAVE.rar, (ONLY data.xp3) あかべぇそふとつぅ_Ｇ線上の魔王.rar (2008, TVP(KIRIKIRI) 2 core 2.29.9901.1022)  
+* [Unencrypted (Chinese patch is Encrypted exe) ] g弦上的魔王, g线上的魔王, (NOT FOUND) [あかべぇそふとつぅ]Ｇ線上の魔王, (ONLY PATCH, NOT GOOD, no data.xp3) [080529] [あかべぇそふとつぅ] G線上の魔王 中文补丁1.00＋SAVE.rar, (ONLY data.xp3) あかべぇそふとつぅ_Ｇ線上の魔王.rar (2008, TVP(KIRIKIRI) 2 core 2.29.9901.1022)  
 ```
 http://bbs.2dgal.com/thread.php?fid=146
 ```    
@@ -90,15 +90,24 @@ http://bbs.2dgal.com/thread.php?fid=146
 3.BUG回报请到http://www.moetea.com/forum-80-1.html或http://tieba.baidu.com/p/1962586170回报。
 3.百合赛高。
 ```
-* [Unencrypted] 恋爱0キロメートル中文版, 恋爱0公里.rar
+* [Unencrypted] 恋爱0キロメートル中文版, (which version? different from Hazx version) 恋爱0公里.rar, (《恋爱0公里》Final（最终版） By Hazx) 《恋爱0公里》[本体+汉化补丁].rar
+```
+《恋爱0公里》Final（最终版） By Hazx
+游戏版权（除补丁外）属日本游戏公司「ASa Project」所有。
+请勿将游戏和补丁用于商业用途！
+《恋爱0公里》资源整合：CG、音乐、歌曲、移植版、PSP版等等
+http://chs.hmacg.net/game/renzero/
+百度恋爱0公里贴吧：
+http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
+```
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
 * (TODO) [WHEEL] ひのまるっ
 * (TODO) [Wheel-Soft]大宇宙の誇り
-* lyricallisp_free-1.7.zip
-* KRKR制作范例.zip
-* A Dream of Summer.7z  
+* (TODO) lyricallisp_free-1.7.zip
+* (TODO) KRKR制作范例.zip
+* (TODO) A Dream of Summer.7z  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * ===NOTE, 以下仅记录===
@@ -121,8 +130,7 @@ param under windows xp
 and 雾之本境正式版.iso,
 don't use old Crass version 0.4.10.1  
 ```
-* 星月夜EP3_DEMO.rar  
-
+* (TODO) 星月夜EP3_DEMO.rar  
 
 ## How to build for Windows  
 * WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
