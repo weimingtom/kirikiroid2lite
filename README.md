@@ -90,6 +90,7 @@ http://bbs.2dgal.com/thread.php?fid=146
 3.BUG回报请到http://www.moetea.com/forum-80-1.html或http://tieba.baidu.com/p/1962586170回报。
 3.百合赛高。
 ```
+* [Unencrypted] 恋爱0キロメートル中文版, 恋爱0公里.rar
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
