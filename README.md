@@ -70,8 +70,11 @@ https://the9thday.net/works/w1/download.php
 * [Encrypted] リアル妹がいる大泉くんのばあい, 实妹相伴的大泉君, cheng141_with_xp3filter_complete_files.7z, cheng141_with_xp3filter_complete_files.7z, realsister_ons
 * (TODO, 可能不能用体验版) 时停社, 嫁探, 不是体验版  
 * (TODO, ? 普通版, 可能不能用体验版) 恋课金, 我的未来是恋爱与氪金, 体验版: koikakinTR.zip, koikakinTRH.zip
-* (TODO) g弦上的魔王, g线上的魔王, [あかべぇそふとつぅ]Ｇ線上の魔王     
-* (TODO, 已散佚, 中文版和日文版都未找到文件, 只找到一个未压缩的中文补丁版带日文原版文件) 谁杀死了知更鸟, (NOT FOUND) 誰が殺したコマドリを_zh, (NOT FOUND) [スマイル戦機]_誰が殺したコマドリを, (baiduyun) 誰が殺したコマドリを.7z with 是谁杀了知更鸟.exe and 誰が殺したコマドリをCSA版.exe (TVP(KIRIKIRI) 2 core 2.31.2011.615) and plugin/windowEx.dll,       
+* (TODO) g弦上的魔王, g线上的魔王, (NOT FOUND) [あかべぇそふとつぅ]Ｇ線上の魔王, (ONLY PATCH) [080529] [あかべぇそふとつぅ] G線上の魔王 中文补丁1.00＋SAVE.rar, (ONLY ) あかべぇそふとつぅ_Ｇ線上の魔王.rar (2008, TVP(KIRIKIRI) 2 core 2.29.9901.1022)  
+```
+http://bbs.2dgal.com/thread.php?fid=146
+```    
+* [Unencrypted] (已散佚, 中文版和日文版都未找到文件, 只找到一个未压缩的中文补丁版带日文原版文件) 谁杀死了知更鸟, (NOT FOUND) 誰が殺したコマドリを_zh, (NOT FOUND) [スマイル戦機]_誰が殺したコマドリを, (baiduyun) 誰が殺したコマドリを.7z with 是谁杀了知更鸟.exe and 誰が殺したコマドリをCSA版.exe (TVP(KIRIKIRI) 2 core 2.31.2011.615) and plugin/windowEx.dll,       
 ```
 ■原版说明
 
