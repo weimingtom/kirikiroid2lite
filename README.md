@@ -57,7 +57,7 @@ https://github.com/krkrz/krkr2/blob/master/kirikiri2/trunk/kirikiri2/src/plugins
 * 2018-07-25 : (gitee) First available version with boost and vs2010  
 
 ## (Please Buy Steam Game if possible) Tested and Playable Supported Games
-* [Unencrypted] Spring Days  
+* [Unencrypted] Spring Days, Spring Days.rar    
 https://code.google.com/archive/p/godxq1986/downloads    
 * [Unencrypted] 第九日-the 9th day-, 试玩版 V2.0 (20160102)  
 9th-trial - Exe(2016.1.12).rar       
@@ -95,6 +95,9 @@ http://bbs.2dgal.com/thread.php?fid=146
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
 * (TODO) [WHEEL] ひのまるっ
 * (TODO) [Wheel-Soft]大宇宙の誇り
+* lyricallisp_free-1.7.zip
+* KRKR制作范例.zip
+* A Dream of Summer.7z  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * ===NOTE, 以下仅记录===
@@ -117,6 +120,8 @@ param under windows xp
 and 雾之本境正式版.iso,
 don't use old Crass version 0.4.10.1  
 ```
+* 星月夜EP3_DEMO.rar  
+
 
 ## How to build for Windows  
 * WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
