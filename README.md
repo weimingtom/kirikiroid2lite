@@ -111,7 +111,6 @@ http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 * (TODO) A Dream of Summer.7z  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
-* ===NOTE, 以下仅记录===
 * [Encrypted] 雾之本境twisty-destiny, twisty-destiny, (same as 默示version) 雾之本境正式版.iso, (黙示, 默示version) [110723][SP-time]雾之本境 [中文硬盘版+RR3].rar, (雾之本境DEMO) 雾之本境.zip     
 ```
    《雾之本境》是一款原创游戏，而非商业游戏，制作人分散在全国各地，请不要将她和其他商业游戏作品进行苛刻的比较。
@@ -132,6 +131,7 @@ and 雾之本境正式版.iso,
 don't use old Crass version 0.4.10.1  
 ```
 * (TODO) 星月夜EP3_DEMO.rar  
+* ===NOTE, 以下仅记录===
 
 ## How to build for Windows  
 * WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
