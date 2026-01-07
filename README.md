@@ -100,6 +100,7 @@ http://chs.hmacg.net/game/renzero/
 百度恋爱0公里贴吧：
 http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 ```
+* [Encrypted (mobile version is unencrypted)] (rar and encrypted, with encrypted TenshinChs.exe and tenshinchs.chm, 2009/05/15, 2.31.2008.416, 2011/2/13 chs) 天神乱漫lucky or unlucky.mp4, (mobile version, unencrypted, small video.xp3 and voice.xp3, no exe, with TenshinChs.xp3) 天神乱漫.7z    
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
