@@ -111,6 +111,18 @@ http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 * (TODO) KRKR制作范例.zip
 * (TODO) A Dream of Summer.7z  
 
+## (TODO, Please buy steam games) steam games
+* [Unencrypted] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
+https://store.steampowered.com/app/1856480/   
+* [Encrypted] Otome Domain, Otome * Domain, 少女 * 领域  
+https://store.steampowered.com/app/2153330/Otome__Domain/  
+* [Encrypted] GINKA
+https://store.steampowered.com/app/2536840/GINKA/  
+* [Encrypted] Ninki Seiyuu: How to Make a Pop Voice Actress, Ninki Seiyuu, 人气声优的养成方式  
+https://store.steampowered.com/app/1777750/Ninki_Seiyuu_How_to_Make_a_Pop_Voice_Actress/  
+* [Encrypted] Kinkoi Golden Time, Kinkoi: Golden Time, 金辉恋曲四重奏 -Golden Time-  
+https://store.steampowered.com/app/1985260/Kinkoi_Golden_Time/  
+
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * [Encrypted] 雾之本境twisty-destiny, twisty-destiny, (same as 默示version) 雾之本境正式版.iso, (黙示, 默示version) [110723][SP-time]雾之本境 [中文硬盘版+RR3].rar, (雾之本境DEMO) 雾之本境.zip     
 ```
