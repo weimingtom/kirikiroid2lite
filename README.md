@@ -122,6 +122,10 @@ https://store.steampowered.com/app/2536840/GINKA/
 https://store.steampowered.com/app/1777750/Ninki_Seiyuu_How_to_Make_a_Pop_Voice_Actress/  
 * [Encrypted] Kinkoi Golden Time, Kinkoi: Golden Time, 金辉恋曲四重奏 -Golden Time-  
 https://store.steampowered.com/app/1985260/Kinkoi_Golden_Time/  
+* [Unencrypted] Marco And The Galaxy Dragon Demo, 丸子与银河龙 DEMO, マルコと銀河竜 体験版, Marco & The Galaxy Dragon     
+https://store.steampowered.com/app/1202540  
+* [Encrypted] ATRI -My Dear Moments- Demo
+* Memory Oblivion Box, 回忆忘却之匣, mob  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * [Encrypted] 雾之本境twisty-destiny, twisty-destiny, (same as 默示version) 雾之本境正式版.iso, (黙示, 默示version) [110723][SP-time]雾之本境 [中文硬盘版+RR3].rar, (雾之本境DEMO) 雾之本境.zip     
