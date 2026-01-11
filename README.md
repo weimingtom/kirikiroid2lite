@@ -116,7 +116,7 @@ http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 https://store.steampowered.com/app/1856480/KamiYaba_Destiny_on_a_Dicey_Deadline/  
 * [Encrypted] Otome Domain, Otome * Domain, 少女 * 领域  
 https://store.steampowered.com/app/2153330/Otome__Domain/  
-* [Encrypted] GINKA
+* [Encrypted] GINKA  
 https://store.steampowered.com/app/2536840/GINKA/  
 * [Encrypted] Ninki Seiyuu: How to Make a Pop Voice Actress, Ninki Seiyuu, 人气声优的养成方式  
 https://store.steampowered.com/app/1777750/Ninki_Seiyuu_How_to_Make_a_Pop_Voice_Actress/  
