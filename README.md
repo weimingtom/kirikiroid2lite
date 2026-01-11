@@ -90,7 +90,7 @@ http://bbs.2dgal.com/thread.php?fid=146
 3.BUG回报请到http://www.moetea.com/forum-80-1.html或http://tieba.baidu.com/p/1962586170回报。
 3.百合赛高。
 ```
-* [Unencrypted] 恋爱0キロメートル中文版, (which version? different from Hazx version) 恋爱0公里.rar, (《恋爱0公里》Final（最终版） By Hazx) 《恋爱0公里》[本体+汉化补丁].rar
+* [Unencrypted] 恋爱0キロメートル中文版, (which version? different from Hazx version) 恋爱0公里.rar, (《恋爱0公里》Final（最终版） By Hazx) 《恋爱0公里》[本体+汉化补丁].rar, 恋爱0公里汉化补丁（除华线2h以外部分）完全汉化！.rar  
 ```
 《恋爱0公里》Final（最终版） By Hazx
 游戏版权（除补丁外）属日本游戏公司「ASa Project」所有。
@@ -152,6 +152,7 @@ and 雾之本境正式版.iso,
 don't use old Crass version 0.4.10.1  
 ```
 * (TODO) 星月夜EP3_DEMO.rar  
+* [Encrypted] 虹色旋律～The Melody of Iris～demo2011.exe, 虹色旋律/demo.rar  
 * ===NOTE, 以下仅记录===
 
 ## How to build for Windows  
