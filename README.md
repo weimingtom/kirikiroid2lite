@@ -76,7 +76,7 @@ https://the9thday.net/works/w1/download.php
 ```
 http://bbs.2dgal.com/thread.php?fid=146
 ```    
-* [Unencrypted] (已散佚, 中文版和日文版都未找到文件, 只找到一个未压缩的中文补丁版带日文原版文件) 谁杀死了知更鸟, (NOT FOUND) 誰が殺したコマドリを_zh, (NOT FOUND) [スマイル戦機]_誰が殺したコマドリを, (baiduyun) 誰が殺したコマドリを.7z with 是谁杀了知更鸟.exe and 誰が殺したコマドリをCSA版.exe (TVP(KIRIKIRI) 2 core 2.31.2011.615) and plugin/windowEx.dll,       
+* [Unencrypted] (已散佚, 中文版和日文版都未找到文件, 只找到一个未压缩的中文补丁版带日文原版文件) 谁杀死了知更鸟, (NOT FOUND) 誰が殺したコマドリを_zh, (NOT FOUND) [スマイル戦機]_誰が殺したコマドリを, (baiduyun) 誰が殺したコマドリを.7z with 是谁杀了知更鸟.exe and 誰が殺したコマドリをCSA版.exe (TVP(KIRIKIRI) 2 core 2.31.2011.615) and plugin/windowEx.dll, (touchgal, include patch.xp3汉化补丁, 是谁杀了知更鸟.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2011/11/21) 是谁杀了知更鸟.zip, (touchgal, include 1.20简体中文化补丁 and patch.xp3, include 《是谁杀了知更鸟》1.20简体中文化补丁.rar) 【PCKR】是谁杀死了知更鸟.rar      
 ```
 ■原版说明
 
