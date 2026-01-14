@@ -112,6 +112,7 @@ http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 * (TODO) lyricallisp_free-1.7.zip
 * (TODO) KRKR制作范例.zip
 * (TODO) A Dream of Summer.7z  
+* (TODO) 東京封鎖 ～キミが隣にいた昨日～
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
