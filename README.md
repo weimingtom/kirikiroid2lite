@@ -68,7 +68,7 @@ https://the9thday.net/works/w1/download.php
 * [Unencrypted] from touchgal, 恋花绽放樱飞时.zip  
 * [Encrypted] 《恋花绽放樱飞时》简体中文汉化补丁.exe  
 * [Encrypted] LIKE×LOVE ～色川 鈴音～, LIKExLOVE2, LIKExLOVE2.zip, https://github.com/weimingtom/kirikiroid2lite/issues/1
-* [Encrypted] リアル妹がいる大泉くんのばあい, 实妹相伴的大泉君, cheng141_with_xp3filter_complete_files.7z, cheng141_with_xp3filter_complete_files.7z, realsister_ons
+* [Encrypted] リアル妹がいる大泉くんのばあい, 实妹相伴的大泉君, cheng141_with_xp3filter_complete_files.7z, cheng141_with_xp3filter_complete_files.7z, realsister_ons, (默示版, with realsister_chs.exe) [100528][ALcotハニカム]リアル妹がいる大泉くんのばあい [汉化硬盘版+RR3].rar, 日文版：2.31.2010.128, 2010/5/17, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 中文版2010/8/24, (日文版, data.xp3 is same as 默示版) (18禁ゲーム) [100528] [ALcotハニカム] リアル妹がいる大泉くんのばあい  
 * (TODO, 可能不能用体验版) 时停社, 嫁探, 不是体验版  
 * [Encrypted] 恋课金普通版日文版, 我的未来是恋爱与氪金, with windowEx.dll, (TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2019/2/21) 僕の未来は、恋と課金と。.exe, (日文版, (18禁ゲーム) [190222] [Sonora] 僕の未来は、恋と課金と。～Charge To The Future～) koikakin.7z      
 * [Encrypted] 恋课金体验版: koikakinTR.zip, koikakinTRH.zip  
