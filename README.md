@@ -70,8 +70,8 @@ https://the9thday.net/works/w1/download.php
 * [Encrypted] LIKE×LOVE ～色川 鈴音～, LIKExLOVE2, LIKExLOVE2.zip, https://github.com/weimingtom/kirikiroid2lite/issues/1
 * [Encrypted] リアル妹がいる大泉くんのばあい, 实妹相伴的大泉君, cheng141_with_xp3filter_complete_files.7z, cheng141_with_xp3filter_complete_files.7z, realsister_ons
 * (TODO, 可能不能用体验版) 时停社, 嫁探, 不是体验版  
-* [Unencrypted, 普通版日文版, 不能用体验版] 恋课金, 我的未来是恋爱与氪金, with windowEx.dll, (TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2019/2/21) 僕の未来は、恋と課金と。.exe   
-* (TODO) [Encrypted?] 恋课金体验版: koikakinTR.zip, koikakinTRH.zip  
+* [Encrypted] 恋课金普通版日文版, 我的未来是恋爱与氪金, with windowEx.dll, (TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2019/2/21) 僕の未来は、恋と課金と。.exe, (日文版, (18禁ゲーム) [190222] [Sonora] 僕の未来は、恋と課金と。～Charge To The Future～) koikakin.7z      
+* [Encrypted] 恋课金体验版: koikakinTR.zip, koikakinTRH.zip  
 * [Unencrypted (Chinese patch is Encrypted exe) ] g弦上的魔王, g线上的魔王, (NOT FOUND) [あかべぇそふとつぅ]Ｇ線上の魔王, (ONLY PATCH, NOT GOOD, no data.xp3) [080529] [あかべぇそふとつぅ] G線上の魔王 中文补丁1.00＋SAVE.rar, (ONLY data.xp3) あかべぇそふとつぅ_Ｇ線上の魔王.rar (2008, TVP(KIRIKIRI) 2 core 2.29.9901.1022)  
 ```
 http://bbs.2dgal.com/thread.php?fid=146
