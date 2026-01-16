@@ -104,7 +104,7 @@ http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 ```
 * [Encrypted (mobile version is unencrypted)] (rar and encrypted, with encrypted TenshinChs.exe and tenshinchs.chm, 2009/05/15, 2.31.2008.416, 2011/2/13 chs, plugin/windowEx.dll and tenshin.tpm and yuzuex.dll) 天神乱漫lucky or unlucky.mp4, (mobile version, unencrypted, small video.xp3 and voice.xp3, no exe, with TenshinChs.xp3, with patch.tjs) 天神乱漫.7z    
 * [Unencrypted] (zip, 高压版, kirikiroid2版, mobile version, 天神乱漫 Happy Go Lucky!! GPT高压（逆天全年龄），注：我认为全年龄不逆天好吧, no exe, with plugin dlls) 天神乱漫 Happy Go Lucky!!  
-* [Encrypted] LC, (with lovelyxcation_cn.exe) LOVELYxCATION_Ver0.9汉化补丁.rar  
+* [Encrypted, but cnpatch is uncrypted?] LC, (with lovelyxcation_cn.exe no version, with cnpatch.xp3 uncrypted) LOVELYxCATION_Ver0.9汉化补丁.rar, (with windowEx.dll, with ＬＯＶＥＬＹ×Ｃ∧ＴＩＯＮ.exe:TVP(KIRIKIRI) 2 core / Scripting Platform for Win32: 2.31.2009.620: 2011/5/14) LOVELYxCATION.ISO   
 ```
 【免责声明】
 
