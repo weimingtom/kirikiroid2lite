@@ -104,6 +104,17 @@ http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 ```
 * [Encrypted (mobile version is unencrypted)] (rar and encrypted, with encrypted TenshinChs.exe and tenshinchs.chm, 2009/05/15, 2.31.2008.416, 2011/2/13 chs, plugin/windowEx.dll and tenshin.tpm and yuzuex.dll) 天神乱漫lucky or unlucky.mp4, (mobile version, unencrypted, small video.xp3 and voice.xp3, no exe, with TenshinChs.xp3, with patch.tjs) 天神乱漫.7z    
 * [Unencrypted] (zip, 高压版, kirikiroid2版, mobile version, 天神乱漫 Happy Go Lucky!! GPT高压（逆天全年龄），注：我认为全年龄不逆天好吧, no exe, with plugin dlls) 天神乱漫 Happy Go Lucky!!  
+* [Encrypted] LC, (with lovelyxcation_cn.exe) LOVELYxCATION_Ver0.9汉化补丁.rar  
+```
+【免责声明】
+
+本游戏版权归原制作商所有，汉化部分版权归汉化成员共有。汉化版游戏仅供汉化研究教学之用，任何组织或个人不得以汉化版游戏用于任何形式的商业目的，对此产生的一切后果由使用方自负，汉化成员将不对此负任何责任。
+
+
+组名啥的不需要
+祝大家玩得愉快
+2012.10.08
+```
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
