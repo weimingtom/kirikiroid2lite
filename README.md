@@ -167,6 +167,7 @@ don't use old Crass version 0.4.10.1
 ```
 * (TODO) 星月夜EP3_DEMO.rar  
 * [Encrypted] 虹色旋律～The Melody of Iris～demo2011.exe, 虹色旋律/demo.rar  
+* [unencrypted and unpacked] 9thavg.zip  
 * ===NOTE, 以下仅记录===
 
 ## How to build for Windows  
