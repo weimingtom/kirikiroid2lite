@@ -115,7 +115,7 @@ http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 祝大家玩得愉快
 2012.10.08
 ```
-* [Encrypted] (with a large 寻找失去的未来_chs_120410.exe, with plugin/windowEx.dll and patch.tjs and xp3filter.tjs) 寻找失去的未来kirikiroid专版.rar, 寻找失去的未来_chs_120410.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32 2.31.2011.615 2012/4/10,  
+* [Encrypted] (with a large 寻找失去的未来_chs_120410.exe, with plugin/windowEx.dll and patch.tjs and xp3filter.tjs) 寻找失去的未来kirikiroid专版.rar, 寻找失去的未来_chs_120410.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32 2.31.2011.615 2012/4/10, (with setup.exe 简体中文汉化包(2.31.2011.615)) 失われた未来を求めて.part1.rar:失われた未来を求めて.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32 2.31.2010.425 2010/11/17  
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
