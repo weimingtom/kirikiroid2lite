@@ -171,7 +171,30 @@ don't use old Crass version 0.4.10.1
 * (TODO) 星月夜EP3_DEMO.rar  
 * [Encrypted] 虹色旋律～The Melody of Iris～demo2011.exe, 虹色旋律/demo.rar  
 * [Unencrypted and unpacked] (第九日, 疑似百度盘上泄露源代码的git版) 9thavg.zip (krkr.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.420, 2012/11/20, 简体中文)    
-* [Unencrypted] (touchgal, no exe, mobile version) 第九日.zip, (touchgal, 9th-trial - Exe, the9thDay.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2016/1/11, 2.30.2.420) 3DMGAME_djr.CHS.Green.rar
+* [Unencrypted] (touchgal, no exe, mobile version, with patch.xp3) 第九日.zip, (touchgal, no patch.xp3, 9th-trial - Exe, the9thDay.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2016/1/11, 2.30.2.420) 3DMGAME_djr.CHS.Green.rar
+```
+3DMGAME_djr.CHS.Green.rar
+
+游戏名称：第九日
+英文名称：the 9th day
+游戏类型：角色扮演游戏
+游戏平台：PC
+发售时间：2016年1月12日
+游戏制作：第九日制作委员会
+游戏发行：第九日制作委员会
+官方网站：http://www.the9thday.net/
+游戏版本：试玩版v2.0
+
+游戏介绍
+一如既往的日常，毫无征兆地迎来了它的终结。
+为了救出青梅竹马的少女，高中二年生叶山翔不幸丧生于火海之中。
+然而，看似悲剧的终结，却成为了一切的开始……意外发现自己竟能以灵魂状态停留在人世的翔，开始用不同的眼光审视自己生前的过往。
+
+安装信息
+1. 解压缩
+2. 运行游戏
+
+```
 * ===NOTE, 以下仅记录===
 
 ## How to build for Windows  
