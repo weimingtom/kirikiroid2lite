@@ -170,7 +170,8 @@ don't use old Crass version 0.4.10.1
 ```
 * (TODO) 星月夜EP3_DEMO.rar  
 * [Encrypted] 虹色旋律～The Melody of Iris～demo2011.exe, 虹色旋律/demo.rar  
-* [unencrypted and unpacked] 9thavg.zip (krkr.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.420, 2012/11/20, 简体中文)    
+* [Unencrypted and unpacked] (第九日, 疑似百度盘上泄露源代码的git版) 9thavg.zip (krkr.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.420, 2012/11/20, 简体中文)    
+* [Unencrypted] (touchgal, no exe, mobile version) 第九日.zip, (touchgal, 9th-trial - Exe, the9thDay.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2016/1/11, 2.30.2.420) 3DMGAME_djr.CHS.Green.rar
 * ===NOTE, 以下仅记录===
 
 ## How to build for Windows  
