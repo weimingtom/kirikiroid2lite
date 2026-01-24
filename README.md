@@ -125,6 +125,8 @@ http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 * (TODO) KRKR制作范例.zip
 * (TODO) A Dream of Summer.7z  
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～
+* (TODO) torp_0030t.zip, 恋する乙女と守護の楯 〜薔薇の聖母〜  
+https://dlsoft.dmm.co.jp/detail/torp_0030/  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
