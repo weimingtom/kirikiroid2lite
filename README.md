@@ -64,7 +64,11 @@ https://code.google.com/archive/p/godxq1986/downloads
 https://the9thday.net/works/w1/download.php  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Japanese kirikiri2 or kirikiriz games  
-* [Unencrypted] 恋がさくころ桜どき 体験版, 恋花绽放樱飞时 体验版, sakusaku_trial.zip, https://palette.clearrave.co.jp/product/sakusaku/download.html  
+* [Unencrypted] 恋がさくころ桜どき 体験版, 恋花绽放樱飞时 体验版, sakusaku_trial.zip  
+https://palette.clearrave.co.jp/product/sakusaku/download.html  
+clear_0010t.zip, 【さくさく】恋がさくころ桜どき, 体験版  
+https://dlsoft.dmm.co.jp/detail/clear_0010/    
+https://sample9.dmm.co.jp/digital/pcgame/clear_0010/clear_0010t.zip    
 * [Unencrypted] from touchgal, 恋花绽放樱飞时.zip  
 * [Encrypted] 《恋花绽放樱飞时》简体中文汉化补丁.exe  
 * [Encrypted] LIKE×LOVE ～色川 鈴音～, LIKExLOVE2, LIKExLOVE2.zip, https://github.com/weimingtom/kirikiroid2lite/issues/1
