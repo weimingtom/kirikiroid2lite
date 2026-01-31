@@ -202,7 +202,7 @@ don't use old Crass version 0.4.10.1
 
 ```
 * ===NOTE, 以下仅记录===
-* steam, 真恋～寄语枫秋～, rue Love ～Confide to the Maple～   
+* steam, 真恋～寄语枫秋～, True Love ～Confide to the Maple～   
 https://store.steampowered.com/app/495990/_/?curator_clanid=4777282  
 * steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/?curator_clanid=4777282  
