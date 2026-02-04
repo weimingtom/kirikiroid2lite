@@ -153,6 +153,8 @@ https://store.steampowered.com/app/473460/Memory_Oblivion_Box/
 https://store.steampowered.com/app/691150/Saku_Saku_Love_Blooms_with_the_Cherry_Blossoms/  
 * [Unencrypted, but .txt.scn] Japanese School Life Demo, JAPANESE SCHOOL LIFE TRIAL    
 https://store.steampowered.com/app/555640/Japanese_School_Life/  
+* LAMUNATION! -international-  
+https://store.steampowered.com/app/1025140/LAMUNATION_international/  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * [Encrypted] 雾之本境twisty-destiny, twisty-destiny, (same as 默示version) 雾之本境正式版.iso, (黙示, 默示version) [110723][SP-time]雾之本境 [中文硬盘版+RR3].rar, (雾之本境DEMO) 雾之本境.zip     
