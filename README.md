@@ -213,8 +213,10 @@ https://store.steampowered.com/app/1339410/?curator_clanid=4777282
 
 ## How to build for Windows  
 * WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
-* If you download zip or tar.gz source file from github web page, you should use notepad++ to batch replace \n with \r\n.  
+* If you download zip or tar.gz source file from github web page, you should use notepad-- (notepad++ is also ok but not recommended) to batch replace \n with \r\n.  
+* You can use notepad--, https://gitee.com/cxasm/notepad--/releases  
 * Open project\win32\cocos2d-win32.vs2013.sln with vs2013.  
+* Why is it not recommended to use Notepad++ ? I just don't think Notepad++ and my exe should be updated so frequently. 
 
 ## How to build for Android  
 * Modify project\android\console.bat, point to NDK path. Recommended NDK r25 (you can also try NDK r10e)    
