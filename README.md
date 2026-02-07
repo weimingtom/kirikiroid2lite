@@ -120,6 +120,8 @@ http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 2012.10.08
 ```
 * [Encrypted] (with a large 寻找失去的未来_chs_120410.exe, with plugin/windowEx.dll and patch.tjs and xp3filter.tjs) 寻找失去的未来kirikiroid专版.rar, 寻找失去的未来_chs_120410.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32 2.31.2011.615 2012/4/10, (with setup.exe 简体中文汉化包(2.31.2011.615)) 失われた未来を求めて.part1.rar:失われた未来を求めて.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32 2.31.2010.425 2010/11/17  
+* [Unencrypted] ロイヤルガーデン 〜乙女に恋する皇子の戯曲〜 体験版, next_0210t.zip, royalgarden_trial, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2015/10/15, tvpwin32.exe  
+https://dlsoft.dmm.co.jp/detail/next_0210/  
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
