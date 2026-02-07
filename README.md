@@ -238,6 +238,9 @@ https://store.steampowered.com/app/1339410/?curator_clanid=4777282
 ```
 Toast.makeText(getApplicationContext(), "You grant write external storage permission. Please restart to continue.", Toast.LENGTH_LONG).show();
 ```
+* (TODO, **Android 13 sdcard permission**) Use LibreraReader Android6.java ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION for Android 13 and Android 14 external storage permission request  
+https://github.com/foobnix/LibreraReader/blob/master/app/src/main/java/com/foobnix/pdf/info/Android6.java  
+But this class is not very good, I think it's require some changes  
 
 ## (TODO) How to build for Linux (Xubuntu 20.04 64bit, Xubuntu 25.04 64bit)
 * (FIXME) Fix initWithRect and setDesignResolutionSize problems
