@@ -240,7 +240,7 @@ Toast.makeText(getApplicationContext(), "You grant write external storage permis
 ```
 * (TODO, **Android 13 sdcard permission**) Use LibreraReader Android6.java ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION for Android 13 and Android 14 external storage permission request  
 https://github.com/foobnix/LibreraReader/blob/master/app/src/main/java/com/foobnix/pdf/info/Android6.java  
-But this class is not very good, I think it's require some changes  
+But this class is not very good, I think it requires some changes  
 
 ## (TODO) How to build for Linux (Xubuntu 20.04 64bit, Xubuntu 25.04 64bit)
 * (FIXME) Fix initWithRect and setDesignResolutionSize problems
