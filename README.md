@@ -214,11 +214,11 @@ don't use old Crass version 0.4.10.1
 ```
 * ===NOTE, 以下仅记录===
 * steam, 真恋～寄语枫秋～, True Love ～Confide to the Maple～   
-https://store.steampowered.com/app/495990/_/?curator_clanid=4777282  
+https://store.steampowered.com/app/495990/
 * steam, Melody of Iris-虹色旋律-(Full Color ver.)  
-https://store.steampowered.com/app/737710/?curator_clanid=4777282  
+https://store.steampowered.com/app/737710/
 * steam, 雾之本境S Conspiracy Field: Fog Shadow  
-https://store.steampowered.com/app/1339410/?curator_clanid=4777282  
+https://store.steampowered.com/app/1339410/
 
 ## How to build for Windows  
 * WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
