@@ -129,6 +129,16 @@ https://www.bilibili.com/opus/1160637774173306888
 「このみのなく頃に」
 Copyright 2005, geo垢取得した中の人(などいないっ)
 ```
+konomi.zip, 日本语版:  
+https://web.archive.org/web/20060707035637/http://www.geocities.jp/konominaku/konomi.zip  
+https://web.archive.org/web/20051223034139/http://www.geocities.jp/konominaku/  
+```
+2005/ 4/08 (金)
+【リンク】このみのなく頃に
+＞タカくんを殺してこのみも死ぬに触発されたので作ってみますた。
+```
+http://www.aurora.dti.ne.jp/~sek/2005.html  
+
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
