@@ -129,7 +129,7 @@ https://www.bilibili.com/opus/1160637774173306888
 「このみのなく頃に」
 Copyright 2005, geo垢取得した中の人(などいないっ)
 ```
-konomi.zip, 日本语版:  
+* [Encrypted] このみのなく頃に, konomi.zip, 日本语版, single exe no xp3, konomi.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.22.5.865, 2005/4/7    
 https://web.archive.org/web/20060707035637/http://www.geocities.jp/konominaku/konomi.zip  
 https://web.archive.org/web/20051223034139/http://www.geocities.jp/konominaku/  
 ```
