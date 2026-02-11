@@ -123,6 +123,8 @@ http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 * [Unencrypted?] ロイヤルガーデン 〜乙女に恋する皇子の戯曲〜 体験版, next_0210t.zip, royalgarden_trial, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2015/10/15, tvpwin32.exe  
 https://dlsoft.dmm.co.jp/detail/next_0210/   
 * [Encrypted] 密室 硬盘汉化版.rar, 无限轨道, one exe no xp3, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.28.1.9906, 2010/11/6  
+* [Unencrypted] 木实鸣泣之时简体中文汉化版v1.0, 木实鸣泣之时.zip, konomi.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.22.5.865, 2005/4/7    
+https://www.bilibili.com/opus/1160637774173306888  
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
