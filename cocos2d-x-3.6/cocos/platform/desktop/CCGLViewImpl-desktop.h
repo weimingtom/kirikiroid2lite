@@ -34,7 +34,7 @@ THE SOFTWARE.
 #include <EGL/egl.h>
 #include <GLES2/gl2.h>
 #else
-#if !defined(__MINGW32__) && !USE_GLEW	
+#if !defined(__MINGW32__) && !USE_GLEW && !defined(_MSC_VER)	
 #define GLFW_INCLUDE_ES2
 #endif
 #include <GLFW/glfw3.h>

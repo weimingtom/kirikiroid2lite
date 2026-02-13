@@ -44,7 +44,11 @@ THE SOFTWARE.
 #define USE_SDL2 1
 #if USE_SDL2
 //SDL2, see SDL2/test/checkkeys.c and SDL2/test/loopwave.c
+#if defined(_MSC_VER)
+#include <SDL.h>
+#else
 #include <SDL2/SDL.h>
+#endif
 SDL_Window *window;
 int done;
 
@@ -172,7 +176,7 @@ PrintText(char *eventtype, char *text)
 #endif
 
 //FIXME:???!defined(__MINGW32__)
-#if !defined(__MINGW32__) && !USE_GLEW && !defined(__APPLE__)
+#if !defined(__MINGW32__) && !USE_GLEW && !defined(__APPLE__) && !defined(_MSC_VER)
 // <EGL/egl.h> exists since android 2.3
 #include <EGL/egl.h>
 PFNGLGENVERTEXARRAYSOESPROC glGenVertexArraysOESEXT = 0;
@@ -442,7 +446,7 @@ GLViewImpl::GLViewImpl()
 , _mouseY(0.0f)
 {
 //FIXME:!defined(__MINGW32__)
-#if !defined(__MINGW32__) && !USE_GLEW && !defined(__APPLE__)
+#if !defined(__MINGW32__) && !USE_GLEW && !defined(__APPLE__) && !defined(_MSC_VER)
 initExtensions();
 #endif
     _viewName = "cocos2dx";
@@ -778,7 +782,7 @@ CCLOGINFO("setFrameSize %f, %f", width, height);
                                    _monitor,
                                    nullptr);
 								   
-#if !defined(__MINGW32__)
+#if !defined(__MINGW32__) && !defined(_MSC_VER)
 //For msys2, win11:
 //if use this in Msys2, it will hide the window title
 								   
@@ -1715,7 +1719,7 @@ static bool glew_dynamic_binding()
 // helper
 bool GLViewImpl::initGlew()
 {
-#if defined(__MINGW32__) || USE_GLEW
+#if defined(__MINGW32__) || USE_GLEW || defined(_MSC_VER)
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_MAC)
     GLenum GlewInitResult = glewInit();
     if (GLEW_OK != GlewInitResult)

@@ -216,7 +216,9 @@ void TVPMainFileSelectorForm::show() {
 #else
     // get application path
     static char fullpath[1024 * 4] = {0};
-#if defined(__MINGW32__)
+#if defined(_MSC_VER)
+	ssize_t length = GetModuleFileNameA(NULL, fullpath, sizeof(fullpath)-1);
+#elif defined(__MINGW32__)
     ssize_t length = GetModuleFileName(NULL, fullpath, sizeof(fullpath)-1);
 #else	
     ssize_t length = readlink("/proc/self/exe", fullpath, sizeof(fullpath)-1);

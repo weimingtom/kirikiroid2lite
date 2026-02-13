@@ -1759,7 +1759,7 @@ void TVPMainScene::popUIForm(cocos2d::Node *form, eLeaveAni ani) {
 ui_ = ui;            
         this->runAction(Sequence::createWithTwoActions(
             DelayTime::create(UI_CHANGE_DURATION),
-#if defined(__APPLE__) || defined(ANDROID)
+#if defined(__APPLE__) || defined(ANDROID) || defined(_MSC_VER)
 //cannot be captured because it does not have automatic storage duration
             CallFunc::create([=] {ui->removeFromParent();})));
 #else
@@ -1782,7 +1782,7 @@ printf("<<<<<<<<<<<<<<<< runAction ColorMask->removeFromParent()\n");
 ColorMask_ = ColorMask;
         runAction(Sequence::createWithTwoActions(
             DelayTime::create(UI_CHANGE_DURATION),
- #if defined(__APPLE__) || defined(ANDROID)
+#if defined(__APPLE__) || defined(ANDROID) || defined(_MSC_VER)
  //cannot be captured because it does not have automatic storage duration
              CallFunc::create([=] {ColorMask->removeFromParent();})));
  #else

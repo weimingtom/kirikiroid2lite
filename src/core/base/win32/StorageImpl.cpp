@@ -285,10 +285,10 @@ void TVPGetLocalFileListAt(const ttstr &name, const std::function<void(const tts
 			tTVPLocalFileInfo info;
 			info.NativeName = WCS2UTF8(ffd.cFileName).c_str();
 			info.Mode = stat_buf.st_mode;
-			info.Size = stat_buf.st_size;
-			info.AccessTime = stat_buf.st_atime;
-			info.ModifyTime = stat_buf.st_mtime;
-			info.CreationTime = stat_buf.st_ctime;
+			info.Size = stat_buf.st_size_;
+			info.AccessTime = stat_buf.st_atime_;
+			info.ModifyTime = stat_buf.st_mtime_;
+			info.CreationTime = stat_buf.st_ctime_;
 			cb(file, &info);
 
 			cont = FindNextFile(handle, &ffd);

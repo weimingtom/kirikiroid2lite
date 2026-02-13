@@ -1095,10 +1095,10 @@ bool TVP_stat(const tjs_char *name, tTVP_stat &s) {
 	struct _stat64 t;
 	bool ret = !_wstat64(name, &t);
 	s.st_mode = t.st_mode;
-	s.st_size = t.st_size;
-	s.st_atime = t.st_atime;
-	s.st_mtime = t.st_mtime;
-	s.st_ctime = t.st_ctime;
+	s.st_size_ = t.st_size;
+	s.st_atime_ = t.st_atime;
+	s.st_mtime_ = t.st_mtime;
+	s.st_ctime_ = t.st_ctime;
 	return ret;
 }
 
