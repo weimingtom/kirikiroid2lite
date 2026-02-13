@@ -31,7 +31,14 @@ CPPFLAGS += -fexceptions
 
 CPPFLAGS += -Wno-deprecated-declarations 
 CPPFLAGS += -Wno-reorder 
+
+#src/core/external/onig/enc/unicode.c:10883:3: error: initialization of 'int (*)(st_data_t,  st_data_t)' 
+#{aka 'int (*)(long unsigned int,  long unsigned int)'} from incompatible pointer type 
+#'int (*)(OnigCodePoint *, OnigCodePoint *)' {aka 'int (*)(long unsigned int *, long unsigned int *)'} 
+#[-Wincompatible-pointer-types]
+#10883 |   code3_cmp,
 CPPFLAGS += -Wno-incompatible-pointer-types
+
 CPPFLAGS += -Wall 
 
 #################
