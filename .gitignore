@@ -1,2 +1,5 @@
 *.sdf
 Debug.win32
+*.o
+/cocos2dx.a
+/project/Resources/*.exe

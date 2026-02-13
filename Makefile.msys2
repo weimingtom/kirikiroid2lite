@@ -31,6 +31,7 @@ CPPFLAGS += -fexceptions
 
 CPPFLAGS += -Wno-deprecated-declarations 
 CPPFLAGS += -Wno-reorder 
+CPPFLAGS += -Wno-incompatible-pointer-types
 CPPFLAGS += -Wall 
 
 #################

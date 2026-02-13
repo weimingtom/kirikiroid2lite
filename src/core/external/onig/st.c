@@ -477,7 +477,7 @@ st_cleanup_safe(table, never)
 int
 st_foreach(table, func, arg)
     st_table *table;
-    int (*func)();
+    int (*func)(st_data_t,st_data_t,st_data_t);
     st_data_t arg;
 {
     st_table_entry *ptr, *last, *tmp;

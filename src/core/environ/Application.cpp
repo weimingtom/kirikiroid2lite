@@ -30,7 +30,7 @@
 #include <pthread.h>
 #include "ConfigManager/LocaleConfigManager.h"
 #include "StorageIntf.h"
-#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__)
+#if !defined(_MSC_VER) && !defined(ANDROID) && !defined(LINUX) && !defined(__APPLE__) && !defined(__MINGW32__)
 extern "C" {
 #include <libavutil/avstring.h>
 }
