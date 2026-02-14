@@ -165,6 +165,7 @@ konomi2.zip, konomi.gif
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～
 * (TODO) torp_0030t.zip, 恋する乙女と守護の楯 ~薔薇の聖母~ 体験版  
 https://dlsoft.dmm.co.jp/detail/torp_0030/  
+* [Encrypted] 夢幻のティル・ナ・ノーグ体験版.zip, kirikiriz, with windowex.dll    
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
