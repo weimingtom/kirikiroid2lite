@@ -332,6 +332,9 @@ But this class is not very good, I think it requires some changes
 * Make sure msys2 dev packages headers are installed to c:/msys64/mingw64/include, otherwise need to modify Makefile.msys2
 * Launch MSYS2 MSYS shell
 * $ pacman -Sy
+* $ pacman -S make
+* $ pacman -S mingw-w64-x86_64-gcc
+* $ pacman -S mingw-w64-x86_64-make
 * $ pacman -S mingw-w64-x86_64-libpng
 * $ pacman -S mingw-w64-x86_64-libjpeg
 * $ pacman -S mingw-w64-x86_64-libwebp
@@ -339,6 +342,14 @@ But this class is not very good, I think it requires some changes
 * $ pacman -S mingw-w64-x86_64-glew
 * $ pacman -S mingw-w64-x86_64-glfw
 * $ pacman -S mingw-w64-x86_64-gdb
+```
+mingw64.exe
+
+pacman -Sy
+pacman -S make mingw-w64-x86_64-gcc mingw-w64-x86_64-make mingw-w64-x86_64-libpng \
+mingw-w64-x86_64-libjpeg mingw-w64-x86_64-libwebp mingw-w64-x86_64-zlib \
+mingw-w64-x86_64-glew mingw-w64-x86_64-glfw mingw-w64-x86_64-gdb
+```
 * $ mingw32-make.exe -f Makefile.msys2 clean
 * $ mingw32-make.exe -f Makefile.msys2 -j8
 * $ mingw32-make.exe -f Makefile.msys2 test
