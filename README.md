@@ -166,6 +166,7 @@ konomi2.zip, konomi.gif
 * (TODO) torp_0030t.zip, 恋する乙女と守護の楯 ~薔薇の聖母~ 体験版  
 https://dlsoft.dmm.co.jp/detail/torp_0030/  
 * [Encrypted] 夢幻のティル・ナ・ノーグ体験版.zip, kirikiriz, with windowex.dll    
+* (TODO) 花の野に咲くうたかたの, 体験版, akbs_0048t.zip, https://dlsoft.dmm.co.jp/detail/akbs_0048/  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
@@ -190,6 +191,10 @@ https://store.steampowered.com/app/691150/Saku_Saku_Love_Blooms_with_the_Cherry_
 https://store.steampowered.com/app/555640/Japanese_School_Life/  
 * LAMUNATION! -international-  
 https://store.steampowered.com/app/1025140/LAMUNATION_international/  
+* [Encrypted] Hana no No ni Saku Utakata no, hananono, 五色浮影绽放于花之海洋 -The Sweet World of The Ephemeral- 
+https://store.steampowered.com/app/1944250/Hana_no_No_ni_Saku_Utakata_no/  
+https://store.hikarifield.co.jp/shop/hananono  
+https://hikarifield.co.jp/hana/  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * [Encrypted] 雾之本境twisty-destiny, twisty-destiny, (same as 默示version) 雾之本境正式版.iso, (黙示, 默示version) [110723][SP-time]雾之本境 [中文硬盘版+RR3].rar, (雾之本境DEMO) 雾之本境.zip     
