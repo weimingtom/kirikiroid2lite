@@ -152,7 +152,7 @@ https://web.archive.org/web/20051223034139/http://www.geocities.jp/konominaku/
 ```
 http://www.aurora.dti.ne.jp/~sek/2005.html  
 konomi2.zip, konomi.gif   
-
+* [Encrypted] 日文版，神頼みしすぎて俺の未来がヤバい。.part1.rar, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2017/3/23  
 
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
