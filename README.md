@@ -168,6 +168,7 @@ konomi2.zip, konomi.gif
 https://dlsoft.dmm.co.jp/detail/torp_0030/  
 * [Encrypted] 夢幻のティル・ナ・ノーグ体験版.zip, kirikiriz, with windowex.dll    
 * (TODO) 花の野に咲くうたかたの, 体験版, akbs_0048t.zip, https://dlsoft.dmm.co.jp/detail/akbs_0048/  
+* [Encrypted] 花钟第一章体验版, kanade-gram_ch1-trial.zip, https://nanawind.jp/product/prj06/chapter1/#download   
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
