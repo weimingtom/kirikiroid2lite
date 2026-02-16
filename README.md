@@ -171,7 +171,7 @@ https://dlsoft.dmm.co.jp/detail/torp_0030/
 * [Encrypted] 花钟第一章体验版, kanade-gram_ch1-trial.zip, https://nanawind.jp/product/prj06/chapter1/#download   
 
 ## (TODO, Please buy steam games) steam games
-* [Unencrypted] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
+* [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
 https://store.steampowered.com/app/1856480/KamiYaba_Destiny_on_a_Dicey_Deadline/  
 * [Encrypted] Otome Domain, Otome * Domain, 少女 * 领域  
 https://store.steampowered.com/app/2153330/Otome__Domain/  
@@ -191,7 +191,7 @@ https://store.steampowered.com/app/473460/Memory_Oblivion_Box/
 https://store.steampowered.com/app/691150/Saku_Saku_Love_Blooms_with_the_Cherry_Blossoms/  
 * [Unencrypted, but .txt.scn] Japanese School Life Demo, JAPANESE SCHOOL LIFE TRIAL    
 https://store.steampowered.com/app/555640/Japanese_School_Life/  
-* LAMUNATION! -international-  
+* [Unencrypted?] LAMUNATION! -international-  
 https://store.steampowered.com/app/1025140/LAMUNATION_international/  
 * [Encrypted] Hana no No ni Saku Utakata no, hananono, 五色浮影绽放于花之海洋 -The Sweet World of The Ephemeral- 
 https://store.steampowered.com/app/1944250/Hana_no_No_ni_Saku_Utakata_no/  
