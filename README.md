@@ -153,7 +153,7 @@ https://web.archive.org/web/20051223034139/http://www.geocities.jp/konominaku/
 http://www.aurora.dti.ne.jp/~sek/2005.html  
 konomi2.zip, konomi.gif   
 * [Encrypted] 日文版，神頼みしすぎて俺の未来がヤバい。.part1.rar, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2017/3/23  
-* [Encrypted] hananono steam中文完整版带DLC（不能在设置选其他语言？）, 5IO.part1.rar, hananono steam version with adult.xp3, 1.2.0.3, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tvpwin32, 2022/4/25  
+* [Encrypted] 五色浮影绽放于花之海洋中文版==hananono steam中文完整版带DLC（不能在设置选其他语言？）, 5IO.part1.rar, hananono steam version with adult.xp3, 1.2.0.3, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tvpwin32, 2022/4/25  
 
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
@@ -164,11 +164,10 @@ konomi2.zip, konomi.gif
 * (TODO) KRKR制作范例.zip
 * (TODO) A Dream of Summer.7z  
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～
-* (TODO) torp_0030t.zip, 恋する乙女と守護の楯 ~薔薇の聖母~ 体験版  
-https://dlsoft.dmm.co.jp/detail/torp_0030/  
-* [Encrypted] 夢幻のティル・ナ・ノーグ体験版.zip, kirikiriz, with windowex.dll    
-* (TODO) 花の野に咲くうたかたの, 体験版, akbs_0048t.zip, https://dlsoft.dmm.co.jp/detail/akbs_0048/  
-* [Encrypted] 花钟第一章体验版, kanade-gram_ch1-trial.zip, https://nanawind.jp/product/prj06/chapter1/#download   
+* (TODO) torp_0030t.zip, 恋する乙女と守護の楯 ~薔薇の聖母~ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/    
+* [Encrypted] 夢幻のティル・ナ・ノーグ体験版.zip, kirikiriz, with windowex.dll, https://azarashi-soft-plusone.nexton-net.jp/tirnanog/trial.html      
+* [Encrypted] 五色浮影绽放于花之海洋日文体验版, 花の野に咲くうたかたの, 体験版, akbs_0048t.zip, https://dlsoft.dmm.co.jp/detail/akbs_0048/  
+* [Encrypted] 花钟kanade第一章体验版, kanade-gram_ch1-trial.zip, https://nanawind.jp/product/prj06/chapter1/#download   
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
@@ -200,6 +199,7 @@ https://hikarifield.co.jp/hana/
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * [Encrypted] 雾之本境twisty-destiny, twisty-destiny, (same as 默示version) 雾之本境正式版.iso, (黙示, 默示version) [110723][SP-time]雾之本境 [中文硬盘版+RR3].rar, (雾之本境DEMO) 雾之本境.zip     
+NOTE: Only tested with Crass-source.7z txxx=xxx param under windows xp and 雾之本境正式版.iso, don't use old Crass version 0.4.10.1    
 ```
    《雾之本境》是一款原创游戏，而非商业游戏，制作人分散在全国各地，请不要将她和其他商业游戏作品进行苛刻的比较。
     这个游戏制作时间长达一年多，其中经历了许多困难，我们没有投资，没有做商业宣传。就算这样，有的成员甚至为了制作而放弃
@@ -212,11 +212,6 @@ https://hikarifield.co.jp/hana/
 官方微博：http://t.sina.com.cn/sptime
 官方主页：www.sp-time.com
 正式版订购地址：http://sptime.taobao.com
-
-NOTE: Only tested with Crass-source.7z txxx=xxx
-param under windows xp
-and 雾之本境正式版.iso,
-don't use old Crass version 0.4.10.1  
 ```
 * (TODO) 星月夜EP3_DEMO.rar  
 * [Encrypted] 虹色旋律～The Melody of Iris～demo2011.exe, 虹色旋律/demo.rar  
@@ -246,11 +241,11 @@ don't use old Crass version 0.4.10.1
 
 ```
 * ===NOTE, 以下仅记录===
-* steam, 真恋～寄语枫秋～, True Love ～Confide to the Maple～   
+* (TODO, to BUY) steam, 真恋～寄语枫秋～, True Love ～Confide to the Maple～   
 https://store.steampowered.com/app/495990/
-* steam, Melody of Iris-虹色旋律-(Full Color ver.)  
+* (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/
-* steam, 雾之本境S Conspiracy Field: Fog Shadow  
+* (TODO, to BUY) steam, 雾之本境S Conspiracy Field: Fog Shadow  
 https://store.steampowered.com/app/1339410/
 
 ## How to build for Windows  
