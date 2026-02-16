@@ -120,7 +120,7 @@ http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 2012.10.08
 ```
 * [Encrypted] (with a large 寻找失去的未来_chs_120410.exe, with plugin/windowEx.dll and patch.tjs and xp3filter.tjs) 寻找失去的未来kirikiroid专版.rar, 寻找失去的未来_chs_120410.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32 2.31.2011.615 2012/4/10, (with setup.exe 简体中文汉化包(2.31.2011.615)) 失われた未来を求めて.part1.rar:失われた未来を求めて.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32 2.31.2010.425 2010/11/17  
-* [Unencrypted?] ロイヤルガーデン ~乙女に恋する皇子の戯曲~ 体験版, next_0210t.zip, royalgarden_trial, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2015/10/15, tvpwin32.exe  
+* [Unencrypted?] ロイヤルガーデン ～乙女に恋する皇子の戯曲～ 体験版, next_0210t.zip, royalgarden_trial, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2015/10/15, tvpwin32.exe  
 https://dlsoft.dmm.co.jp/detail/next_0210/   
 * [Encrypted] 密室 硬盘汉化版.rar, 无限轨道, one exe no xp3, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.28.1.9906, 2010/11/6  
 * [Unencrypted] 木实鸣泣之时简体中文汉化版v1.0, 木实鸣泣之时.zip, konomi.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.22.5.865, 2005/4/7    
@@ -164,7 +164,7 @@ konomi2.zip, konomi.gif
 * (TODO) KRKR制作范例.zip
 * (TODO) A Dream of Summer.7z  
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～
-* (TODO) torp_0030t.zip, 恋する乙女と守護の楯 ~薔薇の聖母~ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/    
+* (TODO) torp_0030t.zip, 恋する乙女と守護の楯 ～薔薇の聖母～ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/    
 * [Encrypted] 夢幻のティル・ナ・ノーグ体験版.zip, kirikiriz, with windowex.dll, https://azarashi-soft-plusone.nexton-net.jp/tirnanog/trial.html      
 * [Encrypted] 五色浮影绽放于花之海洋日文体验版, 花の野に咲くうたかたの, 体験版, akbs_0048t.zip, https://dlsoft.dmm.co.jp/detail/akbs_0048/  
 * [Encrypted] 花钟kanade第一章体验版, kanade-gram_ch1-trial.zip, https://nanawind.jp/product/prj06/chapter1/#download   
