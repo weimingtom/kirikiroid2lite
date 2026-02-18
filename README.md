@@ -171,6 +171,7 @@ konomi2.zip, konomi.gif
 * [Encrypted] 未来世界的planeta体验版, ミライセカイのプラネッタ　体験版, Planeta_Trial.zip, Planeta_Trial2.zip, http://www.libre-soft.jp/planetta/dl.html  
 * (TODO) 16年8月6日磁力链接整合, 汉化游戏磁力链合集, site_20260218.txt, 115  
 * (TODO) [140328][ALcot]Clover Day's [kirikiroid2版].rar, 115   
+* [Unencrypted, but cn patch is encrypted] オトメ＊ドメイン%E3%80%80体験版cn.rar, 115, otomedomain_trial, TVP(KIRIKIRI) Z core / Scripting Platform for Win32  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
