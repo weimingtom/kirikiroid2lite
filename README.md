@@ -169,9 +169,10 @@ konomi2.zip, konomi.gif
 * [Encrypted] 五色浮影绽放于花之海洋日文体验版, 花の野に咲くうたかたの, 体験版, akbs_0048t.zip, https://dlsoft.dmm.co.jp/detail/akbs_0048/  
 * [Encrypted] 花钟kanade第一章体验版, kanade-gram_ch1-trial.zip, https://nanawind.jp/product/prj06/chapter1/#download   
 * [Encrypted] 未来世界的planeta体验版, ミライセカイのプラネッタ　体験版, Planeta_Trial.zip, Planeta_Trial2.zip, http://www.libre-soft.jp/planetta/dl.html  
-* (TODO) 16年8月6日磁力链接整合, 汉化游戏磁力链合集, site_20260218.txt, 115  
+* (TODO) 默示版(?), 16年8月6日磁力链接整合, 汉化游戏磁力链合集, site_20260218.txt, 115  
 * [Encrypted] [140328][ALcot]Clover Day's [kirikiroid2版].rar, 115, Kirikiroid2_1.2.4beta.apk, XP3Player_1.2.4beta.ipa, with xp3filter.tjs and patch.tjs, no exe          
 * [Unencrypted, but cn patch is encrypted] オトメ＊ドメイン%E3%80%80体験版cn.rar, 115, otomedomain_trial, TVP(KIRIKIRI) Z core / Scripting Platform for Win32  
+* [Unencrypted, but .ks.scn, cn patch in exe?] (彼女のセイイキ.exe, 2014/12/9, kanojo_chs_151022.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2015/10/22)[141219][feng]彼女のセイイキ [汉化硬盘版].rar
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
