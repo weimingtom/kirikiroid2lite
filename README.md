@@ -169,6 +169,8 @@ konomi2.zip, konomi.gif
 * [Encrypted] 五色浮影绽放于花之海洋日文体验版, 花の野に咲くうたかたの, 体験版, akbs_0048t.zip, https://dlsoft.dmm.co.jp/detail/akbs_0048/  
 * [Encrypted] 花钟kanade第一章体验版, kanade-gram_ch1-trial.zip, https://nanawind.jp/product/prj06/chapter1/#download   
 * [Encrypted] 未来世界的planeta, ミライセカイのプラネッタ　体験版, Planeta_Trial.zip, Planeta_Trial2.zip, http://www.libre-soft.jp/planetta/dl.html  
+* (TODO) 16年8月6日磁力链接整合, 汉化游戏磁力链合集, site_20260218.txt, 115  
+* (TODO) [140328][ALcot]Clover Day's [kirikiroid2版].rar, 115   
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
