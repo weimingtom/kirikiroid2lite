@@ -203,6 +203,14 @@ https://store.steampowered.com/app/1025140/LAMUNATION_international/
 https://store.steampowered.com/app/1944250/Hana_no_No_ni_Saku_Utakata_no/  
 https://store.hikarifield.co.jp/shop/hananono  
 https://hikarifield.co.jp/hana/  
+* ALIA’s CARNIVAL！, 爱丽娅的明日盛典！, 爱丽娅的明日盛典！（ALIA's Carnival!）    
+https://store.steampowered.com/app/1094530/ALIAs_CARNIVAL/  
+https://store.hikarifield.co.jp/shop/alias_carnival  
+https://hikarifield.co.jp/alia/  
+* Alia's Carnival! Flowering Sky, 爱丽娅的明日盛典！Flowering Sky  
+https://store.steampowered.com/app/2425410/Alias_Carnival_Flowering_Sky/  
+https://store.hikarifield.co.jp/shop/alias_carnival_flowering_sky  
+https://hikarifield.co.jp/alia_fs/  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * [Encrypted] 雾之本境twisty-destiny, twisty-destiny, (same as 默示version) 雾之本境正式版.iso, (黙示, 默示version) [110723][SP-time]雾之本境 [中文硬盘版+RR3].rar, (雾之本境DEMO) 雾之本境.zip     
