@@ -203,7 +203,7 @@ https://store.steampowered.com/app/1025140/LAMUNATION_international/
 https://store.steampowered.com/app/1944250/Hana_no_No_ni_Saku_Utakata_no/  
 https://store.hikarifield.co.jp/shop/hananono  
 https://hikarifield.co.jp/hana/  
-* ALIA’s CARNIVAL！, 爱丽娅的明日盛典！, 爱丽娅的明日盛典！（ALIA's Carnival!）    
+* [Unencrypted?] ALIA’s CARNIVAL！, 爱丽娅的明日盛典！, 爱丽娅的明日盛典！（ALIA's Carnival!）    
 https://store.steampowered.com/app/1094530/ALIAs_CARNIVAL/  
 https://store.hikarifield.co.jp/shop/alias_carnival  
 https://hikarifield.co.jp/alia/  
