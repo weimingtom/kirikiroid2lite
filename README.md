@@ -207,7 +207,7 @@ https://hikarifield.co.jp/hana/
 https://store.steampowered.com/app/1094530/ALIAs_CARNIVAL/  
 https://store.hikarifield.co.jp/shop/alias_carnival  
 https://hikarifield.co.jp/alia/  
-* Alia's Carnival! Flowering Sky, 爱丽娅的明日盛典！Flowering Sky  
+* [Encrypted] Alia's Carnival! Flowering Sky, 爱丽娅的明日盛典！Flowering Sky  
 https://store.steampowered.com/app/2425410/Alias_Carnival_Flowering_Sky/  
 https://store.hikarifield.co.jp/shop/alias_carnival_flowering_sky  
 https://hikarifield.co.jp/alia_fs/  
