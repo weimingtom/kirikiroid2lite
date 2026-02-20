@@ -212,6 +212,13 @@ https://store.steampowered.com/app/2425410/Alias_Carnival_Flowering_Sky/
 https://store.hikarifield.co.jp/shop/alias_carnival_flowering_sky  
 https://hikarifield.co.jp/alia_fs/  
 
+## (TODO, NOT Kirikiri but you can buy steam games for supporting them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
+* [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日   
+https://store.steampowered.com/app/491420/the_9th_day/  
+https://the9thday.net/works/w1  
+* [NOT Kirikiri] 恋愛0キロメートル, 恋爱0公里, Ren'ai 0 Kilometer  
+https://store.steampowered.com/app/3588960/Renai_0_Kilometer/  
+
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * [Encrypted] 雾之本境twisty-destiny, twisty-destiny, (same as 默示version) 雾之本境正式版.iso, (黙示, 默示version) [110723][SP-time]雾之本境 [中文硬盘版+RR3].rar, (雾之本境DEMO) 雾之本境.zip     
 NOTE: Only tested with Crass-source.7z txxx=xxx param under windows xp and 雾之本境正式版.iso, don't use old Crass version 0.4.10.1    
