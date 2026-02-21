@@ -199,10 +199,10 @@ https://store.steampowered.com/app/691150/Saku_Saku_Love_Blooms_with_the_Cherry_
 https://store.steampowered.com/app/555640/Japanese_School_Life/  
 * [Unencrypted?] LAMUNATION! -international-  
 https://store.steampowered.com/app/1025140/LAMUNATION_international/  
-* [Encrypted] Hana no No ni Saku Utakata no, hananono, 五色浮影绽放于花之海洋 -The Sweet World of The Ephemeral- 
-https://store.steampowered.com/app/1944250/Hana_no_No_ni_Saku_Utakata_no/  
-https://store.hikarifield.co.jp/shop/hananono  
-https://hikarifield.co.jp/hana/  
+* [Encrypted] Hana no No ni Saku Utakata no, hananono, 五色浮影绽放于花之海洋 -The Sweet World of The Ephemeral-   
+https://store.steampowered.com/app/1944250/Hana_no_No_ni_Saku_Utakata_no/    
+https://store.hikarifield.co.jp/shop/hananono    
+https://hikarifield.co.jp/hana/    
 * [Unencrypted?] ALIA’s CARNIVAL！, 爱丽娅的明日盛典！, 爱丽娅的明日盛典！（ALIA's Carnival!）    
 https://store.steampowered.com/app/1094530/ALIAs_CARNIVAL/  
 https://store.hikarifield.co.jp/shop/alias_carnival  
@@ -211,8 +211,10 @@ https://hikarifield.co.jp/alia/
 https://store.steampowered.com/app/2425410/Alias_Carnival_Flowering_Sky/  
 https://store.hikarifield.co.jp/shop/alias_carnival_flowering_sky  
 https://hikarifield.co.jp/alia_fs/  
+* 千恋＊万花 体験版, 千恋＊万花 体验版, Senren＊Banka Trial version    
+https://store.steampowered.com/app/1144400/_/  
 
-## (TODO, NOT Kirikiri but you can buy steam games for supporting them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
+## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日   
 https://store.steampowered.com/app/491420/the_9th_day/  
 https://the9thday.net/works/w1  
