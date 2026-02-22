@@ -213,6 +213,9 @@ https://store.hikarifield.co.jp/shop/alias_carnival_flowering_sky
 https://hikarifield.co.jp/alia_fs/  
 * 千恋＊万花 体験版, 千恋＊万花 体验版, Senren＊Banka Trial version    
 https://store.steampowered.com/app/1144400/_/  
+https://store.hikarifield.co.jp/shop/senren_banka  
+https://hikarifield.co.jp/senren/index.html  
+https://store.steampowered.com/app/1144400/SenrenBanka/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日   
