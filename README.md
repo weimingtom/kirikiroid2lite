@@ -175,6 +175,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted, but .ks.scn, cn patch in exe?] (彼女のセイイキ.exe, 2014/12/9, kanojo_chs_151022.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2015/10/22)[141219][feng]彼女のセイイキ [汉化硬盘版].rar
 * [Unencrypted] 百五十年目の魔法使い_体験版（音声あり）, 150mahou03.zip, http://www.pinkcc.sakura.ne.jp/downloadpage.html, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 1.0.0.0, 2014/12/16
 * [Unencrypted, but .txt.scn] 魔女と剣と千の月　体験版, torp_0032t.zip, https://dlsoft.dmm.co.jp/detail/torp_0032/, http://kai-soft.jp/MTS-WEB/index.html     
+* [Unencrypted, but .txt.sdn] 115, OPPAI Academy Big, Bouncy, Booby Babes  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
