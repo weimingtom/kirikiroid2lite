@@ -199,6 +199,8 @@ https://store.steampowered.com/app/691150/Saku_Saku_Love_Blooms_with_the_Cherry_
 https://store.steampowered.com/app/555640/Japanese_School_Life/  
 * [Unencrypted?] LAMUNATION! -international-  
 https://store.steampowered.com/app/1025140/LAMUNATION_international/  
+https://whitepowder.jp  
+https://www.lovelabjapan.com/en/patches/  
 * [Encrypted] Hana no No ni Saku Utakata no, hananono, 五色浮影绽放于花之海洋 -The Sweet World of The Ephemeral-   
 https://store.steampowered.com/app/1944250/Hana_no_No_ni_Saku_Utakata_no/    
 https://store.hikarifield.co.jp/shop/hananono    
@@ -216,6 +218,11 @@ https://store.steampowered.com/app/1144400/SenrenBanka/
 https://store.steampowered.com/app/1144400/_/  
 https://store.hikarifield.co.jp/shop/senren_banka  
 https://hikarifield.co.jp/senren/index.html  
+* [Unencrypted?] 纸上的魔法使 体验版  
+https://store.steampowered.com/app/4237510/_/    
+https://www.tamamakogaming.com  
+https://space.bilibili.com/3546635212687771  
+https://space.bilibili.com/3546560407275783  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日   
