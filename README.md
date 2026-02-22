@@ -284,6 +284,7 @@ https://store.steampowered.com/app/1339410/
 
 ## Links about other Kirikiri games list
 * https://github.com/zeas2/Kirikiroid2_patch/issues/16  
+* https://github.com/weimingtom/galpatch_collection/blob/master/docs/galgame-patch-collections.md  
 
 ## How to build for Windows  
 * (NOTE: be able to be ignored) WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
