@@ -204,6 +204,7 @@ https://www.lovelabjapan.com/en/patches/
 宅在家无事做？Gal厂商制作美少女拼图游戏免费送！  
 https://www.ali213.net/news/html/2020-2/485345.html  
 https://web.archive.org/web/20200223063552/http://whitepowder.jp/patch/  
+https://web.archive.org/web/20210320102233/http://whitepowder.jp/puzzle/  
 * [Encrypted] Hana no No ni Saku Utakata no, hananono, 五色浮影绽放于花之海洋 -The Sweet World of The Ephemeral-   
 https://store.steampowered.com/app/1944250/Hana_no_No_ni_Saku_Utakata_no/    
 https://store.hikarifield.co.jp/shop/hananono    
