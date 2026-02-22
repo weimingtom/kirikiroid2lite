@@ -177,6 +177,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted, but .txt.scn] 魔女と剣と千の月　体験版, torp_0032t.zip, https://dlsoft.dmm.co.jp/detail/torp_0032/, http://kai-soft.jp/MTS-WEB/index.html     
 * [Unencrypted, but .txt.sdn] 115, OPPAI Academy Big, Bouncy, Booby Babes  
 * [Encrypted] 115, 不可視の薬と数奇な運命, 时停社, 不可视之药与坎坷的命运, 透明药  
+* [Encrypted] 115, 神様のような君へ, 献给神明般的你  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
