@@ -195,7 +195,7 @@ https://store.steampowered.com/app/1230140/ATRI_My_Dear_Moments/
 https://store.steampowered.com/app/473460/Memory_Oblivion_Box/  
 * [Encrypted] Saku Saku, Saku Saku: Love Blooms with the Cherry Blossoms  
 https://store.steampowered.com/app/691150/Saku_Saku_Love_Blooms_with_the_Cherry_Blossoms/  
-* [Unencrypted, but .txt.scn] Japanese School Life Demo, JAPANESE SCHOOL LIFE TRIAL    
+* [Encrypted, and .txt.scn] Japanese School Life Demo, JAPANESE SCHOOL LIFE TRIAL    
 https://store.steampowered.com/app/555640/Japanese_School_Life/  
 * [Unencrypted?] LAMUNATION! -international-  
 https://store.steampowered.com/app/1025140/LAMUNATION_international/  
