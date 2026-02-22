@@ -211,7 +211,7 @@ https://hikarifield.co.jp/alia/
 https://store.steampowered.com/app/2425410/Alias_Carnival_Flowering_Sky/  
 https://store.hikarifield.co.jp/shop/alias_carnival_flowering_sky  
 https://hikarifield.co.jp/alia_fs/  
-* 千恋＊万花, Senren＊Banka      
+* [Unencrypted, but .ks.scn] 千恋＊万花, Senren＊Banka      
 https://store.steampowered.com/app/1144400/SenrenBanka/  
 https://store.steampowered.com/app/1144400/_/  
 https://store.hikarifield.co.jp/shop/senren_banka  
