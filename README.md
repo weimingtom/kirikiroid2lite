@@ -282,9 +282,10 @@ https://store.steampowered.com/app/737710/
 * (TODO, to BUY) steam, 雾之本境S Conspiracy Field: Fog Shadow  
 https://store.steampowered.com/app/1339410/
 
-## Links about other Kirikiri games list
+## Links about other Kirikiri and steam games list
 * https://github.com/zeas2/Kirikiroid2_patch/issues/16  
 * https://github.com/weimingtom/galpatch_collection/blob/master/docs/galgame-patch-collections.md  
+* https://steamgalgame.com  
 
 ## How to build for Windows  
 * (NOTE: be able to be ignored) WARNING !!! don't download source zip or tar.gz file on github web page, please use git clone to download source files.  
