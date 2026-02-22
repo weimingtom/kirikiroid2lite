@@ -175,9 +175,17 @@ konomi2.zip, konomi.gif
 * [Unencrypted, but .ks.scn, cn patch in exe?] (彼女のセイイキ.exe, 2014/12/9, kanojo_chs_151022.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2015/10/22)[141219][feng]彼女のセイイキ [汉化硬盘版].rar
 * [Unencrypted] 百五十年目の魔法使い_体験版（音声あり）, 150mahou03.zip, http://www.pinkcc.sakura.ne.jp/downloadpage.html, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 1.0.0.0, 2014/12/16
 * [Unencrypted, but .txt.scn] 魔女と剣と千の月　体験版, torp_0032t.zip, https://dlsoft.dmm.co.jp/detail/torp_0032/, http://kai-soft.jp/MTS-WEB/index.html     
-* [Unencrypted, but .txt.sdn] 115, OPPAI Academy Big, Bouncy, Booby Babes  
+* [Unencrypted, but .txt.scn] 115, OPPAI Academy Big, Bouncy, Booby Babes  
 * [Encrypted] 115, 不可視の薬と数奇な運命, 时停社, 不可视之药与坎坷的命运, 透明药  
 * [Encrypted] 115, 神様のような君へ, 献给神明般的你  
+* [Encrypted and .ks.scn] 115, NEKOPARA, 猫娘乐园, 艹猫
+```
+请买正版, please buy steam game
+```
+* [Encrypted and .ks.scn] 115, NEKOPARA Vol2, 猫娘乐园第2卷, 艹猫2
+```
+请买正版, please buy steam game
+```
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
