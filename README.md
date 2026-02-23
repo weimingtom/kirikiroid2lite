@@ -178,7 +178,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted, but .txt.scn] 115, OPPAI Academy Big, Bouncy, Booby Babes  
 * [Encrypted] 115, 不可視の薬と数奇な運命, 时停社, 不可视之药与坎坷的命运, 透明药  
 * [Encrypted] 115, 神様のような君へ, 献给神明般的你  
-* [Encrypted and .ks.scn] 115, NEKOPARA, 猫娘乐园, 艹猫
+* [Encrypted and .ks.scn] 115, NEKOPARA, 猫娘乐园, 艹猫, 猫娘乐园第1卷  
 ```
 请买正版, please buy steam game
 ```
