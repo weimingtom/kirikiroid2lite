@@ -189,6 +189,7 @@ konomi2.zip, konomi.gif
 * [Encrypted] 115, Berry’s ～ベリーズ～ 初回版  
 * [Encrypted] 115, 恋騎士 Purely☆Kiss 初回限定版  
 * [Encrypted and .txt.scn] 115, オトメ＊ドメイン パッケージ版  
+* [Unencrypted?] VenusBlood -FRONTIER- International 特装版  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
