@@ -190,7 +190,7 @@ konomi2.zip, konomi.gif
 * [Encrypted] 115, 恋騎士 Purely☆Kiss 初回限定版  
 * [Encrypted and .txt.scn] 115, オトメ＊ドメイン パッケージ版  
 * [Unencrypted?] VenusBlood -FRONTIER- International 特装版  
-* 啾啾爱恋！
+* [Unencrypted?] ひよこストライク！体験版, 啾啾爱恋！体验版, hobe_0230t.zip, https://dlsoft.dmm.co.jp/detail/hobe_0230/  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
