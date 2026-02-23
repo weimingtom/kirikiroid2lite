@@ -182,7 +182,7 @@ konomi2.zip, konomi.gif
 ```
 请买正版, please buy steam game
 ```
-* [Encrypted and .ks.scn] 115, Neko Para Vol.2 ~Shimai Neko no Shukure~, 猫娘乐园第2卷, 艹猫2
+* [Encrypted and .ks.scn] 115, Neko Para Vol.2 ～Shimai Neko no Shukure～ (replace ～ with ~), 猫娘乐园第2卷, 艹猫2
 ```
 请买正版, please buy steam game
 ```
