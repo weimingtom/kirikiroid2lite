@@ -242,6 +242,10 @@ https://store.steampowered.com/app/4237510/_/
 https://www.tamamakogaming.com  
 https://space.bilibili.com/3546635212687771  
 https://space.bilibili.com/3546560407275783  
+* [Encrypted, scn unknown with psbfile.dll, original version is NOT Kirikiri] Mashiroiro Symphony HD -Love is Pure White-, MashiroiroSymphonyFHD, 纯白交响曲FHD重制版  
+https://store.steampowered.com/app/2737970/Mashiroiro_Symphony_HD_Love_is_Pure_White/  
+* [Encrypted, scn unknown with psbfile.dll] Mashiroiro Symphony HD -Sana Edition-, 纯白交响曲FHD纱凪版   
+https://store.steampowered.com/app/2737980/Mashiroiro_Symphony_HD_Sana_Edition/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日   
