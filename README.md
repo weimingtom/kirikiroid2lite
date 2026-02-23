@@ -187,6 +187,7 @@ konomi2.zip, konomi.gif
 请买正版, please buy steam game
 ```
 * [Encrypted] 115, Berry’s ～ベリーズ～ 初回版  
+* [Encrypted] 115, 恋騎士 Purely☆Kiss 初回限定版  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
