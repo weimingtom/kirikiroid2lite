@@ -191,6 +191,7 @@ konomi2.zip, konomi.gif
 * [Encrypted and .txt.scn] 115, オトメ＊ドメイン パッケージ版  
 * [Unencrypted?] VenusBlood -FRONTIER- International 特装版  
 * [Unencrypted?] ひよこストライク！体験版, 啾啾爱恋！体验版, hobe_0230t.zip, https://dlsoft.dmm.co.jp/detail/hobe_0230/  
+* [Encrypted] baidupan, 猫vol1.rar, with exe, with patch.tjs and xp3filter.tj, with psbfile.dll  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
