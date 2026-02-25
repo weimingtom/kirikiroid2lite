@@ -322,6 +322,7 @@ NOTE: Only tested with Crass-source.7z txxx=xxx param under windows xp and 雾�
 
 星月夜鸣工作组 2005~2011
 ```
+* [Unencrypted] 真恋-寄语枫秋-.rar, with exe, no plugin dlls, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.1.426, 2013/7/28  
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, 真恋～寄语枫秋～, True Love ～Confide to the Maple～   
 https://store.steampowered.com/app/495990/
