@@ -196,6 +196,7 @@ konomi2.zip, konomi.gif
 * [Encrypted] baidupan, 猫vol2.rar, .ks.scn, with exe, with patch.tjs and xp3filter.tj, with psbfile.dll  
 * [Encrypted] GINKA.appimage, linuxgame  
 * [Encrypted] ATRI.appimage, linuxgame  
+* [Unencrypted, but .txt.scn] 少女领域.Appimage, shaonvlingyu_appimage_extract_game.tar.gz, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2023/8/30, with exe and patch.tjs, one data.xp3  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
