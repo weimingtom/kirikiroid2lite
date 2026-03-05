@@ -64,23 +64,23 @@ https://code.google.com/archive/p/godxq1986/downloads
 https://the9thday.net/works/w1/download.php  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Japanese kirikiri2 or kirikiriz games  
-* [Unencrypted] 恋がさくころ桜どき 体験版, 恋花绽放樱飞时 体验版, sakusaku_trial.zip  
+* [Unencrypted?] 恋がさくころ桜どき 体験版, 恋花绽放樱飞时 体验版, sakusaku_trial.zip  
 https://palette.clearrave.co.jp/product/sakusaku/download.html  
 clear_0010t.zip, 【さくさく】恋がさくころ桜どき, 体験版  
 https://dlsoft.dmm.co.jp/detail/clear_0010/    
 https://sample9.dmm.co.jp/digital/pcgame/clear_0010/clear_0010t.zip    
-* [Unencrypted] from touchgal, 恋花绽放樱飞时.zip  
+* [Unencrypted?] from touchgal, 恋花绽放樱飞时.zip  
 * [Encrypted] 《恋花绽放樱飞时》简体中文汉化补丁.exe  
 * [Encrypted] LIKE×LOVE ～色川 鈴音～, LIKExLOVE2, LIKExLOVE2.zip, https://github.com/weimingtom/kirikiroid2lite/issues/1
 * [Encrypted] リアル妹がいる大泉くんのばあい, 实妹相伴的大泉君, cheng141_with_xp3filter_complete_files.7z, cheng141_with_xp3filter_complete_files.7z, realsister_ons, (默示版, with realsister_chs.exe) [100528][ALcotハニカム]リアル妹がいる大泉くんのばあい [汉化硬盘版+RR3].rar, 日文版：2.31.2010.128, 2010/5/17, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 中文版2010/8/24, (日文版, data.xp3 is same as 默示版) (18禁ゲーム) [100528] [ALcotハニカム] リアル妹がいる大泉くんのばあい  
 * (TODO, 可能不能用体验版) 时停社, 嫁探, 不是体验版  
 * [Encrypted] 恋课金普通版日文版, 我的未来是恋爱与氪金, with windowEx.dll, (TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2019/2/21) 僕の未来は、恋と課金と。.exe, (日文版, (18禁ゲーム) [190222] [Sonora] 僕の未来は、恋と課金と。～Charge To The Future～) koikakin.7z      
 * [Encrypted] 恋课金体验版: koikakinTR.zip, koikakinTRH.zip  
-* [Unencrypted (Chinese patch is Encrypted exe) ] g弦上的魔王, g线上的魔王, (NOT FOUND) [あかべぇそふとつぅ]Ｇ線上の魔王, (ONLY PATCH, NOT GOOD, no data.xp3) [080529] [あかべぇそふとつぅ] G線上の魔王 中文补丁1.00＋SAVE.rar, (ONLY data.xp3) あかべぇそふとつぅ_Ｇ線上の魔王.rar (2008, TVP(KIRIKIRI) 2 core 2.29.9901.1022)  
+* [Unencrypted? (Chinese patch is Encrypted exe) ] g弦上的魔王, g线上的魔王, (NOT FOUND) [あかべぇそふとつぅ]Ｇ線上の魔王, (ONLY PATCH, NOT GOOD, no data.xp3) [080529] [あかべぇそふとつぅ] G線上の魔王 中文补丁1.00＋SAVE.rar, (ONLY data.xp3) あかべぇそふとつぅ_Ｇ線上の魔王.rar (2008, TVP(KIRIKIRI) 2 core 2.29.9901.1022)  
 ```
 http://bbs.2dgal.com/thread.php?fid=146
 ```    
-* [Unencrypted] (已散佚, 中文版和日文版都未找到文件, 只找到一个未压缩的中文补丁版带日文原版文件) 谁杀死了知更鸟, (NOT FOUND) 誰が殺したコマドリを_zh, (NOT FOUND) [スマイル戦機]_誰が殺したコマドリを, (baiduyun) 誰が殺したコマドリを.7z with 是谁杀了知更鸟.exe and 誰が殺したコマドリをCSA版.exe (TVP(KIRIKIRI) 2 core 2.31.2011.615) and plugin/windowEx.dll, (touchgal, include patch.xp3汉化补丁, 是谁杀了知更鸟.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2011/11/21) 是谁杀了知更鸟.zip, (touchgal, include 1.20简体中文化补丁 and patch.xp3, include 《是谁杀了知更鸟》1.20简体中文化补丁.rar) 【PCKR】是谁杀死了知更鸟.rar, (115, 默示版, with 是谁杀了知更鸟.exe and 誰が殺したコマドリをCSA版.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2011/11/21, patch.xp3 is Unencrypted cn patch, data.xp3 is Unencrypted) 誰が殺したコマドリを.rar        
+* [Unencrypted?] (已散佚, 中文版和日文版都未找到文件, 只找到一个未压缩的中文补丁版带日文原版文件) 谁杀死了知更鸟, (NOT FOUND) 誰が殺したコマドリを_zh, (NOT FOUND) [スマイル戦機]_誰が殺したコマドリを, (baiduyun) 誰が殺したコマドリを.7z with 是谁杀了知更鸟.exe and 誰が殺したコマドリをCSA版.exe (TVP(KIRIKIRI) 2 core 2.31.2011.615) and plugin/windowEx.dll, (touchgal, include patch.xp3汉化补丁, 是谁杀了知更鸟.exe is TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2011/11/21) 是谁杀了知更鸟.zip, (touchgal, include 1.20简体中文化补丁 and patch.xp3, include 《是谁杀了知更鸟》1.20简体中文化补丁.rar) 【PCKR】是谁杀死了知更鸟.rar, (115, 默示版, with 是谁杀了知更鸟.exe and 誰が殺したコマドリをCSA版.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2011/11/21, patch.xp3 is Unencrypted cn patch, data.xp3 is Unencrypted) 誰が殺したコマドリを.rar        
 ```
 ■原版说明
 
@@ -96,7 +96,7 @@ http://bbs.2dgal.com/thread.php?fid=146
 3.BUG回报请到http://www.moetea.com/forum-80-1.html或http://tieba.baidu.com/p/1962586170回报。
 3.百合赛高。
 ```
-* [Unencrypted] 恋爱0キロメートル中文版, (which version? different from Hazx version) 恋爱0公里.rar, (《恋爱0公里》Final（最终版） By Hazx) 《恋爱0公里》[本体+汉化补丁].rar, 恋爱0公里汉化补丁（除华线2h以外部分）完全汉化！.rar  
+* [Unencrypted?] 恋爱0キロメートル中文版, (which version? different from Hazx version) 恋爱0公里.rar, (《恋爱0公里》Final（最终版） By Hazx) 《恋爱0公里》[本体+汉化补丁].rar, 恋爱0公里汉化补丁（除华线2h以外部分）完全汉化！.rar  
 ```
 《恋爱0公里》Final（最终版） By Hazx
 游戏版权（除补丁外）属日本游戏公司「ASa Project」所有。
@@ -107,7 +107,7 @@ http://chs.hmacg.net/game/renzero/
 http://tieba.baidu.com/f?kw=%C1%B5%B0%AE0%B9%AB%C0%EF
 ```
 * [Encrypted (mobile version is unencrypted)] (rar and encrypted, with encrypted TenshinChs.exe and tenshinchs.chm, 2009/05/15, 2.31.2008.416, 2011/2/13 chs, plugin/windowEx.dll and tenshin.tpm and yuzuex.dll) 天神乱漫lucky or unlucky.mp4, (mobile version, unencrypted, small video.xp3 and voice.xp3, no exe, with TenshinChs.xp3, with patch.tjs) 天神乱漫.7z    
-* [Unencrypted] (zip, 高压版, kirikiroid2版, mobile version, 天神乱漫 Happy Go Lucky!! GPT高压（逆天全年龄），注：我认为全年龄不逆天好吧, no exe, with plugin dlls) 天神乱漫 Happy Go Lucky!!  
+* [Unencrypted?] (zip, 高压版, kirikiroid2版, mobile version, 天神乱漫 Happy Go Lucky!! GPT高压（逆天全年龄），注：我认为全年龄不逆天好吧, no exe, with plugin dlls) 天神乱漫 Happy Go Lucky!!  
 * [Encrypted, but cnpatch is uncrypted?] LC, (with lovelyxcation_cn.exe no version, with cnpatch.xp3 uncrypted) LOVELYxCATION_Ver0.9汉化补丁.rar, (with windowEx.dll, with ＬＯＶＥＬＹ×Ｃ∧ＴＩＯＮ.exe:TVP(KIRIKIRI) 2 core / Scripting Platform for Win32: 2.31.2009.620: 2011/5/14) LOVELYxCATION.ISO, (默示版? with lovelyxcation_cn.exe 2.31.2009.620, with LocaleSwitch.exe) [110624][暁WORKS-響-]LOVELY×CATION [V1.1汉化硬盘版(全DLC附)].rar     
 ```
 【免责声明】
@@ -152,8 +152,11 @@ https://web.archive.org/web/20051223034139/http://www.geocities.jp/konominaku/
 ```
 http://www.aurora.dti.ne.jp/~sek/2005.html  
 konomi2.zip, konomi.gif   
-* [Encrypted] 日文版，神頼みしすぎて俺の未来がヤバい。.part1.rar, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2017/3/23  
-* [Encrypted] 五色浮影绽放于花之海洋中文版==hananono steam中文完整版带DLC（不能在设置选其他语言？）, 5IO.part1.rar, hananono steam version with adult.xp3, 1.2.0.3, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tvpwin32, 2022/4/25  
+* [Unencrypted?] 百五十年目の魔法使い_体験版（音声あり）, 150mahou03.zip, http://www.pinkcc.sakura.ne.jp/downloadpage.html, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 1.0.0.0, 2014/12/16
+* [Unencrypted?, but cn patch is encrypted] オトメ＊ドメイン%E3%80%80体験版cn.rar, 115, otomedomain_trial, TVP(KIRIKIRI) Z core / Scripting Platform for Win32  
+* [Unencrypted?] 115, VenusBlood -FRONTIER- International 特装版  
+* [Unencrypted?] ひよこストライク！体験版, 啾啾爱恋！体验版, hobe_0230t.zip, https://dlsoft.dmm.co.jp/detail/hobe_0230/  
+* [Encrypted] akbs_0051t.zip, 空色イノセント体験版, sorairo_innocent.exe, with windowEx.dll, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2015/8/24, 2.31.2013.411, https://dlsoft.dmm.co.jp/detail/akbs_0051/  
 
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
@@ -165,15 +168,15 @@ konomi2.zip, konomi.gif
 * (TODO) A Dream of Summer.7z  
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～
 * (TODO) torp_0030t.zip, 恋する乙女と守護の楯 ～薔薇の聖母～ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/    
+* [Encrypted] 日文版，神頼みしすぎて俺の未来がヤバい。.part1.rar, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2017/3/23  
+* [Encrypted] 五色浮影绽放于花之海洋中文版==hananono steam中文完整版带DLC（不能在设置选其他语言？）, 5IO.part1.rar, hananono steam version with adult.xp3, 1.2.0.3, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tvpwin32, 2022/4/25  
 * [Encrypted] 夢幻のティル・ナ・ノーグ体験版.zip, kirikiriz, with windowex.dll, https://azarashi-soft-plusone.nexton-net.jp/tirnanog/trial.html      
 * [Encrypted] 五色浮影绽放于花之海洋日文体验版, 花の野に咲くうたかたの, 体験版, akbs_0048t.zip, https://dlsoft.dmm.co.jp/detail/akbs_0048/  
 * [Encrypted] 花钟kanade第一章体验版, kanade-gram_ch1-trial.zip, https://nanawind.jp/product/prj06/chapter1/#download   
 * [Encrypted] 未来世界的planeta体验版, ミライセカイのプラネッタ　体験版, Planeta_Trial.zip, Planeta_Trial2.zip, http://www.libre-soft.jp/planetta/dl.html  
 * (TODO) 默示版(?), 16年8月6日磁力链接整合, 汉化游戏磁力链合集, site_20260218.txt, 115  
 * [Encrypted] [140328][ALcot]Clover Day's [kirikiroid2版].rar, 115, Kirikiroid2_1.2.4beta.apk, XP3Player_1.2.4beta.ipa, with xp3filter.tjs and patch.tjs, no exe          
-* [Unencrypted, but cn patch is encrypted] オトメ＊ドメイン%E3%80%80体験版cn.rar, 115, otomedomain_trial, TVP(KIRIKIRI) Z core / Scripting Platform for Win32  
 * [Unencrypted, but .ks.scn, cn patch in exe?] (彼女のセイイキ.exe, 2014/12/9, kanojo_chs_151022.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2015/10/22)[141219][feng]彼女のセイイキ [汉化硬盘版].rar
-* [Unencrypted] 百五十年目の魔法使い_体験版（音声あり）, 150mahou03.zip, http://www.pinkcc.sakura.ne.jp/downloadpage.html, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 1.0.0.0, 2014/12/16
 * [Unencrypted, but .txt.scn] 魔女と剣と千の月　体験版, torp_0032t.zip, https://dlsoft.dmm.co.jp/detail/torp_0032/, http://kai-soft.jp/MTS-WEB/index.html     
 * [Unencrypted, but .txt.scn] 115, OPPAI Academy Big, Bouncy, Booby Babes  
 * [Encrypted] 115, 不可視の薬と数奇な運命, 时停社, 不可视之药与坎坷的命运, 透明药  
@@ -189,8 +192,6 @@ konomi2.zip, konomi.gif
 * [Encrypted] 115, Berry’s ～ベリーズ～ 初回版  
 * [Encrypted] 115, 恋騎士 Purely☆Kiss 初回限定版  
 * [Encrypted and .txt.scn] 115, オトメ＊ドメイン パッケージ版  
-* [Unencrypted?] 115, VenusBlood -FRONTIER- International 特装版  
-* [Unencrypted?] ひよこストライク！体験版, 啾啾爱恋！体验版, hobe_0230t.zip, https://dlsoft.dmm.co.jp/detail/hobe_0230/  
 * [Encrypted] baidupan, 猫vol1.rar, with exe, with patch.tjs and xp3filter.tj, with psbfile.dll  
 * [Encrypted] baidupan, 猫vol2.rar, .ks.scn, with exe, with patch.tjs and xp3filter.tj, with psbfile.dll  
 * [Encrypted] GINKA.appimage, linuxgame  
