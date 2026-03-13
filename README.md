@@ -159,6 +159,7 @@ konomi2.zip, konomi.gif
 * [Encrypted] akbs_0051t.zip, 空色イノセント体験版, sorairo_innocent.exe, with windowEx.dll, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2015/8/24, 2.31.2013.411, https://dlsoft.dmm.co.jp/detail/akbs_0051/  
 * [Unencrypted?] scfbht_0012t.zip, お嬢様と憐れな（こ）執事 体験版2, otorena_tr2, otorena_tr.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2017/1/23, https://dlsoft.dmm.co.jp/detail/scfbht_0012/  
 * [Unencrypted?] d_050874t.zip, 幼馴染と十年、夏 体験版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2012/8/23, 2.32.2.426, osana.exe, https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_050874/  
+* [Unencrypted?] 幼驯染与十年之夏(解压密码：御宅同萌).zip, 中文版, no exe, one xp3, kirikiroid专版  
 
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
