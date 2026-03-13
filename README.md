@@ -167,7 +167,7 @@ konomi2.zip, konomi.gif
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
 * (TODO) [WHEEL] ひのまるっ
 * (TODO) [Wheel-Soft]大宇宙の誇り
-* (TODO) lyricallisp_free-1.7.zip
+* (NOT KIRIKIRI) lyricallisp_free-1.7.zip, 这个好像是ONS游戏来的，放错地方了  
 * (TODO) KRKR制作范例.zip
 * (TODO) A Dream of Summer.7z  
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～
