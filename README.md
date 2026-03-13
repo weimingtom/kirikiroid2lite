@@ -167,9 +167,7 @@ konomi2.zip, konomi.gif
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
 * (TODO) [WHEEL] ひのまるっ
 * (TODO) [Wheel-Soft]大宇宙の誇り
-* (NOT KIRIKIRI) lyricallisp_free-1.7.zip, 这个好像是ONS游戏来的，放错地方了  
 * (TODO) KRKR制作范例.zip
-* (TODO) A Dream of Summer.7z  
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～
 * (TODO) torp_0030t.zip, 恋する乙女と守護の楯 ～薔薇の聖母～ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/    
 * [Encrypted] 日文版，神頼みしすぎて俺の未来がヤバい。.part1.rar, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2017/3/23  
