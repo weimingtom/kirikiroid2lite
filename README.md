@@ -202,7 +202,7 @@ konomi2.zip, konomi.gif
 * (TO BUY) G-senjou no Maou - The Devil on G-String  
 https://store.steampowered.com/app/377670/Gsenjou_no_Maou__The_Devil_on_GString/  
 G弦上的魔王steam版英文版  
-* (TO BUY) ISLAND DIARY, 无人岛日记, 海岛日记, 小岛日记
+* (TO BUY) ISLAND DIARY, 无人岛日记, 海岛日记, 小岛日记  
 https://watakubi.com/islanddiary/   
 https://www.ymgal.games/co/article/158867700825718784  
 https://store.steampowered.com/app/1559760/Island_Diary/  
