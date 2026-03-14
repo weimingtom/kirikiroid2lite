@@ -199,6 +199,9 @@ konomi2.zip, konomi.gif
 * [Encrypted] GINKA.appimage, linuxgame  
 * [Encrypted] ATRI.appimage, linuxgame  
 * [Unencrypted, but .txt.scn] 少女领域.Appimage, shaonvlingyu_appimage_extract_game.tar.gz, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2023/8/30, with exe and patch.tjs, one data.xp3, 可能是默示版, LC_ALL=zh_CN.utf-8 ./shaonvlingyu.Appimage      
+* (TO BUY) G-senjou no Maou - The Devil on G-String  
+https://store.steampowered.com/app/377670/Gsenjou_no_Maou__The_Devil_on_GString/  
+G弦上的魔王steam版英文版  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
