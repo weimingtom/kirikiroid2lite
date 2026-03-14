@@ -206,7 +206,8 @@ G弦上的魔王steam版英文版
 https://watakubi.com/islanddiary/   
 https://www.ymgal.games/co/article/158867700825718784  
 https://store.steampowered.com/app/1559760/Island_Diary/  
-* [Unencrypted, but some encrypted, but .txt.scn] island diary (1).zip, with KrkrExtract.db and KrkrUniversalPatch.dll and IslandDiary_Patch.exe, IslandDiary.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tpwin32.exe, 2021/3/1, 1.2.0.3  
+* [Unencrypted, but some encrypted, but .txt.scn] island diary (1).zip, may not steam version, adult version, with KrkrExtract.db and KrkrUniversalPatch.dll and IslandDiary_Patch.exe, IslandDiary.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tpwin32.exe, 2021/3/1, 1.2.0.3  
+* [Unencrypted, but some encrypted, but .txt.scn] Island Diary.zip, steam version, adult version, IslandDiary.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tpwin32.exe, 2021/7/8, 1.2.0.3  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
