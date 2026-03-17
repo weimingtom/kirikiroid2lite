@@ -161,6 +161,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] d_050874t.zip, 幼馴染と十年、夏 体験版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2012/8/23, 2.32.2.426, osana.exe, https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_050874/  
 * [Unencrypted?] 幼驯染与十年之夏(解压密码：御宅同萌).zip, 中文版, no exe, one xp3, kirikiroid专版  
 * [Unencrypted?] 幼驯染と十年、夏.rar, 中文版, with exe, one xp3, osana.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2012/8/5  
+* [Unencrypted?, Unencrypted scn] 964moe5006t.zip, Marguerite Sphere-マーガレット スフィア- 体験版, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=964moe5006/, Marguerite_t.exe, less plugin dlls, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.416, 2010/12/14   
 
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
