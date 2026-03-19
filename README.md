@@ -268,8 +268,8 @@ https://space.bilibili.com/3546560407275783
 https://store.steampowered.com/app/2737970/Mashiroiro_Symphony_HD_Love_is_Pure_White/  
 * [Encrypted, scn unknown with psbfile.dll] Mashiroiro Symphony HD -Sana Edition-, 纯白交响曲FHD纱凪版   
 https://store.steampowered.com/app/2737980/Mashiroiro_Symphony_HD_Sana_Edition/  
-* [Unencrypted?] Seven Days, 7days-与你共度的七日间, 与你共度的七日间, 7days    
-https://store.steampowered.com/app/931560/Seven_Days/  
+* [Unencrypted?] Seven Days, Seven Days With You: The Most Precious Memory in Our Lives, 7days：与你共度的七日间 英日版, 与你共度的七日间 英日版, 7days 英日版      
+https://store.steampowered.com/app/931560/Seven_Days/    
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日   
