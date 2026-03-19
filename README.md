@@ -212,8 +212,6 @@ https://store.steampowered.com/app/1559760/Island_Diary/
 * [Encrypted, and .txt.scn] Island Diary.zip, pc version, steam version, adult version, IslandDiary.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tpwin32.exe, 2021/7/8, 1.2.0.3   
 * [Unencrypted?, but data.xp3's tjs encrypted, ks unencrypted] kaguya_0076t.zip, あやめの町とお姫様 体験版, 菖蒲的城镇与公主日文体验版, https://dlsoft.dmm.co.jp/detail/kaguya_0076/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2013/11/27    
 * [Unencrypted?, but data.xp3's and data.chs's tjs encrypted, ks unencrypted] 菖蒲的城镇与公主.zip, あやめの町とお姫様.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2013/12/6, with ayameno cn.exe and KRPatch.dll and some 补丁   
-* (TO BUY) Seven Days, 7days-与你共度的七日间, 与你共度的七日间, 7days    
-https://store.steampowered.com/app/931560/Seven_Days/  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
@@ -270,6 +268,8 @@ https://space.bilibili.com/3546560407275783
 https://store.steampowered.com/app/2737970/Mashiroiro_Symphony_HD_Love_is_Pure_White/  
 * [Encrypted, scn unknown with psbfile.dll] Mashiroiro Symphony HD -Sana Edition-, 纯白交响曲FHD纱凪版   
 https://store.steampowered.com/app/2737980/Mashiroiro_Symphony_HD_Sana_Edition/  
+* [Unencrypted?] Seven Days, 7days-与你共度的七日间, 与你共度的七日间, 7days    
+https://store.steampowered.com/app/931560/Seven_Days/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日   
