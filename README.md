@@ -269,8 +269,6 @@ https://space.bilibili.com/3546560407275783
 https://store.steampowered.com/app/2737970/Mashiroiro_Symphony_HD_Love_is_Pure_White/  
 * [Encrypted, scn unknown with psbfile.dll] Mashiroiro Symphony HD -Sana Edition-, 纯白交响曲FHD纱凪版   
 https://store.steampowered.com/app/2737980/Mashiroiro_Symphony_HD_Sana_Edition/  
-* [?] LOST:SMILE memories + promises  
-https://store.steampowered.com/app/1102410/LOSTSMILE_memories/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日   
