@@ -279,6 +279,10 @@ https://store.steampowered.com/app/2737970/Mashiroiro_Symphony_HD_Love_is_Pure_W
 https://store.steampowered.com/app/2737980/Mashiroiro_Symphony_HD_Sana_Edition/  
 * [Unencrypted?] Seven Days, Seven Days With You: The Most Precious Memory in Our Lives, 7days：与你共度的七日间 英日版, 与你共度的七日间 英日版, 7days 英日版      
 https://store.steampowered.com/app/931560/Seven_Days/    
+* [Encrypted, open failed] 真恋～寄语枫秋～, True Love ～Confide to the Maple～   
+https://store.steampowered.com/app/495990/  
+* [Encrypted, open failed] 雾之本境S, Conspiracy Field: Fog Shadow   
+https://store.steampowered.com/app/1339410/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日   
@@ -354,12 +358,8 @@ NOTE: Only tested with Crass-source.7z txxx=xxx param under windows xp and 雾�
 ```
 * [Unencrypted?] 真恋-寄语枫秋-.rar, with exe, no plugin dlls, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.1.426, 2013/7/28  
 * ===NOTE, 以下仅记录===
-* (TODO, to BUY) steam, 真恋～寄语枫秋～, True Love ～Confide to the Maple～   
-https://store.steampowered.com/app/495990/
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/
-* (TODO, to BUY) steam, 雾之本境S Conspiracy Field: Fog Shadow  
-https://store.steampowered.com/app/1339410/
 
 ## Links about other Kirikiri and steam games list
 * https://github.com/zeas2/Kirikiroid2_patch/issues/16  
