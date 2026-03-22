@@ -213,7 +213,7 @@ https://store.steampowered.com/app/1559760/Island_Diary/
 * [Unencrypted?, but data.xp3's tjs encrypted, ks unencrypted] kaguya_0076t.zip, あやめの町とお姫様 体験版, 菖蒲的城镇与公主日文体验版, https://dlsoft.dmm.co.jp/detail/kaguya_0076/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2013/11/27    
 * [Unencrypted?, but data.xp3's and data.chs's tjs encrypted, ks unencrypted] 菖蒲的城镇与公主.zip, あやめの町とお姫様.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2013/12/6, with ayameno cn.exe and KRPatch.dll and some 补丁   
 * [Unencrypted? but encrypted scene.sdb] ggs_0861t.zip, 樱花开了。体验版, さくら、咲きました。　体験版２．０, https://dlsoft.dmm.co.jp/detail/ggs_0861/, sksk.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2010.425, 2012/7/27  
-* [Encrypted and encrypted scene.sdb] 樱花开了汉化硬盘版.7z.001, 樱花开了。.zip (with savedata), sksk.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2010.425, 2012/7/26  
+* [Encrypted and encrypted scene.sdb] 樱花开了汉化硬盘版.7z.001, 樱花开了。.zip (with savedata xp3), sksk.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2010.425, 2012/7/26  
 ```
 【SORAHANE社新作销量不好，有爱请支持正版】
 Download版：http://gyutto.com/i/item110814
