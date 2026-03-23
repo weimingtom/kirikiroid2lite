@@ -163,6 +163,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] 幼驯染と十年、夏.rar, 中文版, with exe, one xp3, osana.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2012/8/5  
 * [Unencrypted?, Unencrypted scn] 964moe5006t.zip, Marguerite Sphere-マーガレット スフィア- 体験版, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=964moe5006/, Marguerite_t.exe, less plugin dlls, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.416, 2010/12/14   
 * [Unencrypted?] 中文版, 默示版, セヴンデイズ あなたとすごす七日間（７days —与你共度的七日间—）.zip, view exe as xp3, very large exe ７days —与你共度的七日间—.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2017/10/15, with some patch?.tjs files   
+* [Unencrypted?] phoj_0002t.zip, 俺と彼女がミステリーな件について 体験版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2013/6/28  
 
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
