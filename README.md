@@ -284,7 +284,7 @@ https://store.steampowered.com/app/2737980/Mashiroiro_Symphony_HD_Sana_Edition/
 https://store.steampowered.com/app/931560/Seven_Days/    
 * [Encrypted, open failed] 真恋～寄语枫秋～, True Love ～Confide to the Maple～   
 https://store.steampowered.com/app/495990/  
-* [Encrypted, open failed] 雾之本境S, Conspiracy Field: Fog Shadow   
+* [Encrypted, open failed] 雾之本境S, Conspiracy Field: Fog Shadow, 雾之本境重制版     
 https://store.steampowered.com/app/1339410/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
