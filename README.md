@@ -174,7 +174,7 @@ konomi2.zip, konomi.gif
 * (TODO) [Wheel-Soft]大宇宙の誇り
 * (TODO) KRKR制作范例.zip
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～
-* (TODO) torp_0030t.zip, 恋する乙女と守護の楯 ～薔薇の聖母～ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/    
+* [Unencrypted, but .ks.scn]  torp_0030t.zip, 恋する乙女と守護の楯 ～薔薇の聖母～ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/2/11      
 * [Encrypted] 日文版，神頼みしすぎて俺の未来がヤバい。.part1.rar, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2017/3/23  
 * [Encrypted] 五色浮影绽放于花之海洋中文版==hananono steam中文完整版带DLC（不能在设置选其他语言？）, 5IO.part1.rar, hananono steam version with adult.xp3, 1.2.0.3, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tvpwin32, 2022/4/25  
 * [Encrypted] 夢幻のティル・ナ・ノーグ体験版.zip, kirikiriz, with windowex.dll, https://azarashi-soft-plusone.nexton-net.jp/tirnanog/trial.html      
