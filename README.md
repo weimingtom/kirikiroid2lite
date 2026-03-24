@@ -165,7 +165,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] 中文版, 默示版, セヴンデイズ あなたとすごす七日間（７days —与你共度的七日间—）.zip, view exe as xp3, very large exe ７days —与你共度的七日间—.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2017/10/15, with some patch?.tjs files   
 * [Unencrypted?] phoj_0002t.zip, 俺と彼女がミステリーな件について 体験版 Kanoken_Trial_DCE, Kanoken.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2013/6/28, https://dlsoft.dmm.co.jp/detail/phoj_0002/  
 * [Unencrypted?] 1808apc10450t.zip, 俺と彼女がミステリーな件について 体験版 Kanoken_Trial_01, Kanoken.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2013/6/14, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1808apc10450/ 
-* [Unencrypted?] 2197acm101t.zip, はるかどらいぶ！体験版, Haruka Drive!体験版, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=2197acm101/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.416, 2018/10/27    
+* [Unencrypted?] 2197acm101t.zip, 2197acm101t.7z, はるかどらいぶ！体験版, Haruka Drive!体験版, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=2197acm101/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.416, 2018/10/27    
 
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
