@@ -169,6 +169,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] [161014][LASS]Liber_7 永劫の終わりを待つ君へ_中文体验版.rar, 默示版?, 为什么exe图标都换成默示版? TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2013/4/26, 2.31.2013.330  
 * [Unencrypted?] touchgal, Liber7献给在永劫终末等待着的你.zip, mobile version, no exe, with plugin dlls, with patch.tjs  
 * [Unencrypted?] 默示版, Liber_7 永劫の終わりを待つ君へ（献给在永劫终末等待着的你）.rar, with patch.tjs, with Liber_7.exe but no plugin dlls, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2017/6/28   
+* [Unencrypted?] touchgal, 比默示版更大但好像不是默示版, Liber_7 献给在永劫终末等待着的你.zip, with patch.tjs, with Liber_7.exe but no plugin dlls, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2017/6/28   
 
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
