@@ -170,6 +170,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] touchgal, Liber7献给在永劫终末等待着的你.zip, mobile version, no exe, with plugin dlls, with patch.tjs  
 * [Unencrypted?] 默示版, Liber_7 永劫の終わりを待つ君へ（献给在永劫终末等待着的你）.rar, with patch.tjs, with Liber_7.exe but no plugin dlls, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2017/6/28   
 * [Unencrypted?] touchgal, 比默示版更大但好像不是默示版, Liber_7 献给在永劫终末等待着的你.zip, with patch.tjs, with Liber_7.exe but no plugin dlls, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2017/6/28   
+* [Unencrypted? include update.zip] 她和我的恋爱日常体验版, 女友和我的恋爱日常体验版, russ_0227t.zip, lovelyday_update_1.01.zip, 彼女と俺の恋愛日常_体験版_101, https://dlsoft.dmm.co.jp/detail/russ_0227/, lovelyday_tr.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2016/12/14    
 
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
