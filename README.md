@@ -232,6 +232,8 @@ Download版：http://gyutto.com/i/item110814
 小说版日亚：http://www.amazon.co.jp/dp/4891991003/
 ```
 * [Encrypted] 1578apc11257t.zip, 間宮くんちの五つ子事情 体験版, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1578apc11257/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2016/1/27    
+* touchgal  
+* 05号机, 05的资源，入口在gh首页，https://github.com/butter255  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
