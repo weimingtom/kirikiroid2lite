@@ -296,6 +296,7 @@ Download版：http://gyutto.com/i/item110814
 10.本补丁不能在krkroid2、ex等模拟器上运行。若有移植意向，请直接联系我们：
 ```
 * [Encrypted, include cn.xp3 and data.xp3, very few are Unencrypted] 【硬盘】妹之形解压密码终点, 之形.part1.rar, imokata_cn.exe, 2019/6/3, イモウトノカタチ.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2012/8/30    
+* [Encrypted] has_0044t.zip, https://dlsoft.dmm.co.jp/detail/has_0044/, かりぐらし恋愛体験版, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.4.0.8, 2017/12/25    
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
