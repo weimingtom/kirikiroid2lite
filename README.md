@@ -298,6 +298,28 @@ Download版：http://gyutto.com/i/item110814
 ```
 * [Encrypted, include cn.xp3 and data.xp3, very few are Unencrypted] 【硬盘】妹之形解压密码终点, 之形.part1.rar, imokata_cn.exe, 2019/6/3, イモウトノカタチ.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2012/8/30    
 * [Encrypted] has_0044t.zip, https://dlsoft.dmm.co.jp/detail/has_0044/, かりぐらし恋愛体験版, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.4.0.8, 2017/12/25    
+* [Encrypted] touchgal pc版, 寄宿之恋.part1.rar, kari_cn.exe, 2019/6/12, かりぐらし恋愛.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2016/8/10, 【XX汉化组】《かりぐらし恋愛》简体中文化补丁V1.02.rar
+```
+【汉化说明】
+1.本补丁由【XX汉化组】制作，首发于XXXXXXXXXXXXXXXXXXX，请勿将本补丁随意改动、移植。
+2.本补丁仅供日语学习参考使用，如果您喜欢这个游戏，请购买正版再使用本补丁。
+3.本补丁完全免费，从未参与任何形式的收费活动，由此造成的损失与本组无关。
+4.本补丁严禁用于任何商业盈利用途，包括但不限于直接贩卖、作为各种商品的附赠品、
+众筹、在补丁中附加捐款信息、附带盈利性组织信息及收费群号。
+5.如果您在淘宝等平台上购买到本补丁内容，请直接给卖家差评。
+6.请勿直播或者录播本补丁内容，由此造成的后果与本组无关。
+7.若因上述行为触犯法律，本组不承担任何责任。
+8.请勿将本游戏汉化录像上传到Bilibili等大型视频网站。
+【其他说明】
+1.汉化版补丁包括kari_cn.exe、CN_VM.YKS、CN_VM.YKS2、MOVIE.YKS、UPDATE101.YKS，
+运行时请检查补丁的完整性。
+2.为此补丁制作汉化硬盘版可能会无法运行。
+3.因为在非PC平台上运行汉化而出现的问题一概不提供支持。
+4.启动时可能会有几秒钟的卡顿（视CPU计算能力），属于正常现象。
+5.游戏运行中如果快进得太多或者其他原因导致CPU负荷增加可能会导致游戏停止工作，请做好存档。
+6.本补丁可能无法在精简版本的Win7系统或者服务器版本上运行。
+7.如需移植，请联系我们。
+```
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
