@@ -234,7 +234,7 @@ Download版：http://gyutto.com/i/item110814
 * [Encrypted] 1578apc11257t.zip, 間宮くんちの五つ子事情 体験版, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1578apc11257/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2016/1/27    
 * touchgal  
 * 05号机, 05的资源，入口在gh首页，https://github.com/butter255  
-* [Encrypted] 【XX汉化组】妹之形-中文化补丁v1.01.zip, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, imokata_cn.exe, cn.xp3, 30.tru, 
+* [Encrypted] 【XX汉化组】妹之形-中文化补丁v1.01.zip, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, imokata_cn.exe, cn.xp3, 30.tru, 2.31.2011.615, 2019/6/3  
 ```
 【说明】
 1.本作品汉化补丁由【XX汉化组】制作发布，仅供学习交流使用，
@@ -294,8 +294,8 @@ Download版：http://gyutto.com/i/item110814
 9.本补丁可能无法在精简版本的Win7系统或者服务器版本上运行。
 
 10.本补丁不能在krkroid2、ex等模拟器上运行。若有移植意向，请直接联系我们：
-
 ```
+* [Encrypted, include cn.xp3 and data.xp3, very few are Unencrypted] 【硬盘】妹之形解压密码终点, 之形.part1.rar, imokata_cn.exe, 2019/6/3, イモウトノカタチ.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2012/8/30    
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
