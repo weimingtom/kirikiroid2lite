@@ -321,7 +321,9 @@ Download版：http://gyutto.com/i/item110814
 7.如需移植，请联系我们。
 ```
 * [Unencrypted? but .txt.scn] atled -everlasting song- (iso+rr).part1.rar, iso版, 日版, -atled-everlasting song.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2012/7/14, 2.31.2011.615  
-* [Unencrypted? but .txt.scn] -atled- everlasting song 体験版, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1536apc10177/,   
+* [Unencrypted? but .txt.scn] 1536apc10177t.zip, -atled- everlasting song 体験版, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1536apc10177/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2012/6/10    
+* (TO BUY) Momoiro Closet的steam版英日版, ももいろクローゼット   
+https://store.steampowered.com/app/800180/Momoiro_Closet/    
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
