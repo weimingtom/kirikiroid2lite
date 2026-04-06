@@ -320,6 +320,8 @@ Download版：http://gyutto.com/i/item110814
 6.本补丁可能无法在精简版本的Win7系统或者服务器版本上运行。
 7.如需移植，请联系我们。
 ```
+* [Unencrypted? but .txt.scn] atled -everlasting song- (iso+rr).part1.rar, iso版, 日版, -atled-everlasting song.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2012/7/14, 2.31.2011.615  
+* [Unencrypted? but .txt.scn] -atled- everlasting song 体験版, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1536apc10177/,   
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
