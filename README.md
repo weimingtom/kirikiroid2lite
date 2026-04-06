@@ -173,6 +173,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted? include update.zip] 她和我的恋爱日常体验版, 女友和我的恋爱日常体验版, russ_0227t.zip, lovelyday_update_1.01.zip, 彼女と俺の恋愛日常_体験版_101, https://dlsoft.dmm.co.jp/detail/russ_0227/, lovelyday_tr.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2016/12/14, 2.31.2013.330      
 * [Unencrypted?] iso版, 916828彼女と俺の恋愛日常（ラブリーデイ） 初回版.rar, lovelyday.exe, 2.31.2013.330, 2017/1/13, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32  
 * [Unencrypted?] touchgal, 【KR】女友与我的恋爱日常.7z, mobile version, no exe  
+* [Unencrypted?] touchgal, 寄宿之恋.zip, 寄宿之恋手机版, mobile version, no exe  
 
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
