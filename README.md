@@ -324,6 +324,7 @@ Download版：http://gyutto.com/i/item110814
 * [Unencrypted? but .txt.scn] 1536apc10177t.zip, -atled- everlasting song 体験版, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1536apc10177/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2012/6/10    
 * (TO BUY) Momoiro Closet的steam版英日版, ももいろクローゼット   
 https://store.steampowered.com/app/800180/Momoiro_Closet/    
+* [Encrypted] [180427] [フロントウイング] ももいろクローゼット 通常版.zip, touchgal pc version, moroclo.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tvpwin32, 2018/4/16, 可能是日版带DRM不能exe直接运行    
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
