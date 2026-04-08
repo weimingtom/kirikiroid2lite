@@ -326,6 +326,15 @@ Download版：http://gyutto.com/i/item110814
 https://store.steampowered.com/app/800180/Momoiro_Closet/    
 * [Encrypted] [180427] [フロントウイング] ももいろクローゼット 通常版.zip, touchgal pc version, moroclo.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tvpwin32, 2018/4/16, 可能是日版带DRM不能exe直接运行, 很可能不是steam版没有steam的dll      
 * [Encrypted, very few is Unencrypted] よつのは四叶草.rar, [低压MK2&修正A3]よつのは四叶草, with XP3Viewer.exe and xp3viewer.dll and xp3filter.tjs and patch.tjs and backup.exe, krkr.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.24.0.893, 2010/8/27  
+```
+------------------------------- 更新日志 -----------------------------
+2010.9.28 内测工作结束
+
+HAIKUO-SOFT作品，此公司作品不多，但有一个共通点，就是选项复杂....不过总体来讲游戏本身设计的是非常不错的，剧情人设都很赞，萌点很多，CG都有对应的回想，为了游戏的趣味性，全CG档慎用--
+另外重新运行汉化补丁可以修改对话界面的字体，设置好的字体是动漫体--
+
+小白在此感谢XXXXX汉化组，感谢坑娘，两年辛苦了--
+```
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
