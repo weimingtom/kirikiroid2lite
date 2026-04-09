@@ -335,6 +335,7 @@ HAIKUO-SOFT作品，此公司作品不多，但有一个共通点，就是选项
 
 小白在此感谢XXXXX汉化组，感谢坑娘，两年辛苦了--
 ```
+* [Encrypted] akbs_0105t.zip, きゃらぶれーしょん！ 〜乙女は恋してキャラぶれる〜体験版, https://dlsoft.dmm.co.jp/detail/akbs_0105/, charabure.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2016/9/3, 性格摇摆体验版, 恋爱少女人格崩坏体验版      
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
