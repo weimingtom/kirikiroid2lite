@@ -338,7 +338,8 @@ HAIKUO-SOFT作品，此公司作品不多，但有一个共通点，就是选项
 ```
 * [Encrypted] akbs_0105t.zip, きゃらぶれーしょん！ 〜乙女は恋してキャラぶれる〜体験版, https://dlsoft.dmm.co.jp/detail/akbs_0105/, charabure.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2016/9/3, 性格摇摆体验版, 恋爱少女人格崩坏体验版      
 * [Encrypted, tpm?] cuffs_0001t.zip, 倉野くんちのふたご事情体験版, https://dlsoft.dmm.co.jp/detail/cuffs_0001/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2012.831, 2012/10/24  
-* [Encrypted, few are unencrypted, but .txt.scn] akbs_0120t.zip, cuffs_0001t.zip, 白詰指輪 ～四つ娘の花嫁 俺、全員選びました～　体験版, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2020/2/26   
+* [Encrypted, few are unencrypted, but .txt.scn] akbs_0120t.zip, 白詰指輪 ～四つ娘の花嫁 俺、全員選びました～　体験版, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2020/2/26, https://dlsoft.dmm.co.jp/detail/akbs_0120/     
+* [Unencrypted, but .txt.scn] 2095apc12465t.zip, ケモノ娘の育て方  体験版, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2018/9/28, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=2095apc12465/        
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
