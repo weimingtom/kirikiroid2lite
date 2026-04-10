@@ -175,6 +175,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] touchgal, 【KR】女友与我的恋爱日常.7z, mobile version, no exe  
 * [Unencrypted?] touchgal, 寄宿之恋.zip, 寄宿之恋手机版, mobile version, no exe  
 * [Unencrypted?] ひとつ屋根の、ツバサの下で　体験版, http://harmorise.jp/tsubasa/#trial, hitotsuba_trial.zip and hitotsuba_patch.zip (patch not checked), TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, tvpwin32.exe, 2018/1/26, 在同一屋檐的羽翼之下体验版, 同一屋檐下、羽翼下的故事体验版     
+* [Unencrypted?] d_160864t.zip, 男性を癒やし抜く機械 体験版, https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_160864/, sexualis_trial.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2019/8/24  
 
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
