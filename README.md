@@ -17,6 +17,15 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
   我自横刀向天笑，去留肝胆两昆仑
   ——谭嗣同《狱中题壁》
 ```
+```
+哀公问：“弟子孰为好学？”孔子对曰：“有颜回者好学，不迁怒，
+不贰过。不幸短命死矣。今也则亡，未闻好学者也。”
+
+子曰："贤哉，回也！一箪食，一瓢饮，
+在陋巷，人不堪其忧，回也不改其乐。贤哉，回也！"
+
+——《论语 雍也篇》
+```
 
 ## Original code  
 * https://github.com/zeas2/Kirikiroid2/tree/1.3.8  
