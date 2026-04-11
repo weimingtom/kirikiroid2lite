@@ -416,7 +416,7 @@ https://store.steampowered.com/app/495990/
 https://store.steampowered.com/app/1339410/  
 * [Unencrypted?] Karigurashi Ren'ai: Living on Borrowed Love, 寄宿之恋, 寄恋  
 https://store.steampowered.com/app/4204940/Karigurashi_Renai_Living_on_Borrowed_Love/  
-* [Unencrypted, but .ks.scn] NEKOPARA Vol.1 Demo
+* [Unencrypted, but .ks.scn] NEKOPARA Vol.1 Demo  
 https://store.steampowered.com/app/333600/NEKOPARA_Vol_1/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
