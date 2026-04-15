@@ -355,6 +355,7 @@ HAIKUO-SOFT作品，此公司作品不多，但有一个共通点，就是选项
 * [Encrypted] https://dlsoft.dmm.co.jp/detail/hed_0005/, hed_0005t.zip, リンパに ATATA！ 〜メス牡蠣ミルクどぴゅらっしゅ〜 体験版, atata.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.4.0.8, 2022/2/15   
 * [Encrypted] https://dlsoft.dmm.co.jp/detail/akbs_0098/, akbs_0098t.zip, 如月真綾の誘惑（おねえちゃんのゆうわく）体験版,  TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2017/7/8  
 * [Encrypted] https://dlsoft.dmm.co.jp/detail/has_0112/, has_0112t.zip, フタマタ恋愛体験版, 恋爱成双体验版, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2022/3/15   
+* [Unencrypted, but .ks.scn] https://dlsoft.dmm.co.jp/detail/views_0406/, views_0406t.zip, ひこうき雲の向こう側　体験版, 航迹云的彼方 体验版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2014/3/4  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
