@@ -423,6 +423,8 @@ https://store.steampowered.com/app/1339410/
 https://store.steampowered.com/app/4204940/Karigurashi_Renai_Living_on_Borrowed_Love/  
 * [Unencrypted, but .ks.scn] NEKOPARA Vol.1 Demo, 巧克力与香子兰第1卷DEMO, 猫娘乐园第1卷DEMO   
 https://store.steampowered.com/app/333600/NEKOPARA_Vol_1/  
+* [Encrypted] D.C. Re:tune, 初音岛re:tune, 初音岛1重制版     
+https://store.steampowered.com/app/3287600/DC_Retune/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日   
