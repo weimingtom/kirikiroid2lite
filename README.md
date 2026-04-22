@@ -512,7 +512,7 @@ https://store.steampowered.com/app/737710/
 
 ## Links about other Kirikiri and steam games list
 * https://github.com/zeas2/Kirikiroid2_patch/issues/16  
-* https://github.com/ryank231231/galpatch_collection/blob/master/docs/galgame-patch-collections.md  
+* (NOTE, **SOME MAY BE NOT KIRIKIRI**) https://github.com/ryank231231/galpatch_collection/blob/master/docs/galgame-patch-collections.md  
 * https://steamgalgame.com  
 
 ## How to build for Windows  
