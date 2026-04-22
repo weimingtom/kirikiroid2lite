@@ -428,7 +428,7 @@ https://store.steampowered.com/app/333600/NEKOPARA_Vol_1/
 https://store.steampowered.com/app/3287600/DC_Retune/  
 * [Unencrypted?] Hold Me Tight All Night, Onii-chan! (属性-通用-语言-简体中文版), 哥哥，早起前要一直抱紧我哦！, 妹抱  
 https://store.steampowered.com/app/3155290/Hold_Me_Tight_All_Night_Oniichan/  
-* [Encrypted] Sickly Days and Summer Traces, ド田舎兄妹, 痴情哥哥与病弱妹妹的乡间生活
+* [Encrypted] Sickly Days and Summer Traces, ド田舎兄妹, 痴情哥哥与病弱妹妹的乡间生活  
 https://store.steampowered.com/app/3682050/_/  
 https://store.hikarifield.co.jp/shop/sickly_days  
 https://jaststore.com/games/hifi002/sickly-days-and-summer-traces  
