@@ -186,6 +186,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] ひとつ屋根の、ツバサの下で　体験版, http://harmorise.jp/tsubasa/#trial, hitotsuba_trial.zip and hitotsuba_patch.zip (patch not checked), TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, tvpwin32.exe, 2018/1/26, 在同一屋檐的羽翼之下体验版, 同一屋檐下、羽翼下的故事体验版     
 * [Unencrypted?] d_160864t.zip, 男性を癒やし抜く機械 体験版, https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_160864/, sexualis_trial.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2019/8/24  
 * [Unencrypted?, include update] russ_0136t.zip, yumekoi_update_1.05.zip, ゆめこい 〜夢見る魔法少女と恋の呪文〜 体験版 and アップデータ 1.05, https://dlsoft.dmm.co.jp/detail/russ_0136/, yumekoi_tr.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2013/4/30, yumekoi_update_1.05.zip no exe  
+* [Unencrypted?] ggs_1054t.zip, https://dlsoft.dmm.co.jp/detail/ggs_1054/, お兄ちゃん、キッスの準備はまだですか？体験版ver101, お兄ちゃん、キッスの準備はまだですか？体験版ver101.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/4/4, 妹吻    
 
 * ===NOTE, 以下仅记录===
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
