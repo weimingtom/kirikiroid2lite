@@ -405,6 +405,7 @@ https://store.steampowered.com/app/1144400/_/
 https://store.hikarifield.co.jp/shop/senren_banka  
 https://hikarifield.co.jp/senren/index.html  
 * [Unencrypted?] 纸上的魔法使
+https://store.steampowered.com/app/3771230/_/  
 * [Unencrypted?] 纸上的魔法使 体验版  
 https://store.steampowered.com/app/4237510/_/    
 https://www.tamamakogaming.com  
