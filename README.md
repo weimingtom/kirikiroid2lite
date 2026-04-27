@@ -660,7 +660,7 @@ Blog：http://blog.sina.com.cn/bloomworks
 
 *********************************************************************
 ```
-* [Unencrypted? and some files unpacked] [120624][Hollowings]赤印 [中文硬盘版+RR5].rar, 默示版, Crimson Imprint.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.420, 2007/1/14  
+* [Unencrypted? and some files unpacked] 115, [120624][Hollowings]赤印 [中文硬盘版+RR5].rar, 默示版, Crimson Imprint.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.420, 2007/1/14  
 ```
 赤印 Ver1.01 补丁！
 
@@ -678,7 +678,7 @@ http://www.hollowings.com/download
 将patch.rar解压缩后，将解压后文件夹内容拷贝至游戏根目录（即与运行文件“Crimson Imprint.exe”同一目录）下，替换原文件即可。
 补丁成功后游戏程序框体左上角会显示Vermeil Prologue 赤印|Crimson Imprint Ver1.01。
 ```
-* [Encrypted] [120825][SP-time]雪之本境EX [中文硬盘版+RR3].rar, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 雪之本境EX正式版.exe, 2.32.1.426, 2012/9/2
+* [Encrypted] 115, [120825][SP-time]雪之本境EX [中文硬盘版+RR3].rar, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 雪之本境EX正式版.exe, 2.32.1.426, 2012/9/2
 ```
 ==================
 
@@ -736,7 +736,7 @@ E-mail：sp_time sina.com
 
 ------------------------------------------------
 ```
-* [Encrypted] [120825][SP-time]雪之本境解境篇 [中文硬盘版+RR3].rar, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 雪之本境解境篇.exe, 2.32.1.426, 2012/9/4  
+* [Encrypted] 115, [120825][SP-time]雪之本境解境篇 [中文硬盘版+RR3].rar, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 雪之本境解境篇.exe, 2.32.1.426, 2012/9/4  
 ```
 ==================
 
