@@ -701,7 +701,7 @@ Youth-Bloom的《鸑鷟》初版内测终于发布了——:)
 
 制作和意见交流QQ群：XXXXXXXXXX
 
-电子邮件反馈：youthbloom@sina.com
+电子邮件反馈：youthbloom sina.com
 
 Blog留言反馈：http://blog.sina.com.cn/bloomworks
 
