@@ -565,7 +565,7 @@ CPU:PIII667HZ同等或以上性能
 QQ群：XXXXXXXXX
       XXXXXXXXX
       加群请写明入群理由
-电子邮箱：youthbloom@sina.com 
+电子邮箱：youthbloom sina.com 
 Blog：http://blog.sina.com.cn/bloomworks
 
 
