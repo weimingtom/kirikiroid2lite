@@ -362,7 +362,7 @@ HAIKUO-SOFT作品，此公司作品不多，但有一个共通点，就是选项
 * [Unencrypted, but .ks.scn] https://www.lumpofsugar.co.jp/product/rurizakura/, Rurizakura_trial.zip, 琉璃樱体验版, 瑠璃櫻 体験版, 【瑠璃桜】体験版 (actually 瑠璃櫻), 瑠璃桜　体験版.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2023/3/23  
 * [Unencrypted, but .ks.scn] http://kai-soft.jp/BSC/download.html, 青い空のカミュ ＷＥＢ体験版 （2019年02月21日公開）, CamusInTheSky_TR_web.zip, 青い空のカミュ　体験版, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2019/2/21, 青空下的加缪体验版, dmmgames_0096t.zip, https://dlsoft.dmm.co.jp/detail/dmmgames_0096/        
 * [Encrypted] https://dlsoft.dmm.co.jp/detail/akbs_0125/, akbs_0125t.zip, 水蓮と紫苑 体験版, sts.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.4.0.8, 2020/10/21  
-* [?] https://dlsoft.dmm.co.jp/detail/akbs_0116/, akbs_0116t.zip, 交汇协奏曲体验版, Cross Concerto体验版, クロスコンチェルト 体験版 
+* [Unencrypted, but .txt.scn] https://dlsoft.dmm.co.jp/detail/akbs_0116/, akbs_0116t.zip, 交汇协奏曲体验版, Cross Concerto体验版, クロスコンチェルト　体験版, CrossConcerto.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2019/6/24  
 
 ## (TODO, Please buy steam games) steam games
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
