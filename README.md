@@ -848,9 +848,12 @@ E-mail：sp_time sina.com
 
 ------------------------------------------------
 ```
+* [Unencrypted] 幽冥录II冯家二少, Chronicle of Abyss2for_win.zip  
+* [Unencrypted] 幽冥录1.rar  
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/
+* projects_20241018.7z
 
 ## Links about other Kirikiri and steam games list
 * https://github.com/zeas2/Kirikiroid2_patch/issues/16  
