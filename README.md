@@ -848,8 +848,16 @@ E-mail：sp_time sina.com
 
 ------------------------------------------------
 ```
-* [Unencrypted] 幽冥录II冯家二少, Chronicle of Abyss2for_win.zip  
-* [Unencrypted] 幽冥录1.rar  
+* [Unencrypted] 幽冥录II冯家二少, Chronicle of Abyss2for_win.zip, Chronicle of Abyss2.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2015/8/28, 2.30.2.420  
+```
+TO：阁友
+      
+      玩得愉快哦~(づ￣3￣)づ╭?～
+
+
+                             from：三闲阁原创游戏社
+```
+* [Unencrypted] 幽冥录1.rar, 幽冥录.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2013/3/23, 2.30.2.420  
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/
