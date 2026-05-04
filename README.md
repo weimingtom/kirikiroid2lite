@@ -191,6 +191,10 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] views_0346t.zip, https://dlsoft.dmm.co.jp/detail/views_0346/, 1/2 summer 体験版, summer.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2012/6/7, 2.31.2011.615
 
 * ===NOTE, 以下仅记录===
+* _ons_all_1, Downloads_index_20211026.rar, krkr游戏目录.xlsx, 约346行, ONS目录.xlsx, 约180行, _ons_all_2        
+```
+万人迷游戏2019整理资源表（请各位同学珍惜，不要到处传播，被封盘就没了）
+```
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
 * (TODO) [WHEEL] ひのまるっ
