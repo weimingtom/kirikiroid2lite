@@ -856,7 +856,7 @@ E-mail：sp_time sina.com
 
 ------------------------------------------------
 ```
-* [Unencrypted] 幽冥录II冯家二少, Chronicle of Abyss2for_win.zip, Chronicle of Abyss2.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2015/8/28, 2.30.2.420  
+* [Unencrypted?] 幽冥录II冯家二少, Chronicle of Abyss2for_win.zip, Chronicle of Abyss2.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2015/8/28, 2.30.2.420  
 ```
 TO：阁友
       
@@ -865,7 +865,60 @@ TO：阁友
 
                              from：三闲阁原创游戏社
 ```
-* [Unencrypted] 幽冥录1.rar, 幽冥录.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2013/3/23, 2.30.2.420  
+* [Unencrypted?] 幽冥录1.rar, 幽冥录.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2013/3/23, 2.30.2.420  
+* [Encrypted] MyCLANNAD.rar (CLANNAD-2009, 2009/5/9, with patch.xp3繁中?), (MyCLANNAD-patch) MCpatch.rar, MyCLANNAD.eXe, （patch rar with MyCLANNAD.tpm), TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.28.1.9906, 2009/5/30, https://code.google.com/archive/p/godxq1986/downloads  
+```
+-----------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------
+
+这是传说中的帮助文件。
+
+偶作为一个无德无能的小白，这次继续厚着脸皮盗用原作素材。
+
+因为空闲时间不多，偶又比较懒，这次就把右键菜单系统省略掉了……
+
+因为游戏很短，所以这一次的存档条数只有 6 条。
+
+前 5 条是可以随意使用的空白存档位。
+
+第 6 条名为 < 小镇的印记 > ，是系统的自动存档位，每逢新章节自动存档。
+
+游戏一共 3 条线路，分别为：
+
+1.智代篇
+
+2.杏篇
+
+3.春原基情篇 (大雾)
+
+游戏内容基本上以恶搞为主。
+
+本来还想写一些催泪的东西，但是偶发现自己真不是那块料。
+
+游戲默認是簡體中文，繁體用戶把“TC”資料夾下的“patch.xp3”拷貝至游戲程式所在的資料夾下即可。
+
+
+                                     godxq1986
+                                     2009.5.09
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------
+
+这一次做得很简单，应该不会有 BUG 。
+
+如果万分不幸的出现了 BUG ，游戏程序所在的文件夹内应该会生成一个名为 MyCLANNAD.exe.console.log 的日志文件。
+
+请您详细描述 BUG 出现时的情形，并将 MyCLANNAD.exe.console.log 转发给我，以方便补救。
+
+我的 Email : godxq1986 hotmail.com
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------
+```
+* 
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/
