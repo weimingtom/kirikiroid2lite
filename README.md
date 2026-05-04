@@ -866,7 +866,7 @@ TO：阁友
                              from：三闲阁原创游戏社
 ```
 * [Unencrypted?] 幽冥录1.rar, 幽冥录.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2013/3/23, 2.30.2.420  
-* [Encrypted] MyCLANNAD.rar (CLANNAD-2009, 2009/5/9, with patch.xp3繁中?), (MyCLANNAD-patch) MCpatch.rar, MyCLANNAD.eXe, （patch rar with MyCLANNAD.tpm), TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.28.1.9906, 2009/5/30, https://code.google.com/archive/p/godxq1986/downloads  
+* [Encrypted] CLANNAD < 小镇的一天 > (注:仿clannad的同人游戏?), MyCLANNAD.rar (CLANNAD-2009, 2009/5/9, with patch.xp3繁中?), (MyCLANNAD-patch) MCpatch.rar, MyCLANNAD.eXe, （patch rar with MyCLANNAD.tpm), TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.28.1.9906, 2009/5/30, https://code.google.com/archive/p/godxq1986/downloads  
 ```
 -----------------------------------------------------------------
 -----------------------------------------------------------------------------------------------
