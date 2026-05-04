@@ -368,7 +368,7 @@ HAIKUO-SOFT作品，此公司作品不多，但有一个共通点，就是选项
 * [Encrypted] https://dlsoft.dmm.co.jp/detail/akbs_0125/, akbs_0125t.zip, 水蓮と紫苑 体験版, sts.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.4.0.8, 2020/10/21  
 * [Unencrypted, but .txt.scn] https://dlsoft.dmm.co.jp/detail/akbs_0116/, akbs_0116t.zip, 交汇协奏曲体验版, Cross Concerto体验版, クロスコンチェルト　体験版, CrossConcerto.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2019/6/24  
 
-## (TODO, Please buy steam games) steam games
+## (TODO, Please buy steam games) steam games from Japan
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
 https://store.steampowered.com/app/1856480/KamiYaba_Destiny_on_a_Dicey_Deadline/  
 * [Encrypted] Otome Domain, Otome * Domain, 少女 * 领域  
@@ -383,8 +383,6 @@ https://store.steampowered.com/app/1985260/Kinkoi_Golden_Time/
 https://store.steampowered.com/app/1202540/Marco__The_Galaxy_Dragon/  
 * [Encrypted] ATRI -My Dear Moments- Demo  
 https://store.steampowered.com/app/1230140/ATRI_My_Dear_Moments/  
-* [Encrypted?] Memory Oblivion Box, 回忆忘却之匣, mob  
-https://store.steampowered.com/app/473460/Memory_Oblivion_Box/  
 * [Encrypted] Saku Saku, Saku Saku: Love Blooms with the Cherry Blossoms  
 https://store.steampowered.com/app/691150/Saku_Saku_Love_Blooms_with_the_Cherry_Blossoms/  
 * [Encrypted, and .txt.scn] Japanese School Life Demo, JAPANESE SCHOOL LIFE TRIAL    
@@ -427,10 +425,6 @@ https://store.steampowered.com/app/2737970/Mashiroiro_Symphony_HD_Love_is_Pure_W
 https://store.steampowered.com/app/2737980/Mashiroiro_Symphony_HD_Sana_Edition/  
 * [Unencrypted?] Seven Days, Seven Days With You: The Most Precious Memory in Our Lives, 7days：与你共度的七日间 英日版, 与你共度的七日间 英日版, 7days 英日版      
 https://store.steampowered.com/app/931560/Seven_Days/    
-* [Encrypted, open failed] 真恋～寄语枫秋～, True Love ～Confide to the Maple～   
-https://store.steampowered.com/app/495990/  
-* [Encrypted, open failed] 雾之本境S, Conspiracy Field: Fog Shadow, 雾之本境重制版     
-https://store.steampowered.com/app/1339410/  
 * [Unencrypted?] Karigurashi Ren'ai: Living on Borrowed Love, 寄宿之恋, 寄恋  
 https://store.steampowered.com/app/4204940/Karigurashi_Renai_Living_on_Borrowed_Love/  
 * [Unencrypted, but .ks.scn] NEKOPARA Vol.1 Demo, 巧克力与香子兰第1卷DEMO, 猫娘乐园第1卷DEMO   
@@ -446,11 +440,19 @@ https://jaststore.com/games/hifi002/sickly-days-and-summer-traces
 * [Unencrypted?] 我家恋天使太废柴鸟真～可怕  
 https://store.steampowered.com/app/4491980/_/  
 
+##  (TODO, Please buy steam games) steam games from China  
+* [Encrypted?] Memory Oblivion Box, 回忆忘却之匣, mob  
+https://store.steampowered.com/app/473460/Memory_Oblivion_Box/
+* [Encrypted, open failed] 真恋～寄语枫秋～, True Love ～Confide to the Maple～   
+https://store.steampowered.com/app/495990/  
+* [Encrypted, open failed] 雾之本境S, Conspiracy Field: Fog Shadow, 雾之本境重制版     
+https://store.steampowered.com/app/1339410/
+
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
-* [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日   
+* [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日, from China   
 https://store.steampowered.com/app/491420/the_9th_day/  
 https://the9thday.net/works/w1  
-* [NOT Kirikiri] 恋愛0キロメートル, 恋爱0公里, Ren'ai 0 Kilometer  
+* [NOT Kirikiri] 恋愛0キロメートル, 恋爱0公里, Ren'ai 0 Kilometer, from Japan 
 https://store.steampowered.com/app/3588960/Renai_0_Kilometer/  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
