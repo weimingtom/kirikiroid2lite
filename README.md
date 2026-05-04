@@ -443,6 +443,8 @@ https://store.steampowered.com/app/3155290/Hold_Me_Tight_All_Night_Oniichan/
 https://store.steampowered.com/app/3682050/_/  
 https://store.hikarifield.co.jp/shop/sickly_days  
 https://jaststore.com/games/hifi002/sickly-days-and-summer-traces  
+* [Unencrypted?] 我家恋天使太废柴鸟真～可怕  
+https://store.steampowered.com/app/4491980/_/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日   
