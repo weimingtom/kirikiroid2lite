@@ -1004,6 +1004,211 @@ TO：阁友
 
 9. 補完了 True 路線 7 月 26 日的劇情並追加了《平安夜》小短篇。
 ```
+* [Unencrypted?] 《东周列萌志》2_1.zip, https://natdon.github.io/dongzhou/download.html, DongZhou_DEMO.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.420, 2012/12/22     
+```
+--------------------版本资讯--------------------
+
+《东周列萌志》试玩版 v.2.1 2016年7月28日
+
+
+--------------------版本历程--------------------
+
+v.2.1
+更换音乐为原创作品与商用素材、更换音效为商用素材、增加社群网站连结。
+更换字体为开源字体、更换按钮、增加800x600解析度、修正全荧幕模式下于特定型号荧幕变形问题。。
+
+v.2.0
+增加共通线后半剧情、增加两组CG、增加六种阶段性小结局（儒、墨、道、名、法、Terrible End）。
+添加部份场景叙述、改写少许文字、添加存档小标、固定字体、修订程式指令数值、更换询问窗、再制大立绘。
+
+
+--------------------版权声明--------------------
+
+游戏中剧本、人设、立绘、CG、部份场景、部份介面与部份音乐为离水三尺工作室原创，版权所有；
+游戏中其他商用素材，来源表列于后，唯大部分亦经离水三尺工作室修改，二次创作部份版权所有。
+本游戏与版权所有素材，请勿挪作他用。
+
+
+--------------------相关网站--------------------
+
+游戏网站
+http://3chistudio.com/dongzhou/
+
+工作室部落格
+http://www.3chistudio.com/blog/ 
+
+官方脸书
+https://www.facebook.com/3chi.DongZhou/
+
+官方噗浪
+http://www.plurk.com/dongzhoulemon/
+
+官方微博
+http://weibo.com/sfvie/
+
+官方贴吧
+http://tieba.baidu.com/f?ie=utf-8&kw=离水三尺/
+
+欢迎光临！
+
+...
+...
+...
+
+本游戏使用THE NVL Maker（基于吉里吉里/KAG）制作 http://www.nvlmaker.net/ by 全局变量D
+
+...
+...
+...
+
+```
+* [Unencrypted?] 《东周列萌志：冬至特典》1_1.zip, https://natdon.github.io/dongzhou/download.html, DongZhou_Winter.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.420, 2012/12/22  
+```
+--------------------版本资讯--------------------
+
+《东周列萌志：冬至特典》v.1.1 2016年8月5日
+
+
+--------------------版本历程--------------------
+
+v.1.1
+更换音乐为原创作品与商用素材、更换音效为商用素材、增加社群网站连结。
+更换字体为开源字体、更换按钮、修正全荧幕模式下于特定型号荧幕变形问题。。
+
+
+--------------------版权声明--------------------
+
+游戏中剧本、人设、立绘、CG、部份场景、部份介面与部份音乐为离水三尺工作室原创，版权所有；
+游戏中其他商用素材，来源表列于后，唯大部分亦经离水三尺工作室修改，二次创作部份版权所有。
+本游戏与版权所有素材，请勿挪作他用。
+
+
+--------------------相关网站--------------------
+
+游戏网站
+http://3chistudio.com/dongzhou/
+
+工作室部落格
+http://www.3chistudio.com/blog/ 
+
+官方脸书
+https://www.facebook.com/3chi.DongZhou/
+
+官方噗浪
+http://www.plurk.com/dongzhoulemon/
+
+官方微博
+http://weibo.com/sfvie/
+
+官方贴吧
+http://tieba.baidu.com/f?ie=utf-8&kw=离水三尺/
+
+欢迎光临！
+
+...
+...
+...
+```
+* [Unencrypted?] 東周列萌志/DongZhou_demo_tra.7z, DongZhou.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.420, 2012/12/22   
+```
+--------------------版本資訊--------------------
+
+《東周列萌志》試玩版 v.1.0 繁體中文版 2013年5月29日
+
+
+--------------------版權聲明--------------------
+
+本遊戲僅供免費遊玩，請勿用於商業用途。
+遊戲中劇本、人設、立繪、CG、部份場景、部份介面與部份音樂為離水三尺工作室原創，版權所有；
+遊戲中使用《軒轅劍》系列配樂，版權屬於作者XXX、XXX、XXX與大宇資訊股份有限公司所有；（經作者同意使用，特此致謝。許可截圖：http://dongzhoulemon.github.io/img/approval.jpg）
+遊戲中其他合法免費素材，來源表列於後，唯大部分亦經離水三尺工作室修改，二次創作部份版權所有。
+版權所有素材，請勿挪作他用。
+
+
+--------------------相關網站--------------------
+
+東周列萌志官方網站
+http://dongzhoulemon.github.io/
+
+離水三尺工作室官方部落格
+http://sfvie.weebly.com/
+
+歡迎光臨！
+
+...
+...
+...
+
+
+---
+
+&lt;&lt; 看板訊息 &gt;&gt;
+
+追蹤  回應  熱門看板
+
+
+首頁 ? 看板 RomanceGame
+返回
+作者trilvie (Tulpenmanie)
+看板RomanceGame
+標題[閒聊][試玩]自製全年齡女性向AVG《東周列萌志》
+時間Fri May 31 22:30:44 2013
+
+遊戲名稱:       東周列萌志
+
+遊戲類型:       全年齡女性向戀愛冒險遊戲(AVG/ADV)
+
+官方網站:       http://dongzhoulemon.github.io
+
+作者團隊:       http://sfvie.weebly.com  by 離水三尺工作室
+
+遊戲載點:       http://lemon.yllan.org/dl/DongZhou_demo_tra.7z
+
+注意事項:       試玩版包含共通線前半部份，四張CG，一周目約三十分鐘。
+
+
+遊戲介紹:
+
+東周戰國晚期，來自兩千三百年後的女孩擄得一群智商和容貌都超群的諸子們的芳心……
+                                                                          嗎？
+
+女主角莫名穿越到這時的齊國山中小村，
+旁人建議她去稷下學宮找陰陽大家鄒衍幫忙，尋求回現代的方法，
+但通往國都的關口因冬日大雪封閉，還有一個月才會開啟……
+
+村中旅店住著儒、墨、道、名、法、陰陽六家門徒，雪融後也將前往臨淄。
+各型帥哥，各項學說，各種辯論……
+她能成功回到現代嗎？或者得到哪位才子的心？
+
+
+攻略角色:
+
+儒正太：http://tinyurl.com/lmlnr3b
+墨兄貴：http://tinyurl.com/k6xamx6
+道美男：http://tinyurl.com/mhnfc52
+名傲嬌：http://tinyurl.com/m6gsted
+法腹黑：http://tinyurl.com/lcd2j5o
+陰陽人：http://tinyurl.com/lnq9tg4
+
+
+哩哩扣扣:
+
+遊戲畫面：http://tinyurl.com/kw26eh5
+主題旋律：http://tinyurl.com/ksvkpfl
+
+＊
+
+花費一年多時間做出的試玩版 完整版也會繼續努力下去的
+希望大家覺得有趣！ &lt;(_ _)&gt;
+
+--
+
+從你的純真開始
+
+          目睹你的衰微
+
+    而後  重生
+```
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/
