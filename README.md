@@ -190,6 +190,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] ggs_1054t.zip, https://dlsoft.dmm.co.jp/detail/ggs_1054/, お兄ちゃん、キッスの準備はまだですか？体験版ver101, お兄ちゃん、キッスの準備はまだですか？体験版ver101.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/4/4, 妹吻    
 * [Unencrypted?] views_0346t.zip, https://dlsoft.dmm.co.jp/detail/views_0346/, 1/2 summer 体験版, summer.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2012/6/7, 2.31.2011.615
 * [Unencrypted?] russ_0145t.zip, https://dlsoft.dmm.co.jp/detail/russ_0145/, 迷える2人とセカイのすべて 体験版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2014/9/19, 2.31.2013.330   
+* [Unencrypted?] hobc_0347t.zip, https://dlsoft.dmm.co.jp/detail/hobc_0347/, 波間の国のファウスト　体験版１, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2012/4/6  
 
 * ===NOTE, 以下仅记录===
 * _ons_all_1, Downloads_index_20211026.rar, krkr游戏目录.xlsx, 约346行, ONS目录.xlsx, 约180行, _ons_all_2        
