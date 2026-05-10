@@ -1128,5 +1128,52 @@ debug2:
 #sudo apt install libncurses-dev	
 #sudo ln -s /usr/lib/x86_64-linux-gnu/libncurses.so /usr/lib/x86_64-linux-gnu/libncurses.so.5
 #gdb not usable
+# ==========================================
+# 安装配置 (含桌面快捷方式与图标)
+# ==========================================
+INSTALL_DIR = /usr/lib/kirikiroid2lite
+BIN_DIR     = /usr/bin
+ICON_DIR    = /usr/share/pixmaps
+DESKTOP_DIR = /usr/share/applications
 
+install:
+	@echo "开始安装 kirikiroid2lite..."
+	# 1. 创建目标目录并复制项目文件 (实现改名并存放至 /usr/lib)
+	mkdir -p $(INSTALL_DIR)
+	cp -r ./project/* $(INSTALL_DIR)/
+	
+	# 2. 赋予可执行权限
+	chmod +x $(INSTALL_DIR)/kirikiroid2
+	
+	# 3. 创建软链接到 /usr/bin
+	ln -sf $(INSTALL_DIR)/kirikiroid2 $(BIN_DIR)/kirikiroid2
+	
+	# 4. 安装图标文件到系统图标库
+	# 使用 bang.png 作为图标，重命名为 kirikiroid2lite.png
+	install -D -m 644 project/Resources/bang.png $(ICON_DIR)/kirikiroid2lite.png
+	
+	# 5. 生成 .desktop 快捷方式文件并放入菜单目录
+	@echo "正在生成桌面启动器..."
+	@echo "[Desktop Entry]" > kirikiroid2lite.desktop
+	@echo "Name=Kirikiroid2 Lite" >> kirikiroid2lite.desktop
+	@echo "Comment=Kirikiri2 emulation engine" >> kirikiroid2lite.desktop
+	@echo "Exec=$(BIN_DIR)/kirikiroid2" >> kirikiroid2lite.desktop
+	@echo "Icon=kirikiroid2lite" >> kirikiroid2lite.desktop
+	@echo "Terminal=false" >> kirikiroid2lite.desktop
+	@echo "Type=Application" >> kirikiroid2lite.desktop
+	@echo "Categories=Game;Emulator;" >> kirikiroid2lite.desktop
+	
+	# 将生成的临时文件移动到系统目录
+	install -D -m 644 kirikiroid2lite.desktop $(DESKTOP_DIR)/kirikiroid2lite.desktop
+	rm -f kirikiroid2lite.desktop
+	
+	@echo "安装完成！你现在可以在系统菜单中找到 'Kirikiroid2 Lite' 了。"
+
+uninstall:
+	@echo "正在卸载..."
+	rm -rf $(INSTALL_DIR)
+	rm -f  $(BIN_DIR)/kirikiroid2
+	rm -f  $(ICON_DIR)/kirikiroid2lite.png
+	rm -f  $(DESKTOP_DIR)/kirikiroid2lite.desktop
+	@echo "卸载完成！"
 
