@@ -1603,8 +1603,8 @@ https://github.com/weimingtom/kirikiroid2-miyoo-a30/tree/master/cocosstudio/kr2
 ## Build for Arduino UNO Q 4GB memory 32GB eMMC
 * $ sudo apt update
 * $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
-* $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype-dev
-(with libgles-dev)  
+* $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype-dev  
+(libsdl2-dev with libgles-dev)    
 * $ make clean
 * $ make -j8
 * $ make test
