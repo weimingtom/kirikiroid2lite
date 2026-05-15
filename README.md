@@ -1280,6 +1280,7 @@ But this class is not very good, I think it requires some changes
 
 ## (TODO) How to build for VisionFive2 Debian RISC-V 64 bit TFCard boot, just -Os
 * You need a CPU fan to make sure the CPU temperature is not over 85 degrees, see also https://www.waveshare.net/wiki/VisionFive2   
+* You need to cmake external_orangepi5/glfw-3.4.zip to get external_visionfive2/lib/libglfw3.a
 * $ sudo apt update
 * $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
 * $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype6-dev libbz2-dev
@@ -1600,7 +1601,16 @@ https://github.com/weimingtom/kirikiroid2-miyoo-a30/tree/master/cocosstudio/kr2
 * https://github.com/radxa-pkg/rockchip-prebuilt
 * https://github.com/lihuang1111/wayland-glesv2-demo
 
-## Build for Arduino UNO Q 4GB memory 32GB eMMC
+## Build for OrangePi 5
+* You need to cmake external_orangepi5/glfw-3.4.zip to get external_orangepi5/lib/libglfw3.a
+* $ sudo apt update
+* $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
+* $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype6-dev libbz2-dev
+* $ make -f Makefile.orangepi5 clean
+* $ make -f Makefile.orangepi5 -j3
+* $ make -f Makefile.orangepi52 test
+
+## Build for Arduino UNO Q 4GB RAM 32GB eMMC
 * $ sudo apt update
 * $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
 * $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype-dev  
@@ -1645,4 +1655,4 @@ Armbian_25.11.1_Orangepi5_noble_current_6.12.58_xfce_desktop.img.xz
 2023-05-03-raspios-bullseye-armhf.img  
 * (TODO) OGA 1.1, ODROID-GO Advance 1.1 black version     
 ubuntu-18.04.3-4.4-es-odroid-goA-20200923.img  
-* Arduino UNO Q 4GB memory 32GB eMMC, with GPU driver FD702 by freedreno, the OS is Debian 13 trixie, the desktop environment is Xfce    
+* Arduino UNO Q 4GB RAM 32GB eMMC, with GPU driver FD702 by freedreno, the OS is Debian 13 trixie, the desktop environment is Xfce    
