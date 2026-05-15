@@ -1280,7 +1280,7 @@ But this class is not very good, I think it requires some changes
 
 ## (TODO) How to build for VisionFive2 Debian RISC-V 64 bit TFCard boot, just -Os
 * You need a CPU fan to make sure the CPU temperature is not over 85 degrees, see also https://www.waveshare.net/wiki/VisionFive2   
-* You need to cmake external_orangepi5/glfw-3.4.zip to get external_visionfive2/lib/libglfw3.a
+* You need to cmake external_orangepi5/glfw-3.4.zip (default static .a lib ?) to get external_visionfive2/lib/libglfw3.a, because system's libglfw3.so may be linked to wrong egl and gles2 .so files   
 * $ sudo apt update
 * $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
 * $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype6-dev libbz2-dev
@@ -1602,7 +1602,7 @@ https://github.com/weimingtom/kirikiroid2-miyoo-a30/tree/master/cocosstudio/kr2
 * https://github.com/lihuang1111/wayland-glesv2-demo
 
 ## Build for OrangePi 5
-* You need to cmake external_orangepi5/glfw-3.4.zip to get external_orangepi5/lib/libglfw3.a
+* You need to cmake external_orangepi5/glfw-3.4.zip (default static .a lib ?) to get external_orangepi5/lib/libglfw3.a, because system's libglfw3.so may be linked to wrong egl and gles2 .so files   
 * $ sudo apt update
 * $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
 * $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype6-dev libbz2-dev
