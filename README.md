@@ -1645,4 +1645,4 @@ Armbian_25.11.1_Orangepi5_noble_current_6.12.58_xfce_desktop.img.xz
 2023-05-03-raspios-bullseye-armhf.img  
 * (TODO) OGA 1.1, ODROID-GO Advance 1.1 black version     
 ubuntu-18.04.3-4.4-es-odroid-goA-20200923.img  
-* Arduino UNO Q 4GB memory 32GB eMMC, with GPU driver FD702 by freedreno, the OS is Debian 13 trixie, the desktop environment is XFCE  
+* Arduino UNO Q 4GB memory 32GB eMMC, with GPU driver FD702 by freedreno, the OS is Debian 13 trixie, the desktop environment is Xfce    
