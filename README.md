@@ -1600,6 +1600,15 @@ https://github.com/weimingtom/kirikiroid2-miyoo-a30/tree/master/cocosstudio/kr2
 * https://github.com/radxa-pkg/rockchip-prebuilt
 * https://github.com/lihuang1111/wayland-glesv2-demo
 
+## Build for Arduino UNO Q 4GB memory 32GB eMMC
+* $ sudo apt update
+* $ sudo apt install libpng-dev zlib1g-dev libjpeg-dev libbz2-dev
+* $ sudo apt install libsdl2-dev libglfw3-dev libglew-dev libfreetype-dev
+(with libgles-dev)  
+* $ make clean
+* $ make -j8
+* $ make test
+
 ## Planned supported devices  
 * Steam Deck LCD version, with GPU driver AMD Custom GPU 0405 (radeonsi, vangogh, LLVM 19.1.7, DRM 3.61, 6.14.0-15-generic) by AMD  
 ubuntu-25.04-desktop-amd64.iso, LiveCD mode  
@@ -1636,3 +1645,4 @@ Armbian_25.11.1_Orangepi5_noble_current_6.12.58_xfce_desktop.img.xz
 2023-05-03-raspios-bullseye-armhf.img  
 * (TODO) OGA 1.1, ODROID-GO Advance 1.1 black version     
 ubuntu-18.04.3-4.4-es-odroid-goA-20200923.img  
+* Arduino UNO Q 4GB memory 32GB eMMC, with GPU driver by FD702 by freedreno, OS is Debian 13 trixie, Desktop environment is XFCE
