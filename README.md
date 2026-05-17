@@ -372,6 +372,12 @@ HAIKUO-SOFT作品，此公司作品不多，但有一个共通点，就是选项
 * [Encrypted] https://dlsoft.dmm.co.jp/detail/akbs_0125/, akbs_0125t.zip, 水蓮と紫苑 体験版, sts.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.4.0.8, 2020/10/21  
 * [Unencrypted, but .txt.scn] https://dlsoft.dmm.co.jp/detail/akbs_0116/, akbs_0116t.zip, 交汇协奏曲体验版, Cross Concerto体验版, クロスコンチェルト　体験版, CrossConcerto.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2019/6/24  
 * [Encrypted, and .ks.scn] views_0557t.zip (include 2 games), https://dlsoft.dmm.co.jp/detail/views_0557/, 茜色の境界線 体験版, kanesen.exe (2 exe files), TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2017/6/9, 2017/6/16  
+* 关于krkr2的版本问题    
+https://zhuanlan.zhihu.com/p/140729253    
+https://tieba.baidu.com/p/7403137918    
+https://tieba.baidu.com/f?kw=吉里吉里&fr=pb   
+用kirikiri制作galgame都要会什么，怎么做呀？  
+https://tieba.baidu.com/p/6518548832  
 
 ## (TODO, Please buy steam games) steam games from Japan
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
