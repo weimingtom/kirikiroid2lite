@@ -43,6 +43,10 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * Linux support: only tested under Xubuntu 20.04   
 
 ## Bugs
+* (TODO) 用最新的android studio直接编译jni部分(目前我是把jni动态库分开来编译), 可以参考whisper.cpp的写法(使用cmake), whisper.cpp-master_20260401.7z    
+https://github.com/ggml-org/whisper.cpp/blob/master/examples/whisper.android.java/app/build.gradle  
+https://github.com/ggml-org/whisper.cpp/blob/master/examples/whisper.android/lib/build.gradle  
+当然也可以问ai, 它也许可以帮你生成一个cmake的写法(其实理论上可以同时支持cmake和ndk-build, 但我忘记在哪里见过,不过也无所谓了,反正我也很少用这种和java/kotlin代码一起编译的方式编译)  
 * (TODO, not need, not good, not done, about cocos2d-x project cmakelists.txt format) 参考ai生成的cmakelists.txt的写法, 例如galgame_cocos2d-x_claude_deepseek_v3.tar.gz, 使用-DCOCOS2D_ROOT=xxxx的cmake参数, 或者把cocos2d-x-3.17.2.zip解压到cocos2d目录 (参考cmakelists.txt中的../cocos2d, **小心!不要把cocos2d-x-3.17.2目录解压在cocos2d目录内**), 然后把工程目录(例如galgame目录)放在cocos2d目录旁边. 如果使用此方法,需要另外执行cmake编译cocos2d下的代码, 否则会提示cannot find -lcocos2d
 ```
 cmake_minimum_required(VERSION 3.10)
