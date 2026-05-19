@@ -43,7 +43,7 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * Linux support: only tested under Xubuntu 20.04   
 
 ## Bugs
-* (TODO) 参考ai生成的cmakelists.txt的写法, 例如galgame_cocos2d-x_claude_deepseek_v2.zip, 它是使用-DCOCOS2D_ROOT的cmake参数, 如果不填则为../cocos, 即把工程目录放在cocos2d-x-3.XX.X中, 也就是放在cocos2d-x-3.XX.X/cocos目录旁边
+* (TODO) 参考ai生成的cmakelists.txt的写法, 例如galgame_cocos2d-x_claude_deepseek_v2.zip, 使用-DCOCOS2D_ROOT
 ```
 cmake_minimum_required(VERSION 3.10)
 project(GalgameEngineDemo)
