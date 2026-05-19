@@ -43,7 +43,7 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * Linux support: only tested under Xubuntu 20.04   
 
 ## Bugs
-* (TODO, not need, about cocos2d-x project cmakelists.txt format) 参考ai生成的cmakelists.txt的写法, 例如galgame_cocos2d-x_claude_deepseek_v2.zip, 使用-DCOCOS2D_ROOT, 把cocos2d-x-3.17.2.zip解压到cocos2d目录 (**小心!不要把cocos2d-x-3.17.2目录放在cocos2d目录内**), 然后把工程目录(例如galgame目录)放在cocos2d目录旁边. 如果使用此方法,需要另外执行cmake编译cocos2d下的代码, 否则会提示cannot find -lcocos2d
+* (TODO, not need, about cocos2d-x project cmakelists.txt format) 参考ai生成的cmakelists.txt的写法, 例如galgame_cocos2d-x_claude_deepseek_v2.zip, 使用-DCOCOS2D_ROOT=xxxx的cmake参数, 或者把cocos2d-x-3.17.2.zip解压到cocos2d目录 (参考cmakelists.txt中的../cocos2d, **小心!不要把cocos2d-x-3.17.2目录解压在cocos2d目录内**), 然后把工程目录(例如galgame目录)放在cocos2d目录旁边. 如果使用此方法,需要另外执行cmake编译cocos2d下的代码, 否则会提示cannot find -lcocos2d
 ```
 cmake_minimum_required(VERSION 3.10)
 project(GalgameEngineDemo)
