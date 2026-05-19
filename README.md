@@ -43,6 +43,22 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * Linux support: only tested under Xubuntu 20.04   
 
 ## Bugs
+* (TODO) 参考ai生成的cmakelists.txt的写法, 例如galgame_cocos2d-x_claude_deepseek_v2.zip, 它是使用-DCOCOS2D_ROOT的cmake参数, 如果不填则为../cocos, 即把工程目录放在cocos2d-x-3.XX.X中, 也就是放在cocos2d-x-3.XX.X/cocos目录旁边
+```
+cmake_minimum_required(VERSION 3.10)
+project(GalgameEngineDemo)
+
+set(APP_NAME GalgameDemo)
+
+# ============================================
+# Point COCOS2D_ROOT to your cocos2d-x install
+# e.g. set(COCOS2D_ROOT "/path/to/cocos2d-x")
+# ============================================
+if(NOT DEFINED COCOS2D_ROOT)
+    message(WARNING "COCOS2D_ROOT not set. Set it to your cocos2d-x directory.")
+    set(COCOS2D_ROOT "${CMAKE_SOURCE_DIR}/../cocos2d")
+endif()
+```
 * Only support software renderer (软件渲染器) in the global settings, not support OpenGL renderer（OpenGL渲染器，实验性）  
 * Android version: enter demo game->bottom bar->right button close->no response   
 * Linux version: windowEx.dll System.getMonitorInfo is not found, it makes application crashing       
