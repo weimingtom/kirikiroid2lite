@@ -44,7 +44,7 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 
 ## Bugs
 * My cocos2d-x linux version mod: cocos2d-x-3.17.2-linux_v3.tar.gz      
-* About cocos2d-x linux version build:
+* About cocos2d-x linux version build:  
 https://docs.cocos.com/cocos2d-x/manual/zh/installation/Linux.html    
 https://docs.cocos2d-x.org/cocos2d-x/v3/zh/installation/Linux.html    
 https://docs.cocos2d-x.org/cocos2d-x/v3/en/installation/CMake-Guide.html    
