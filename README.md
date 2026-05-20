@@ -48,6 +48,7 @@ https://docs.cocos.com/cocos2d-x/manual/zh/installation/Linux.html
 https://docs.cocos2d-x.org/cocos2d-x/v3/zh/installation/Linux.html    
 https://docs.cocos2d-x.org/cocos2d-x/v3/en/installation/CMake-Guide.html    
 (dead) https://docs.cocos2d-x.org/manual/framework/native/getting-started/setting-up-development-environments/linux-environment-setup/zh   
+cocos2d-x-3.17.2-linux_v3.tar.gz  
 * (TODO) 用最新的android studio直接编译jni部分(目前我是把jni动态库分开来编译), 可以参考whisper.cpp的写法(使用cmake), whisper.cpp-master_20260401.7z    
 https://github.com/ggml-org/whisper.cpp/blob/master/examples/whisper.android.java/app/build.gradle  
 https://github.com/ggml-org/whisper.cpp/blob/master/examples/whisper.android/lib/build.gradle  
