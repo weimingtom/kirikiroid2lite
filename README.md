@@ -89,7 +89,7 @@ https://github.com/krkrz/krkr2/blob/master/kirikiri2/trunk/kirikiri2/src/plugins
 * src/core/tjs2/tjsUtils.cpp:struct tTJSCriticalSectionImpl written with pthread is too bad, need reimplementation
 
 ## History  
-* 2025-10-11 : First running macos version on old MAC MINI successfully.  
+* 2025-10-11 : First running macos version on old Mac mini (Intel version) successfully.  
 * 2025-10-10 : Building and running VisionFive2 and BPI-F3 versions successfully with OpenGL ES hardware accelerated, not softpipe, just with -Os not -O2 and -O3.  
 * 2025-10-09 : First running msys2 version successfully.
 * 2025-09-02 : Merge kirikiroid2-miyoo-a30 sources and compile linux version successfully.
