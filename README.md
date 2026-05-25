@@ -42,7 +42,9 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * Android support: tested in MuMu emulator (emulate android x86 ?) under Win11 (Android 6.0.1), with many bugs now.    
 * Linux support: only tested under Xubuntu 20.04   
 
-## Bugs
+## Bugs and references  
+* RISC-V平台SDL2图形开发实战：从环境搭建到性能优化  
+https://blog.csdn.net/weixin_32447969/article/details/161313050   
 * My cocos2d-x linux version mod: cocos2d-x-3.17.2-linux_v3.tar.gz      
 * About cocos2d-x linux version build:  
 https://docs.cocos.com/cocos2d-x/manual/zh/installation/Linux.html    
