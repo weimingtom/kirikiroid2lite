@@ -414,6 +414,7 @@ https://tieba.baidu.com/p/7403137918
 https://tieba.baidu.com/f?kw=吉里吉里&fr=pb   
 用kirikiri制作galgame都要会什么，怎么做呀？  
 https://tieba.baidu.com/p/6518548832  
+* [Encrypted] sukisuki_trial, 1659apc10453t.zip, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1659apc10453/, ずっとすきして たくさんすきして 体験版, 挚爱随行 倾慕相伴 体验版, 挚爱相随 倾慕相伴 体验版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2012.1127, 2013/6/13  
 
 ## (TODO, Please buy steam games) steam games from Japan
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
