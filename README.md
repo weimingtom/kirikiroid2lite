@@ -416,6 +416,13 @@ https://tieba.baidu.com/f?kw=吉里吉里&fr=pb
 https://tieba.baidu.com/p/6518548832  
 * [Encrypted] sukisuki_trial, 1659apc10453t.zip, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1659apc10453/, ずっとすきして たくさんすきして 体験版, 挚爱随行 倾慕相伴 体验版, 挚爱相随 倾慕相伴 体验版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2012.1127, 2013/6/13  
 * 真红小站, shinnku.com, ons集合约162个, krkr集合约468个, 注:我没下载过    
+* indienova 独立游戏, kirikiri超过180个, 但具体数量不明，nscripter有50个  
+https://indienova.com/gamedb/engine/kirikiri/p/1  
+https://indienova.com/gamedb/engine/krkr2/p/1  
+https://indienova.com/gamedb/engine/nscripter/p/1  
+* SteamDB, KiriKiri约478个, Nscripter约30个  
+https://steamdb.info/tech/Engine/KiriKiri/  
+https://steamdb.info/tech/Engine/NScripter/  
 
 ## (TODO, Please buy steam games) steam games from Japan
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
