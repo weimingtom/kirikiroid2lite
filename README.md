@@ -1336,8 +1336,8 @@ http://bcpc.taobao.com/?v=1
 
 合作网站：http://www.u77.com/
 ```
-* [Encrypted, exe cannot open] 遗忘花园DEMO1.rar, need install, Evening Primrose.exe, no data.xp3, has patch.xp3, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2010/10/22  
-* [Encrypted, exe cannot open] 遗忘花园DEMO2.zip, 遗忘花园：白色情人节, Oblivious Garden.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.416, 2010/5/21, no data.xp3  
+* [Encrypted, exe cannot open] 遗忘花园DEMO1.rar, need install, Evening Primrose.exe, one large exe no data.xp3, has patch.xp3, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2010/10/22  
+* [Encrypted, exe cannot open] 遗忘花园DEMO2.zip, 遗忘花园：白色情人节, Oblivious Garden.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.416, 2010/5/21, one large exe no data.xp3  
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/  
