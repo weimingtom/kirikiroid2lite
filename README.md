@@ -1265,7 +1265,7 @@ http://sfvie.weebly.com/
 
     而後  重生
 ```
-* [Encrypted, cannot open] gaokao100_demo.exe, 《高考恋爱100天》DEMO语音版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.1.426, 2014/5/17, gaokao100.exe
+* [Encrypted, cannot open] gaokao100_demo.exe, 《高考恋爱100天》DEMO语音版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.1.426, 2014/5/17, gaokao100.exe  
 https://tieba.baidu.com/f?kw=高恋一百天    
 http://www.gaokaolianai.net/   
 ```
