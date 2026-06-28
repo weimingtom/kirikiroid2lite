@@ -508,6 +508,8 @@ https://store.steampowered.com/app/473460/Memory_Oblivion_Box/
 https://store.steampowered.com/app/495990/  
 * [Encrypted, open failed] 雾之本境S, Conspiracy Field: Fog Shadow, 雾之本境重制版     
 https://store.steampowered.com/app/1339410/
+* [Unencrypted? by THE NVL Maker?] 听不到你的话语的我，想要静静聆听你的心 DEMO, I Can't Hear Your Words, So I Want To Listen To Your Heart DEMO  
+https://store.steampowered.com/app/2096710/_/    
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日, from China   
