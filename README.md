@@ -241,7 +241,6 @@ konomi2.zip, konomi.gif
 * (TODO) [Wheel-Soft]大宇宙の誇り
 * (TODO) KRKR制作范例.zip
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～
-* (TODO) 僕はキミだけを見つめる, 我只注视着你, https://dlsoft.dmm.co.jp/detail/sesyg_0016/  
 * (TODO) あきゆめくくる, 秋夜梦萦萦, https://dlsoft.dmm.co.jp/detail/crnt_0002/  
 * (TODO) なつくもゆるる, 夏日云悠悠, https://dlsoft.dmm.co.jp/detail/crnt_0001/
 * (TOOD) ウチはもう、延期できない。, 我们是不能延期了, 我们已经不能延期了, https://dlsoft.dmm.co.jp/detail/cuffs_0039/  
@@ -428,6 +427,7 @@ https://indienova.com/gamedb/engine/nscripter/p/1
 * SteamDB, KiriKiri约478个, Nscripter约30个  
 https://steamdb.info/tech/Engine/KiriKiri/  
 https://steamdb.info/tech/Engine/NScripter/  
+* [Encrypted] 僕はキミだけを見つめる 体験版, 我只注视着你 体验版, https://dlsoft.dmm.co.jp/detail/sesyg_0016/, sesyg_0016t.zip, bokukimi.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.416, 2015/10/4    
 
 ## (TODO, Please buy steam games) steam games from Japan
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
