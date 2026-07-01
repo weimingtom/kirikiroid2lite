@@ -427,7 +427,7 @@ https://indienova.com/gamedb/engine/nscripter/p/1
 * SteamDB, KiriKiri约478个, Nscripter约30个  
 https://steamdb.info/tech/Engine/KiriKiri/  
 https://steamdb.info/tech/Engine/NScripter/  
-* [Encrypted] 僕はキミだけを見つめる 体験版, 我只注视着你 体验版, https://dlsoft.dmm.co.jp/detail/sesyg_0016/, sesyg_0016t.zip, bokukimi.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.416, 2015/10/4    
+* [Encrypted] bokukimi_trial, 僕はキミだけを見つめる 体験版, 我只注视着你 体验版, https://dlsoft.dmm.co.jp/detail/sesyg_0016/, sesyg_0016t.zip, bokukimi.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.416, 2015/10/4    
 
 ## (TODO, Please buy steam games) steam games from Japan
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
