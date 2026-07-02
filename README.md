@@ -108,6 +108,10 @@ https://code.google.com/archive/p/godxq1986/downloads
 9th-trial - Exe(2016.1.12).rar       
 https://the9thday.net/works/w1/download.php  
 
+## (TODO) English kirikiri2 or kirikiriz games
+* Kirikiroid2 Compatibility List (ENG)  
+https://visuallyneko.wordpress.com/visual-novel-hacks/kirikiroid2-compatibility-list-eng/  
+
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Japanese kirikiri2 or kirikiriz games  
 * [Unencrypted?] 恋がさくころ桜どき 体験版, 恋花绽放樱飞时 体验版, sakusaku_trial.zip  
 https://palette.clearrave.co.jp/product/sakusaku/download.html  
@@ -229,7 +233,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] hobc_0347t.zip, https://dlsoft.dmm.co.jp/detail/hobc_0347/, 波間の国のファウスト　体験版１, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2012/4/6  
 * [Unencrypted?] hobe_0108t.zip, https://dlsoft.dmm.co.jp/detail/hobe_0108/, 春萌 〜はるもい〜 体験版, harumoi.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.24.3.893, 2006/2/11  
 * [Unencrypted?] russ_0144t.zip, https://dlsoft.dmm.co.jp/detail/russ_0144/, 少女神域∽少女天獄 体験版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2012.1127, 2013/4/3  
-* [Unencrypted?] crnt_0001t.zip, なつくもゆるる　ＷＥＢ体験版, なつくもゆるる, 夏日云悠悠, https://dlsoft.dmm.co.jp/detail/crnt_0001/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2013/5/21  
+* [Unencrypted?] crnt_0001t.zip, なつくもゆるる　ＷＥＢ体験版, 夏日云悠悠体验版, https://dlsoft.dmm.co.jp/detail/crnt_0001/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2013/5/21  
 
 * ===NOTE, 以下仅记录===
 * _ons_all_1, Downloads_index_20211026.rar, krkr游戏目录.xlsx, 约346行, ONS目录.xlsx, 约180行, _ons_all_2        
