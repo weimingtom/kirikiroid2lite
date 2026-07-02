@@ -243,16 +243,16 @@ konomi2.zip, konomi.gif
 ```
 万人迷游戏2019整理资源表（请各位同学珍惜，不要到处传播，被封盘就没了）
 ```
-* (TOOD) 去看咸鱼上的galgame
-* (TOOD) 百度org.tvp.kirikiri2 apk，看用什么游戏做例子
+* (TODO) 去看咸鱼上的galgame
+* (TODO) 百度org.tvp.kirikiri2 apk，看用什么游戏做例子
 * (TODO) [C82][CLIC_CLAC]田舎でシよう！京都編
 * (TODO) [WAVESTAR] SPARKLE!!～ギリギリ家庭教師Lesson～
 * (TODO) [WHEEL] ひのまるっ
 * (TODO) [Wheel-Soft]大宇宙の誇り
 * (TODO) KRKR制作范例.zip
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～
-* (TOOD) ウチはもう、延期できない。, 我们是不能延期了, 我们已经不能延期了, https://dlsoft.dmm.co.jp/detail/cuffs_0039/  
-* (TOOD) 
+* (TODO) ウチはもう、延期できない。, 我们是不能延期了, 我们已经不能延期了, https://dlsoft.dmm.co.jp/detail/cuffs_0039/  
+* (TODO) 
 * ===NOTE，以下仅记录===
 * [Unencrypted, but .ks.scn]  torp_0030t.zip, 恋する乙女と守護の楯 ～薔薇の聖母～ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/2/11      
 * [Encrypted] 日文版，神頼みしすぎて俺の未来がヤバい。.part1.rar, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2017/3/23  
