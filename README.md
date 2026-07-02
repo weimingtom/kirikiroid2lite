@@ -234,6 +234,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] hobe_0108t.zip, https://dlsoft.dmm.co.jp/detail/hobe_0108/, 春萌 〜はるもい〜 体験版, harumoi.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.24.3.893, 2006/2/11  
 * [Unencrypted?] russ_0144t.zip, https://dlsoft.dmm.co.jp/detail/russ_0144/, 少女神域∽少女天獄 体験版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2012.1127, 2013/4/3  
 * [Unencrypted?] crnt_0001t.zip, なつくもゆるる　ＷＥＢ体験版, 夏日云悠悠体验版, https://dlsoft.dmm.co.jp/detail/crnt_0001/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2013/5/21  
+* [Unencrypted?, open exe as xp3] akeyoruR.zip, 明けない夜が来る前に, https://gensou1945.sakura.ne.jp/akeyoru.htm, 没有黎明之夜来临之前 日语版, https://www.ourplay.net/rank/detail/22551, akeyoruR.exe, one exe no xp3, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2021/12/23   
 
 * ===NOTE, 以下仅记录===
 * _ons_all_1, Downloads_index_20211026.rar, krkr游戏目录.xlsx, 约346行, ONS目录.xlsx, 约180行, _ons_all_2        
