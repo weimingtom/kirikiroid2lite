@@ -43,6 +43,19 @@ It is just for hacking code. You had better use krkrsdl2 or other implementation
 * Linux support: only tested under Xubuntu 20.04   
 
 ## Bugs and references  
+* (USB connect to device, then start listening on Android device) adb -d tcpip 5555  
+(Find IP v4 like 192.168.1.XXX in device Android Wifi settings, then connect to device) adb connect 192.168.1.XXX  
+```
+我怀疑adb tcpip 5555是启用安卓设备的5555监听功能，所以这个命令正确的写法应该是adb -d tcpip 5555。
+假如这个安卓设备不关机，也不断开wifi，就可以长期不执行这个adb tcpip，只需要执行一次，
+随时都可以用pc的adb connect 192.168.1.XXX连接上 ​​​
+
+我现在搞明白adb的wifi调试是用来做什么的了。如果设备的usb口被占用，例如接了手写板之类的外设，
+就需要adb无线调试，但无线调试也有两种，模拟器上面的无线调试是指二维码pair，
+但其实也可以用adb命令连接，例如
+adb tcpip 5555和adb connect 192.168.1.2:5555来无线调试，
+就是说android studio模拟器上的说明其实是用不上的
+```
 * RISC-V平台SDL2图形开发实战：从环境搭建到性能优化  
 https://blog.csdn.net/weixin_32447969/article/details/161313050   
 * My cocos2d-x linux version mod: cocos2d-x-3.17.2-linux_v3.tar.gz      
