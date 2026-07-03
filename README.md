@@ -263,8 +263,9 @@ konomi2.zip, konomi.gif
 * (TODO) [WHEEL] ひのまるっ
 * (TODO) [Wheel-Soft]大宇宙の誇り
 * (TODO) KRKR制作范例.zip
-* (TODO) 東京封鎖 ～キミが隣にいた昨日～
-* (TODO) ウチはもう、延期できない。, 我们是不能延期了, 我们已经不能延期了, https://dlsoft.dmm.co.jp/detail/cuffs_0039/  
+* (TODO) 東京封鎖 ～キミが隣にいた昨日～  
+* (TODO) ウチはもう、延期できない。, 我们是不能延期了, 我们已经不能延期了, https://dlsoft.dmm.co.jp/detail/cuffs_0039/   
+* (TODO) Re：LieF 〜親愛なるあなたへ〜, Re:LieF 〜献给亲爱的你〜 Re:LanguagE, https://store.hikarifield.co.jp/shop/relief, https://dlsoft.dmm.co.jp/detail/rask_0001/  
 * (TODO) 
 * ===NOTE，以下仅记录===
 * [Unencrypted, but .ks.scn]  torp_0030t.zip, 恋する乙女と守護の楯 ～薔薇の聖母～ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/2/11      
