@@ -452,6 +452,7 @@ https://steamdb.info/tech/Engine/KiriKiri/
 https://steamdb.info/tech/Engine/NScripter/  
 * [Encrypted] bokukimi_trial, 僕はキミだけを見つめる 体験版, 我只注视着你 体验版, https://dlsoft.dmm.co.jp/detail/sesyg_0016/, sesyg_0016t.zip, bokukimi.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.416, 2015/10/4    
 * [Unencrypted, but .txt.scn] sumikko7_akikuru_trial, あきゆめくくる体験版, 秋夜梦萦萦 体验版, https://dlsoft.dmm.co.jp/detail/crnt_0002/, crnt_0002t.zip, あきゆめくくる体験版.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/11/17    
+* [Unencrypted, but .snr] views_0513t.zip, PuppetEngine（ぱぺっとエンジン）, 月光アルスマギカ −不可逆神域の少女たち− 体験版, ta_trial, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2015/2/18  
 
 ## (TODO, Please buy steam games) steam games from Japan
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
