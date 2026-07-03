@@ -250,6 +250,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?, open exe as xp3] akeyoruR.zip, 明けない夜が来る前に, https://gensou1945.sakura.ne.jp/akeyoru.htm, 没有黎明之夜来临之前 日语版, https://www.ourplay.net/rank/detail/22551, akeyoruR.exe, one exe no xp3, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2021/12/23   
 * [Unpacked, with tyrano tyranoscript and html5] 沒有黎明之夜來臨之前_v1.1.apk  
 * [Unencrypted?, open exe as xp3] 【PC】没有黎明之夜来临之前.mp4, akeyoru.CHT.20180507.exe (jp version is akeyoru.exe), TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2018/5/7 (akeyoru.exe is 2012/3/18)  
+* [Unencrypted?] Re：LieF 〜親愛なるあなたへ〜 体験版, Re:LieF 〜献给亲爱的你〜体验版, Re:LieF 〜献给亲爱的你〜 Re:LanguagE, https://store.hikarifield.co.jp/shop/relief, https://dlsoft.dmm.co.jp/detail/rask_0001/, rask_0001t.zip, ReLieF_TriaL, ReLieF_TriaL.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2016/9/24    
 
 * ===NOTE, 以下仅记录===
 * _ons_all_1, Downloads_index_20211026.rar, krkr游戏目录.xlsx, 约346行, ONS目录.xlsx, 约180行, _ons_all_2        
@@ -265,7 +266,6 @@ konomi2.zip, konomi.gif
 * (TODO) KRKR制作范例.zip
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～  
 * (TODO) ウチはもう、延期できない。, 我们是不能延期了, 我们已经不能延期了, https://dlsoft.dmm.co.jp/detail/cuffs_0039/   
-* (TODO) Re：LieF 〜親愛なるあなたへ〜, Re:LieF 〜献给亲爱的你〜 Re:LanguagE, https://store.hikarifield.co.jp/shop/relief, https://dlsoft.dmm.co.jp/detail/rask_0001/  
 * (TODO) 
 * ===NOTE，以下仅记录===
 * [Unencrypted, but .ks.scn]  torp_0030t.zip, 恋する乙女と守護の楯 ～薔薇の聖母～ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/2/11      
