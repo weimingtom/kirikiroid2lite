@@ -1371,6 +1371,13 @@ http://bcpc.taobao.com/?v=1
 ```
 * [Encrypted, exe cannot open] 遗忘花园DEMO1.rar, need install, Evening Primrose.exe, one large exe no data.xp3, has patch.xp3, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2010/10/22  
 * [Encrypted, exe cannot open] 遗忘花园DEMO2.zip, 遗忘花园：白色情人节, Oblivious Garden.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.30.2.416, 2010/5/21, one large exe no data.xp3  
+* [Unencrypted?] 星空不在的梦境.rar, 星空不在的梦境.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.28.1.9906, 2007/1/1  
+```
+转百度百科
+《星空不在的梦境》是幻爵工作室正式发布的第二部作品
+游戏实体碟版于2010年3月6、7日（CD5）及2010年3月21日（CC6）发布。网络发布版与PSP版均于2010年5月1日发布。安卓版于2014年12月9日发布，iOS版则处于不定期制作中。
+游戏使用KRKR引擎开发，文本长度为16万字（双线）。在CD5上，实体碟售出约200套，这为工作室改善了办公环境
+```
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/  
