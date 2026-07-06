@@ -267,6 +267,7 @@ konomi2.zip, konomi.gif
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～  
 * (TODO) 朱红·零 -圣屠十日-, Saint Slaughter X Days 圣屠十日     
 * (TODO) ウチはもう、延期できない。, 我们是不能延期了, 我们已经不能延期了, https://dlsoft.dmm.co.jp/detail/cuffs_0039/   
+* (TODO) 迷える2人とセカイのすべて, 迷途的二人与世界的全部, https://dlsoft.dmm.co.jp/detail/russ_0145/  
 * (TODO) 
 * ===NOTE，以下仅记录===
 * [Unencrypted, but .ks.scn]  torp_0030t.zip, 恋する乙女と守護の楯 ～薔薇の聖母～ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/2/11      
