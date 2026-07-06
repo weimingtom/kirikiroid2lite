@@ -265,6 +265,7 @@ konomi2.zip, konomi.gif
 * (TODO) [Wheel-Soft]大宇宙の誇り
 * (TODO) KRKR制作范例.zip
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～  
+* (TODO) 朱红·零 -圣屠十日-, Saint Slaughter X Days 圣屠十日     
 * (TODO) ウチはもう、延期できない。, 我们是不能延期了, 我们已经不能延期了, https://dlsoft.dmm.co.jp/detail/cuffs_0039/   
 * (TODO) 
 * ===NOTE，以下仅记录===
