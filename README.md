@@ -266,7 +266,6 @@ konomi2.zip, konomi.gif
 * (TODO) KRKR制作范例.zip
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～  
 * (TODO) 朱红·零 -圣屠十日-, Saint Slaughter X Days 圣屠十日     
-* (TODO) ウチはもう、延期できない。, 我们是不能延期了, 我们已经不能延期了, https://dlsoft.dmm.co.jp/detail/cuffs_0039/   
 * (TODO) 迷える2人とセカイのすべて, 迷途的二人与世界的全部, https://dlsoft.dmm.co.jp/detail/russ_0145/  
 * (TODO) 響野さん家はエロゲ屋さん！, 响野家的工口游戏店, https://dlsoft.dmm.co.jp/detail/hobe_0493/  
 * (TODO) 
@@ -457,6 +456,7 @@ https://steamdb.info/tech/Engine/NScripter/
 * [Unencrypted, but .txt.scn] sumikko7_akikuru_trial, あきゆめくくる体験版, 秋夜梦萦萦 体验版, https://dlsoft.dmm.co.jp/detail/crnt_0002/, crnt_0002t.zip, あきゆめくくる体験版.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/11/17    
 * [Unencrypted, but .snr] views_0513t.zip, PuppetEngine（ぱぺっとエンジン）, 月光アルスマギカ −不可逆神域の少女たち− 体験版, ta_trial, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2015/2/18  
 * [Encrypted] cuffs_0009t.zip, あま恋シロップス 〜恥じらう恋心でシたくなる甘神様の恋祭り〜 体験版, 甘神大人的糖浆恋祭 体验版, https://dlsoft.dmm.co.jp/detail/cuffs_0009/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2015/1/23    
+* [Encrypted] cuffs_0039t.zip, ウチはもう、延期できない。 体験版, 我们是不能延期了, 我们已经不能延期了 体验版, https://dlsoft.dmm.co.jp/detail/cuffs_0039/, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.4.0.8, 2021/10/21     
 
 ## (TODO, Please buy steam games) steam games from Japan
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
