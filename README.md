@@ -266,7 +266,6 @@ konomi2.zip, konomi.gif
 * (TODO) KRKR制作范例.zip
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～  
 * (TODO) 朱红·零 -圣屠十日-, Saint Slaughter X Days 圣屠十日     
-* (TODO) 迷える2人とセカイのすべて, 迷途的二人与世界的全部, https://dlsoft.dmm.co.jp/detail/russ_0145/  
 * (TODO) 響野さん家はエロゲ屋さん！, 响野家的工口游戏店, https://dlsoft.dmm.co.jp/detail/hobe_0493/  
 * (TODO) 
 * ===NOTE，以下仅记录===
