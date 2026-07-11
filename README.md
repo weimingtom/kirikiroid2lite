@@ -501,6 +501,8 @@ https://store.steampowered.com/app/1144400/SenrenBanka/
 https://store.steampowered.com/app/1144400/_/  
 https://store.hikarifield.co.jp/shop/senren_banka  
 https://hikarifield.co.jp/senren/index.html  
+* [Encrypted] Senren＊Banka Trial version, 千恋＊万花 体验版  
+https://store.steampowered.com/app/1144400/_/  
 * [Unencrypted?] 纸上的魔法使  
 https://store.steampowered.com/app/3771230/_/  
 * [Unencrypted?] 纸上的魔法使 体验版  
