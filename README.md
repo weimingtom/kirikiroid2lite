@@ -216,9 +216,9 @@ https://web.archive.org/web/20051223034139/http://www.geocities.jp/konominaku/
 http://www.aurora.dti.ne.jp/~sek/2005.html  
 konomi2.zip, konomi.gif   
 * [Unencrypted?] 百五十年目の魔法使い_体験版（音声あり）, 150mahou03.zip, http://www.pinkcc.sakura.ne.jp/downloadpage.html, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 1.0.0.0, 2014/12/16
-* [Unencrypted?, but cn patch is encrypted] オトメ＊ドメイン%E3%80%80体験版cn.rar, 115, otomedomain_trial, TVP(KIRIKIRI) Z core / Scripting Platform for Win32  
-* [Unencrypted?] 115, VenusBlood -FRONTIER- International 特装版  
-* [Unencrypted?] ひよこストライク！体験版, 啾啾爱恋！体验版, hobe_0230t.zip, https://dlsoft.dmm.co.jp/detail/hobe_0230/  
+* [Unencrypted?, but cn patch is encrypted] オトメ＊ドメイン%E3%80%80体験版cn.rar, 115, otomedomain_trial, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, otomedomain_trial_cn.exe, 1.2.0.3, 2016/5/12; otomedomain_trial.exe, 1.2.0.3, 2016/4/22    
+* [Unencrypted?] 115, VenusBlood -FRONTIER- International 特装版 (include 修正ファイル Ver1.0.1.rar, patch.xp3), VBFI.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2018/3/8      
+* [Unencrypted?] ひよこストライク！体験版, 啾啾爱恋！体验版, hobe_0230t.zip, https://dlsoft.dmm.co.jp/detail/hobe_0230/, hiyo_tryfull.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2011/11/22    
 * [Encrypted] akbs_0051t.zip, 空色イノセント体験版, sorairo_innocent.exe, with windowEx.dll, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2015/8/24, 2.31.2013.411, https://dlsoft.dmm.co.jp/detail/akbs_0051/  
 * [Unencrypted?] scfbht_0012t.zip, お嬢様と憐れな（こ）執事 体験版2, otorena_tr2, otorena_tr.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2017/1/23, https://dlsoft.dmm.co.jp/detail/scfbht_0012/  
 * [Unencrypted?] d_050874t.zip, 幼馴染と十年、夏 体験版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2012/8/23, 2.32.2.426, osana.exe, https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_050874/  
