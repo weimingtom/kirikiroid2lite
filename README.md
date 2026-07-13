@@ -292,9 +292,9 @@ konomi2.zip, konomi.gif
 ```
 请买正版, please buy steam game
 ```
-* [Encrypted] 115, Berry’s ～ベリーズ～ 初回版  
-* [Encrypted] 115, 恋騎士 Purely☆Kiss 初回限定版  
-* [Encrypted and .txt.scn] 115, オトメ＊ドメイン パッケージ版  
+* [Encrypted] 115, Berry’s ～ベリーズ～ 初回版, Berry's.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2013/6/27    
+* [Encrypted] 115, 恋騎士 Purely☆Kiss 初回限定版, koikishi.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2011/9/19    
+* [Encrypted and .txt.scn] 115, オトメ＊ドメイン パッケージ版, otomedomain.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, 2016/6/23    
 * [Encrypted] baidupan, 猫vol1.rar, with exe, with patch.tjs and xp3filter.tjs, with psbfile.dll  
 * [Encrypted] baidupan, 猫vol2.rar, .ks.scn, with exe, with patch.tjs and xp3filter.tjs, with psbfile.dll  
 * [Encrypted] GINKA.appimage, linuxgame  
