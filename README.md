@@ -462,7 +462,7 @@ https://www.igdb.com/game_engines/onscripter
 * [Encrypted] cuffs_0009t.zip, あま恋シロップス 〜恥じらう恋心でシたくなる甘神様の恋祭り〜 体験版, 甘神大人的糖浆恋祭 体验版, https://dlsoft.dmm.co.jp/detail/cuffs_0009/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2015/1/23    
 * [Encrypted] cuffs_0039t.zip, ウチはもう、延期できない。 体験版, 我们是不能延期了, 我们已经不能延期了 体验版, https://dlsoft.dmm.co.jp/detail/cuffs_0039/, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.4.0.8, 2021/10/21     
 * [Encrypted, and .ks.scn] akbs_0043t.zip, 恋騎士 Purely☆Kiss 体験版, 恋骑士 体验版, https://dlsoft.dmm.co.jp/detail/akbs_0043/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2011/8/10    
-* [Encrypted, and .ks.scn] akbs_0054t.zip, 聖騎士Melty☆Lovers 体験版, 圣骑士 体验版, https://dlsoft.dmm.co.jp/detail/akbs_0054/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32,     
+* [Encrypted] akbs_0054t.zip, 聖騎士Melty☆Lovers 体験版, 圣骑士 体验版, https://dlsoft.dmm.co.jp/detail/akbs_0054/, MeltyLovers.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2015/6/24   
 
 ## (TODO, Please buy steam games) steam games from Japan
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
