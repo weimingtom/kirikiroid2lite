@@ -269,6 +269,7 @@ konomi2.zip, konomi.gif
 * (TODO) 朱红·零 -圣屠十日-, Saint Slaughter X Days 圣屠十日     
 * (TODO) 響野さん家はエロゲ屋さん！, 响野家的工口游戏店, https://dlsoft.dmm.co.jp/detail/hobe_0493/   
 * (TODO) 夢か現かマトリョーシカ, 	梦与现实的联理结, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1833apc10500/   
+* (TODO) 車輪の国、向日葵の少女, ??? 車輪の国、悠久の少年少女
 * (TODO) 
 * ===NOTE，以下仅记录===
 * [Unencrypted, but .ks.scn]  torp_0030t.zip, 恋する乙女と守護の楯 ～薔薇の聖母～ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/2/11      
