@@ -252,6 +252,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?, open exe as xp3] 【PC】没有黎明之夜来临之前.mp4, akeyoru.CHT.20180507.exe (jp version is akeyoru.exe), TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2018/5/7 (akeyoru.exe is 2012/3/18)  
 * [Unencrypted?] Re：LieF 〜親愛なるあなたへ〜 体験版, Re:LieF 〜献给亲爱的你〜体验版, Re:LieF 〜献给亲爱的你〜 Re:LanguagE, https://store.hikarifield.co.jp/shop/relief, https://dlsoft.dmm.co.jp/detail/rask_0001/, rask_0001t.zip, ReLieF_TriaL, ReLieF_TriaL.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2016/9/24    
 * [Unencrypted?, English version, translated by mirror moon] (注: 这个不是原版，这个是英文翻译版, Tsukihime Plus+Disc version 1.2) 115, 月姫 PLUS-DISC English translated by mirror moon, 月姫 PLUS-DISC English translated by mirror moon, [Fuwanovel] Tsukihime Plus+Disc/TsukihimePLUSDISC.zip, PLUS+DISC.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.17.8.689, tvpwin32.exe, 2013/6/5  
+* [Unencrypted?] chbld_0002t.zip, カミツレ～７の二乗不思議～　体験版, カミツレ〜7の二乗不思議〜 体験版, カミツレ　体験版.exe, kamitsure_trial_0225a, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, https://dlsoft.dmm.co.jp/detail/chbld_0002/, 2.31.2013.330, 2015/2/25   
 
 * ===NOTE, 以下仅记录===
 * _ons_all_1, Downloads_index_20211026.rar, krkr游戏目录.xlsx, 约346行, ONS目录.xlsx, 约180行, _ons_all_2        
