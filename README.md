@@ -275,7 +275,7 @@ konomi2.zip, konomi.gif
 * (TODO) 妹のセイイキ
 * (TODO) 彼女のセイイキ
 * (TODO) 桜ひとひら恋もよう, 樱舞落花恋模样
-* (TODO) 
+* (TODO) タマユラミライ, 玉响未来  
 * (TODO) 
 * ===NOTE，以下仅记录===
 * [Unencrypted, but .ks.scn]  torp_0030t.zip, 恋する乙女と守護の楯 ～薔薇の聖母～ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/2/11      
