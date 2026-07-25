@@ -313,10 +313,6 @@ konomi2.zip, konomi.gif
 * (TO BUY) G-senjou no Maou - The Devil on G-String  
 https://store.steampowered.com/app/377670/Gsenjou_no_Maou__The_Devil_on_GString/  
 G弦上的魔王steam版英文版  
-* (TO BUY) ISLAND DIARY, 无人岛日记, 海岛日记, 小岛日记  
-https://watakubi.com/islanddiary/   
-https://www.ymgal.games/co/article/158867700825718784  
-https://store.steampowered.com/app/1559760/Island_Diary/  
 * [Unencrypted?, but some encrypted, but .txt.scn] island diary (1).zip, mobile version, kirikiroid2 version but with exe, not steam version (?), adult version, with KrkrExtract.db and KrkrUniversalPatch.dll and IslandDiary_Patch.exe, IslandDiary.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tpwin32.exe, 2021/3/1, 1.2.0.3  
 * [Encrypted, and .txt.scn] Island Diary.zip, pc version, steam version, adult version, IslandDiary.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, tpwin32.exe, 2021/7/8, 1.2.0.3   
 * [Unencrypted?, but data.xp3's tjs encrypted, ks unencrypted] kaguya_0076t.zip, あやめの町とお姫様 体験版, 菖蒲的城镇与公主日文体验版, https://dlsoft.dmm.co.jp/detail/kaguya_0076/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2013/11/27    
@@ -547,6 +543,10 @@ https://store.hikarifield.co.jp/shop/sickly_days
 https://jaststore.com/games/hifi002/sickly-days-and-summer-traces  
 * [Unencrypted?] 我家恋天使太废柴鸟真～可怕  
 https://store.steampowered.com/app/4491980/_/  
+* [Encrypted, and .txt.scn] ISLAND DIARY, 无人岛日记, 海岛日记, 小岛日记  
+https://store.steampowered.com/app/1559760/Island_Diary/  
+https://watakubi.com/islanddiary/    
+https://www.ymgal.games/co/article/158867700825718784  
 
 ##  (TODO, Please buy steam games) steam games from China  
 * [Encrypted?] Memory Oblivion Box, 回忆忘却之匣, mob  
