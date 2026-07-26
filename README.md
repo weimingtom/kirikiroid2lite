@@ -559,7 +559,7 @@ https://store.steampowered.com/app/1339410/
 https://store.steampowered.com/app/2096710/_/    
 * [Unencrypted?] 遗忘花园 Oblivious Garden ~Carmina Burana (steam game, I buy it with DLC white day)   
 https://store.steampowered.com/app/323490/_Oblivious_Garden_Carmina_Burana/  
-* [Unencrypted?, I don't find, maybe in data.xp3(???)] 遗忘花园DLC, Oblivious Garden ~White Day   
+* [?, I don't find, maybe in data.xp3(???)] 遗忘花园DLC, Oblivious Garden ~White Day   
 https://store.steampowered.com/app/345040/Oblivious_Garden_White_Day/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
