@@ -557,6 +557,10 @@ https://store.steampowered.com/app/495990/
 https://store.steampowered.com/app/1339410/
 * [Unencrypted? by THE NVL Maker?] 听不到你的话语的我，想要静静聆听你的心 DEMO, I Can't Hear Your Words, So I Want To Listen To Your Heart DEMO  
 https://store.steampowered.com/app/2096710/_/    
+* [Unencrypted?] 遗忘花园 Oblivious Garden ~Carmina Burana (steam game, I buy it with DLC white day)   
+https://store.steampowered.com/app/323490/_Oblivious_Garden_Carmina_Burana/  
+* [Unencrypted?, I don't find, maybe in data.xp3(???)] 遗忘花园DLC, Oblivious Garden ~White Day   
+https://store.steampowered.com/app/345040/Oblivious_Garden_White_Day/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日, from China   
@@ -1403,10 +1407,6 @@ http://bcpc.taobao.com/?v=1
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/  
-* (TODO, to BUY) steam, 遗忘花园 Oblivious Garden ~Carmina Burana  
-https://store.steampowered.com/app/323490/_Oblivious_Garden_Carmina_Burana/  
-DLC, Oblivious Garden ~White Day   
-https://store.steampowered.com/app/345040/Oblivious_Garden_White_Day/  
 * projects_20241018.7z
 
 ## Links about other Kirikiri and steam games list
