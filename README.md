@@ -283,6 +283,7 @@ konomi2.zip, konomi.gif
 * (TODO) 出会って5分は俺のもの！時間停止と不可避な運命, 相见5分属于我！ 时间停止和不可避的命运  
 * (TODO) 真愛の百合は赤く染まる, 真爱百合, 染成红色的真爱百合
 * (TODO) お兄ちゃん、キッスの準備はまだですか？ エッチの準備もまだですか？, 妹吻FD
+* (TODO) はるまで、くるる, 春开意遥遥  
 * (TODO) 
 * (TODO) 
 * ===NOTE，以下仅记录===
@@ -475,6 +476,7 @@ https://www.igdb.com/game_engines/onscripter
 * [Encrypted] cuffs_0039t.zip, ウチはもう、延期できない。 体験版, 我们是不能延期了, 我们已经不能延期了 体验版, https://dlsoft.dmm.co.jp/detail/cuffs_0039/, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.4.0.8, 2021/10/21     
 * [Encrypted, and .ks.scn] akbs_0043t.zip, 恋騎士 Purely☆Kiss 体験版, 恋骑士 体验版, https://dlsoft.dmm.co.jp/detail/akbs_0043/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2011/8/10    
 * [Encrypted] akbs_0054t.zip, 聖騎士Melty☆Lovers 体験版, 圣骑士 体验版, https://dlsoft.dmm.co.jp/detail/akbs_0054/, MeltyLovers.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2015/6/24   
+* [Unencrypted, but .ks.scn] hiqua_0005t.zip, 杀恋体验版, サツコイ～悠久なる恋の歌～　体験版, satsukoi_trial, https://dlsoft.dmm.co.jp/detail/views_0471/, satsukoi.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 2014/7/21, 1.1.0.2   
 
 ## (TODO, Please buy steam games) steam games from Japan
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
