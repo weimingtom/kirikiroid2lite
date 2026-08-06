@@ -240,7 +240,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] ひとつ屋根の、ツバサの下で　体験版, http://harmorise.jp/tsubasa/#trial, hitotsuba_trial.zip and hitotsuba_patch.zip (patch not checked), TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.2.0.3, tvpwin32.exe, 2018/1/26, 在同一屋檐的羽翼之下体验版, 同一屋檐下、羽翼下的故事体验版     
 * [Unencrypted?] d_160864t.zip, 男性を癒やし抜く機械 体験版, https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_160864/, sexualis_trial.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2019/8/24  
 * [Unencrypted?, include update] russ_0136t.zip, yumekoi_update_1.05.zip, ゆめこい 〜夢見る魔法少女と恋の呪文〜 体験版 and アップデータ 1.05, https://dlsoft.dmm.co.jp/detail/russ_0136/, yumekoi_tr.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2013/4/30, yumekoi_update_1.05.zip no exe  
-* [Unencrypted?] ggs_1054t.zip, https://dlsoft.dmm.co.jp/detail/ggs_1054/, お兄ちゃん、キッスの準備はまだですか？体験版ver101, お兄ちゃん、キッスの準備はまだですか？体験版ver101.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/4/4, 妹吻    
+* [Unencrypted?] ggs_1054t.zip, https://dlsoft.dmm.co.jp/detail/ggs_1054/, 妹吻体验版, お兄ちゃん、キッスの準備はまだですか？体験版ver101, お兄ちゃん、キッスの準備はまだですか？体験版ver101.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/4/4, 妹吻    
 * [Unencrypted?] views_0346t.zip, https://dlsoft.dmm.co.jp/detail/views_0346/, 1/2 summer 体験版, summer.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2012/6/7, 2.31.2011.615  
 * [Unencrypted?] russ_0145t.zip, https://dlsoft.dmm.co.jp/detail/russ_0145/, 迷える2人とセカイのすべて 体験版, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2014/9/19, 2.31.2013.330   
 * [Unencrypted?] hobc_0347t.zip, https://dlsoft.dmm.co.jp/detail/hobc_0347/, 波間の国のファウスト　体験版１, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2011.615, 2012/4/6  
@@ -278,7 +278,11 @@ konomi2.zip, konomi.gif
 * (TODO) タマユラミライ, 玉响未来
 * (TODO) 光輪の町、ラベンダーの少女, 光轮之町、薰衣草之少女
 * (TODO) ? 桃色恋恋
-* (TODO) ? 猫神大人与七颗星星  
+* (TODO) ? 猫神大人与七颗星星
+* (TODO) 枯れない世界と終わる花, 永不枯萎的世界与终焉之花
+* (TODO) 出会って5分は俺のもの！時間停止と不可避な運命, 相见5分属于我！ 时间停止和不可避的命运  
+* (TODO) 真愛の百合は赤く染まる, 真爱百合, 染成红色的真爱百合
+* (TODO) お兄ちゃん、キッスの準備はまだですか？ エッチの準備もまだですか？, 妹吻FD
 * (TODO) 
 * (TODO) 
 * ===NOTE，以下仅记录===
