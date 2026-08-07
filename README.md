@@ -1478,6 +1478,20 @@ http://tieba.baidu.com/刻痕
 
 (C)opyright 2012 Ladomu./Angels Blue.
 ```
+* [Unencrypted?, one exe] 叙事曲, BalladeLite_Win_1308_HC.zip, BalladeLite_Win_1308.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2013/7/31, 2.28.1.9906
+```
+https://baike.baidu.com/item/叙事曲/7023758
+
+《叙事曲》是由286studio开发的校园题材AVG游戏，初代作品《叙事曲 CHS for iPhone》于2011年登陆iOS平台，
+续作《叙事曲2：星空下的诺言》2019年5月24日登陆Steam平台。游戏以厦门大学和清华大学为原型构建虚构的“朗润大学”，
+场景取景自厦门，讲述物理系学生南望在大三暑期返校后，发现与好友文朔（大K）及其女友程可的三人关系发生剧变。
+面对陷入悲伤的程可，以及宴会上突然登场的神秘少女若瑜，南望的校园生活迎来了新的转折 [1-2] [4]。
+
+该系列采用全程中文配音，角色设定包含南望、好友文朔（大K）、程可以及神秘少女若瑜等。
+开发团队由清华大学、南加州大学等高校成员组成，制作团队成员来自名校 [1-2] [4]。
+续作《叙事曲2：星空下的诺言》包含245个场景、138张CG [3] [5]。
+初代作品《叙事曲:难忘的回忆》于2019年10月1日移植至Steam，支持繁简中文及云存档功能
+```
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/  
