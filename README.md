@@ -1495,6 +1495,10 @@ https://baike.baidu.com/item/叙事曲/7023758
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/  
+* (TODO, to buy) steam, 叙事曲：难忘的回忆 / Ballade: with Memories  
+https://store.steampowered.com/app/1091720/__Ballade_with_Memories/   
+* (TODO, to buy) steam, 叙事曲2：星空下的诺言 / Ballade2: the Celestial Promise  
+https://store.steampowered.com/app/1080990/2__Ballade2_the_Celestial_Promise/  
 * projects_20241018.7z
 
 ## Links about other Kirikiri and steam games list
