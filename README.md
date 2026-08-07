@@ -1411,6 +1411,7 @@ http://bcpc.taobao.com/?v=1
 《星空不在的梦境》是幻爵工作室正式发布的第二部作品
 游戏实体碟版于2010年3月6、7日（CD5）及2010年3月21日（CC6）发布。网络发布版与PSP版均于2010年5月1日发布。安卓版于2014年12月9日发布，iOS版则处于不定期制作中。
 游戏使用KRKR引擎开发，文本长度为16万字（双线）。在CD5上，实体碟售出约200套，这为工作室改善了办公环境
+* (not good, don't use) [Encrypted] 虹色旋律, HSXL.Green.Edition-ALI213.7z, MOI.exe, (?) TVP(KIRIKIRI) 2 core / Scripting Platform for Win32   
 ```
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
