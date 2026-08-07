@@ -576,6 +576,10 @@ https://store.steampowered.com/app/491420/the_9th_day/
 https://the9thday.net/works/w1  
 * [NOT Kirikiri] 恋愛0キロメートル, 恋爱0公里, Ren'ai 0 Kilometer, from Japan 
 https://store.steampowered.com/app/3588960/Renai_0_Kilometer/  
+* [NOT Kirikiri, use Qt5] steam, 叙事曲：难忘的回忆 / Ballade: with Memories  
+https://store.steampowered.com/app/1091720/__Ballade_with_Memories/   
+* [NOT Kirikiri, use Qt5]  steam, 叙事曲2：星空下的诺言 / Ballade2: the Celestial Promise  
+https://store.steampowered.com/app/1080990/2__Ballade2_the_Celestial_Promise/
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * [Encrypted] 雾之本境twisty-destiny, twisty-destiny, (same as 默示version) 雾之本境正式版.iso, (黙示, 默示version) [110723][SP-time]雾之本境 [中文硬盘版+RR3].rar, (雾之本境DEMO) 雾之本境.zip     
@@ -1495,10 +1499,6 @@ https://baike.baidu.com/item/叙事曲/7023758
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/  
-* (TODO, to buy) steam, 叙事曲：难忘的回忆 / Ballade: with Memories  
-https://store.steampowered.com/app/1091720/__Ballade_with_Memories/   
-* (TODO, to buy) steam, 叙事曲2：星空下的诺言 / Ballade2: the Celestial Promise  
-https://store.steampowered.com/app/1080990/2__Ballade2_the_Celestial_Promise/  
 * projects_20241018.7z
 
 ## Links about other Kirikiri and steam games list
