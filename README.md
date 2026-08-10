@@ -1503,6 +1503,10 @@ https://baike.baidu.com/item/叙事曲/7023758
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/  
 * projects_20241018.7z
+* (TODO, to BUY) steam, Saint Slaughter X Days, 圣屠十日steam版    
+https://store.steampowered.com/app/846670/Saint_Slaughter_X_Days/  
+* (TODO, to BUY) steam, Crimson Imprint plus -Nonexistent Christmas-, 赤印plus:不存在的圣诞节steam版     
+https://store.steampowered.com/app/740260/Crimson_Imprint_plus_Nonexistent_Christmas/  
 
 ## Links about other Kirikiri and steam games list
 * https://github.com/zeas2/Kirikiroid2_patch/issues/16  
