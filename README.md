@@ -289,6 +289,8 @@ konomi2.zip, konomi.gif
 * (TODO) J.Q.V 人類救済部 ～With love from isotope～, J.Q.V人类救济部 体验版  
 * (TODO) るいは智を呼ぶ, 智以类聚
 * (TODO) 祝祭の歌姫 ―君と紡ぐ明日への歌―
+* (TODO) 11eyes－罪と罰と贖いの少女－  
+* (TODO) 
 * (TODO) 
 * (TODO) 
 * ===NOTE，以下仅记录===
