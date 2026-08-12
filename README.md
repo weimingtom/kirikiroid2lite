@@ -287,6 +287,8 @@ konomi2.zip, konomi.gif
 * (TODO) ちいさな彼女の小夜曲, 娇小少女的小夜曲
 * (TODO) 彼女と俺の恋愛日常, 女友与我的恋爱日常   
 * (TODO) J.Q.V 人類救済部 ～With love from isotope～, J.Q.V人类救济部 体验版  
+* (TODO) るいは智を呼ぶ, 智以类聚
+* (TODO) 祝祭の歌姫 ―君と紡ぐ明日への歌―
 * (TODO) 
 * (TODO) 
 * ===NOTE，以下仅记录===
