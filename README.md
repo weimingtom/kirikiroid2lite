@@ -579,7 +579,7 @@ https://store.steampowered.com/app/323490/_Oblivious_Garden_Carmina_Burana/
 https://store.steampowered.com/app/345040/Oblivious_Garden_White_Day/  
 * [Unencrypted?, text English, voice Chinese] 赤印plus steam版英文试玩版（**注意，试玩版字幕只有英文但语音是中文**）, Crimson Imprint plus -Nonexistent Christmas- Demo, Chrimson Imprint Plus Ver 1.22E English tiral version  
 https://store.steampowered.com/app/740260/Crimson_Imprint_plus_Nonexistent_Christmas/  
-* [Unencrypted?, Chinese] steam, Crimson Imprint plus -Nonexistent Christmas-, 赤印plus:不存在的圣诞节steam版       
+* [Unencrypted?, Chinese] steam, Crimson Imprint plus -Nonexistent Christmas-, 赤印plus:不存在的圣诞节steam版, Crimson Imprint Plus | 赤印+ 不存在的圣诞节Ver 1.12          
 https://store.steampowered.com/app/740260/Crimson_Imprint_plus_Nonexistent_Christmas/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
