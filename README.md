@@ -579,7 +579,8 @@ https://store.steampowered.com/app/323490/_Oblivious_Garden_Carmina_Burana/
 https://store.steampowered.com/app/345040/Oblivious_Garden_White_Day/  
 * [Unencrypted?, text English, voice Chinese] 赤印plus steam版英文试玩版（**注意，试玩版字幕只有英文但语音是中文**）, Crimson Imprint plus -Nonexistent Christmas- Demo, Chrimson Imprint Plus Ver 1.22E English tiral version  
 https://store.steampowered.com/app/740260/Crimson_Imprint_plus_Nonexistent_Christmas/  
-* 
+* [Unencrypted?, Chinese] steam, Crimson Imprint plus -Nonexistent Christmas-, 赤印plus:不存在的圣诞节steam版       
+https://store.steampowered.com/app/740260/Crimson_Imprint_plus_Nonexistent_Christmas/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日, from China   
@@ -1513,8 +1514,6 @@ https://store.steampowered.com/app/737710/
 * projects_20241018.7z
 * (TODO, to BUY) steam, Saint Slaughter X Days, 圣屠十日steam版    
 https://store.steampowered.com/app/846670/Saint_Slaughter_X_Days/  
-* (TODO, to BUY) steam, Crimson Imprint plus -Nonexistent Christmas-, 赤印plus:不存在的圣诞节steam版     
-https://store.steampowered.com/app/740260/Crimson_Imprint_plus_Nonexistent_Christmas/  
 
 ## Links about other Kirikiri and steam games list
 * https://github.com/zeas2/Kirikiroid2_patch/issues/16  
