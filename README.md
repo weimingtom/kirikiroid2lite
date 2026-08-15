@@ -268,7 +268,6 @@ konomi2.zip, konomi.gif
 * (TODO) [Wheel-Soft]大宇宙の誇り
 * (TODO) KRKR制作范例.zip
 * (TODO) 東京封鎖 ～キミが隣にいた昨日～  
-* (TODO) 朱红·零 -圣屠十日-, Saint Slaughter X Days 圣屠十日     
 * (TODO) 響野さん家はエロゲ屋さん！, 响野家的工口游戏店, https://dlsoft.dmm.co.jp/detail/hobe_0493/   
 * (TODO) 夢か現かマトリョーシカ, 	梦与现实的联理结, https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=1833apc10500/   
 * (TODO) 車輪の国、向日葵の少女, ??? 車輪の国、悠久の少年少女
@@ -581,6 +580,8 @@ https://store.steampowered.com/app/345040/Oblivious_Garden_White_Day/
 https://store.steampowered.com/app/740260/Crimson_Imprint_plus_Nonexistent_Christmas/  
 * [Unencrypted?, Chinese] steam, Crimson Imprint plus -Nonexistent Christmas-, 赤印plus:不存在的圣诞节steam版, Crimson Imprint Plus | 赤印+ 不存在的圣诞节Ver 1.12          
 https://store.steampowered.com/app/740260/Crimson_Imprint_plus_Nonexistent_Christmas/  
+* [Unencrypted?] steam, Saint Slaughter X Days, 圣屠十日steam版, 朱红·零 -圣屠十日-, Saint Slaughter X Days 圣屠十日         
+https://store.steampowered.com/app/846670/Saint_Slaughter_X_Days/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日, from China   
@@ -1512,8 +1513,6 @@ https://baike.baidu.com/item/叙事曲/7023758
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/  
 * projects_20241018.7z
-* (TODO, to BUY) steam, Saint Slaughter X Days, 圣屠十日steam版    
-https://store.steampowered.com/app/846670/Saint_Slaughter_X_Days/  
 
 ## Links about other Kirikiri and steam games list
 * https://github.com/zeas2/Kirikiroid2_patch/issues/16  
