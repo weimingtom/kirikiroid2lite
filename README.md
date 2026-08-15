@@ -562,7 +562,7 @@ https://store.steampowered.com/app/4491980/_/
 https://store.steampowered.com/app/1559760/Island_Diary/  
 https://watakubi.com/islanddiary/    
 https://www.ymgal.games/co/article/158867700825718784  
-* Your Diary +
+* Your Diary +  
 https://store.steampowered.com/app/761700/Your_Diary/  
 
 ##  (TODO, Please buy steam games) steam games from China  
@@ -584,7 +584,7 @@ https://store.steampowered.com/app/740260/Crimson_Imprint_plus_Nonexistent_Chris
 https://store.steampowered.com/app/740260/Crimson_Imprint_plus_Nonexistent_Christmas/  
 * [Unencrypted?] steam, Saint Slaughter X Days, 圣屠十日steam版, 朱红·零 -圣屠十日-, Saint Slaughter X Days 圣屠十日, St. Slaughter X Days | 朱红·零 -圣屠十日- 1.05         
 https://store.steampowered.com/app/846670/Saint_Slaughter_X_Days/  
-* [Unencrypted? THE NVL Maker 界面模板], Leaflet Love Story  
+* [Unencrypted? THE NVL Maker 界面模板, support English and Chinese] Leaflet Love Story  
 https://store.steampowered.com/app/895220/Leaflet_Love_Story/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
