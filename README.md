@@ -562,7 +562,7 @@ https://store.steampowered.com/app/4491980/_/
 https://store.steampowered.com/app/1559760/Island_Diary/  
 https://watakubi.com/islanddiary/    
 https://www.ymgal.games/co/article/158867700825718784  
-* Your Diary +  
+* [Unencrypted? support English and Traditional Chinese text] Your Diary +    
 https://store.steampowered.com/app/761700/Your_Diary/  
 
 ##  (TODO, Please buy steam games) steam games from China  
