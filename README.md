@@ -1626,6 +1626,10 @@ mingw-w64-x86_64-glew mingw-w64-x86_64-glfw mingw-w64-x86_64-gdb
 * $ mingw32-make.exe -f Makefile.msys2 clean
 * $ mingw32-make.exe -f Makefile.msys2 -j8
 * $ mingw32-make.exe -f Makefile.msys2 test
+* (TODO, unresolved) Error when compiling with official SDL2
+```
+error: '_beginthreadex' undeclared (first use in this function); did you mean 'SDL_beginthread'?
+```
 
 ## Minimum version of Cocos2d-x  
 * VS2013 version cocos2d-x 3.6, see   
