@@ -1626,7 +1626,9 @@ mingw-w64-x86_64-glew mingw-w64-x86_64-glfw mingw-w64-x86_64-gdb
 * $ mingw32-make.exe -f Makefile.msys2 clean
 * $ mingw32-make.exe -f Makefile.msys2 -j8
 * $ mingw32-make.exe -f Makefile.msys2 test
-* (TODO, not tested, unresolved) Error when compiling with msys2's official SDL2
+* (TODO, not tested, unresolved) Error when compiling with msys2's official SDL2  
+Consider using SDL2-devel-2.0.3-mingw.tar.gz  
+https://github.com/libsdl-org/SDL/releases/download/release-2.32.8/SDL2-devel-2.32.8-mingw.tar.gz  
 ```
 error: '_beginthreadex' undeclared (first use in this function); did you mean 'SDL_beginthread'?
 ```
