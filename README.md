@@ -487,6 +487,7 @@ https://www.igdb.com/game_engines/onscripter
 * [Encrypted] akbs_0054t.zip, 聖騎士Melty☆Lovers 体験版, 圣骑士 体验版, https://dlsoft.dmm.co.jp/detail/akbs_0054/, MeltyLovers.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.411, 2015/6/24   
 * [Unencrypted, but .ks.scn] views_0471t.zip, 杀恋体验版, サツコイ～悠久なる恋の歌～　体験版, satsukoi_trial, https://dlsoft.dmm.co.jp/detail/views_0471/, satsukoi.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 2014/7/21, 1.1.0.2   
 * [Encrypted, and .scn] russ_0196t.zip, よめはぴ 〜You make happy！〜　体験版, https://dlsoft.dmm.co.jp/detail/russ_0196/, ymhptry.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2011/6/17, 2.32.2.426   
+* [Encrypted] osana_tri.exe, https://www.vogons.org/viewtopic.php?t=53980, 幼なじみは大統領 体験版, osana_trial.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2009.825, 2009/9/9  
 
 ## (TODO, Please buy steam games) steam games from Japan
 * [Unencrypted?] KamiYaba: Destiny on a Dicey Deadline, KamiYaba, 太依赖咒术的我未来堪忧。  
