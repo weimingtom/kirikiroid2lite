@@ -290,7 +290,8 @@ konomi2.zip, konomi.gif
 * (TODO) るいは智を呼ぶ, 智以类聚
 * (TODO) 祝祭の歌姫 ―君と紡ぐ明日への歌―
 * (TODO) 11eyes－罪と罰と贖いの少女－  
-* (TODO) 
+* (TODO) 将軍様はお年頃    
+* (TODO) 幼なじみは大統領, osana_tri.exe   
 * (TODO) 
 * (TODO) 
 * ===NOTE，以下仅记录===
