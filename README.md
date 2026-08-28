@@ -293,6 +293,7 @@ konomi2.zip, konomi.gif
 * (TODO) 11eyes－罪と罰と贖いの少女－  
 * (TODO) 将軍様はお年頃    
 * (TODO) 幼なじみは大統領, osana_tri.exe   
+* (TODO) 变恋黑历史, 変恋≒黒歴史  
 * (TODO) 
 * (TODO) 
 * ===NOTE，以下仅记录===
