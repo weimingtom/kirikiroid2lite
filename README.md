@@ -294,6 +294,16 @@ konomi2.zip, konomi.gif
 * (TODO) 将軍様はお年頃    
 * (TODO) 幼なじみは大統領, osana_tri.exe   
 * (TODO) 变恋黑历史, 変恋≒黒歴史  
+* (TODO) ワガママハイスペック, 任性High Spec
+* (TODO) 桜吹雪～千年の恋をしました～, 樱吹雪  
+* (TODO) 夏雪 ～summer snow～
+* (TODO) 忠臣蔵46+1, 忠臣藏46+1
+* (TODO) 黄昏のシンセミア, 黄昏的禁忌之药
+* (TODO) 月影のシミュラクル -解放の羽-, 月影魅像 -解放之羽-, https://www.hikarifield.co.jp/tsukikage/  
+* (TODO) ??? Deep One
+* (TOOD) ゴスデリ -GOTHIC DELUSION-, 哥特妄想
+* (TODO) Clover Day's  
+* (TODO) 9-nine-ここのつここのかここのいろ, 9-nine-九次九日九重色
 * (TODO) 
 * (TODO) 
 * ===NOTE，以下仅记录===
