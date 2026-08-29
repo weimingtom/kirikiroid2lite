@@ -304,6 +304,9 @@ konomi2.zip, konomi.gif
 * (TOOD) ゴスデリ -GOTHIC DELUSION-, 哥特妄想
 * (TODO) Clover Day's  
 * (TODO) 9-nine-ここのつここのかここのいろ, 9-nine-九次九日九重色
+* (TODO) 魔法使いの夜, 魔法使之夜
+* (TODO) Fate/hollow ataraxia, FHA  
+* (TODO) Fate/stay night, 命运之夜     
 * (TODO) 
 * (TODO) 
 * ===NOTE，以下仅记录===
