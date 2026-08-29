@@ -124,6 +124,9 @@ https://the9thday.net/works/w1/download.php
 ## (TODO) English kirikiri2 or kirikiriz games
 * Kirikiroid2 Compatibility List (ENG)  
 https://visuallyneko.wordpress.com/visual-novel-hacks/kirikiroid2-compatibility-list-eng/  
+* [Unencrypted?, English version, translated by mirror moon] (注: 这个不是原版，这个是英文翻译版, Tsukihime Plus+Disc version 1.2) 115, 月姫 PLUS-DISC English translated by mirror moon, 月姫 PLUS-DISC English translated by mirror moon, [Fuwanovel] Tsukihime Plus+Disc/TsukihimePLUSDISC.zip, PLUS+DISC.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.17.8.689, tvpwin32.exe, 2013/6/5  
+* [Unencrypted?, exe is also Unencrypted can be open] https://www.vogons.org/viewtopic.php?t=53980, TR79.zip, Kara_no_Shoujo_trial, english translation, Kara no Shoujo (MangaGamer version; original version has different engine), TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2011/5/31 (I don't know if it is the steam version's trial)       
+* (??? not tested) Kirikiroid2 - karanoshojo.zip, Kara no Shoujo, Fade in / fade out transitions are slow, Patch required. See also https://visuallyneko.wordpress.com/visual-novel-hacks/kirikiroid2-compatibility-list-eng/  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Japanese kirikiri2 or kirikiriz games  
 * [Unencrypted?] 恋がさくころ桜どき 体験版, 恋花绽放樱飞时 体验版, sakusaku_trial.zip  
@@ -251,11 +254,9 @@ konomi2.zip, konomi.gif
 * [Unpacked, with tyrano tyranoscript and html5] 沒有黎明之夜來臨之前_v1.1.apk  
 * [Unencrypted?, open exe as xp3] 【PC】没有黎明之夜来临之前.mp4, akeyoru.CHT.20180507.exe (jp version is akeyoru.exe), TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2018/5/7 (akeyoru.exe is 2012/3/18)  
 * [Unencrypted?] Re：LieF 〜親愛なるあなたへ〜 体験版, Re:LieF 〜献给亲爱的你〜体验版, Re:LieF 〜献给亲爱的你〜 Re:LanguagE, https://store.hikarifield.co.jp/shop/relief, https://dlsoft.dmm.co.jp/detail/rask_0001/, rask_0001t.zip, ReLieF_TriaL, ReLieF_TriaL.exe, TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2016/9/24    
-* [Unencrypted?, English version, translated by mirror moon] (注: 这个不是原版，这个是英文翻译版, Tsukihime Plus+Disc version 1.2) 115, 月姫 PLUS-DISC English translated by mirror moon, 月姫 PLUS-DISC English translated by mirror moon, [Fuwanovel] Tsukihime Plus+Disc/TsukihimePLUSDISC.zip, PLUS+DISC.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.17.8.689, tvpwin32.exe, 2013/6/5  
 * [Unencrypted?] chbld_0002t.zip, カミツレ～７の二乗不思議～　体験版, カミツレ〜7の二乗不思議〜 体験版, カミツレ　体験版.exe, kamitsure_trial_0225a, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, https://dlsoft.dmm.co.jp/detail/chbld_0002/, 2.31.2013.330, 2015/2/25   
 * [Unencrypted?] hiqua_0005t.zip, ひとなつの 体験版, https://dlsoft.dmm.co.jp/detail/hiqua_0005/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2014/3/27 (2014/1/30)      
 * [Unpacked] 2-4875934262-cd.iso, 1-4875934262-lowres.pdf, https://archive.org/details/4875934262_game_production_using_kirikiri_and_kag/0-4875934262/,  吉里吉里/KAGではじめるゲーム制作 : タグでノベルゲームが簡単にできる!, kr2_218r2.lzh, krkr.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.18.0.713, 2003/3/6   
-* [Unencrypted?, exe is also Unencrypted can be open] https://www.vogons.org/viewtopic.php?t=53980, TR79.zip, Kara_no_Shoujo_trial, english translation, Kara no Shoujo (MangaGamer version; original version has different engine), TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2011/5/31 (I don't know if it is the steam version's trial)       
 
 * ===NOTE, 以下仅记录===
 * _ons_all_1, Downloads_index_20211026.rar, krkr游戏目录.xlsx, 约346行, ONS目录.xlsx, 约180行, _ons_all_2        
