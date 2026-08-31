@@ -607,7 +607,7 @@ https://store.steampowered.com/app/740260/Crimson_Imprint_plus_Nonexistent_Chris
 https://store.steampowered.com/app/846670/Saint_Slaughter_X_Days/  
 * [Unencrypted? THE NVL Maker 界面模板, support English and Chinese] Leaflet Love Story  
 https://store.steampowered.com/app/895220/Leaflet_Love_Story/  
-* [Unencrypted?] steam, 夏花的轨迹——A summer promise to forever  
+* [Unencrypted?] steam, 夏花的轨迹——A summer promise to forever, Trajectory of summer flower    
 https://store.steampowered.com/app/629960/A_summer_promise_to_forever/    
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
@@ -619,7 +619,9 @@ https://store.steampowered.com/app/3588960/Renai_0_Kilometer/
 * [NOT Kirikiri, use Qt5] steam, 叙事曲：难忘的回忆 / Ballade: with Memories  
 https://store.steampowered.com/app/1091720/__Ballade_with_Memories/   
 * [NOT Kirikiri, use Qt5]  steam, 叙事曲2：星空下的诺言 / Ballade2: the Celestial Promise  
-https://store.steampowered.com/app/1080990/2__Ballade2_the_Celestial_Promise/
+https://store.steampowered.com/app/1080990/2__Ballade2_the_Celestial_Promise/  
+* [NOT Kirikiri, but very like] steam, 夏花的轨迹——A summer promise to forever, Trajectory of summer flower Ⅱ  
+https://store.steampowered.com/app/2698190/That_summer_of_eternal_eden/  
 
 ## (TODO, Please buy steam games) Not tested unencrypted or encrypted (need xp3filter.tjs) Chinese kirikiri2 or kirikiriz games  
 * [Encrypted] 雾之本境twisty-destiny, twisty-destiny, (same as 默示version) 雾之本境正式版.iso, (黙示, 默示version) [110723][SP-time]雾之本境 [中文硬盘版+RR3].rar, (雾之本境DEMO) 雾之本境.zip     
