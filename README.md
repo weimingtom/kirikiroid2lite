@@ -607,6 +607,8 @@ https://store.steampowered.com/app/740260/Crimson_Imprint_plus_Nonexistent_Chris
 https://store.steampowered.com/app/846670/Saint_Slaughter_X_Days/  
 * [Unencrypted? THE NVL Maker 界面模板, support English and Chinese] Leaflet Love Story  
 https://store.steampowered.com/app/895220/Leaflet_Love_Story/  
+* [Unencrypted?] steam, 夏花的轨迹——A summer promise to forever  
+https://store.steampowered.com/app/629960/A_summer_promise_to_forever/    
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日, from China   
@@ -1552,8 +1554,6 @@ https://baike.baidu.com/item/叙事曲/7023758
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/  
-* (TODO, to BUY) steam, 夏花的轨迹——A summer promise to forever  
-https://store.steampowered.com/app/629960/A_summer_promise_to_forever/    
 * projects_20241018.7z
 
 ## Links about other Kirikiri and steam games list
