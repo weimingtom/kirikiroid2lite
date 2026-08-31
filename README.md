@@ -1534,6 +1534,7 @@ https://baike.baidu.com/item/叙事曲/7023758
 续作《叙事曲2：星空下的诺言》包含245个场景、138张CG [3] [5]。
 初代作品《叙事曲:难忘的回忆》于2019年10月1日移植至Steam，支持繁简中文及云存档功能
 ```
+* [Unencrypted?] 夏花的轨迹（试玩版）.exe, 夏花的轨迹.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.1.426, 2017/4/25, https://sorapray.com/download  
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/  
