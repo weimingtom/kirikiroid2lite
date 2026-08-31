@@ -1538,6 +1538,8 @@ https://baike.baidu.com/item/叙事曲/7023758
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/  
+* (TODO, to BUY) steam, 夏花的轨迹——A summer promise to forever  
+https://store.steampowered.com/app/629960/A_summer_promise_to_forever/    
 * projects_20241018.7z
 
 ## Links about other Kirikiri and steam games list
