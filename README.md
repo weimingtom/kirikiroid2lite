@@ -1535,7 +1535,20 @@ https://baike.baidu.com/item/叙事曲/7023758
 初代作品《叙事曲:难忘的回忆》于2019年10月1日移植至Steam，支持繁简中文及云存档功能
 ```
 * [Unencrypted?] 夏花的轨迹（试玩版）.exe, 夏花的轨迹.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.1.426, 2017/4/25, https://sorapray.com/download  
+```
+引自百度百科https://baike.baidu.com/item/夏花的轨迹/57080687：
+《夏花的轨迹(A summer promise to forever)》是由SoraPrayer制作并于2017年8月15日发行的一款恋爱养成类电子视觉小说游戏，登陆PC与Mac平台。
+游戏讲述了高中生林家俊受父亲委托前往棠下村视察学校，重逢青梅竹马并结识农家女孩。在逐渐融入村庄生活的过程中，林家俊发现了村庄背后隐藏的旧社会恶习，
+并试图拯救两位少女。其短篇续作于2025年1月27日发售。
+```
 * [Unencrypted?] 彼方木棉（试玩版）.exe, 彼方木棉.exe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.28.1.9906, 2016/4/19, https://sorapray.com/download  
+```
+引：https://dl.3dmgame.com/pc/76293.html
+《彼方木棉》是一款剧情向的文字冒险游戏。故事中讲述了一对生长在长满木棉花岛屿的兄妹，他们的亲人在一场空难中遇难，只留下他们独自生活。
+可是慢慢的他们发现了生活使人与人之间的关系的变化，以及一些不可告人的秘密。
+
+注：吐槽，这背景素材眼熟
+```
 * ===NOTE, 以下仅记录===
 * (TODO, to BUY) steam, Melody of Iris-虹色旋律-(Full Color ver.)  
 https://store.steampowered.com/app/737710/  
