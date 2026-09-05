@@ -609,6 +609,8 @@ https://store.steampowered.com/app/846670/Saint_Slaughter_X_Days/
 https://store.steampowered.com/app/895220/Leaflet_Love_Story/  
 * [Unencrypted?] steam, 夏花的轨迹——A summer promise to forever, Trajectory of summer flower    
 https://store.steampowered.com/app/629960/A_summer_promise_to_forever/    
+* [Unpacked and Unencrypted, by NVLMaker] moc Demo, 回忆忘却之看板娘 DEMO   
+https://store.steampowered.com/app/3691760/_/  
 
 ## (TODO, NOT Kirikiri but you can buy steam games to support them) Steam games, their original version or trial demo is Kirikiri Engine, but steam version is NOT Kirikiri Engine  
 * [NOT Kirikiri, Unity, tolua.dll] the 9th day:第九日, from China   
