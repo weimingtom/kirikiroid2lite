@@ -554,6 +554,11 @@ https://hikarifield.co.jp/senren/index.html
 https://store.steampowered.com/app/1144400/_/  
 * [Unencrypted?] 纸上的魔法使  
 https://store.steampowered.com/app/3771230/_/  
+```
+纸上的魔法使steam版，Shift+F4的调试功能都没关，可以按出来。
+不过我试过大部分kirikiri引擎的steam游戏都没办法按出这个调试功能，
+可能有某种方法在打包时把这个功能禁用掉 ​​​
+```
 * [Unencrypted?] 纸上的魔法使 体验版  
 https://store.steampowered.com/app/4237510/_/    
 https://www.tamamakogaming.com  
