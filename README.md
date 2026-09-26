@@ -257,6 +257,7 @@ konomi2.zip, konomi.gif
 * [Unencrypted?] chbld_0002t.zip, カミツレ～７の二乗不思議～　体験版, カミツレ〜7の二乗不思議〜 体験版, カミツレ　体験版.exe, kamitsure_trial_0225a, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, https://dlsoft.dmm.co.jp/detail/chbld_0002/, 2.31.2013.330, 2015/2/25   
 * [Unencrypted?] hiqua_0005t.zip, ひとなつの 体験版, https://dlsoft.dmm.co.jp/detail/hiqua_0005/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2014/3/27 (2014/1/30)      
 * [Unpacked] 2-4875934262-cd.iso, 1-4875934262-lowres.pdf, https://archive.org/details/4875934262_game_production_using_kirikiri_and_kag/0-4875934262/,  吉里吉里/KAGではじめるゲーム制作 : タグでノベルゲームが簡単にできる!, kr2_218r2.lzh, krkr.eXe, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.18.0.713, 2003/3/6   
+* [Unencrypted?, .scn] d_733479t.zip, ダンジョンアンドブライド体験版, 地下城与新娘体验版, https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_733479/, demo.exe and demo64.exe, demo.exe:TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.32.2.426, 2010/10/26, demo64.exe: TVP(KIRIKIRI) Z core / Scripting Platform for Win32, 1.3.3.7, 2016/8/10  
 
 * ===NOTE, 以下仅记录===
 * _ons_all_1, Downloads_index_20211026.rar, krkr游戏目录.xlsx, 约346行, ONS目录.xlsx, 约180行, _ons_all_2        
