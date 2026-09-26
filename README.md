@@ -317,7 +317,13 @@ konomi2.zip, konomi.gif
 * (TODO) SWAN SONG
 * (TODO) 水平線まで何マイル?
 * (TODO) se・きらら
-* (TODO) 
+* (TODO) 1999ChristmasEve
+* (TODO) おれのなつやすみ2
+* (TODO) ゾウディアック
+* (TODO) (?nscripter) 月姫PLUS+DISC   
+* (TODO) 花帰葬  
+* (TODO) ひまわり
+* (TODO) 継照～ツギノテラス～  
 * (TODO) 
 * ===NOTE，以下仅记录===
 * [Unencrypted, but .ks.scn]  torp_0030t.zip, 恋する乙女と守護の楯 ～薔薇の聖母～ 体験版, https://dlsoft.dmm.co.jp/detail/torp_0030/, TVP(KIRIKIRI) 2 core / Scripting Platform for Win32, 2.31.2013.330, 2016/2/11      
