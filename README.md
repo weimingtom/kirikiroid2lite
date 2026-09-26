@@ -309,6 +309,14 @@ konomi2.zip, konomi.gif
 * (TODO) 魔法使いの夜, 魔法使之夜
 * (TODO) Fate/hollow ataraxia, FHA  
 * (TODO) Fate/stay night, 命运之夜     
+* (TODO) 幼なじみとの暮らし方
+* (TODO) ひまわりのチャペルできみと
+* (TODO) 接待倶楽部
+* (TODO) FairChild -フェアチャイルド
+* (TODO) 機械仕掛けのイヴ 〜Dea Ex Machina〜
+* (TODO) SWAN SONG
+* (TODO) 水平線まで何マイル?
+* (TODO) se・きらら
 * (TODO) 
 * (TODO) 
 * ===NOTE，以下仅记录===
